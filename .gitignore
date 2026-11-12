@@ -1,0 +1,13 @@
+proje.md
+Proje.md
+AGENTS.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.ppk
+copykemal_hetzner*
+hackathon2026_hetzner*
+.ssh/
+node_modules/
