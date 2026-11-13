@@ -1,6 +1,11 @@
 proje.md
 Proje.md
 AGENTS.md
+/research/
+/_research/
+/voiceover-drafts/
+/_voiceover-drafts/
+/Apollo Research and Voiceover*/
 .env
 .env.*
 !.env.example
