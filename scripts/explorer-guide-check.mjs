@@ -29,6 +29,11 @@ try {
   for (const mission of ['apollo', 'viking', 'sojourner']) {
     await page.locator('.' + mission + '-card .mission-button').click();
     await page.locator('#room-page').waitFor({ state: 'visible' });
+    const help = page.locator('.guide-help');
+    await page.waitForFunction(m => document.querySelector('.guide-help').dataset.guide === m, mission);
+    const badge = await help.boundingBox();
+    assert.ok(badge.y < 120 && Math.abs(badge.width - badge.height) < 1);
+    assert.ok(await help.locator('img').evaluate(img => img.complete && img.naturalWidth > 0));
     const button = page.locator('#learning-guide-open');
     const size = await button.boundingBox();
     assert.ok(size.height >= 60);
@@ -52,6 +57,10 @@ try {
       missionTips.add(await guide.locator('.guide-message').innerText());
     }
     assert.equal(missionTips.size, 4, mission);
+    await page.evaluate(() => document.activeElement.blur());
+    await page.mouse.move(15, 100);
+    await page.clock.fastForward(30000);
+    assert.equal(await guide.isVisible(), true, 'Manual tip must survive mouse movement and timeout');
     await guide.locator('.guide-action').click();
     await page.locator('#exhibit-dialog').waitFor({ state: 'visible' });
     assert.equal(await page.locator('.learning-card').count(), 3);
@@ -83,7 +92,7 @@ try {
   assert.equal(await guide.isVisible(), false);
   assert.equal(await page.locator('.guide-help').isVisible(), false);
   assert.deepEqual(errors, []);
-  await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Idle-only appearance on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
+  await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Idle-only appearance on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
   console.log('Explorer guides passed: four characters, idle timing, actions, focus, dialogs, suppression and responsive bounds.');
 } finally {
   await browser.close();

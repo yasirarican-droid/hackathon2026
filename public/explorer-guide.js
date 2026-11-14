@@ -14,7 +14,9 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   document.querySelector('#application').append(root);
   const help = document.createElement('button');
   help.className = 'guide-help';
-  help.textContent = '?';
+  const portrait = document.createElement('img');
+  portrait.alt = '';
+  help.append(portrait);
   help.title = 'Ask your explorer guide';
   help.setAttribute('aria-label', 'Ask your explorer guide for another tip');
   help.setAttribute('aria-controls', root.id);
@@ -32,6 +34,17 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   let disabled = false;
   let previousFocus;
   let runAction;
+  let pinned = false;
+  function updateControl(state) {
+    help.hidden = state.blocked || !cast[state.page];
+    if (cast[state.page] && help.dataset.guide !== state.page) {
+      const [name, file] = cast[state.page];
+      portrait.src = asset('assets/art/' + file);
+      help.dataset.guide = state.page;
+      help.title = name + ' · Get an explorer tip';
+      help.setAttribute('aria-label', name + ': get another explorer tip');
+    }
+  }
   function hide() {
     const hadFocus = root.contains(document.activeElement);
     root.hidden = true;
@@ -41,9 +54,11 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   }
   function reset() {
     hide();
+    updateControl(context());
     lastActivity = performance.now();
   }
   function show(state, manual = false) {
+    pinned = manual;
     const iteration = tipIndices.get(state.page) || 0;
     const [name, file] = cast[state.page];
     root.dataset.guide = state.page;
@@ -100,13 +115,13 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       nextAllowed = 0;
       reset();
     }
-    help.hidden = state.blocked || !cast[state.page];
+    updateControl(state);
     if (state.blocked || !cast[state.page]) {
       reset();
       return;
     }
     if (!root.hidden) {
-      if (now - shownAt >= visibleMs && !root.contains(document.activeElement)) reset();
+      if (!pinned && now - shownAt >= visibleMs && !root.contains(document.activeElement)) reset();
       return;
     }
     if (!disabled && (counts.get(key) || 0) < 2 && now - lastActivity >= idleMs && now >= nextAllowed)
@@ -115,7 +130,6 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   function activity(event) {
     lastActivity = performance.now();
     if (event.type === 'keydown' && event.key === 'Escape') hide();
-    if (!root.contains(event.target) && !root.hidden) hide();
   }
   for (const type of ['pointerdown', 'pointermove', 'keydown', 'scroll'])
     document.addEventListener(type, activity, { passive: true });
