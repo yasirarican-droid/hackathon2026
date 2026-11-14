@@ -1,0 +1,214 @@
+{
+  "source": {
+    "file": "s4e2_first_steps_sojourner.mp3",
+    "bytes": 62933511,
+    "sha256": "a626edf669f456209591b6e6500020ddf1c976298b379ac346b85f2e407cc703",
+    "page": "https://www.nasa.gov/podcasts/on-a-mission/first-steps-sojourner-s4e2/",
+    "podcastPublication": "2022-01-18",
+    "ownerSupplied": true
+  },
+  "prepared": "2026-11-14",
+  "status": "Integrated into the local Sojourner cassette player on 2026-11-14.",
+  "processing": "Source MP3 unchanged. Excerpts use 70 Hz high-pass, mild dynamics compression, measured two-pass loudness target -20 LUFS / -3 dBTP, 150ms fade-in, 250ms fade-out, mono 24 kHz 96 kbps MP3. No synthetic voice, added music, pitch or speed change. Existing source background music remains where present.",
+  "alignment": "Cached local speech recognition plus NASA transcript used to identify speech boundaries. Source times refer to this supplied MP3, not mission elapsed time; speakers/wording follow NASA transcript rather than recognition guesses.",
+  "selection": "Avoids harsh countdown/radio launch noise, computer-error ticking, zombie effects, and distressing/speculative death/abandonment narration. Brief celebratory cheers remain in first-wheels with reduced dynamic range. Child suitability remains an editorial judgement for owner review.",
+  "clips": [
+    {
+      "id": "launch-day",
+      "filename": "01-launch-day.mp3",
+      "title": "Launch day",
+      "titleTr": "Fırlatma günü",
+      "start": 1780.15,
+      "end": 1785.4,
+      "kind": "Modern NASA/JPL podcast narration",
+      "description": "Narrator gives the Pathfinder launch date. Harsh launch countdown and engine/radio noise omitted.",
+      "durationSeconds": 5.25,
+      "bytes": 64289,
+      "sha256": "5bd692666acc1fa4b47f9c8c3079268e1afe41b79dc3be90e3692e04bafa32ef",
+      "measuredOutput": {
+        "input_i": "-20.67",
+        "input_tp": "-4.23",
+        "input_lra": "0.80",
+        "input_thresh": "-30.67",
+        "output_i": "-19.88",
+        "output_tp": "-3.54",
+        "output_lra": "0.90",
+        "output_thresh": "-29.88",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.12"
+      },
+      "file": "assets/audio/sojourner-01-launch-day.mp3",
+      "transcript": [
+        {
+          "start": 0,
+          "end": 5.25,
+          "speaker": "Narrator · 2022",
+          "text": "The Pathfinder mission launched from Earth on December 4, 1996."
+        }
+      ]
+    },
+    {
+      "id": "first-wheels",
+      "filename": "02-first-wheels-on-mars.mp3",
+      "title": "First wheels on Mars",
+      "titleTr": "Mars üzerindeki ilk tekerlekler",
+      "start": 1967.45,
+      "end": 1995.65,
+      "kind": "Modern narration followed by archival JPL mission-control audio",
+      "description": "Narrator explains overnight power saving and the ramp descent; original mission-control confirmation and brief cheers follow. Archive begins about 19.1 seconds into this excerpt.",
+      "durationSeconds": 28.2,
+      "bytes": 339627,
+      "sha256": "fe2e992f606461b83109ad5690bc17b43bdacdaac90cee71d23674365186713b",
+      "measuredOutput": {
+        "input_i": "-20.53",
+        "input_tp": "-3.57",
+        "input_lra": "3.00",
+        "input_thresh": "-30.77",
+        "output_i": "-20.03",
+        "output_tp": "-3.40",
+        "output_lra": "2.90",
+        "output_thresh": "-30.22",
+        "normalization_type": "dynamic",
+        "target_offset": "0.03"
+      },
+      "file": "assets/audio/sojourner-02-first-wheels-on-mars.mp3",
+      "transcript": [
+        {
+          "start": 0,
+          "end": 4.6,
+          "speaker": "Narrator · 2022",
+          "text": "To save power, the lander and rover were programmed to go to sleep at night."
+        },
+        {
+          "start": 4.9,
+          "end": 10.8,
+          "speaker": "Narrator · 2022",
+          "text": "When they woke up the next morning, the rover chatted with the lander like nothing had ever been wrong."
+        },
+        {
+          "start": 11,
+          "end": 18.1,
+          "speaker": "Narrator · 2022",
+          "text": "With a sigh of relief, the team began directing the rover down the ramp so that it could finally touch Martian ground."
+        },
+        {
+          "start": 19.1,
+          "end": 20.2,
+          "speaker": "JPL Mission Control · 1997",
+          "text": "Flight rover."
+        },
+        {
+          "start": 20.6,
+          "end": 21.9,
+          "speaker": "JPL Mission Control · 1997",
+          "text": "Go ahead rover."
+        },
+        {
+          "start": 22.2,
+          "end": 25.4,
+          "speaker": "JPL Mission Control · 1997",
+          "text": "We can report visually six wheels on soil."
+        },
+        {
+          "start": 25.4,
+          "end": 26.3,
+          "speaker": "Archive sound",
+          "text": "[Cheers]"
+        },
+        {
+          "start": 26.3,
+          "end": 28.2,
+          "speaker": "JPL Mission Control · 1997",
+          "text": "Right, copy that."
+        }
+      ]
+    },
+    {
+      "id": "communications",
+      "filename": "03-a-team-across-space.mp3",
+      "title": "A team across space",
+      "titleTr": "Uzay boyunca iletişim",
+      "start": 1919.5,
+      "end": 1949.85,
+      "kind": "Modern interview with Dave Gruel",
+      "description": "Dave Gruel explains rover/lander communications using a light-bulb comparison and describes the initial local link problem.",
+      "durationSeconds": 30.35,
+      "bytes": 365546,
+      "sha256": "441dde3d8a7d5c714372a8f5b27e1c9f450ea17bf515d8b4744ea16471b23072",
+      "measuredOutput": {
+        "input_i": "-20.67",
+        "input_tp": "-3.14",
+        "input_lra": "3.20",
+        "input_thresh": "-30.98",
+        "output_i": "-19.88",
+        "output_tp": "-3.00",
+        "output_lra": "2.70",
+        "output_thresh": "-30.17",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.12"
+      },
+      "file": "assets/audio/sojourner-03-a-team-across-space.mp3",
+      "transcript": [
+        {
+          "start": 0,
+          "end": 5.2,
+          "speaker": "Dave Gruel · modern interview",
+          "text": "The communications link between the lander and the rover was pretty basic."
+        },
+        {
+          "start": 5.2,
+          "end": 20.8,
+          "speaker": "Dave Gruel · modern interview",
+          "text": "You know, we think about the fact that we can communicate with a vehicle that’s on the surface of Mars, that’s millions of miles away, and the power that it gives off is similar to the power of a light bulb in your refrigerator."
+        },
+        {
+          "start": 20.8,
+          "end": 30.35,
+          "speaker": "Dave Gruel · modern interview",
+          "text": "And we can make out those ones and zeros here on Earth and figure out what that says about the surface of another planet, yet we couldn’t get these two vehicles, who are in close proximity to one another, to communicate well."
+        }
+      ]
+    },
+    {
+      "id": "legacy",
+      "filename": "04-a-lasting-adventure.mp3",
+      "title": "A lasting adventure",
+      "titleTr": "Devam eden keşif hikâyesi",
+      "start": 2346.4,
+      "end": 2364.72,
+      "kind": "Modern NASA/JPL podcast narration",
+      "description": "Narrator summarizes the missions exceeding their intended lifetimes and their lasting influence. No speculative final-rover story or later-mission claims included.",
+      "durationSeconds": 18.32,
+      "bytes": 221258,
+      "sha256": "a9ec9ebf6214a665dc469cff0787c874178984bbc42dbf6d2a93243a8c93fc59",
+      "measuredOutput": {
+        "input_i": "-20.57",
+        "input_tp": "-3.98",
+        "input_lra": "1.50",
+        "input_thresh": "-30.74",
+        "output_i": "-20.18",
+        "output_tp": "-3.50",
+        "output_lra": "1.30",
+        "output_thresh": "-30.38",
+        "normalization_type": "dynamic",
+        "target_offset": "0.18"
+      },
+      "file": "assets/audio/sojourner-04-a-lasting-adventure.mp3",
+      "transcript": [
+        {
+          "start": 0,
+          "end": 11.6,
+          "speaker": "Narrator · 2022",
+          "text": "Sojourner and Pathfinder may only have been active a few short months, but they lasted many times longer than designed, and their influence continues to this day."
+        },
+        {
+          "start": 11.6,
+          "end": 18.32,
+          "speaker": "Narrator · 2022",
+          "text": "They changed how we explore Mars, and marked the start of 25 years of Mars rover adventures."
+        }
+      ]
+    }
+  ],
+  "transcriptNote": "Words, speaker labels and punctuation follow the NASA published transcript, checked against the owner-supplied excerpt using local recognition. Cue times are approximate editorial reading cues, not mission elapsed time. Modern narrator/interview material belongs to the 2022 podcast; JPL Mission Control in first-wheels is the historical 1997 excerpt."
+}

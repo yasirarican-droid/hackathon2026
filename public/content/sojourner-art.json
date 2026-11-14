@@ -1,0 +1,76 @@
+{
+  "records": [
+    {
+      "file": "assets/art/sojourner-lava-lamp-v2.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+      "bytes": 562624,
+      "sha256": "b3d44366eda90787af5325904700eaad70d96767707ecf7a45e2d9d5beb7dc4e",
+      "classification": "AI-generated decorative illustration, not original NASA evidence.",
+      "webOptimization": {
+        "originalSHA256": "82962f76c4758ddc634f9eff1faddda955830ab80bd2b4d2b159b4104b2ddf8b",
+        "originalBytes": 2462335,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    {
+      "file": "assets/art/sojourner-desk-phone-v3.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+      "bytes": 592100,
+      "sha256": "93a7f9c67f20a1a23ef277ab88f17cfe39dd485c7882836c8d9bb28462ee05a7",
+      "classification": "AI-generated decorative illustration, not original NASA evidence.",
+      "webOptimization": {
+        "originalSHA256": "35741fa12a14a95832ac6d78df240582c5f4f51db86f2703b431e6ded247e209",
+        "originalBytes": 2740506,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    {
+      "file": "assets/art/sojourner-cassette-v2.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+      "bytes": 702254,
+      "sha256": "feda4752ad9a6b88ee4abeb1e73ab9934ca6a0f6934ed1281c81d053cf84536e",
+      "classification": "AI-generated decorative illustration, not original NASA evidence.",
+      "webOptimization": {
+        "originalSHA256": "eb14a71211e05c54ae8eb9fbbf11b51c4f5023a453ac4a97e585cfb04419f773",
+        "originalBytes": 3412654,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    {
+      "file": "assets/art/sojourner-hello-explorer-v2.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+      "bytes": 817496,
+      "sha256": "f318b72332c6091a56360fd71a4b6e3ac0f9707012775ac5a6faf4cbb5dd4487",
+      "classification": "AI-generated decorative illustration, not original NASA evidence.",
+      "webOptimization": {
+        "originalSHA256": "4d9bf903be1e0f34de229b0c4512eecc036140b486814be880255b054fbdc501",
+        "originalBytes": 3927227,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    {
+      "file": "assets/art/sojourner-room-v1.webp",
+      "created": "2026-11-14",
+      "origin": "OpenAI ImageGen edit of owner-selected 1997 decorative room; wall NASA logo and mission emblems removed. Composition and empty CRT apertures retained.",
+      "classification": "AI-generated fictional room, not a NASA control-room photograph.",
+      "webOptimization": {
+        "originalSHA256": "71ceaf9a7e7c9798c7f20296c321b685bceafcb7f5316461868a8c236e8aa9a9",
+        "originalBytes": 2145716,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    }
+  ]
+}

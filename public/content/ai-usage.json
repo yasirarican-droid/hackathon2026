@@ -1,0 +1,251 @@
+{
+  "created": "2026-11-14",
+  "status": "Published to the owner-managed nasastarboard.app server after explicit owner authorization on 2026-11-14. Competition submission has not been performed by this deployment.",
+  "code": {
+    "tool": "OpenAI Codex",
+    "scope": "New HTML, CSS, JavaScript, content structure, asset-loading logic and local QA scripts. Homepage rocket is inline SVG with separately animated flame layers; the shape follows the user-provided project rocket reference. All motion respects pause and reduced-motion preferences. A seven-second illustrated Apollo entry briefing uses the Web Animations API, sourced static mission facts and local SVG/CSS artwork. Its rocket path is illustrative, not telemetry.",
+    "disclosure": "AI-assisted application code. Verified behavior is documented separately in the local QA report."
+  },
+  "text": {
+    "tool": "OpenAI Codex",
+    "scope": "Original child-friendly summaries based on the individually credited NASA sources. The two brief radio excerpts retain their speaker and GET timestamps. Original short Apollo 11 narrator story, based on linked NASA records. Not a transcript or a spacecraft transmission. Original child-friendly Viking telephone narrator script based on NASA mission, PDS spacecraft description and science records; not a transmission.",
+    "disclosure": "AI-assisted explanatory text; not a NASA-authored educational narrative."
+  },
+  "art": {
+    "tool": "OpenAI built-in ImageGen",
+    "created": "2026-11-14",
+    "files": [
+      "assets/art/apollo-room-v2.webp",
+      "assets/art/desk-props-v2.webp",
+      "assets/art/wordmark.webp",
+      "assets/art/space-hero.webp",
+      "assets/art/space-planets.webp",
+      "assets/art/eagle-story.webp",
+      "assets/art/viking-room-v1.webp",
+      "assets/art/viking-story.webp",
+      "assets/art/sojourner-room-v1.webp",
+      "assets/art/viking-banker-lamp-v2.webp",
+      "assets/art/viking-telephone-v2.webp",
+      "assets/art/sojourner-lava-lamp-v2.webp",
+      "assets/art/sojourner-desk-phone-v3.webp",
+      "assets/art/timeline-apollo-v2.webp",
+      "assets/art/timeline-sojourner-v2.webp",
+      "assets/art/sojourner-cassette-v2.webp",
+      "assets/art/sojourner-hello-explorer-v2.webp"
+    ],
+    "disclosure": "AI-generated illustrative interface artwork, not scientific evidence, historical photography, or an exact reconstruction of a real control room.",
+    "marking": "At owner request, repeated image/interface labels were removed and production tools are described in the shared How this archive was made card. Original video watermarks remain. Metadata preserves AI provenance; this card-only illustration disclosure is not declared equivalent to the competition visible-watermark requirement.",
+    "hero": "The home illustration is assembled from an ImageGen-edited planet/trail layer and clipped original rocket and flame layers. The embedded home AI lettering is removed at the owner's request. The Sources panel retains the AI illustration disclosure. The rocket has gentle motion and its flame flickers; pause and reduced motion apply.",
+    "storyIllustration": "Imagined friendly Eagle character based on the owner's storybook style reference. Generated with OpenAI ImageGen on 2026-11-14. Not a NASA image, hardware reconstruction or scientific evidence. AI origin is disclosed via the i panel and Sources.",
+    "vikingRoom": "Built-in ImageGen edit of the Apollo decorative room on 14 November 2026: three CRT cabinets recolored olive green with fixed screen geometry and desk perspective. No generated logos, flags, evidence or graph. Full prompt in docs/viking-room.md.",
+    "vikingStoryIllustration": {
+      "tool": "OpenAI built-in ImageGen",
+      "created": "2026-11-14",
+      "file": "assets/art/viking-story.webp",
+      "sha256": "8e97255726f347c8bd036068e2417ab25da5df51939c452ecbaec4ac95be5854",
+      "description": "Owner-requested storybook Viking character matching the Apollo postcard style. NASA hardware photograph and PDS description used as references. Three landing legs, antenna dish and sampler retained as recognizable features. Friendly face and Martian scene are imagined illustrative art, not evidence or an exact engineering reconstruction. No generated logos, flags or insignia.",
+      "promptRecord": "docs/viking-phone-story.md",
+      "marking": "Uses the existing i panel, Sources and metadata disclosures per owner preference.",
+      "webOptimization": {
+        "originalSHA256": "b69de4a140ebe8c22d71f91fb9588cf009a7edfc7a53ce204db78da5be2b3249",
+        "originalBytes": 3780193,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    "vikingProps": {
+      "metadata": "content/viking-props.json",
+      "scope": "New banker lamp and push-button phone generated from scratch on 2026-11-14 after 09:00 Europe/Istanbul. Replaces retired pre-start artwork."
+    }
+  },
+  "audio": {
+    "included": true,
+    "file": "assets/audio/lets-explore.mp3",
+    "originalFilename": "Let's Explore (3).mp3",
+    "providedBy": "Project owner",
+    "added": "2026-11-14",
+    "sha256": "658c38cda3ee1974c6f38d16a06f717358f9d19223a860b268c91ea7fff55852",
+    "bytes": 872588,
+    "creator": "Suno AI, owner-provided music",
+    "aiGeneration": "AI-generated music created with Suno; confirmed by project owner.",
+    "disclosure": "AI-generated music: Suno. AI-generated narrator recordings: ElevenLabs. Owner confirms paid plans at creation. ID3 disclosure added without re-encoding audio. NASA/JPL cassette source voices are separately credited and are not synthetic narration.",
+    "rights": "Owner confirms music was created on a paid Suno plan. Media use follows applicable Suno terms; it is not relicensed under Apache 2.0.",
+    "narration": {
+      "included": true,
+      "metadata": "content/narration.json",
+      "status": "Six ElevenLabs AI-generated narration recordings. Paid plan at creation confirmed by owner. ID3 and descriptive disclosure included; audio packet bytes unchanged.",
+      "disclosure": "AI-generated narration · ElevenLabs. NASA-based educational stories, not original NASA mission transmissions.",
+      "tools": [
+        "ElevenLabs"
+      ]
+    },
+    "arrivalVideoAudio": "Original soundtrack embedded in the owner-provided moon-animation.mp4. Retained with the original file; sound enabled by default. User may mute it, and that choice is respected on replay during the visit. Browser autoplay restrictions may require interaction.",
+    "productionTimeOwnerStatement": {
+      "statement": "Owner confirms all supplied homepage music, arrival films and Apollo/Viking/Sojourner narrator recordings were produced after 2026-11-14 09:00 Europe/Istanbul.",
+      "recordedOn": "2026-11-14",
+      "verification": "Owner statement; exact original production timestamps are not independently established. Original bytes retained."
+    },
+    "sourceOriginalSHA256": "f7d008956e3362392d334cce1bddd84d7d7334df8db6eb0f9fce87c656f63b38",
+    "planAtCreation": "Paid plan, confirmed by project owner",
+    "rightsSources": [
+      "https://help.suno.com/en/articles/2416769",
+      "https://elevenlabs.io/docs/overview/administration/billing"
+    ]
+  },
+  "scientificData": {
+    "generated": false,
+    "disclosure": "No synthetic telemetry or generated numerical dataset. NASA images are recorded individually in media.json with original download URLs and SHA-256 hashes.",
+    "viking": "Unchanged NASA PDS source files retained under docs/provenance; VL1 sols 1-30 PRESS_MEAN extracted to content/viking-pressure.json with original row numbers and warning flags. Chart uses straight segments; no smoothing, gap filling or fabricated points."
+  },
+  "fonts": [
+    {
+      "family": "Patrick Hand",
+      "license": "SIL Open Font License 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/patrickhand",
+      "localLicense": "assets/fonts/patrick-hand-OFL.txt"
+    },
+    {
+      "family": "Kalam",
+      "license": "SIL Open Font License 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/kalam",
+      "localLicense": "assets/fonts/kalam-OFL.txt"
+    },
+    {
+      "family": "Share Tech Mono",
+      "license": "SIL Open Font License 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/sharetechmono",
+      "localLicense": "assets/fonts/sharetechmono-OFL.txt"
+    }
+  ],
+  "codeLicense": "Apache-2.0 for project-authored code. NASA evidence, supplied media, fonts and third-party libraries retain their separate terms. See licenses and THIRD_PARTY.md.",
+  "model": {
+    "file": "assets/models/apollo-lunar-module.glb",
+    "origin": "NASA / Michael D. Carbajal; user file verified byte-for-byte against NASA download.",
+    "aiGeneratedGeometry": false,
+    "changes": "Original GLB geometry and embedded images unchanged. AI-assisted viewer code adjusts selected material appearance and lighting at runtime, with original-color toggle.",
+    "metadata": "content/model.json"
+  },
+  "video": {
+    "file": "assets/video/moon-arrival-web.mp4",
+    "origin": "Provided by the project owner",
+    "metadata": "content/video.json",
+    "disclosure": "The supplied clip visibly includes an AI-generated ChatGPT/Kling AI watermark. The file and embedded marking are retained unchanged. The exact generation workflow has not been independently established.",
+    "webOptimization": {
+      "originalSHA256": "a83f6e3c1cdaaadbd07b12b5c7efe07bcfed98182c2cdbbba10d5a793ace1107",
+      "originalBytes": 14807402,
+      "processing": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+      "originalRetained": "Unchanged original retained outside published project."
+    }
+  },
+  "vikingModel": {
+    "metadata": "content/viking-model.json",
+    "file": "assets/models/viking-lander.glb",
+    "aiGeneratedGeometry": false,
+    "changes": "NASA-identical original GLB with AI-assisted runtime material, opacity and lighting adjustments. Original materials toggle retained. Shared viewer and dialog controls with Apollo."
+  },
+  "vikingEntry": {
+    "code": "Shared Apollo entry components configured for Viking: 7-second illustrative Earth-to-Mars flight, supplied video, close-up CRT text and camera reveal. No telemetry generated.",
+    "text": "Original AI-assisted NASA-based Viking introduction; exact script in archive.vikingEntry.crtIntro and owner voiceover folder. Not historic radio audio.",
+    "video": {
+      "file": "assets/video/viking-arrival-web.mp4",
+      "metadata": "content/viking-video.json",
+      "origin": "Owner-provided AI-generated illustrated animation created with ChatGPT + Kling AI, as confirmed by the owner on 2026-11-14. Not original NASA mission footage. Source audio/video bytes unchanged; lower-left application credit added.",
+      "webOptimization": {
+        "originalSHA256": "de8af9d38c7536bbe6c5e0e00d2549832ea7db66153deb3626bdacde22ed02df",
+        "originalBytes": 6888513,
+        "processing": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    "crtAudio": {
+      "file": "assets/audio/viking-intro-crt.mp3",
+      "metadata": "content/narration.json",
+      "status": "Unchanged owner-provided recording included. AI-generation status not established.",
+      "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Year and mission numerals normalized, Chryse and plain spelling preserved from approved script. Playback follows audio.currentTime; these are editorial estimates, not archival timestamps."
+    }
+  },
+  "vikingPhoneNarration": {
+    "file": "assets/audio/viking1-phone.mp3",
+    "metadata": "content/narration.json",
+    "origin": "Owner-provided recording; exact voice generation workflow not supplied.",
+    "playback": "Uses shared phone audio controller and automatically plays on telephone activation."
+  },
+  "sideScreenActivities": {
+    "code": "AI-assisted HTML, CSS, SVG and JavaScript for shared side CRT previews and interactive activities. No new generated bitmap artwork.",
+    "facts": "Historical mission dates and original photographs credited to NASA. Apollo 11 array count of 100 corner cubes sourced to NASA-hosted ILRS reflector record.",
+    "measurements": "Viking VL1 pressure values remain the original NASA PDS daily averages for sols 1-30, with archive flags retained. Differences are calculated from selected recorded values and explicitly labeled. No synthetic samples, smoothing or live telemetry.",
+    "animation": "Timeline playback, laser pulse travel and photograph arrival are illustrative and accelerated, not historical timing or new scientific measurements. Pause, hidden-page and reduced-motion handling included."
+  },
+  "sojournerRoom": {
+    "code": "New AI-assisted 1997 room configuration, accessible object panels, mission timeline and two-value duration comparison, integrated into shared room and dialog components.",
+    "art": "Room background was generated by ImageGen on 2026-11-14 as a derivative of an owner design reference. Lamp, phone, cassette and story portrait are new from-scratch post-start generations. Old CRT illustration removed; fallback uses original NASA photograph. See sojourner-art.json and production-audit.json.",
+    "facts": "NASA mission, Photojournal, History and JPL Robotics records, individually mapped in archive.json. Actual lander and rover camera images are distinguished. Duration bars compare 7 planned and 83 NASA-reported days, not sols or telemetry.",
+    "unavailableMedia": "Owner-supplied arrival film, CRT narration and telephone story are integrated. Original bytes and provenance retained."
+  },
+  "sojournerCassette": {
+    "code": "AI-assisted chapter selector, transcript reading cues and audio lifecycle controls.",
+    "audio": "Four processed excerpts from owner-supplied NASA/JPL First Steps: Sojourner episode; no synthesized speech. Existing review MP3 bytes reused unchanged. Audio processing, original source times, voice classifications, transcript and hashes in content/sojourner-recordings.json.",
+    "text": "English transcript follows NASA published wording and speaker labels, checked against the supplied excerpt. Cue timing is approximate editorial alignment, not archival mission time. Modern 2022 narration/interview and historical 1997 JPL control excerpt are explicitly distinguished."
+  },
+  "sojournerEducationalModels": {
+    "created": "2026-11-14",
+    "tool": "OpenAI Codex authored Three.js geometry; GLTFExporter creates two local GLB files. No third-party model or image-to-3D service used.",
+    "metadata": "content/sojourner-models.json",
+    "classification": "Educational 3D reconstructions based on NASA references, not NASA-issued assets, engineering CAD or photogrammetry.",
+    "simplifications": "Solar-cell pattern, small hardware, colors/materials, wheel tread, antenna length and wiring approximate. Pathfinder shown open without airbags or arrival hardware. All limitations are disclosed in viewer and provenance.",
+    "evidence": "JPL July 1997 landing press kit component diagrams and dimensions, original NASA/JPL hardware photograph and mission evidence photographs. Original scientific images remain separate and unchanged."
+  },
+  "sojournerEntry": {
+    "code": "Shared Apollo/Viking seven-second briefing and typed close-up CRT configured for Sojourner. Camera reveals the same room after the text preview.",
+    "facts": "191 million km (119 million miles) Earth-Mars separation at arrival on July 4, 1997, from NASA PDS mission description and 1997 landing press kit. Not total travel distance or present-day separation.",
+    "text": "Two original AI-assisted child-friendly NASA-based narrator scripts, telephone and CRT; not historical radio speech or NASA-authored transcripts. Saved separately for owner recording.",
+    "media": "Owner-provided landing film, CRT and telephone recordings included unchanged. CRT uses word cues tied to audio.currentTime. No media borrowed from other missions.",
+    "crtAudio": {
+      "file": "assets/audio/sojorner-crt.mp3",
+      "metadata": "content/narration.json",
+      "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Spoken year normalized; Ares Vallis spelling retained from NASA sources. Playback follows audio.currentTime, including pauses and seeking. Editorial word timings, not historical mission timestamps."
+    },
+    "phoneAudio": {
+      "file": "assets/audio/sojorner-phone.mp3",
+      "metadata": "content/narration.json",
+      "playback": "Shared phone controller; automatically starts on activation."
+    },
+    "video": {
+      "file": "assets/video/sojourner-arrival-web.mp4",
+      "metadata": "content/sojourner-video.json",
+      "origin": "AI-generated visual · ChatGPT + Kling AI. Tool attribution supplied by the project owner on 2026-11-14. Not original NASA mission footage.",
+      "displayCredit": "AI-GENERATED VISUAL · CHATGPT + KLING AI",
+      "webOptimization": {
+        "originalSHA256": "a3282158c0c8f26cf5b1f842cb4a4eacd6b46efec4ae65eac54aac7c0e25a0c3",
+        "originalBytes": 21765352,
+        "processing": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    }
+  },
+  "timelineArt": {
+    "metadata": "content/timeline-art.json",
+    "classification": "AI-generated decorative mission-card illustrations, not NASA evidence.",
+    "newArt": "Apollo and Sojourner monitor illustrations newly generated from scratch after cutoff. Viking monitor was generated on 2026-11-14 after cutoff as an edit with a pre-event cabinet style reference and NASA hardware photo; derivative origin retained. All are illustrative, not NASA evidence.",
+    "disclosure": "Common artwork information button and Sources describe illustrative origin. Original NASA photographs remain in evidence panels unchanged."
+  },
+  "productionAudit": {
+    "metadata": "content/production-audit.json",
+    "removedPreStartArtwork": 9,
+    "newFromScratchReplacements": 8,
+    "method": "Retired files moved outside project; no timestamps rewritten. Existing post-start ImageGen outputs verified by exact SHA256. Historical NASA and third-party dates preserved."
+  },
+  "webOptimization": {
+    "created": "2026-11-14",
+    "art": "18 decorative PNGs converted to WebP quality 92, preserving original dimensions and alpha. Originals archived unchanged outside published site. Original generation provenance preserved; no new scene or evidence image generated.",
+    "video": "Three supplied arrival animations transcoded to H.264 CRF23 faststart at original resolution and timing; original AAC packet bytes verified identical. Original supplied MP4s archived unchanged.",
+    "scientificEvidence": "Original NASA photograph and model bytes are unchanged.",
+    "loading": "Six bounded parallel downloads; content-hash versioned asset URLs permit browser cache reuse while manifest is refreshed. All required assets still finish in the one initial loader.",
+    "removed": "Unused old three-monitor illustration atlas removed from public assets."
+  },
+  "learningExperience": {
+    "tool": "OpenAI Codex",
+    "scope": "Source-linked field guide goals, local-only progress persistence, direct/story entry choices, keyboard-accessible model part lessons and ray picking for the project-authored rover/lander. No generated scientific data.",
+    "geometry": "Original NASA GLBs remain unchanged. Temporary annotation outlines and guided camera views are viewer overlays. Educational Sojourner/Pathfinder parts are matched to named reconstruction components."
+  }
+}
