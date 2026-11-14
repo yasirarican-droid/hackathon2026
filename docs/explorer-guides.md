@@ -2,6 +2,8 @@
 
 The Field Guide is a yellow notebook control with a readable title, short instruction, three progress dots and gentle four-second glow. Completion turns it green. Reduced-motion and Pause motion disable the glow and pop animation.
 
+The control sits directly below Timeline in all three rooms, as a tab extending from the left edge. It is anchored to the actual navigation row rather than to the desk. Hover and keyboard focus slide it inward slightly; the title and progress remain visible without hovering. Landscape uses compact dimensions.
+
 When the full character guide is open, a noninteractive translucent shade dims the surrounding page and leaves the guide and launcher bright. The shade disappears on dismissal, navigation or suppression. It does not behave as a separate modal or intercept pointer events.
 
 A small Need a clue? Tap me! invitation appears beside the portrait about ten seconds after a screen becomes available, stays for approximately 5.5 seconds, and can repeat after 75 seconds, up to three times per screen per load. Clicking it opens the same manual guide. It is suppressed during a full guide, dialogs, mission media, hidden tabs and orientation prompts. Disabling automatic tips disables this invitation too. Reduced motion disables its entrance animation.

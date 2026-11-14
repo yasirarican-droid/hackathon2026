@@ -50,6 +50,9 @@ try {
     const button = page.locator('#learning-guide-open');
     const size = await button.boundingBox();
     assert.ok(size.height >= 60);
+    const timeline = await page.locator('.room-toolbar a[href="#home"]').boundingBox();
+    assert.ok(size.y >= timeline.y + timeline.height + 8 && size.x <= 1 && size.x + size.width > 200);
+    if (mission === 'sojourner') await page.screenshot({ path: 'docs/qa/field-guide-tab-desktop.png', animations: 'disabled' });
     assert.equal(await button.locator('.field-guide-dots i').count(), 3);
     await idle();
     await guide.waitFor({ state: 'visible' });

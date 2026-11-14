@@ -4901,8 +4901,9 @@ a:hover {
 }
 .learning-guide-open {
   position: absolute;
-  left: 1.4%;
-  bottom: 5.6%;
+  left: calc(-1.4cqw - 12px);
+  top: calc(100% + 12px);
+  bottom: auto;
   z-index: 22;
   border-color: #f1cd64;
   font-size: clamp(10px, 1cqw, 15px);
@@ -5015,7 +5016,7 @@ a:hover {
 }
 @media (max-height: 600px) and (orientation: landscape) {
   .learning-guide-open {
-    bottom: 8.5%;
+    top: calc(100% + 8px);
     font-size: 9px;
     padding: 3px 5px;
   }
@@ -5104,18 +5105,20 @@ a:hover {
   align-items: center;
   gap: 12px;
   min-height: 64px;
-  padding: 10px 17px;
+  padding: 10px 17px 10px 28px;
   color: #243d39;
   background: #ffda68;
   border: 2px solid #fff1a6;
-  border-radius: 10px 8px 12px 7px;
+  border-radius: 0 12px 12px 0;
   box-shadow: 0 5px 0 #142d32, 0 0 25px #ffcd6666;
   text-align: left;
   animation: field-guide-beacon 4s ease-in-out infinite;
+  transition: transform .2s ease-out, background-color .2s ease-out;
 }
-.learning-guide-open:hover {
+.learning-guide-open:hover,
+.learning-guide-open:focus-visible {
   background: #ffe99b;
-  transform: translateY(-3px);
+  transform: translateX(10px);
 }
 .field-guide-icon {
   display: grid;
@@ -5285,7 +5288,7 @@ a:hover {
   to { opacity: 1; transform: none; }
 }
 @media (max-height: 600px) and (orientation: landscape) {
-  .learning-guide-open { min-height: 45px; padding: 6px 10px; gap: 8px; bottom: 7.5%; }
+  .learning-guide-open { min-height: 45px; padding: 6px 10px 6px 22px; gap: 8px; }
   .field-guide-icon { width: 26px; height: 30px; font-size: 20px; }
   .field-guide-copy strong { font-size: 16px; }
   .field-guide-copy small { font-size: 11px; }
