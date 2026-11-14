@@ -1,5 +1,5 @@
-import { durationChart } from "./sojourner-room.js?v=20261114-learning1";
-import { pressureChart } from "./mission-room.js?v=20261114-learning1";
+import { durationChart } from "./sojourner-room.js?v=20261115-journey1";
+import { pressureChart } from "./mission-room.js?v=20261115-journey1";
 
 const el = (tag, className = "", text) => {
   const item = document.createElement(tag);
@@ -464,7 +464,7 @@ export function createSideScreens({ asset, archive, pressure, openExhibit }) {
       current = index;
       view.select(index);
       slider.value = String(index + 1);
-      flag.textContent = `NASA PDS · VL1 · Sol ${index + 1} · Archive flag: ${pressure.samples[index].flags}`;
+      flag.textContent = `NASA weather record · Day ${index + 1} on Mars`;
     }
     const playback = clock(
       1000,
@@ -543,6 +543,36 @@ export function createSideScreens({ asset, archive, pressure, openExhibit }) {
     refresh();
     comparison.append(selectors, feedback, answers);
     root.append(comparison);
+    const seasons = el('section', 'seasons-lesson');
+    seasons.append(el('h4', '', 'Why can the air pressure change?'), el('p', '', 'Carbon dioxide can freeze into ice at the winter pole. That leaves less gas in the air. In warmer seasons, ice returns to gas and can raise the pressure.'));
+    const diagram = el('div', 'seasons-diagram');
+    diagram.dataset.season = 'winter';
+    diagram.setAttribute('aria-label', 'Illustrated carbon-dioxide transfer between air and polar ice');
+    const gas = el('div', 'season-gas');
+    gas.append(el('strong', '', 'Air'));
+    for (let i = 0; i < 10; i++) gas.append(el('i'));
+    const ice = el('div', 'season-ice', 'Polar ice');
+    diagram.append(gas, ice);
+    const explanation = el('p', 'season-explanation', 'Winter: some gas freezes into polar ice. Less gas remains in the air.');
+    explanation.setAttribute('role', 'status');
+    const winter = button('Polar winter', () => chooseSeason('winter'));
+    const spring = button('Warmer season', () => chooseSeason('spring'));
+    function chooseSeason(season) {
+      diagram.dataset.season = season;
+      winter.setAttribute('aria-pressed', String(season === 'winter'));
+      spring.setAttribute('aria-pressed', String(season === 'spring'));
+      explanation.textContent = season === 'winter' ? 'Winter: some gas freezes into polar ice. Less gas remains in the air.' : 'Warmer season: ice turns back into gas. More gas in the air can raise pressure.';
+    }
+    chooseSeason('winter');
+    const controls = el('div', 'activity-controls');
+    controls.append(winter, spring);
+    seasons.append(diagram, controls, explanation, el('p', 'activity-note', 'The dots illustrate an idea, not measured amounts. These 30 days alone do not show how much ice formed.'));
+    const source = el('a', '', 'NASA explanation of the seasonal process ↗');
+    source.href = archive.sources['mars-seasons'].url;
+    source.target = '_blank';
+    source.rel = 'noopener noreferrer';
+    seasons.append(source);
+    root.append(seasons);
     select(0);
     quizLink(root);
   }

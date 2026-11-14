@@ -70,23 +70,24 @@
     "question": "Can one exciting signal answer every scientific question?",
     "goals": [
       {
-        "id": "pressure",
-        "title": "Read a real Mars measurement",
-        "objective": "Open Science Data and compare the first and last displayed sols.",
+        "id": "seasonal-air",
+        "title": "Explain a changing atmosphere",
+        "objective": "Explore the recorded pressure graph, then try the winter/spring explanation.",
         "evidence": "viking-weather",
-        "prompt": "Which displayed day has the higher daily mean pressure?",
+        "prompt": "When some carbon-dioxide gas freezes into polar ice, how much gas remains in the air?",
         "choices": [
-          "Sol 30",
-          "Both are identical",
-          "Sol 1"
+          "Less gas remains",
+          "More gas remains",
+          "The lander makes new air"
         ],
-        "answer": 2,
-        "explanation": "The recorded mean is 7.629 mbar on Sol 1 and 7.286 mbar on Sol 30. This compares two archived observations, not live weather or a prediction.",
-        "hint": "Compare the two recorded numbers; do not guess the trend beyond this archive.",
+        "answer": 0,
+        "explanation": "Some gas becomes solid ice, leaving less in the atmosphere. This seasonal process can lower pressure. The displayed 30 days alone do not prove its full contribution.",
+        "hint": "Follow the gas dots from the air to the polar ice.",
         "sources": [
-          "viking-pressure"
+          "viking-pressure",
+          "mars-seasons"
         ],
-        "takeaway": "I can compare two original NASA PDS pressure measurements."
+        "takeaway": "Seasonal freezing can move carbon dioxide from the air into polar ice."
       },
       {
         "id": "biology",
@@ -224,7 +225,8 @@
     "sojourner-hardware": "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/pathfinder/",
     "sojourner-podcast": "https://www.nasa.gov/podcasts/on-a-mission/first-steps-sojourner-s4e2/",
     "pathfinder-model-reference": "https://www.jpl.nasa.gov/news/press_kits/mpfland.pdf",
-    "sojourner-distance": "https://planetarydata.jpl.nasa.gov/img/data/mpf/rover/mprv_0001/document/mission.htm"
+    "sojourner-distance": "https://planetarydata.jpl.nasa.gov/img/data/mpf/rover/mprv_0001/document/mission.htm",
+    "mars-seasons": "https://www.nasa.gov/missions/with-mars-methane-mystery-unsolved-curiosity-serves-scientists-a-new-one-oxygen/"
   },
   "parts": {
     "apollo": {

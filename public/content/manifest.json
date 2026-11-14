@@ -185,6 +185,11 @@
     "sha256": "f6df3b87abf065a18e4ff93f7721df9db47b4c2186a266b3d84394be0990b8db"
   },
   {
+    "path": "assets/audio/apollo-original-landing.mp3",
+    "bytes": 26388,
+    "sha256": "c2cf9c2754ec3c2f7315acd4fcdd7d892fb2027919c1a80adf90a49f63c0316c"
+  },
+  {
     "path": "assets/audio/apollo-phone.mp3",
     "bytes": 1264318,
     "sha256": "eaedbc0cd9098d67b8b7afe3150a1b1af1494eb91b3df7048d2056046330d1d4"
@@ -240,6 +245,11 @@
     "sha256": "252063af6ade8b9a744cde4ddad0fc21ea53b8ba711eed121a0c2e8610ea9c93"
   },
   {
+    "path": "assets/fonts/nunito-700.ttf",
+    "bytes": 125464,
+    "sha256": "1a025dfce6e6e03bbe31ba82277ec5ed96df8b8dd58b3df6267269490b90b1dc"
+  },
+  {
     "path": "assets/fonts/patrick-hand-400-latin.woff2",
     "bytes": 23944,
     "sha256": "ac5bc9033b2572bf84d39f7150c1634e37ed16e8dbee632d6d0bceac0bbf0199"
@@ -270,6 +280,21 @@
     "sha256": "1233dc2c96a1c0b08ca9a20f7ed9c09e0223f06f14f6ae6371349504c1929149"
   },
   {
+    "path": "assets/nasa/apollo-orbit.jpg",
+    "bytes": 202986,
+    "sha256": "c8ebab62a7c56b5320b7b9100787a048e262643f5d893b7ce079d706279b597b"
+  },
+  {
+    "path": "assets/nasa/pathfinder-orbit.jpg",
+    "bytes": 455564,
+    "sha256": "7acfff0767cbfcdc92ae8ed8724ea4f99e2e1cc0704547dd1500f4cd3209c627"
+  },
+  {
+    "path": "assets/nasa/viking-orbit.jpg",
+    "bytes": 112103,
+    "sha256": "df5ee2fbaeed24f024702ef84bd09b90d3673194c8a0eb461bc2b600936eff57"
+  },
+  {
     "path": "assets/video/moon-arrival-web.mp4",
     "bytes": 2524090,
     "sha256": "c2c5cee99e673c093b4318af97aab94811f676901ea93852f27e21a4af608cfa"
@@ -290,9 +315,14 @@
     "sha256": "38b16394ab91ad8578aed4381ad186996c07be123b723bab02dfa83e1d55b778"
   },
   {
+    "path": "content/archival-audio.json",
+    "bytes": 862,
+    "sha256": "2115253999a2b848547dbac7c8f508605d3e8f3c09100a71dc1adeb009d01df4"
+  },
+  {
     "path": "content/archive.json",
-    "bytes": 94652,
-    "sha256": "663ad6c331239863ce742eb5a97c3e3553145665f73f0b49f92d5e19f5622256"
+    "bytes": 106874,
+    "sha256": "6627ba3c58f219c6bc83b1029e488fd6ccfe1aa1b20ba28dc583ee80392b249f"
   },
   {
     "path": "content/explorer-guides.json",
@@ -300,14 +330,24 @@
     "sha256": "48d33058dafe79e0656bb2dbb15a713ae14af36a1f500abff7ed455a5e04b142"
   },
   {
+    "path": "content/final-signals.json",
+    "bytes": 3569,
+    "sha256": "42dd6376096b52d7a15088a428feb2c8d0018a5f0a3911fa354989eec468d534"
+  },
+  {
     "path": "content/learning.json",
-    "bytes": 15231,
-    "sha256": "5c79c5b52e02216c45632e0d81d18774788610f9f394d5916414d511410153d3"
+    "bytes": 15476,
+    "sha256": "faf109c65002c5fc044db46eaed8570cbf02b347a1ef5ce81f72da5e8416e8bd"
   },
   {
     "path": "content/media.json",
-    "bytes": 9240,
-    "sha256": "ea14ce0569f90aa31e2ddfc4851775af19b964b513a85ec5fb06993c9e584d50"
+    "bytes": 11976,
+    "sha256": "ac099279673e669d2657521882949f7d9885908d9532c58e5ff9d8735645fe44"
+  },
+  {
+    "path": "content/mission-status.json",
+    "bytes": 4102,
+    "sha256": "8d5ac35a9be5c394b14d8eca8c5b7f5861e6d450c1a8e1aa20d2dc5d51311996"
   },
   {
     "path": "content/model.json",
@@ -320,14 +360,19 @@
     "sha256": "1d877181cb6c248b7ed10cc73e797d7c4ae8e0fe1ea58b020cda0acb41345d14"
   },
   {
+    "path": "content/orbital-images.json",
+    "bytes": 2848,
+    "sha256": "ade365999a85566aa360bace77a9e3b9ccf85e27780abaa8a75f10894bb741a8"
+  },
+  {
     "path": "content/production-audit.json",
     "bytes": 23210,
     "sha256": "f07e229783827f5ce6cc974dd87c65d8db27948deb0d3f7634068463f83e6642"
   },
   {
     "path": "content/project-info.json",
-    "bytes": 3954,
-    "sha256": "bc41229decb86ea9861a74ecb7307729387971c3221e857b84e1f2b41bc4cf5d"
+    "bytes": 5329,
+    "sha256": "96fc234134cc630b68d91d3ac977475dce55e99fe72249cf8f72db72f79779e0"
   },
   {
     "path": "content/sojourner-art.json",

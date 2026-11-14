@@ -10,7 +10,7 @@
     "catalog": {
       "title": "NASA NSSDCA — Apollo 11 LM / EASEP",
       "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
-      "usedFor": "Eagle's two stages, landing, surface stay, returned samples and instrument status."
+      "usedFor": "Eagle's two stages, landing, surface stay, returned samples and instrument status. Descent stage served as ascent launch platform and stayed on the Moon; upper-stage fate not known, impact only assumed in catalog."
     },
     "mission": {
       "title": "NASA — Apollo 11",
@@ -180,6 +180,66 @@
       "title": "NASA PDS / JPL - Mars Pathfinder Mission Description",
       "url": "https://planetarydata.jpl.nasa.gov/img/data/mpf/rover/mprv_0001/document/mission.htm",
       "usedFor": "Earth-Mars range at arrival on July 4, 1997: 191,000,000 km, increasing. This is planet separation at arrival, not spacecraft flight path length. July 1997 NASA landing press kit also gives 191 million km / 119 million miles."
+    },
+    "lunar-artifacts": {
+      "title": "NASA History — Human Artifacts on the Moon",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/humanartifacts.html",
+      "usedFor": "Apollo 11 ascent stage left in lunar orbit; catalog reports an unknown impact location. Do not confuse this with the surviving descent stage.",
+      "accessed": "2026-11-14"
+    },
+    "orbital-apollo": {
+      "title": "NASA Science — Apollo 11 Landing Site (LRO/LROC)",
+      "url": "https://science.nasa.gov/resource/apollo-11-landing-site/",
+      "usedFor": "Orbital identification of the descent stage and astronaut trails; published 19 June 2019, not a live observation.",
+      "accessed": "2026-11-14"
+    },
+    "orbital-viking": {
+      "title": "NASA Photojournal — PIA01881: Viking Lander 1 Imaged from Orbit",
+      "url": "https://science.nasa.gov/photojournal/viking-lander-1-thomas-a-mutch-memorial-station-imaged-from-orbit/",
+      "usedFor": "HiRISE identification of Viking 1 and NASA-provided lander cutout; published 5 December 2006.",
+      "accessed": "2026-11-14"
+    },
+    "orbital-pathfinder": {
+      "title": "NASA Photojournal — PIA09105: Mars Pathfinder Landing Site and Surroundings",
+      "url": "https://science.nasa.gov/photojournal/mars-pathfinder-landing-site-and-surroundings/",
+      "usedFor": "Annotated HiRISE hardware image from 21 December 2006; NASA identifies Pathfinder and describes a tentative Sojourner candidate. No confirmed final rover position is asserted.",
+      "accessed": "2026-11-14"
+    },
+    "sojourner-last": {
+      "title": "NASA/JPL — First Steps: Sojourner, 35:09–38:03",
+      "url": "https://www.jpl.nasa.gov/podcasts/on-a-mission-season-1/season-4-mars-rovers/episode-2-first-steps-sojourner/",
+      "usedFor": "Loss of the lander relay, programmed approach/circling behavior and explicit uncertainty about the rover’s final activity and position.",
+      "accessed": "2026-11-14"
+    },
+    "mars-seasons": {
+      "title": "NASA — Seasonal carbon dioxide and Martian pressure",
+      "url": "https://www.nasa.gov/missions/with-mars-methane-mystery-unsolved-curiosity-serves-scientists-a-new-one-oxygen/",
+      "usedFor": "General mechanism: winter polar CO2 freezing reduces atmospheric pressure; return to gas in warmer seasons raises it. The first 30 Viking sols alone do not isolate this mechanism.",
+      "accessed": "2026-11-14"
+    },
+    "apollo-audio": {
+      "title": "NASA — Historical Sounds: Apollo 11, Eagle Has Landed",
+      "url": "https://www.nasa.gov/historical-sounds/",
+      "usedFor": "Original NASA-hosted landing-call audio file, separate from synthetic educational narration.",
+      "accessed": "2026-11-14"
+    },
+    "catalog-viking": {
+      "title": "NASA NSSDCA Master Catalog — Viking 1 Lander · 1975-075C",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C",
+      "usedFor": "Stationary lander, Chryse Planitia landing, science instruments and communications ended in November 1982. Catalog gives 13 November; NASA Science gives 11 November, so child-facing ending uses month precision.",
+      "accessed": "2026-11-15"
+    },
+    "catalog-pathfinder": {
+      "title": "NASA NSSDCA Master Catalog — Mars Pathfinder · 1996-068A",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-068A",
+      "usedFor": "Stationary lander in Ares Vallis; last communications on 27 September 1997, cause unknown in catalog.",
+      "accessed": "2026-11-15"
+    },
+    "catalog-sojourner": {
+      "title": "NASA NSSDCA Master Catalog — Mars Pathfinder Rover / Sojourner · MESURPR",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=MESURPR",
+      "usedFor": "Six-wheeled rover; all communications through lander; APXS rocks and soil analysis; communication lost 27 September 1997; no exact final rover position confirmed.",
+      "accessed": "2026-11-15"
     }
   },
   "panels": {
@@ -194,7 +254,10 @@
         "Sojourner means traveler. A young person's thoughtful words helped give a Mars explorer its name!",
         "Your ideas matter, too. What would you name a future explorer — and why?"
       ],
-      "sources": ["sojourner-name", "sojourner-podcast"]
+      "sources": [
+        "sojourner-name",
+        "sojourner-podcast"
+      ]
     },
     "mission": {
       "title": "A journey to the Moon",
@@ -205,11 +268,24 @@
         "The landing site was called the Sea of Tranquility. It is a rocky lunar plain, not an ocean of water. The crew returned safely to Earth on July 24."
       ],
       "facts": [
-        ["LAUNCH", "16 JUL 1969"],
-        ["LANDING", "20 JUL 1969"],
-        ["RETURN", "24 JUL 1969"]
+        [
+          "LAUNCH",
+          "16 JUL 1969"
+        ],
+        [
+          "LANDING",
+          "20 JUL 1969"
+        ],
+        [
+          "RETURN",
+          "24 JUL 1969"
+        ]
       ],
-      "sources": ["mission", "catalog", "timeline-source"]
+      "sources": [
+        "mission",
+        "catalog",
+        "timeline-source"
+      ]
     },
     "eagle": {
       "title": "Meet Eagle",
@@ -221,11 +297,24 @@
       ],
       "image": "eagle",
       "facts": [
-        ["STAGES", "2"],
-        ["LANDING LEGS", "4"],
-        ["SURFACE STAY", "21 h 36 min"]
+        [
+          "STAGES",
+          "2"
+        ],
+        [
+          "LANDING LEGS",
+          "4"
+        ],
+        [
+          "SURFACE STAY",
+          "21 h 36 min"
+        ]
       ],
-      "sources": ["catalog", "images", "model"]
+      "sources": [
+        "catalog",
+        "images",
+        "model"
+      ]
     },
     "science": {
       "title": "Science stayed behind",
@@ -254,7 +343,10 @@
       ],
       "image": "reflector",
       "question": "Where does the laser light begin its journey?",
-      "sources": ["reflector", "reflector-array"]
+      "sources": [
+        "reflector",
+        "reflector-array"
+      ]
     },
     "seismometer": {
       "title": "Feeling tiny shakes",
@@ -265,7 +357,11 @@
         "It sensed shaking rather than listening to sound in the air. This particular instrument had a short operating life and is no longer transmitting."
       ],
       "image": "seismometer",
-      "sources": ["science", "catalog", "images"]
+      "sources": [
+        "science",
+        "catalog",
+        "images"
+      ]
     },
     "photos": {
       "title": "Eagle at Tranquility Base",
@@ -276,7 +372,10 @@
         "Look for the wide landing feet and the ladder. The complete photograph is shown here, without generated additions."
       ],
       "image": "eagle",
-      "sources": ["images", "catalog"]
+      "sources": [
+        "images",
+        "catalog"
+      ]
     },
     "footprint": {
       "title": "A footprint with a story",
@@ -287,7 +386,10 @@
         "The person who took a picture and the reason it was taken are important parts of its evidence."
       ],
       "image": "bootprint",
-      "sources": ["bootprint", "science"]
+      "sources": [
+        "bootprint",
+        "science"
+      ]
     },
     "samples": {
       "title": "What came home?",
@@ -297,7 +399,10 @@
         "Armstrong and Aldrin brought back more than 20 kilograms of lunar rocks and soil. These samples gave scientists material to examine in laboratories on Earth.",
         "They also recovered a foil that had collected particles from the solar wind. That foil came home; it was not left as a permanent lunar experiment."
       ],
-      "sources": ["catalog", "science"]
+      "sources": [
+        "catalog",
+        "science"
+      ]
     },
     "timeline": {
       "title": "The lunar event record",
@@ -308,19 +413,31 @@
         "Eagle stayed on the surface for about 22 hours. Its upper stage then carried the two explorers back to meet Collins."
       ],
       "facts": [
-        ["20 JUL", "Eagle lands"],
-        ["21 JUL UTC", "First step; later, liftoff"],
-        ["24 JUL", "Crew returns to Earth"]
+        [
+          "20 JUL",
+          "Eagle lands"
+        ],
+        [
+          "21 JUL UTC",
+          "First step; later, liftoff"
+        ],
+        [
+          "24 JUL",
+          "Crew returns to Earth"
+        ]
       ],
-      "sources": ["catalog", "mission"]
+      "sources": [
+        "catalog",
+        "mission"
+      ]
     },
     "radio": {
       "title": "Words from the landing",
       "tag": "NASA TRANSCRIPT / APOLLO 11",
       "intro": "Actual words, with the people and mission times attached.",
       "paragraphs": [
-        "These short excerpts come from NASA's Apollo Lunar Surface Journal. GET means mission elapsed time: hours, minutes and seconds since launch.",
-        "This is a readable transcript selection. No original audio or synthetic voice is being played."
+        "Play the original NASA-hosted landing call, or read two nearby mission calls below. The recording is historical audio, not an AI voice.",
+        "GET means mission elapsed time: hours, minutes and seconds since launch. The transcript excerpts include adjacent landing calls; they are not timed captions for every second of the short clip."
       ],
       "quotes": [
         {
@@ -334,7 +451,10 @@
           "text": "Houston, Tranquility Base here. The Eagle has landed."
         }
       ],
-      "sources": ["transcript"]
+      "sources": [
+        "transcript",
+        "apollo-audio"
+      ]
     },
     "olive": {
       "title": "A small wish for peace",
@@ -345,7 +465,10 @@
         "The NASA photograph below shows the object before the flight. The floating illustration is a symbolic drawing, not a photograph of the lunar surface."
       ],
       "image": "olive",
-      "sources": ["memorials", "science"]
+      "sources": [
+        "memorials",
+        "science"
+      ]
     },
     "disc": {
       "title": "Messages from planet Earth",
@@ -356,7 +479,9 @@
         "This preflight NASA photograph includes a coin for scale. The coin is not being identified as an object left on the Moon."
       ],
       "image": "disc",
-      "sources": ["memorials"]
+      "sources": [
+        "memorials"
+      ]
     },
     "legacy": {
       "title": "The story keeps going",
@@ -366,7 +491,11 @@
         "The crew returned, Eagle's lower stage stayed, and samples reached Earth. Instruments, pictures and measurements helped people ask new questions about the Moon.",
         "Try three discoveries. There is no timer, and you can always try again."
       ],
-      "sources": ["mission", "catalog", "reflector"],
+      "sources": [
+        "mission",
+        "catalog",
+        "reflector"
+      ],
       "quiz": [
         {
           "question": "Which part of Eagle stayed on the Moon?",
@@ -408,7 +537,9 @@
         "Pathfinder brought Sojourner to Mars in 1997. Open the 1997 mission monitor to explore its interactive archive."
       ],
       "image": "sojourner",
-      "sources": ["pathfinder"]
+      "sources": [
+        "pathfinder"
+      ]
     },
     "about": {
       "title": "Small objects. Extraordinary stories.",
@@ -418,7 +549,11 @@
         "Explore a mission, open an object and follow its evidence back to NASA. Scientific photographs stay separate from our illustrated archive setting.",
         "The rooms and decorative artwork are AI-generated illustrations, not photographs of a historical control room. NASA does not endorse this project. Apollo and Viking include owner-provided illustrated arrival animations. Narration recordings are credited separately."
       ],
-      "sources": ["catalog", "viking", "pathfinder"]
+      "sources": [
+        "catalog",
+        "viking",
+        "pathfinder"
+      ]
     },
     "help": {
       "title": "Your explorer's guide",
@@ -441,16 +576,34 @@
         "The smiling explorer guides are imagined navigation helpers. Their tips explain how to use this archive; they are not historical spacecraft messages."
       ],
       "facts": [
-        ["ILLUSTRATIONS", "OpenAI ImageGen"],
-        ["ILLUSTRATED FILMS", "ChatGPT + Kling AI"],
-        ["NARRATOR VOICES", "ElevenLabs"],
-        ["HOMEPAGE MUSIC", "Suno"],
-        ["CODE & EXPLANATORY TEXT", "OpenAI Codex assistance"],
+        [
+          "ILLUSTRATIONS",
+          "OpenAI ImageGen"
+        ],
+        [
+          "ILLUSTRATED FILMS",
+          "ChatGPT + Kling AI"
+        ],
+        [
+          "NARRATOR VOICES",
+          "ElevenLabs"
+        ],
+        [
+          "HOMEPAGE MUSIC",
+          "Suno"
+        ],
+        [
+          "CODE & EXPLANATORY TEXT",
+          "OpenAI Codex assistance"
+        ],
         [
           "HISTORICAL EVIDENCE",
           "NASA photographs, mission records and measured data"
         ],
-        ["APOLLO & VIKING 3D", "Original NASA models, with viewer adjustments"],
+        [
+          "APOLLO & VIKING 3D",
+          "Original NASA models, with viewer adjustments"
+        ],
         [
           "SOJOURNER & PATHFINDER 3D",
           "Project-authored educational reconstructions based on NASA references"
@@ -471,7 +624,11 @@
         "Some equipment stayed, but its story kept going.",
         "Now it’s your turn. Look at the photographs, open the files, and follow the clues. What will you discover?"
       ],
-      "sources": ["catalog", "mission", "reflector"],
+      "sources": [
+        "catalog",
+        "mission",
+        "reflector"
+      ],
       "illustration": "assets/art/eagle-story.webp",
       "narration": {
         "file": "assets/audio/apollo-phone.mp3",
@@ -493,7 +650,10 @@
         "Each object holds a clue to how people reached the Moon—and what they left there.",
         "Look closely, explorer. Your mission starts now."
       ],
-      "sources": ["catalog", "mission"]
+      "sources": [
+        "catalog",
+        "mission"
+      ]
     },
     "viking-mission": {
       "title": "A new chapter on Mars",
@@ -510,9 +670,18 @@
         "viking-messages"
       ],
       "facts": [
-        ["LAUNCH", "20 AUG 1975"],
-        ["MARS ORBIT", "19 JUN 1976"],
-        ["LANDING", "20 JUL 1976"]
+        [
+          "LAUNCH",
+          "20 AUG 1975"
+        ],
+        [
+          "MARS ORBIT",
+          "19 JUN 1976"
+        ],
+        [
+          "LANDING",
+          "20 JUL 1976"
+        ]
       ]
     },
     "viking-lander": {
@@ -523,7 +692,10 @@
         "Viking 1 was a lander, not a rover. It explored its surroundings with cameras, a sampling arm and scientific instruments.",
         "Explore NASA’s original Viking lander model. Drag to rotate or use the controls to zoom. Display colors and lighting have been adjusted for clarity; use Original model colors to compare."
       ],
-      "sources": ["viking", "viking-model"],
+      "sources": [
+        "viking",
+        "viking-model"
+      ],
       "image": "viking-lander"
     },
     "viking-weather": {
@@ -535,11 +707,24 @@
         "A Mars day is called a sol. Each plotted point comes from the archived VL1 table; the connecting lines do not add new measurements.",
         "The archive includes warning flags about data coverage. Open the table to see the values and flags alongside the graph."
       ],
-      "sources": ["viking", "viking-pressure"],
+      "sources": [
+        "viking",
+        "viking-pressure",
+        "mars-seasons"
+      ],
       "facts": [
-        ["INSTRUMENT", "VMIS"],
-        ["SELECTION", "VL1 · SOLS 1–30"],
-        ["UNIT", "mbar"]
+        [
+          "INSTRUMENT",
+          "VMIS"
+        ],
+        [
+          "SELECTION",
+          "VL1 · SOLS 1–30"
+        ],
+        [
+          "UNIT",
+          "mbar"
+        ]
       ]
     },
     "viking-photos": {
@@ -550,7 +735,9 @@
         "Look at the right side: part of Viking’s footpad appears in the first surface photograph. Nearby, its camera saw rocks and fine-grained material.",
         "A small detail can tell a big story. This image is evidence from Mars, not a drawing."
       ],
-      "sources": ["viking-first"],
+      "sources": [
+        "viking-first"
+      ],
       "image": "viking-first",
       "question": "Can you find the footpad? What does the photograph show clearly?"
     },
@@ -562,7 +749,9 @@
         "This is NASA’s first color image from Viking Lander 1. Compare it with the black-and-white view.",
         "The original NASA file is preserved. The small print on the desk is a preview; this panel shows the full image."
       ],
-      "sources": ["viking-color"],
+      "sources": [
+        "viking-color"
+      ],
       "image": "viking"
     },
     "viking-panorama": {
@@ -572,7 +761,9 @@
       "paragraphs": [
         "A panorama brings a broad stretch of the surroundings into one image. Follow the horizon and look for changes in the rocky ground."
       ],
-      "sources": ["viking-panorama"],
+      "sources": [
+        "viking-panorama"
+      ],
       "image": "viking-panorama"
     },
     "viking-soil": {
@@ -583,7 +774,9 @@
         "Viking’s biology experiments tested Martian soil. The results revealed puzzling chemical activity, but did not provide clear evidence of living microorganisms.",
         "An exciting signal is a reason to investigate carefully. It is not enough to announce that life has been found."
       ],
-      "sources": ["viking-science"]
+      "sources": [
+        "viking-science"
+      ]
     },
     "viking-timeline": {
       "title": "From launch to a lasting archive",
@@ -593,7 +786,9 @@
         "20 August 1975: launch. 19 June 1976: Mars orbit. 20 July 1976: surface landing.",
         "The lander stopped operating on November 11, 1982 after a faulty command. The lander and orbiter had separate operating histories."
       ],
-      "sources": ["viking"]
+      "sources": [
+        "viking"
+      ]
     },
     "viking-message": {
       "title": "Pictures that called home",
@@ -608,7 +803,11 @@
         "Viking One sent its final message home in nineteen eighty-two. Its radio grew quiet, but its photographs and measurements are still here to explore.",
         "Now it’s your turn. Open the photographs, follow the weather record, and try the notebook quiz. What will you discover?"
       ],
-      "sources": ["viking", "viking-hardware-description", "viking-science"],
+      "sources": [
+        "viking",
+        "viking-hardware-description",
+        "viking-science"
+      ],
       "illustration": "assets/art/viking-story.webp",
       "illustrationAlt": "An imagined friendly Viking lander on three legs on an illustrated Martian plain, saying Hello, explorer!",
       "illustrationCaption": "An imagined Viking character. A story grounded in NASA facts.",
@@ -626,7 +825,10 @@
         "Viking 1’s final transmission reached Earth on November 11, 1982. Its photographs and measurements remain available to explore.",
         "Try these three questions, then return to the archive and follow another clue."
       ],
-      "sources": ["viking-science", "viking-pressure"],
+      "sources": [
+        "viking-science",
+        "viking-pressure"
+      ],
       "quiz": [
         {
           "question": "How did Viking 1 explore Mars?",
@@ -674,7 +876,11 @@
         "See the glowing question mark? Open the notebook and try the discovery quiz.",
         "Look closely, explorer. Your Mars mission starts now."
       ],
-      "sources": ["viking", "viking-first", "viking-science"]
+      "sources": [
+        "viking",
+        "viking-first",
+        "viking-science"
+      ]
     },
     "sojourner-mission": {
       "title": "A small rover, a long journey",
@@ -684,7 +890,10 @@
         "Pathfinder carried Sojourner to Mars. One stayed at the landing site; the other could move to nearby rocks.",
         "The dates below mark different events: launch, landing, rover deployment and the final data received from Pathfinder."
       ],
-      "sources": ["pathfinder", "sojourner-barnacle"]
+      "sources": [
+        "pathfinder",
+        "sojourner-barnacle"
+      ]
     },
     "sojourner-rover": {
       "title": "Meet Sojourner & Pathfinder",
@@ -703,9 +912,18 @@
       ],
       "image": "sojourner",
       "facts": [
-        ["ROVER", "Sojourner"],
-        ["LANDER", "Pathfinder"],
-        ["ARRIVAL", "4 JUL 1997"]
+        [
+          "ROVER",
+          "Sojourner"
+        ],
+        [
+          "LANDER",
+          "Pathfinder"
+        ],
+        [
+          "ARRIVAL",
+          "4 JUL 1997"
+        ]
       ]
     },
     "sojourner-duration": {
@@ -716,11 +934,22 @@
         "NASA reports a seven-day planned rover mission and 83 days of Sojourner operation. These bars compare those two summary values.",
         "They are days, not Martian sols, a daily activity record or a series of sensor measurements. A longer bar means a longer reported duration."
       ],
-      "sources": ["sojourner-barnacle"],
+      "sources": [
+        "sojourner-barnacle"
+      ],
       "facts": [
-        ["PLANNED", "7 days"],
-        ["REPORTED", "83 days"],
-        ["DATA TYPE", "Mission summary"]
+        [
+          "PLANNED",
+          "7 days"
+        ],
+        [
+          "REPORTED",
+          "83 days"
+        ],
+        [
+          "DATA TYPE",
+          "Mission summary"
+        ]
       ]
     },
     "sojourner-photos": {
@@ -731,7 +960,9 @@
         "Pathfinder took this early picture after landing. Sojourner is still on the lander; the white material nearby belongs to the deflated airbags.",
         "Notice the difference between the rover, the lander and the landscape. They are three different parts of this picture."
       ],
-      "sources": ["sojourner-airbags"],
+      "sources": [
+        "sojourner-airbags"
+      ],
       "image": "sojourner-airbags"
     },
     "sojourner-barnacle": {
@@ -742,7 +973,9 @@
         "The lander camera recorded this view on sol 3. The rover later moved into position to examine Barnacle Bill with its rear-mounted APXS instrument.",
         "The instrument is not visible in this photograph. A photo and an instrument reading give us different kinds of evidence."
       ],
-      "sources": ["sojourner-barnacle"],
+      "sources": [
+        "sojourner-barnacle"
+      ],
       "image": "sojourner"
     },
     "sojourner-yogi": {
@@ -753,7 +986,9 @@
         "Sojourner used its rear color camera for this close view of Yogi. The image record is dated July 11, 1997.",
         "Compare it with the lander photographs. The camera location changes what we can see."
       ],
-      "sources": ["sojourner-yogi"],
+      "sources": [
+        "sojourner-yogi"
+      ],
       "image": "sojourner-yogi"
     },
     "sojourner-landing": {
@@ -764,7 +999,11 @@
         "A parachute slowed Pathfinder during descent. Airbags cushioned the landing before opening the way for the rover.",
         "On sol 2, Sojourner rolled down a ramp and onto Mars. The lander remained its partner for communications."
       ],
-      "sources": ["pathfinder", "sojourner-history", "sojourner-hardware"],
+      "sources": [
+        "pathfinder",
+        "sojourner-history",
+        "sojourner-hardware"
+      ],
       "image": "sojourner-airbags"
     },
     "sojourner-timeline": {
@@ -775,10 +1014,19 @@
         "NASA received the final Pathfinder data on September 27, 1997. The team continued trying to restore communications.",
         "A NASA Photojournal note gives March 10, 1998 as formal mission termination. The mission overview lists September 27, 1997 as its end date; this archive labels both events separately."
       ],
-      "sources": ["pathfinder", "sojourner-barnacle"],
+      "sources": [
+        "pathfinder",
+        "sojourner-barnacle"
+      ],
       "facts": [
-        ["LAST DATA", "27 SEP 1997"],
-        ["FORMAL TERMINATION", "10 MAR 1998"]
+        [
+          "LAST DATA",
+          "27 SEP 1997"
+        ],
+        [
+          "FORMAL TERMINATION",
+          "10 MAR 1998"
+        ]
       ]
     },
     "sojourner-message": {
@@ -816,7 +1064,10 @@
         "These excerpts come from NASA/JPL’s 2022 podcast First Steps: Sojourner. Modern narration and interviews are labeled separately from the 1997 mission-control excerpt.",
         "The cassette is an illustrated archive prop. These are edited NASA/JPL recordings, not Sojourner speaking or sounds recorded by a microphone on Mars."
       ],
-      "sources": ["sojourner-podcast", "sojourner-hardware"]
+      "sources": [
+        "sojourner-podcast",
+        "sojourner-hardware"
+      ]
     },
     "sojourner-solar": {
       "title": "Sunlight for a little rover",
@@ -826,7 +1077,11 @@
         "Sojourner used solar power and batteries. Its solar panel helped turn sunlight into electrical energy.",
         "Use the educational model to locate the solar array, then compare it with the original NASA hardware photograph. The small cell pattern and materials are simplified."
       ],
-      "sources": ["sojourner-history", "pathfinder", "sojourner-hardware"],
+      "sources": [
+        "sojourner-history",
+        "pathfinder",
+        "sojourner-hardware"
+      ],
       "image": "sojourner"
     },
     "sojourner-relay": {
@@ -837,7 +1092,11 @@
         "Sojourner communicated through the Pathfinder lander. The two vehicles had different jobs: one explored nearby ground; the other acted as a link with Earth.",
         "A rover camera and a lander camera can show the same place from very different viewpoints."
       ],
-      "sources": ["sojourner-history", "pathfinder", "sojourner-hardware"]
+      "sources": [
+        "sojourner-history",
+        "pathfinder",
+        "sojourner-hardware"
+      ]
     },
     "sojourner-legacy": {
       "title": "What did we discover?",
@@ -847,7 +1106,11 @@
         "Sojourner demonstrated mobile exploration on Mars. Its pictures and rock investigations became part of a lasting scientific record.",
         "The rover remains on Mars. Its historical work continues through the evidence we can study today."
       ],
-      "sources": ["pathfinder", "sojourner-history", "sojourner-yogi"],
+      "sources": [
+        "pathfinder",
+        "sojourner-history",
+        "sojourner-yogi"
+      ],
       "quiz": [
         {
           "question": "Which vehicle could move across the ground?",
@@ -901,6 +1164,55 @@
         "sojourner-barnacle",
         "pathfinder-model-reference"
       ]
+    },
+    "apollo-status": {
+      "title": "Apollo 11 · Eagle — Where is it now?",
+      "tag": "LEFT BEHIND",
+      "intro": "Tranquility Base, Moon",
+      "paragraphs": [
+        "The lower landing stage is inactive on the Moon. The separate laser reflector still returns light sent from Earth.",
+        "The lower stage was the launch platform for the crew cabin. The cabin lifted off; the landing gear and surface experiments stayed behind.",
+        "The upper cabin was left in lunar orbit after the crew transferred. NASA's artifact catalog lists its impact location as unknown."
+      ],
+      "sources": [
+        "catalog",
+        "reflector",
+        "lunar-artifacts",
+        "orbital-apollo"
+      ],
+      "image": "apollo-orbit"
+    },
+    "viking-status": {
+      "title": "Viking 1 · Lander — Where is it now?",
+      "tag": "LEFT BEHIND",
+      "intro": "Chryse Planitia, Mars",
+      "paragraphs": [
+        "The lander is inactive at its landing site. It no longer sends messages to Earth.",
+        "Viking was a stationary science station, not a return spacecraft. It remained where it landed when communication ended.",
+        "In November 1982, a faulty command sent from Earth interrupted communications. Attempts to regain contact were unsuccessful."
+      ],
+      "sources": [
+        "viking",
+        "viking-science",
+        "orbital-viking"
+      ],
+      "image": "viking-orbit"
+    },
+    "sojourner-status": {
+      "title": "Sojourner & Pathfinder — Where is it now?",
+      "tag": "LEFT BEHIND",
+      "intro": "Pathfinder landing region, Ares Vallis, Mars",
+      "paragraphs": [
+        "Both are silent. Sojourner needed the Pathfinder lander to relay its messages to Earth; the rover's final parking spot is uncertain.",
+        "They were sent to study Mars, with no return journey. Once the lander stopped relaying data, the team could no longer talk to the rover.",
+        "Pathfinder's final data arrived on 27 September 1997. Sojourner was programmed to approach and circle an unresponsive lander, but its actual final movements are not known."
+      ],
+      "sources": [
+        "pathfinder",
+        "sojourner-last",
+        "orbital-pathfinder"
+      ],
+      "image": "pathfinder-orbit"
     }
   },
   "briefing": {
@@ -913,11 +1225,24 @@
     "distanceContext": "Average Earth–Moon distance",
     "landing": "Eagle landed · 20 July 1969",
     "facts": [
-      ["SPACECRAFT", "Eagle"],
-      ["DESIGN", "2 stages"],
-      ["LANDING GEAR", "4 legs"]
+      [
+        "SPACECRAFT",
+        "Eagle"
+      ],
+      [
+        "DESIGN",
+        "2 stages"
+      ],
+      [
+        "LANDING GEAR",
+        "4 legs"
+      ]
     ],
-    "sources": ["moon-distance", "catalog", "mission"],
+    "sources": [
+      "moon-distance",
+      "catalog",
+      "mission"
+    ],
     "illustrationNote": "7-second illustrated journey · not to scale or actual flight time"
   },
   "crtIntro": {
@@ -1486,7 +1811,10 @@
       "generation": "AI-generated narration · ElevenLabs",
       "alignment": "Local speech-recognition word estimates aligned to the approved script; playback follows audio.currentTime. Not archival timestamps."
     },
-    "sources": ["catalog", "mission"]
+    "sources": [
+      "catalog",
+      "mission"
+    ]
   },
   "vikingEntry": {
     "name": "Viking 1",
@@ -1502,11 +1830,23 @@
       "distanceContextText": "≈341 million km · Earth–Mars distance at landing",
       "landing": "Viking 1 landed · 20 July 1976",
       "facts": [
-        ["SPACECRAFT", "Robotic lander"],
-        ["LANDING SITE", "Chryse Planitia"],
-        ["FIRST VIEW", "20 JUL 1976"]
+        [
+          "SPACECRAFT",
+          "Robotic lander"
+        ],
+        [
+          "LANDING SITE",
+          "Chryse Planitia"
+        ],
+        [
+          "FIRST VIEW",
+          "20 JUL 1976"
+        ]
       ],
-      "sources": ["viking", "viking-distance"],
+      "sources": [
+        "viking",
+        "viking-distance"
+      ],
       "illustrationNote": "7-second illustrated journey · not to scale or actual flight time"
     },
     "crtIntro": {
@@ -2113,7 +2453,11 @@
         ],
         "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Year and mission numerals normalized, Chryse and plain spelling preserved from approved script. Playback follows audio.currentTime; these are editorial estimates, not archival timestamps."
       },
-      "sources": ["viking", "viking-first", "viking-science"]
+      "sources": [
+        "viking",
+        "viking-first",
+        "viking-science"
+      ]
     },
     "arrivalWatermarkEmbedded": true
   },
@@ -2125,7 +2469,9 @@
           "shortDate": "16 JUL 1969",
           "date": "16 July 1969",
           "description": "Armstrong, Aldrin and Collins launch together on Apollo 11. Their goal: land people on the Moon and bring them home.",
-          "sources": ["mission"]
+          "sources": [
+            "mission"
+          ]
         },
         {
           "name": "Eagle lands",
@@ -2134,21 +2480,31 @@
           "description": "Armstrong and Aldrin land in Eagle at the Sea of Tranquility. Collins remains in lunar orbit.",
           "file": "assets/archive/eagle.jpg",
           "caption": "AS11-40-5961 · NASA / Neil Armstrong. Eagle during the moonwalk, not a photograph of touchdown.",
-          "sources": ["mission", "catalog", "images"]
+          "sources": [
+            "mission",
+            "catalog",
+            "images"
+          ]
         },
         {
           "name": "First step",
           "shortDate": "21 JUL · UTC",
           "date": "21 July 1969 · about 02:56 UTC",
           "description": "Armstrong takes the first human step on the Moon. In the eastern United States it is still July 20. Dates depend on the time zone.",
-          "sources": ["timeline-source", "catalog"]
+          "sources": [
+            "timeline-source",
+            "catalog"
+          ]
         },
         {
           "name": "Safe return",
           "shortDate": "24 JUL 1969",
           "date": "24 July 1969",
           "description": "All three astronauts return to Earth. Eagle’s lower stage remains on the Moon, while lunar samples come home with the crew.",
-          "sources": ["mission", "catalog"]
+          "sources": [
+            "mission",
+            "catalog"
+          ]
         }
       ],
       "viking": [
@@ -2157,21 +2513,27 @@
           "shortDate": "20 AUG 1975",
           "date": "20 August 1975",
           "description": "Viking 1 leaves Earth with an orbiter and a robotic lander traveling together.",
-          "sources": ["viking"]
+          "sources": [
+            "viking"
+          ]
         },
         {
           "name": "Mars orbit",
           "shortDate": "19 JUN 1976",
           "date": "19 June 1976",
           "description": "Viking 1 enters orbit around Mars. Images from above help the team examine possible landing places.",
-          "sources": ["viking"]
+          "sources": [
+            "viking"
+          ]
         },
         {
           "name": "Surface landing",
           "shortDate": "20 JUL 1976",
           "date": "20 July 1976",
           "description": "The lander touches down at Chryse Planitia. The orbiter continues working above Mars.",
-          "sources": ["viking"]
+          "sources": [
+            "viking"
+          ]
         },
         {
           "name": "The first picture",
@@ -2180,7 +2542,10 @@
           "description": "Viking 1 returns its first surface photograph. Rocks, fine material and part of its footpad appear in the image.",
           "file": "assets/archive/viking-first.jpg",
           "caption": "PIA00381 · NASA/JPL. Original Viking 1 surface photograph.",
-          "sources": ["viking-first", "viking-messages"]
+          "sources": [
+            "viking-first",
+            "viking-messages"
+          ]
         }
       ],
       "sojourner": [
@@ -2189,7 +2554,9 @@
           "shortDate": "04 DEC 1996",
           "date": "4 December 1996",
           "description": "Pathfinder launches carrying the small Sojourner rover.",
-          "sources": ["pathfinder"]
+          "sources": [
+            "pathfinder"
+          ]
         },
         {
           "name": "Mars landing",
@@ -2198,21 +2565,28 @@
           "description": "Pathfinder lands at Ares Vallis with protective airbags. Sojourner is still on the lander.",
           "file": "assets/archive/sojourner-airbags.jpg",
           "caption": "PIA00611 · NASA/JPL · Pathfinder lander camera; rover still aboard.",
-          "sources": ["pathfinder", "sojourner-airbags"]
+          "sources": [
+            "pathfinder",
+            "sojourner-airbags"
+          ]
         },
         {
           "name": "Rover deployment",
           "shortDate": "SOL 2",
           "date": "Sol 2 · second Martian day",
           "description": "Sojourner rolls down the ramp onto the surface. A sol is a Martian day.",
-          "sources": ["pathfinder"]
+          "sources": [
+            "pathfinder"
+          ]
         },
         {
           "name": "Final data received",
           "shortDate": "27 SEP 1997",
           "date": "27 September 1997",
           "description": "The final Pathfinder data arrive on Earth. Attempts to restore communication continue afterward.",
-          "sources": ["sojourner-barnacle"]
+          "sources": [
+            "sojourner-barnacle"
+          ]
         }
       ]
     }
@@ -2239,9 +2613,18 @@
       "distanceContextText": "≈119 million miles · Earth–Mars distance at arrival",
       "landing": "Pathfinder landed · 4 July 1997",
       "facts": [
-        ["LANDER", "Pathfinder"],
-        ["ROVER", "Sojourner"],
-        ["LANDING SITE", "Ares Vallis"]
+        [
+          "LANDER",
+          "Pathfinder"
+        ],
+        [
+          "ROVER",
+          "Sojourner"
+        ],
+        [
+          "LANDING SITE",
+          "Ares Vallis"
+        ]
       ],
       "sources": [
         "pathfinder",

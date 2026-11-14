@@ -2,22 +2,27 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261114-info1";
+} from "./progress-store.js?v=20261115-journey1";
 import {
   renderLearningGuide,
   mountPartLesson,
-} from "./learning-guide.js?v=20261114-info1";
-import { createCassettePlayer } from "./cassette-player.js?v=20261114-info1";
-import { sojournerItems } from "./sojourner-room.js?v=20261114-info1";
-import { createCRTIntro } from "./crt-intro.js?v=20261114-info1";
-import { createSideScreens } from "./side-screens.js?v=20261114-info1";
+  renderCompletionBadge,
+} from "./learning-guide.js?v=20261115-journey1";
+import { createCassettePlayer } from "./cassette-player.js?v=20261115-journey1";
+import { sojournerItems } from "./sojourner-room.js?v=20261115-journey1";
+import { createCRTIntro } from "./crt-intro.js?v=20261115-journey1";
+import { createSideScreens } from "./side-screens.js?v=20261115-journey1";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261114-info1";
+} from "./mission-room.js?v=20261115-journey1";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261114-info1";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261115-journey1";
+import { renderMissionStatus } from "./mission-status.js?v=20261115-journey1";
+
+import { createFinalSignal } from "./final-signal.js?v=20261115-journey1";
+import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-journey1";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
@@ -43,10 +48,16 @@ const dialog = $("#exhibit-dialog");
 const content = $("#exhibit-content");
 let archive;
 let projectInfo;
+let missionStatus;
+let finalSignalStories;
+let finalSignal;
+let certificateWasReady = false;
+let archivalVoice;
 let learning;
 const savedProgress = loadProgress();
 const goalsSolved = new Set();
 const storiesRead = new Set(safeIds(savedProgress.stories, ["sojourner-name"]));
+const screensRead = new Set(safeIds(savedProgress.screens, ["apollo-status", "viking-status", "sojourner-status", "apollo-signal", "viking-signal", "sojourner-signal"]));
 let progressSaved = false;
 let media;
 let lastFocus;
@@ -141,6 +152,7 @@ function updateMusicButton() {
 }
 
 async function syncMusic() {
+  finalSignal?.sync();
   sideScreens?.sync();
   cassettePlayer?.sync();
   crtIntro?.sync();
@@ -275,6 +287,8 @@ async function prepare() {
     arrivalVideo.load();
     archive = await (await fetch(asset("content/archive.json"))).json();
     projectInfo = await (await fetch(asset("content/project-info.json"))).json();
+    missionStatus = await (await fetch(asset("content/mission-status.json"))).json();
+    finalSignalStories = await (await fetch(asset("content/final-signals.json"))).json();
     learning = await (await fetch(asset("content/learning.json"))).json();
     restoreLearningProgress();
     const storyFile = archive.panels["apollo-story"].narration.file;
@@ -467,6 +481,7 @@ function saveAllProgress() {
       sojourner: [...sojournerDiscoveries],
     },
     goals: [...goalsSolved],
+    screens: [...screensRead],
     stories: [...storiesRead],
     quiz: Object.fromEntries(quizProgress),
     entries: Object.fromEntries([
@@ -490,8 +505,14 @@ function updateLearningUI() {
       `[data-learning-progress="${mission}"]`,
     );
     if (label)
-      label.textContent = `${set.size} objects opened · ${count} / 3 learning goals`;
+      label.textContent = `${set.size} ${set.size === 1 ? "object" : "objects"} opened · ${count} / 3 learning goals`;
   }
+  const ready = certificateEarned(getCertificateRows());
+  const certificateButton = $("#certificate-open");
+  certificateButton.classList.toggle("certificate-earned", ready);
+  certificateButton.textContent = ready ? "✦ Your certificate is ready →" : "✦ Explorer certificate";
+  if (ready && !certificateWasReady && prepared) notify("All three archives explored. Your explorer certificate is ready on the timeline!");
+  certificateWasReady = ready;
   const mission = currentMission();
   const count = learning[mission].goals.filter((g) =>
     goalsSolved.has(mission + ":" + g.id),
@@ -511,6 +532,21 @@ function updateLearningUI() {
     guideButton.append(icon, copy, dots);
   }
 }
+function getCertificateRows() {
+  return certificateRequirements({ items: { apollo: roomItems, viking: vikingItems, sojourner: sojournerItems }, visited: { apollo: discoveries, viking: vikingDiscoveries, sojourner: sojournerDiscoveries }, solved: goalsSolved, learning, quizzes: quizProgress, archive, screens: screensRead });
+}
+function resetAllProgress(reopen) {
+  if (!confirm("Reset all mission visits, answers, stories and certificate progress saved on this device?")) return;
+  for (const set of [discoveries, vikingDiscoveries, sojournerDiscoveries, goalsSolved, storiesRead, screensRead]) set.clear();
+  quizProgress.clear();
+  entryVisits.clear();
+  briefingSeen = arrivalSeen = crtIntroSeen = false;
+  saveAllProgress();
+  explorerGuide?.reset();
+  if (reopen) openExhibit(reopen);
+  else notify("All mission progress has been reset on this device.");
+}
+
 function openLearningGuide() {
   renderLearningGuide({
     host: content,
@@ -526,21 +562,7 @@ function openLearningGuide() {
     node,
     action,
     saved: progressSaved,
-    reset: () => {
-      if (
-        !confirm(
-          "Reset the objects opened, quiz progress and learning goals saved on this device?",
-        )
-      )
-        return;
-      discoveries.clear();
-      vikingDiscoveries.clear();
-      sojournerDiscoveries.clear();
-      goalsSolved.clear();
-      quizProgress.clear();
-      saveAllProgress();
-      openExhibit("learning-guide");
-    },
+    reset: () => resetAllProgress("learning-guide"),
   });
 }
 function enterMission(mission, story) {
@@ -939,6 +961,7 @@ function renderQuiz(host, questions) {
   let quizStep = quizProgress.get(activePanel) || 0;
   host.replaceChildren();
   if (quizStep >= questions.length) {
+    renderCompletionBadge({ host, label: currentMission() === "apollo" ? "Apollo 11" : currentMission() === "viking" ? "Viking 1" : "Sojourner", node, action });
     host.append(
       node("p", "panel-tag", "THREE DISCOVERIES MADE"),
       node("h3", "", "Curiosity looks good on you."),
@@ -1262,7 +1285,7 @@ function renderMissionStory(id) {
     copy.append(node("p", "story-paragraph", paragraph));
   copy.append(
     id === "apollo-story"
-      ? action("Read the real landing transcript →", () => openExhibit("radio"))
+      ? action("Hear the real landing call →", () => openExhibit("radio"))
       : action(
           id === "sojourner-message"
             ? "Explore the landing photographs →"
@@ -1353,7 +1376,7 @@ function renderProjectInfo() {
     card.append(node("h4", "", person.name), node("strong", "", person.role), node("p", "", person.responsibility));
     cards.append(card);
   }
-  team.append(cards);
+  team.append(cards, node("p", "project-note", info.humanContribution));
   const tools = sections.get("tools");
   tools.append(node("h3", "", "How this archive was made"));
   for (const tool of info.tools) {
@@ -1407,9 +1430,16 @@ function renderNamingStory() {
 }
 
 function openExhibit(id) {
+  if (id === "mission-status") id = currentMission() + "-status";
+  if (id === "last-signal") id = currentMission() + "-signal";
+  finalSignal?.stop();
+  finalSignal = null;
+  dialog.classList.toggle("signal-dialog", id.endsWith("-signal"));
   if (id === "about") id = "art-info";
   explorerGuide?.reset();
   if (!archive) return;
+  archivalVoice?.pause();
+  archivalVoice = null;
   sideScreens?.closePanel();
   cassettePlayer?.close();
   if (!dialog.open) lastFocus = document.activeElement;
@@ -1429,10 +1459,23 @@ function openExhibit(id) {
   sojournerExplorer?.selectModel(0);
   sojournerExplorer?.preview();
   content.replaceChildren();
-  if (storyPanels.has(id)) renderMissionStory(id);
+  if (id === "certificate") renderCertificate({ host: content, rows: getCertificateRows(), node, action, open: openExhibit, navigate: mission => { dialog.close(); enterMission(mission, false); } });
+  else if (["apollo-signal", "viking-signal", "sojourner-signal"].includes(id)) {
+    const mission = id.split("-")[0];
+    finalSignal = createFinalSignal({ host: content, spec: finalSignalStories[mission], node, action, sources: sourceNotes, blocked: () => document.hidden || orientationQuery.matches || !dialog.open, complete: finished => {
+      finalSignal?.stop();
+      if (finished) screensRead.add(id);
+      saveAllProgress();
+      dialog.close();
+      location.hash = "home";
+    } });
+  }
+  else if (storyPanels.has(id)) renderMissionStory(id);
   else if (id === "learning-guide") openLearningGuide();
   else if (id === "sojourner-name") renderNamingStory();
   else if (id === "art-info") renderProjectInfo();
+  else if (["apollo-status", "viking-status", "sojourner-status"].includes(id))
+    renderMissionStatus({ host: content, mission: id.split("-")[0], data: missionStatus, imageFigure, sources: sourceNotes, node });
   else if (id === "sources") renderSources();
   else if (id === "objects") {
     const viking = location.hash === "#viking";
@@ -1627,7 +1670,7 @@ function openExhibit(id) {
     if (id === "viking-weather") {
       const detail = node("details", "pressure-table");
       detail.append(
-        node("summary", "", "View all 30 measurements & archive flags"),
+        node("summary", "", "For curious adults: all 30 measurements and archive fields"),
       );
       const table = node("table");
       const head = node("tr");
@@ -1658,6 +1701,18 @@ function openExhibit(id) {
       content.append(detail);
     }
     if (panel.quotes) {
+      if (id === "radio") {
+        const player = node("section", "original-audio");
+        player.append(node("h3", "", "Hear the real landing call"), node("p", "", "NASA historical audio · Neil Armstrong · 20 July 1969"));
+        archivalVoice = document.createElement("audio");
+        archivalVoice.controls = true;
+        archivalVoice.preload = "auto";
+        archivalVoice.volume = 0.5;
+        archivalVoice.src = asset("assets/audio/apollo-original-landing.mp3");
+        archivalVoice.setAttribute("aria-label", "Play the original NASA Apollo 11 landing call");
+        player.append(archivalVoice);
+        content.append(player);
+      }
       const transcript = node("div", "transcript");
       for (const quote of panel.quotes) {
         const line = node("p");
@@ -1727,6 +1782,8 @@ function openExhibit(id) {
     }
   }
   content.scrollTop = 0;
+  if (["apollo-status", "viking-status", "sojourner-status"].includes(id)) screensRead.add(id);
+  if (location.hash === "#apollo" && roomItems.includes(id)) discoveries.add(id);
   if (location.hash === "#viking" && vikingItems.includes(id)) {
     vikingDiscoveries.add(id);
     $("#discovery-count").textContent =
@@ -1811,6 +1868,10 @@ document.addEventListener("click", async (event) => {
 
 $("#close-exhibit").addEventListener("click", () => dialog.close());
 dialog.addEventListener("close", () => {
+  finalSignal?.stop();
+  finalSignal = null;
+  dialog.classList.remove("signal-dialog");
+  archivalVoice?.pause();
   sideScreens?.closePanel();
   cassettePlayer?.close();
   storyVoice.pause();
@@ -1840,13 +1901,15 @@ $("#lamp-toggle").addEventListener("click", () => {
   );
 });
 document.addEventListener("visibilitychange", () => {
+  if (document.hidden) archivalVoice?.pause();
   document.body.classList.toggle(
     "exhibit-open",
     document.hidden || dialog.open,
   );
   syncMusic();
 });
-window.addEventListener("hashchange", route);
+window.addEventListener("hashchange", () => { finalSignal?.stop(); if (dialog.open) dialog.close(); route(); });
+$("#reset-missions").addEventListener("click", () => resetAllProgress());
 $("#briefing-skip").addEventListener("click", finishBriefing);
 $("#arrival-skip").addEventListener("click", finishArrival);
 $("#crt-intro-restart").addEventListener("click", startCRTIntro);
@@ -1888,7 +1951,7 @@ arrivalVideo.addEventListener("error", () => {
     $("#arrival-status").textContent =
       "This video could not play. You can still enter with Skip.";
 });
-$("#briefing-replay").addEventListener("click", startBriefing);
+$("#briefing-replay").addEventListener("click", () => enterMission(currentMission(), true));
 $("#briefing-pause").addEventListener("click", () => {
   briefingPaused = !briefingPaused;
   syncBriefing();

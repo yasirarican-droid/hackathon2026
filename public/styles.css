@@ -4,8 +4,9 @@
 }
 @font-face {
   font-family: ArchiveHeading;
-  src: url("assets/fonts/kalam-700-latin.woff2");
+  src: url("assets/fonts/nunito-700.ttf") format("truetype");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: ArchiveMono;
@@ -5385,3 +5386,117 @@ a:hover {
 @media (prefers-reduced-motion: reduce) {
   .learning-guide-open, .explorer-guide, .guide-invitation { animation: none; }
 }
+.home-footer { flex-wrap: wrap; }
+.home-footer .home-affiliation { flex-basis: 100%; margin: 10px 0 4px; color: #e1dfcc; font: 15px/1.45 ArchiveHand; }
+.where-now-link { display: block; margin: 0 auto 9px; padding: 5px 10px; border: 1px solid #d6cf97; border-radius: 16px; background: #253f3c; color: #fff0b7; font: 700 14px ArchiveHeading; }
+.room-toolbar .mission-status-open { position: absolute; top: calc(100% + 18px); left: clamp(265px, 21cqw, 310px); padding: 8px 12px; font-size: 14px; border-radius: 18px; }
+#arrival-replay, #crt-intro-restart { display: none !important; }
+.crt-hint { font-size: clamp(10px, .8cqw, 14px); }
+.status-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.status-evidence .evidence-figure { margin: 0; }
+.status-evidence .evidence-figure img { width: 100%; max-height: 460px; object-fit: contain; background: #172c2e; border-radius: 9px; }
+.status-image-note { font-size: 16px; color: #576749; }
+.status-fact { margin: 0 0 16px; }
+.status-fact h3 { font: 700 19px ArchiveHeading; margin: 0 0 5px; color: #2c5343; }
+.status-fact p { font: 20px/1.45 ArchiveHand; margin: 0; }
+.status-question { padding: 14px 18px; margin: 20px 0; border-radius: 9px; background: #dde6b7; }
+.status-question summary { cursor: pointer; font-size: 20px; }
+.status-question p { font-size: 19px; line-height: 1.45; }
+.original-audio { padding: 18px; background: #e0e6bd; border-radius: 10px; margin: 18px 0; }
+.original-audio h3 { margin-top: 0; }
+.original-audio audio { width: 100%; }
+.completion-badge { display: flex; align-items: center; gap: 18px; padding: 18px; border: 2px solid #b79542; border-radius: 14px; background: #fff1b5; margin: 12px 0; }
+.completion-seal { display: grid; place-items: center; flex-shrink: 0; width: 72px; height: 72px; border: 4px double #315748; border-radius: 50%; color: #315748; background: #ffda68; font-size: 48px; }
+.completion-badge-copy { display: grid; gap: 5px; }
+.completion-badge-copy strong { font: 700 23px ArchiveHeading; color: #315748; }
+.completion-badge-copy span { font-size: 18px; }
+.seasons-lesson { padding: 18px; margin-top: 25px; border: 1px solid #b8ae78; border-radius: 12px; background: #fff2cd; }
+.seasons-lesson h4 { margin: 0; font: 700 22px ArchiveHeading; }
+.seasons-lesson p { font-size: 19px; line-height: 1.45; }
+.seasons-lesson a { font-size: 16px; text-decoration: underline; }
+.seasons-diagram { display: flex; align-items: center; gap: 35px; min-height: 150px; padding: 20px; border-radius: 10px; background: #d5e4e6; color: #254738; }
+.season-gas { flex: 2; display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.season-gas strong { grid-column: 1 / -1; }
+.season-gas i { display: block; height: 14px; width: 14px; border-radius: 50%; background: #365c61; transition: opacity .4s; }
+.season-ice { flex: 1; text-align: center; }
+.season-ice::before { content: ''; display: block; height: 12px; margin: 0 0 12px; background: #f6fcff; border: 2px solid #7899a4; border-radius: 45% 45% 0 0; transition: height .4s; }
+[data-season="winter"] .season-gas i:nth-of-type(n+6) { opacity: .12; }
+[data-season="winter"] .season-ice::before { height: 55px; }
+.seasons-lesson [aria-pressed="true"] { background: #d9e8b4; border-color: #406047; }
+@media (max-height: 600px) and (orientation: landscape) {
+  .room-toolbar .mission-status-open { left: 205px; top: calc(100% + 11px); padding: 7px 10px; font-size: 11px; }
+  .status-layout { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 16px; }
+  .status-fact p { font-size: 18px; }
+}
+@media (max-width: 650px) { .status-layout { grid-template-columns: 1fr; } }
+.motion-paused .season-gas i, .motion-paused .season-ice::before { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .season-gas i, .season-ice::before { transition: none; }
+}
+
+.crt, .crt *, .crt-intro-terminal, .crt-intro-terminal *, .signal-glass, .signal-glass *, .signal-label, .signal-counter {
+  font-family: ArchiveMono, monospace !important;
+  font-weight: 400;
+}
+.home-achievements { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 18px; padding: 20px 0 12px; }
+.home-achievements button { border: 1px solid #e6d899; padding: 11px 19px; background: #284940; color: #fff1c8; border-radius: 10px; font: 700 17px ArchiveHeading; min-height: 44px; }
+.home-achievements #reset-missions { background: transparent; font: 16px ArchiveHand; }
+.home-achievements .certificate-earned { background: #ffdb70; color: #23473a; box-shadow: 0 0 20px #ffdb7055; }
+.room-toolbar .mission-history-actions { position: absolute; top: calc(100% + 18px); left: clamp(265px, 21cqw, 310px); display: flex; flex-direction: row; gap: 8px; }
+.room-toolbar .mission-history-actions .mission-status-open { position: static; }
+.room-toolbar .last-signal-open { border-radius: 18px; padding: 8px 12px; font-size: 14px; color: #fff0bd; border-color: #c5ad6b; }
+.catalog-record { display: inline-block; margin: 0 0 6px; padding: 11px 15px; border: 2px solid #6b8050; background: #dbe7c1; border-radius: 9px; font: 700 17px/1.4 ArchiveHeading; color: #284f40; text-decoration: underline; text-underline-offset: 3px; }
+.catalog-note { margin: 5px 0 22px; font-size: 16px; line-height: 1.4; color: #52644d; }
+.certificate-checklist { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 22px 0; }
+.certificate-mission { padding: 16px; border: 1px solid #bdab73; border-radius: 10px; background: #fff3cf; }
+.certificate-mission h3 { font: 700 21px ArchiveHeading; margin-top: 0; }
+.certificate-mission p { margin: 7px 0; font-size: 18px; }
+.certificate-mission button { display: block; padding: 8px 10px; margin-top: 10px; border: 1px solid #b0a16e; background: #dee7bd; color: #284c3e; border-radius: 7px; }
+.certificate-form { display: grid; gap: 12px; max-width: 600px; padding: 25px; margin: 22px auto; border: 3px double #ab8c3e; border-radius: 14px; background: #fff0b5; }
+.certificate-form label { font: 700 20px ArchiveHeading; }
+.certificate-form input { font: 22px ArchiveHand; padding: 12px; border: 1px solid #78916a; border-radius: 6px; background: #fff9e6; color: #234639; }
+.certificate-form small, .certificate-note { font-size: 16px; line-height: 1.4; }
+.signal-dialog { width: min(1300px, 96vw); max-width: 96vw; background: #111d1b; color: #ecedba; border: 0; }
+.signal-dialog .notebook-shell { background: linear-gradient(135deg, #8b9568, #485744 45%, #b2ad7f); border: 3px solid #c1b78c; box-shadow: inset 0 0 25px #0009; padding: 25px; }
+.signal-dialog .notebook-spine { display: none; }
+.signal-dialog .exhibit-content { padding: 20px; background: transparent; }
+.signal-dialog .close-exhibit { background: #243d32; color: #fff0bd; z-index: 4; }
+.final-signal-frame { --signal-dark: 0; position: relative; }
+.final-signal-frame h2 { color: #fff0b8; margin: 12px 0; font: 700 clamp(23px, 3vw, 36px) ArchiveHeading; }
+.signal-label { color: #e4d79d; font-size: 15px; letter-spacing: 2px; }
+.signal-note { font: 18px/1.4 ArchiveHand; color: #fff0c0; max-width: 850px; }
+.signal-glass { position: relative; display: flex; align-items: center; min-height: clamp(230px, 35vh, 370px); padding: clamp(20px, 4vw, 50px); overflow: hidden; border: 18px solid #152124; border-radius: 48px / 30px; background: radial-gradient(ellipse, #0c3b35, #041c1e); box-shadow: inset 0 0 40px #0009, 0 0 0 4px #29302b, 0 0 0 7px #b6b287; }
+.signal-glass::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, #0003 0 1px, transparent 1px 4px); }
+.signal-text { color: #d8f3a5; font-size: clamp(19px, 2.1vw, 29px); line-height: 1.6; margin: 0; white-space: pre-wrap; text-shadow: 0 0 8px #c4f19f33; }
+.signal-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 25px; }
+.signal-counter { margin-right: auto; }
+.signal-controls button { border: 1px solid #c4bd8b; padding: 10px 15px; background: #253f35; color: #fff0ba; border-radius: 6px; min-height: 44px; }
+.signal-transcript { color: #fff0c9; margin-top: 20px; font-size: 18px; line-height: 1.5; }
+.signal-transcript summary { cursor: pointer; }
+.signal-dialog .source-notes { color: #fff1c6; border-color: #c7be8e; }
+.signal-dialog .source-notes h3 { color: #fff1c6; }
+.signal-dialog .source-notes a { color: #fff1c6; font-size: 17px; }
+.signal-ending::after { content: ''; position: fixed; inset: 0; z-index: 3; background: #000; opacity: var(--signal-dark); pointer-events: none; }
+.signal-ending .signal-glass::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(24deg, #fff2 0 1px, transparent 1px 3px, #fff1 3px 4px), repeating-linear-gradient(119deg, #0003 0 2px, transparent 2px 5px); animation: signal-static .18s steps(2) infinite; z-index: 2; }
+@keyframes signal-static { from { transform: translateY(-8px) scale(1.1); } to { transform: translateY(8px) scale(1.1); } }
+@media (max-height: 600px) and (orientation: landscape) {
+  .room-toolbar .mission-history-actions { top: calc(100% + 7px); left: 205px; gap: 5px; }
+  .room-toolbar .mission-history-actions button { font-size: 10px; padding: 6px 8px; }
+  .signal-dialog .notebook-shell { padding: 8px; }
+  .signal-dialog .exhibit-content { padding: 14px; }
+  .signal-note { font-size: 15px; }
+  .signal-glass { min-height: 150px; border-width: 10px; padding: 18px; }
+  .signal-text { font-size: 18px; }
+  .signal-controls { margin-top: 17px; }
+  .signal-controls button { padding: 7px 10px; }
+  .certificate-mission { padding: 10px; }
+  .signal-label { font-size: 11px; margin: 0 0 6px; }
+  .final-signal-frame h2 { font-size: 22px; margin: 5px 0; }
+  .signal-note { font-size: 13px; margin: 5px 0 12px; }
+  .signal-glass { min-height: 135px; padding: 14px; }
+  .signal-text { font-size: 16px; line-height: 1.5; }
+  .signal-controls { margin-top: 16px; }
+  .signal-controls button { min-height: 36px; font-size: 14px; padding: 6px 9px; }
+  .signal-counter { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .signal-ending .signal-glass::before { animation: none; background: #0004; } }

@@ -53,8 +53,12 @@ The shared **How this archive was made** card lists ImageGen illustrations, Chat
 
 Project-authored code: **Apache-2.0**, see LICENSE and NOTICE. Media, NASA sources, fonts and third-party code have separate terms: see THIRD_PARTY.md and the in-app Sources panel. Apache-2.0 grants no NASA trademark or endorsement rights.
 
-Practice completion is not a certification or proof of measured learning effectiveness. Automated tests are not a substitute for testing with children on actual devices. A short anonymous observation protocol is included under `docs/submission/`.
+The independent explorer certificate acknowledges completing the exploration; it is not NASA-issued or proof of measured learning effectiveness. Automated tests are not a substitute for testing with children on actual devices. A short anonymous observation protocol is included under `docs/submission/`.
 
 ## Deployment
 
 Serve only `public/` through a static HTTPS server. No development notes, environment files, private keys or Git history belong in that directory. The owner-managed server uses atomic release directories and preserves rollback targets. The current SSH release remains pinned while GitHub main is unchanged; a new main commit resumes normal automatic deployment. This repository branch is available for review before merging.
+
+## Mission endings and completion
+
+Direct NSSDCA records are visible in every status card. Last Signal offers four sourced narrator paragraphs, pause/skip/transcript, a gentle CRT ending and return to the timeline. Completing the three archives and all learning/discovery questions unlocks a named downloadable explorer certificate. Home also provides a confirmed local progress reset. See docs/final-journey.md for exact requirements and source distinctions. Run node scripts/final-journey-check.mjs for the full completion flow.

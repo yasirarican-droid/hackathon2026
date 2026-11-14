@@ -1,4 +1,4 @@
-export function createExplorerGuide({ asset, context, open, navigate, idleMs = 45000, repeatMs = 120000, visibleMs = 14000 }) {
+export function createExplorerGuide({ asset, context, open, navigate }) {
   const cast = {
     home: ['Your little space explorer', 'guide-astronaut.webp'],
     apollo: ['Eagle', 'guide-eagle.webp'],
@@ -47,16 +47,11 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   const image = root.querySelector('img');
   const message = root.querySelector('.guide-message');
   const action = root.querySelector('.guide-action');
-  const counts = new Map();
   const tipIndices = new Map();
   let key;
-  let lastActivity = performance.now();
-  let nextAllowed = 0;
-  let shownAt = 0;
   let disabled = false;
   let previousFocus;
   let runAction;
-  let pinned = false;
   let inviteAt = performance.now() + 10000;
   let inviteShownAt = 0;
   const inviteCounts = new Map();
@@ -91,14 +86,13 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   function reset() {
     hide();
     updateControl(context());
-    lastActivity = performance.now();
+    const now = performance.now();
     invitation.hidden = true;
     factInvitation.hidden = true;
-    inviteAt = Math.max(inviteAt, lastActivity + 10000);
-    factAt = Math.max(factAt, lastActivity + 25000);
+    inviteAt = Math.max(inviteAt, now + 10000);
+    factAt = Math.max(factAt, now + 25000);
   }
-  function show(state, manual = false) {
-    pinned = manual;
+  function show(state) {
     const iteration = tipIndices.get(state.page) || 0;
     const [name, file] = cast[state.page];
     root.dataset.guide = state.page;
@@ -146,17 +140,13 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     inviteAt = performance.now() + 75000;
     help.setAttribute('aria-expanded', 'true');
     tipIndices.set(state.page, iteration + 1);
-    if (!manual) counts.set(state.page, (counts.get(state.page) || 0) + 1);
-    shownAt = performance.now();
-    nextAllowed = shownAt + repeatMs;
-    if (manual) action.focus({ preventScroll: true });
+    action.focus({ preventScroll: true });
   }
   function tick() {
     const state = context();
     const now = performance.now();
     if (state.page !== key) {
       key = state.page;
-      nextAllowed = 0;
       inviteAt = now + 10000;
       factAt = now + 25000;
       reset();
@@ -171,7 +161,6 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       factInvitation.hidden = true;
       factAt = now + 110000;
       inviteAt = now + 75000;
-      if (!pinned && now - shownAt >= visibleMs && !root.contains(document.activeElement)) reset();
       return;
     }
     if (!invitation.hidden && now - inviteShownAt >= 5500 && document.activeElement !== invitation)
@@ -190,19 +179,16 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       factAt = now + 110000;
       factExposures++;
     }
-    if (!disabled && (counts.get(key) || 0) < 2 && now - lastActivity >= idleMs && now >= nextAllowed)
-      show(state);
   }
   function activity(event) {
-    lastActivity = performance.now();
     if (event.type === 'keydown' && event.key === 'Escape') reset();
   }
-  for (const type of ['pointerdown', 'pointermove', 'keydown', 'scroll'])
+  for (const type of ['keydown'])
     document.addEventListener(type, activity, { passive: true });
   root.querySelector('.guide-close').addEventListener('click', reset);
   function requestTip() {
     const state = context();
-    if (!state.blocked && cast[state.page]) show(state, true);
+    if (!state.blocked && cast[state.page]) show(state);
   }
   help.addEventListener('click', requestTip);
   invitation.addEventListener('click', requestTip);
@@ -230,7 +216,7 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     reset,
     destroy() {
       clearInterval(timer);
-      for (const type of ['pointerdown', 'pointermove', 'keydown', 'scroll'])
+      for (const type of ['keydown'])
         document.removeEventListener(type, activity);
       hide();
       root.remove();

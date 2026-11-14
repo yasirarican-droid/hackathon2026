@@ -4,7 +4,7 @@ The Apache-2.0 license applies to project-authored source code. It does not reli
 
 - Three.js: MIT; original license in public/vendor/three-LICENSE.txt. Bundled legal notices retained in eagle-viewer.js.LEGAL.txt.
 - Draco: Apache-2.0; original license in public/vendor/draco-LICENSE.txt.
-- Patrick Hand, Kalam, Share Tech Mono: SIL Open Font License 1.1; individual licenses under public/assets/fonts/.
+- Nunito, Patrick Hand, Kalam, Share Tech Mono: SIL Open Font License 1.1; individual licenses under public/assets/fonts/. Nunito now provides readable headings and critical labels.
 - Original NASA photographs and mission records: source URLs, image identifiers, credits and original hashes in public/content/media.json and archive.json. Follow the source-specific NASA usage conditions; no blanket Apache license is asserted for these materials.
 - Original NASA/Michael D. Carbajal 3D models: source/credit and exact-source verification in content/model.json and viking-model.json. Viewer changes are described separately from original geometry.
 - NASA/JPL podcast excerpts: First Steps: Sojourner (2022). Original speakers, exact source intervals, transcripts and processing in content/sojourner-recordings.json. These are distinct from synthetic narration.
@@ -16,3 +16,5 @@ The Apache-2.0 license applies to project-authored source code. It does not reli
 - OpenAI Codex assisted code and explanatory text. No synthetic scientific measurement dataset is presented.
 
 Provider-plan and original media production information is based on the owner's statements. Commercial-use permissions do not by themselves establish copyright protection or permission to redistribute under another license. NASA source pages and relevant provider conditions remain authoritative.
+
+- NASA Historical Sounds — Eagle Has Landed: unchanged NASA-hosted MP3; source, duration and SHA256 in public/content/archival-audio.json. Final Signal static is a quiet procedural interface sound, not mission audio.

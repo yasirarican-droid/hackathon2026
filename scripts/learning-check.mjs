@@ -55,6 +55,11 @@ try {
     );
   }
   await p.screenshot({ path: "docs/qa/learning-apollo-complete.png" });
+  assert.equal(await p.locator('.completion-badge-copy strong').innerText(), 'Evidence Explorer');
+  const badgeDownload = p.waitForEvent('download');
+  await p.getByRole('button', { name: 'Save explorer badge', exact: true }).click();
+  const badgeFile = await badgeDownload;
+  assert.match(await readFile(await badgeFile.path(), 'utf8'), /not a NASA award/);
   const downloaded = p.waitForEvent("download");
   await p
     .getByRole("button", { name: "Save my field notes", exact: true })
@@ -161,7 +166,7 @@ try {
     .locator(".learning-card")
     .first()
     .locator("fieldset button")
-    .nth(2)
+    .nth(data.viking.goals[0].answer)
     .click();
   assert.match(await q.locator(".learning-progress").innerText(), /^1 \/ 3/);
   await blocked.close();

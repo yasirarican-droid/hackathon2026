@@ -29,12 +29,14 @@ try {
   await page.clock.fastForward(6000);
   assert.equal(await invitation.isVisible(), false);
   await idle();
+  assert.equal(await guide.isVisible(), false);
+  assert.equal(await page.evaluate(() => document.activeElement.tagName), focus);
+  await page.locator('.guide-help:not(.guide-fact)').click();
   await guide.waitFor({ state: 'visible' });
   assert.equal(await shade.isVisible(), true);
   assert.equal(await invitation.isVisible(), false);
   assert.equal(await shade.evaluate(el => getComputedStyle(el).pointerEvents), 'none');
   assert.equal(await guide.getAttribute('data-guide'), 'home');
-  assert.equal(await page.evaluate(() => document.activeElement.tagName), focus);
   await page.screenshot({ path: 'docs/qa/explorer-home-desktop.png', animations: 'disabled' });
   await guide.locator('.guide-action').click();
   assert.match(page.url(), /#missions$/);
@@ -55,6 +57,8 @@ try {
     if (mission === 'sojourner') await page.screenshot({ path: 'docs/qa/field-guide-tab-desktop.png', animations: 'disabled' });
     assert.equal(await button.locator('.field-guide-dots i').count(), 3);
     await idle();
+    assert.equal(await guide.isVisible(), false);
+    await help.click();
     await guide.waitFor({ state: 'visible' });
     assert.equal(await shade.isVisible(), true);
     assert.equal(await guide.getAttribute('data-guide'), mission);
@@ -89,6 +93,8 @@ try {
   }
   await page.clock.runFor(1100);
   await page.clock.fastForward(130000);
+  assert.equal(await guide.isVisible(), false);
+  await page.locator('.guide-help:not(.guide-fact)').click();
   await guide.waitFor({ state: 'visible' });
   const manualTips = new Set();
   for (let i = 0; i < 4; i++) {
@@ -128,7 +134,7 @@ try {
   assert.equal(await small.locator('.guide-help:not(.guide-fact)').evaluate(el => el === document.activeElement), true);
   await small.close();
   assert.deepEqual(errors, []);
-  await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Idle-only appearance on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
+  await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Small invitations only until clicked on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
   console.log('Explorer guides passed: four characters, idle timing, actions, focus, dialogs, responsive bounds, dimmed background and launcher invitation.');
 } finally {
   await browser.close();

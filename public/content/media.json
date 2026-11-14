@@ -172,5 +172,59 @@
     "bytes": 38174,
     "sha256": "e737cf379c31d9fbee99d73293cad742cee290b497747962fc32b30b50286598",
     "processing": "Original NASA-hosted image bytes retained unchanged. Evidence panel shows the complete image."
+  },
+  {
+    "file": "assets/nasa/apollo-orbit.jpg",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/a/a11_lro.jpg",
+    "source": "https://science.nasa.gov/resource/apollo-11-landing-site/",
+    "credit": "NASA/Goddard Space Flight Center/Arizona State University",
+    "imageId": "LRO/LROC Apollo 11 landing site",
+    "date": "Published 19 June 2019; acquisition date not specified on the linked NASA page.",
+    "bytes": 202986,
+    "sha256": "c8ebab62a7c56b5320b7b9100787a048e262643f5d893b7ce079d706279b597b",
+    "size": [
+      1000,
+      562
+    ],
+    "processing": "Original NASA-provided JPEG bytes retained unchanged. No cropping, drawing, AI editing or resampling applied.",
+    "id": "apollo-orbit",
+    "retrieved": "2026-11-14",
+    "kind": "Original NASA orbital photograph; NASA annotations retained where present"
+  },
+  {
+    "file": "assets/nasa/viking-orbit.jpg",
+    "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia01/pia01881/figures/PIA01881_lander.jpg",
+    "source": "https://science.nasa.gov/photojournal/viking-lander-1-thomas-a-mutch-memorial-station-imaged-from-orbit/",
+    "credit": "NASA/JPL-Caltech/University of Arizona",
+    "imageId": "PIA01881 — NASA-provided lander cutout",
+    "date": "Published 5 December 2006.",
+    "bytes": 112103,
+    "sha256": "df5ee2fbaeed24f024702ef84bd09b90d3673194c8a0eb461bc2b600936eff57",
+    "size": [
+      828,
+      812
+    ],
+    "processing": "Original NASA-provided JPEG bytes retained unchanged. No cropping, drawing, AI editing or resampling applied.",
+    "id": "viking-orbit",
+    "retrieved": "2026-11-14",
+    "kind": "Original NASA orbital photograph; NASA annotations retained where present"
+  },
+  {
+    "file": "assets/nasa/pathfinder-orbit.jpg",
+    "download": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia09/pia09105/figures/PIA09105_fig3.jpg",
+    "source": "https://science.nasa.gov/photojournal/mars-pathfinder-landing-site-and-surroundings/",
+    "credit": "NASA/JPL/Univ. of Arizona/USGS",
+    "imageId": "PIA09105 — NASA-provided annotated hardware view",
+    "date": "Acquired 21 December 2006; published 11 January 2007.",
+    "bytes": 455564,
+    "sha256": "7acfff0767cbfcdc92ae8ed8724ea4f99e2e1cc0704547dd1500f4cd3209c627",
+    "size": [
+      1280,
+      1280
+    ],
+    "processing": "Original NASA-provided JPEG bytes retained unchanged. No cropping, drawing, AI editing or resampling applied.",
+    "id": "pathfinder-orbit",
+    "retrieved": "2026-11-14",
+    "kind": "Original NASA orbital photograph; NASA annotations retained where present"
   }
 ]

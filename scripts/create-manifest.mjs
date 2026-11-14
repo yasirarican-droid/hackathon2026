@@ -21,6 +21,9 @@ async function walk(directory) {
         "learning-guide.js",
         "progress-store.js",
         "explorer-guide.js",
+        "mission-status.js",
+        "final-signal.js",
+        "explorer-certificate.js",
       ].includes(file.name) &&
       !full.endsWith(".txt")
     )

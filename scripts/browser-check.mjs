@@ -125,7 +125,7 @@ await page.keyboard.press("Escape");
 await page.locator(".telephone").click();
 await page
   .getByRole("button", {
-    name: "Read the real landing transcript →",
+    name: "Hear the real landing call →",
     exact: true,
   })
   .click();

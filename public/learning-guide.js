@@ -1,3 +1,22 @@
+export function renderCompletionBadge({ host, label, node, action }) {
+  const badge = node('div', 'completion-badge');
+  const seal = node('span', 'completion-seal', '✦');
+  seal.setAttribute('aria-hidden', 'true');
+  const text = node('div', 'completion-badge-copy');
+  text.append(node('strong', '', 'Evidence Explorer'), node('span', '', label + ' · Explorer badge earned'));
+  badge.append(seal, text);
+  host.append(badge, action('Save explorer badge', () => {
+    const safe = label.replace(/[<>&"]/g, '');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"><rect width="640" height="480" rx="28" fill="#fff1c8"/><circle cx="320" cy="143" r="78" fill="#ffda68" stroke="#315748" stroke-width="8"/><path d="m320 79 16 45 48 1-38 29 13 47-39-28-39 28 13-47-38-29 48-1Z" fill="#315748"/><g font-family="Arial,sans-serif" text-anchor="middle" fill="#26483c"><text x="320" y="278" font-size="34" font-weight="bold">EVIDENCE EXPLORER</text><text x="320" y="329" font-size="29">${safe}</text><text x="320" y="377" font-size="20">Three sourced challenges completed</text><text x="320" y="433" font-size="16">An independent project explorer badge, not a NASA award</text></g></svg>`;
+    const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+    const download = document.createElement('a');
+    download.href = url;
+    download.download = 'evidence-explorer-' + label.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '.svg';
+    download.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }));
+}
+
 export function renderLearningGuide({
   host,
   mission,
@@ -32,6 +51,7 @@ export function renderLearningGuide({
   host.append(status, meter);
   if (total === spec.goals.length) {
     const summary = node("section", "learning-summary");
+    renderCompletionBadge({ host: summary, label: spec.title.split(' · ')[0], node, action });
     summary.append(node("h3", "", "Here is what you can explain now"));
     const list = node("ul");
     for (const goal of spec.goals) list.append(node("li", "", goal.takeaway));
@@ -119,10 +139,11 @@ export function renderLearningGuide({
       saved,
     });
     const target =
-      host.querySelector(".learning-summary h3") ||
+      host.querySelector(".learning-summary") ||
       host.querySelectorAll(".learning-card h3")[index];
     target.tabIndex = -1;
     target.focus();
+    target.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
 }
 

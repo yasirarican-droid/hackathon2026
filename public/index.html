@@ -14,8 +14,8 @@
     <meta name="theme-color" content="#253952" />
     <title>Abandoned, But Not Forgotten — Moon & Mars Archive</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20261114-info1" />
-    <script type="module" src="main.js?v=20261114-info1"></script>
+    <link rel="stylesheet" href="styles.css?v=20261115-journey1" />
+    <script type="module" src="main.js?v=20261115-journey1"></script>
   </head>
   <body>
     <section
@@ -356,7 +356,7 @@
               </h1>
 
               <p class="hero-invitation">
-                Choose a year. Tap a screen. Start exploring.
+                Left on the Moon and Mars. Still helping us learn.
               </p>
             </div>
             <div class="space-illustration" aria-hidden="true">
@@ -413,8 +413,9 @@
               <p class="mission-kicker">01 / ONE SMALL STEP</p>
               <h2>APOLLO 11</h2>
               <p class="mission-description">
-                First footsteps. A lasting legacy.
+                Eagle's landing stage is still on the Moon.
               </p>
+              <button class="where-now-link" data-open="apollo-status">Where is it now? ↗</button>
               <a
                 class="mission-button"
                 href="#apollo"
@@ -448,8 +449,9 @@
               <p class="mission-kicker">02 / THE FIRST PICTURE</p>
               <h2>VIKING 1</h2>
               <p class="mission-description">
-                A new world, seen from the ground.
+                Still on Mars. Silent since November 1982.
               </p>
+              <button class="where-now-link" data-open="viking-status">Where is it now? ↗</button>
               <a
                 class="mission-button"
                 href="#viking"
@@ -488,8 +490,9 @@
               <p class="mission-kicker">03 / LITTLE WHEELS, BIG DREAMS</p>
               <h2>SOJOURNER</h2>
               <p class="mission-description">
-                Small wheels. A world of questions.
+                On Mars. Its final parking spot is uncertain.
               </p>
+              <button class="where-now-link" data-open="sojourner-status">Where is it now? ↗</button>
               <a
                 class="mission-button"
                 href="#sojourner"
@@ -537,10 +540,12 @@
             ></span
           ><span class="object-name">A light that returns</span>
         </button>
+        <section class="home-achievements" aria-label="Explorer progress"><button id="certificate-open" data-open="certificate">✦ Explorer certificate</button><button id="reset-missions">Reset missions</button></section>
         <footer class="home-footer">
           <p><span>✦</span> Every explorer has a story.</p>
           <span>THREE CHAPTERS. ONE SHARED CURIOSITY.</span
           ><button data-open="help">How to explore ↗</button>
+          <p class="home-affiliation">Independent team project created for the 2026 NASA Space Apps Challenge. Not affiliated with or endorsed by NASA.</p>
         </footer>
       </section>
       <section
@@ -565,9 +570,10 @@
               Field guide · 0 / 3 goals
             </button>
             <h1>APOLLO 11 / MOON ARCHIVE</h1>
+            <div class="mission-history-actions"><button class="console-button mission-status-open" data-open="mission-status">Where is it now? ↗</button><button class="console-button last-signal-open" data-open="last-signal">Last Signal ◉</button></div>
             <div>
               <button id="briefing-replay" class="console-button">
-                Briefing</button
+                Replay story</button
               ><button id="arrival-replay" class="console-button">
                 Arrival</button
               ><button id="crt-intro-restart" class="console-button">

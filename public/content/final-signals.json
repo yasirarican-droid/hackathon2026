@@ -1,0 +1,49 @@
+{
+  "reviewed": "2026-11-15",
+  "provenance": "Modern narrator storytelling adapted from original NASA records. No spacecraft last words or historical audio are invented. The thank-you is the project narrator addressing the hardware. No new narration audio generated.",
+  "apollo": {
+    "title": "Eagle · What stayed behind",
+    "paragraphs": [
+      "The astronauts came home. But part of Eagle stayed beneath a quiet lunar sky. Its lower stage had one more important job: to be the launch platform that helped the crew cabin leave the Moon.",
+      "That landing stage is still at Tranquility Base. NASA’s lunar orbiter has photographed it. The upper cabin had a different ending: it was left in lunar orbit, and NSSDCA says its fate is not known. We cannot point to a confirmed impact site.",
+      "The landing stage is silent. Nearby, the separate laser reflector can still return light sent from Earth. The rocks and measurements brought home continue to help people study the Moon.",
+      "Thank you, Eagle, for helping people take their first steps on another world. Your crew came home, and what you helped us discover stayed with us. The screen will go quiet. Your story will not."
+    ],
+    "sources": [
+      "catalog",
+      "lunar-artifacts",
+      "orbital-apollo",
+      "reflector"
+    ]
+  },
+  "viking": {
+    "title": "Viking 1 · A quiet station on Mars",
+    "paragraphs": [
+      "For years, Viking 1 watched a world no person had ever stood on. It sent pictures of rocky ground, measured the weather and examined the soil. A small station on Mars helped Earth learn to see a new place.",
+      "Then, in November 1982, a faulty command from Earth interrupted communication. The team tried to reconnect, but no answer returned. This was the end of contact, not a spoken goodbye.",
+      "Viking 1 remains at its landing site in Chryse Planitia. It cannot drive away: it is a stationary lander. Its messages are silent now, but its archived pictures and measurements can still be explored.",
+      "Thank you, Viking 1, for showing us the ground of Mars and helping us study its air and soil. A quiet machine can still leave a loud question: what will we discover next?"
+    ],
+    "sources": [
+      "catalog-viking",
+      "viking",
+      "orbital-viking"
+    ]
+  },
+  "sojourner": {
+    "title": "Sojourner · The little explorer’s quiet trail",
+    "paragraphs": [
+      "Six little wheels carried Sojourner across rocky Martian ground. With Pathfinder as its radio helper, the rover sent clues about rocks and soil back to Earth. The little explorer showed how much a small beginning could teach us.",
+      "The last data from Pathfinder arrived on 27 September 1997. Sojourner needed that lander to pass its messages to Earth. When the relay fell silent, the team could no longer hear the rover.",
+      "Pathfinder remains in the Ares Vallis landing region. Sojourner is also silent, but its exact final parking spot is uncertain. It was programmed to approach and circle a lander that did not reply. We do not know whether those final movements actually happened.",
+      "Thank you, Sojourner and Pathfinder, for bringing a new kind of exploration to Mars. Your wheels and radio are quiet, but your pictures and discoveries are still here for curious children to explore. A small explorer can leave a very big story."
+    ],
+    "sources": [
+      "catalog-sojourner",
+      "catalog-pathfinder",
+      "pathfinder",
+      "sojourner-last",
+      "orbital-pathfinder"
+    ]
+  }
+}
