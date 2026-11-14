@@ -75,6 +75,21 @@
     "sha256": "37848374f7da9f7ef616f6b63a45f9c3b8e4b6f774b74888045027eedf482c19"
   },
   {
+    "path": "assets/art/archive-cd-v1.webp",
+    "bytes": 453018,
+    "sha256": "1af000dd7fca95cb66c60958bd38531dd08ae8169581caa98022b3606df3b657"
+  },
+  {
+    "path": "assets/art/archive-floppy-35-v1.webp",
+    "bytes": 444660,
+    "sha256": "a07c74976afbc75232070e2726f1b4a9ba4da660e12b95434d1adadd1c2fb7f7"
+  },
+  {
+    "path": "assets/art/archive-floppy-525-v1.webp",
+    "bytes": 449360,
+    "sha256": "a76f05b1b52cb7283a18248263df9b4ba6206319d55379c49ae702c5a4980fca"
+  },
+  {
     "path": "assets/art/desk-props-v2.webp",
     "bytes": 526624,
     "sha256": "e5fad05141a4d8c598c14f211aac62b5f7b23eef8e34d4e6ef61fac902172d54"
@@ -240,6 +255,21 @@
     "sha256": "d5b9f1825cc37495731a60f6f205db883ec002f0210f3c1a468c001b44f62b15"
   },
   {
+    "path": "assets/fonts/BubblegumSans-Regular.ttf",
+    "bytes": 38844,
+    "sha256": "db8d1c71c398266ecabe9ae4923c4feb1323441a4f056a9339e41d8f847bd0c0"
+  },
+  {
+    "path": "assets/fonts/ComicNeue-Bold.ttf",
+    "bytes": 55716,
+    "sha256": "3e7e5fccfd7e0788f317b43312151c1bd5cf058c9697a8d83eac3939050bd61e"
+  },
+  {
+    "path": "assets/fonts/ComicNeue-Regular.ttf",
+    "bytes": 57248,
+    "sha256": "a0ee5a37c8b27c4db0700137d928598b1e23b0089e1546a8961909176b779360"
+  },
+  {
     "path": "assets/fonts/kalam-700-latin.woff2",
     "bytes": 22144,
     "sha256": "252063af6ade8b9a744cde4ddad0fc21ea53b8ba711eed121a0c2e8610ea9c93"
@@ -320,9 +350,14 @@
     "sha256": "2115253999a2b848547dbac7c8f508605d3e8f3c09100a71dc1adeb009d01df4"
   },
   {
+    "path": "content/archive-desk-media.json",
+    "bytes": 4079,
+    "sha256": "325c5fbffce56fc27d6a99d2a4fd1bdfaf30872318250935293f1d8be228194e"
+  },
+  {
     "path": "content/archive.json",
-    "bytes": 106874,
-    "sha256": "6627ba3c58f219c6bc83b1029e488fd6ccfe1aa1b20ba28dc583ee80392b249f"
+    "bytes": 106872,
+    "sha256": "27cdc3202eadb90aee0b2e98e0a0b8c166bc06f71e3277eee8a1641861fb569e"
   },
   {
     "path": "content/explorer-guides.json",
@@ -331,8 +366,8 @@
   },
   {
     "path": "content/final-signals.json",
-    "bytes": 3569,
-    "sha256": "42dd6376096b52d7a15088a428feb2c8d0018a5f0a3911fa354989eec468d534"
+    "bytes": 3727,
+    "sha256": "05b3508168f906da6eb4b78a63364b0e50c34a53d90f15823741792ddc2959d2"
   },
   {
     "path": "content/learning.json",
@@ -366,13 +401,13 @@
   },
   {
     "path": "content/production-audit.json",
-    "bytes": 23210,
-    "sha256": "f07e229783827f5ce6cc974dd87c65d8db27948deb0d3f7634068463f83e6642"
+    "bytes": 25424,
+    "sha256": "2284bb2081b321c7a4b46b48e8724e6fe2663d63fe2cd60bca6963e9c4f0aead"
   },
   {
     "path": "content/project-info.json",
-    "bytes": 5329,
-    "sha256": "96fc234134cc630b68d91d3ac977475dce55e99fe72249cf8f72db72f79779e0"
+    "bytes": 5484,
+    "sha256": "86cf212d2e18fa9d647e902945e99810caf50d437afdd2adce68c5d4d1e4ea67"
   },
   {
     "path": "content/sojourner-art.json",

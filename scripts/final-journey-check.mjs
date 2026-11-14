@@ -41,7 +41,7 @@ try {
     await p.locator('#learning-guide-open').click();
     for (const [index, goal] of learning[mission].goals.entries()) await p.locator('.learning-card').nth(index).locator('fieldset button').nth(goal.answer).click();
     await p.keyboard.press('Escape');
-    await p.locator('.last-signal-open').click();
+    await p.locator('.telephone').click();
     assert.match(await p.locator('.signal-note').innerText(), /not the spacecraft/);
     await p.getByRole('button', { name: 'Pause', exact: true }).click();
     assert.equal(await p.getByRole('button', { name: 'Resume', exact: true }).count(), 1);
@@ -51,7 +51,7 @@ try {
       await p.waitForURL(/#home$/);
       assert.equal(await p.evaluate(() => JSON.parse(localStorage.getItem('nasa-starboard-learning-v1')).screens.includes('apollo-signal')), false);
       await p.locator('.apollo-card .mission-button').click();
-      await p.locator('.last-signal-open').click();
+      await p.locator('.telephone').click();
     }
     if (mission === 'viking') {
       await p.setViewportSize({ width: 844, height: 390 });
@@ -101,7 +101,7 @@ try {
   await p.emulateMedia({ reducedMotion: 'no-preference' });
   await p.clock.install();
   await p.locator('.apollo-card .mission-button').click();
-  await p.locator('.last-signal-open').click();
+  await p.locator('.telephone').click();
   await p.clock.runFor(900);
   assert.ok((await p.locator('.signal-text').innerText()).length > 5);
   await p.getByRole('button', { name: 'Pause', exact: true }).click();

@@ -157,10 +157,10 @@ export function createSojournerRoom({ asset }) {
         : "NASA PHOTOGRAPH · TAP TO EXPLORE ↗";
     get(".crt-right .crt-heading").textContent = "BEYOND THE PLAN";
     get(".folder .prop-label").textContent = "LANDING FILE";
-    get(".telephone .desk-tip").textContent = "A little rover calls home";
+    get(".telephone .desk-tip").textContent = "Last Signal";
     get(".telephone").setAttribute(
       "aria-label",
-      "Read the Sojourner telephone story",
+      "Open Sojourner Last Signal story",
     );
     get(".event-paper").replaceChildren();
     const title = document.createElement("span");

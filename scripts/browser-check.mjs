@@ -122,7 +122,7 @@ assert.equal(
   "A footprint with a story",
 );
 await page.keyboard.press("Escape");
-await page.locator(".telephone").click();
+await page.locator(".story-media").click();
 await page
   .getByRole("button", {
     name: "Hear the real landing call →",

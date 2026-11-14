@@ -1,4 +1,4 @@
-import { createSojournerRoom } from "./sojourner-room.js?v=20261115-journey1";
+import { createSojournerRoom } from "./sojourner-room.js?v=20261115-desk3";
 export const vikingItems = [
   "viking-mission",
   "viking-lander",
@@ -241,7 +241,7 @@ export function createMissionRoom({ asset, pressure, duration }) {
       get(selector + " img").alt = alt;
       get(selector + " span").textContent = caption;
     }
-    get(".telephone .desk-tip").textContent = "Pictures that called home";
+    get(".telephone .desk-tip").textContent = "Last Signal";
   }
   return { apply };
 }

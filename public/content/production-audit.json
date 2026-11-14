@@ -269,6 +269,36 @@
       "processing": "WebP quality 88 method 6; original pixel dimensions and exact alpha retained. Original generated PNG retained outside published project.",
       "verification": "New post-start ImageGen character output; alpha verified. Imagined illustrative guide, not original NASA imagery or a scientific model.",
       "sourceWebPSHA256": "ab2f85b0e83216dfb7892e848306660dc2af08dbf2265cc05386229d1867f675"
+    },
+    {
+      "file": "assets/art/archive-floppy-525-v1.webp",
+      "sha256": "a76f05b1b52cb7283a18248263df9b4ba6206319d55379c49ae702c5a4980fca",
+      "generationOutput": "exec-a32648df-2287-4bc0-ac14-ee4cbe38e701.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T21:24:26.692639+00:00",
+      "originalGenerationSHA256": "ea679f7092bb1e74afeddf9698a99202a901a602a0efa7ed40c9da39ca0ec52f",
+      "processing": "WebP quality 90 method 6, original dimensions and exact alpha retained.",
+      "verification": "New built-in ImageGen output after event start. Fictional retrospective archive prop, not mission equipment. Display credit in shared production information card.",
+      "kind": "5.25-inch story archive floppy"
+    },
+    {
+      "file": "assets/art/archive-floppy-35-v1.webp",
+      "sha256": "a07c74976afbc75232070e2726f1b4a9ba4da660e12b95434d1adadd1c2fb7f7",
+      "generationOutput": "exec-fe504eba-166e-4a35-9931-af4726b8b878.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T21:25:24.423670+00:00",
+      "originalGenerationSHA256": "63c0eb78cf8ac44478c39b6b0bdb06c2a36a7375779f1825cef721d33f042fa6",
+      "processing": "WebP quality 90 method 6, original dimensions and exact alpha retained.",
+      "verification": "New built-in ImageGen output after event start. Fictional retrospective archive prop, not mission equipment. Display credit in shared production information card.",
+      "kind": "3.5-inch story archive floppy"
+    },
+    {
+      "file": "assets/art/archive-cd-v1.webp",
+      "sha256": "1af000dd7fca95cb66c60958bd38531dd08ae8169581caa98022b3606df3b657",
+      "generationOutput": "exec-8d1bdac9-c55c-4bbc-90b8-de72ec61d91a.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T21:26:18.274376+00:00",
+      "originalGenerationSHA256": "3a9e2b0fdd8c5a8929bf1d57a6bc90669e31c5ee1c42e24476945717ee4857e9",
+      "processing": "WebP quality 90 method 6, original dimensions and exact alpha retained.",
+      "verification": "New built-in ImageGen output after event start. Fictional retrospective archive prop, not mission equipment. Display credit in shared production information card.",
+      "kind": "CD story archive"
     }
   ],
   "retirement": "Nine pre-start illustrations removed from project and retained outside project for undo/audit. One obsolete import script retired. No dates falsified.",

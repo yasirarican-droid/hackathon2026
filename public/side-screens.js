@@ -1,5 +1,5 @@
-import { durationChart } from "./sojourner-room.js?v=20261115-journey1";
-import { pressureChart } from "./mission-room.js?v=20261115-journey1";
+import { durationChart } from "./sojourner-room.js?v=20261115-desk3";
+import { pressureChart } from "./mission-room.js?v=20261115-desk3";
 
 const el = (tag, className = "", text) => {
   const item = document.createElement(tag);

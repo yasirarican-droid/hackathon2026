@@ -62,3 +62,5 @@ Serve only `public/` through a static HTTPS server. No development notes, enviro
 ## Mission endings and completion
 
 Direct NSSDCA records are visible in every status card. Last Signal offers four sourced narrator paragraphs, pause/skip/transcript, a gentle CRT ending and return to the timeline. Completing the three archives and all learning/discovery questions unlocks a named downloadable explorer certificate. Home also provides a confirmed local progress reset. See docs/final-journey.md for exact requirements and source distinctions. Run node scripts/final-journey-check.mjs for the full completion flow.
+
+Recorded mission stories now open from illustrated floppy/CD archive controls; ringing phones open Last Signal. Cartoon headings and readable handwritten body text are separated from digital CRT typography. See docs/archive-desk-media.md for interaction, art and font provenance.

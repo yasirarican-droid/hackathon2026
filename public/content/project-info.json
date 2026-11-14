@@ -110,8 +110,8 @@
       ]
     }
   ],
-  "software": "Three.js (MIT), Draco (Apache-2.0), FFmpeg for media processing, esbuild for the viewer bundle and Playwright for browser checks. Nunito, Patrick Hand, Kalam and Share Tech Mono fonts use the SIL Open Font License.",
+  "software": "Three.js (MIT), Draco (Apache-2.0), FFmpeg for media processing, esbuild for the viewer bundle and Playwright for browser checks. Kalam Bold headings, Patrick Hand body text and Share Tech Mono CRT text use the SIL Open Font License.",
   "license": "Apache-2.0 covers project-authored code. NASA evidence, original models, fonts, supplied media and generated recordings retain their own credits and applicable terms.",
-  "distinction": "Illustrated scenes and smiling characters are creative guides, not historical photographs. Real NASA images, measurements and recordings are credited individually. This is an independent team project, not a NASA product or endorsement.",
+  "distinction": "Illustrated scenes and smiling characters are creative guides, not historical photographs. Real NASA images, measurements and recordings are credited individually. This is an independent team project, not a NASA product or endorsement. Diskettes and CDs are imagined retrospective story archive controls, not a claim that those formats were used by the original missions.",
   "humanContribution": "The team chose the missions and NASA source pool, directed the visual style and interactions, supplied the films and narrator recordings, and reviewed and refined the experience. AI tools assisted production; they did not supply original scientific measurements."
 }

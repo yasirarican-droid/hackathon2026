@@ -38,7 +38,7 @@ try {
     assert.match(await dialog.locator('.status-copy').innerText(), new RegExp(place));
     await p.keyboard.press('Escape');
     if (mission === 'apollo') {
-      await p.locator('.telephone').click();
+      await p.locator('.story-media').click();
       await p.getByRole('button', { name: 'Hear the real landing call →', exact: true }).click();
       const audio = dialog.locator('.original-audio audio');
       await audio.waitFor();

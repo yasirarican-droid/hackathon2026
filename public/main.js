@@ -2,27 +2,27 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261115-journey1";
+} from "./progress-store.js?v=20261115-desk3";
 import {
   renderLearningGuide,
   mountPartLesson,
   renderCompletionBadge,
-} from "./learning-guide.js?v=20261115-journey1";
-import { createCassettePlayer } from "./cassette-player.js?v=20261115-journey1";
-import { sojournerItems } from "./sojourner-room.js?v=20261115-journey1";
-import { createCRTIntro } from "./crt-intro.js?v=20261115-journey1";
-import { createSideScreens } from "./side-screens.js?v=20261115-journey1";
+} from "./learning-guide.js?v=20261115-desk3";
+import { createCassettePlayer } from "./cassette-player.js?v=20261115-desk3";
+import { sojournerItems } from "./sojourner-room.js?v=20261115-desk3";
+import { createCRTIntro } from "./crt-intro.js?v=20261115-desk3";
+import { createSideScreens } from "./side-screens.js?v=20261115-desk3";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261115-journey1";
+} from "./mission-room.js?v=20261115-desk3";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261115-journey1";
-import { renderMissionStatus } from "./mission-status.js?v=20261115-journey1";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261115-desk3";
+import { renderMissionStatus } from "./mission-status.js?v=20261115-desk3";
 
-import { createFinalSignal } from "./final-signal.js?v=20261115-journey1";
-import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-journey1";
+import { createFinalSignal } from "./final-signal.js?v=20261115-desk3";
+import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-desk3";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
@@ -883,6 +883,15 @@ function route() {
   }
   if (inRoom)
     missionRoom?.apply(sojourner ? "sojourner" : viking ? "viking" : "apollo");
+  if (inRoom) {
+    const recording = nextMission === "sojourner" ? ["archive-cd-v1.webp", "CD", "Sojourner"] : nextMission === "viking" ? ["archive-floppy-35-v1.webp", "3.5-inch floppy disk", "Viking 1"] : ["archive-floppy-525-v1.webp", "5.25-inch floppy disk", "Eagle"];
+    $(".story-media .media-art").src = asset("assets/art/" + recording[0]);
+    $(".story-media .media-art").alt = "Illustrated story archive " + recording[1];
+    $(".story-media").setAttribute("aria-label", "Play " + recording[2] + "’s recorded story from the archive " + recording[1]);
+    $(".telephone").dataset.open = "last-signal";
+    $(".telephone").setAttribute("aria-label", "Open " + recording[2] + " Last Signal story");
+    $(".telephone .desk-tip").textContent = "Last Signal";
+  }
   if (inRoom)
     sideScreens?.setMission(
       sojourner ? "sojourner" : viking ? "viking" : "apollo",

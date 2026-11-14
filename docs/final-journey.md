@@ -1,6 +1,6 @@
 # Three quiet explorers: completion and farewell
 
-The current scope remains Apollo 11, Viking 1 and Sojourner. The application is English. Readable Nunito headings and Patrick Hand body text are separated from Share Tech Mono on live CRT contents and close-up CRT stories. Raster illustrations are unchanged.
+The current scope remains Apollo 11, Viking 1 and Sojourner. The application is English. Kalam Bold handwritten headings and Patrick Hand body text are separated from Share Tech Mono on live CRT contents and close-up CRT stories. Raster illustrations are unchanged.
 
 ## NSSDCA visibly used
 
@@ -15,7 +15,7 @@ Catalog history does not establish present exact rover coordinates. Dated LRO/Hi
 
 ## Last Signal
 
-Each console has a Last Signal button. Four short paragraphs use a modern narrator, not invented robot dialogue or a claimed archival last transmission. Sources remain available below the CRT. The device is thanked for its contribution; location and present inactivity are explained, with upper-stage and final-rover-position uncertainty preserved.
+Each console telephone and the toolbar Last Signal button open the farewell. The former phone recordings now open from the illustrated floppy/CD story archives. Four short paragraphs use a modern narrator, not invented robot dialogue or a claimed archival last transmission. Sources remain available below the CRT. The device is thanked for its contribution; location and present inactivity are explained, with upper-stage and final-rover-position uncertainty preserved.
 
 Normal motion types each paragraph at 22 ms per character, then allows 5.5 seconds before continuing. Pause and Next are available. Reduced motion shows complete paragraphs and requires Next, avoiding forced timing. Full text is also available as a readable transcript. Completing the final paragraph runs a gentle 1.9-second static-to-black transition and returns home. Skip returns home without marking the story complete. Close/Escape returns to the console and stops the sequence. Hidden pages suspend its clock and sound. The optional, low-volume 1.5-second procedural static is an interface effect, not original mission audio. No new narration recording has been generated or substituted. External recording scripts are in the owner's Downloads/Last Signal Seslendirme Metinleri directory.
 
