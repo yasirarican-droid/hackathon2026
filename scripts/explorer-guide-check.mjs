@@ -14,7 +14,7 @@ try {
   await page.locator('#application').waitFor({ state: 'visible', timeout: 60000 });
   const guide = page.locator('.explorer-guide');
   const shade = page.locator('.guide-shade');
-  const invitation = page.locator('.guide-invitation');
+  const invitation = page.locator('.guide-invitation:not(.guide-fact-invitation)');
   async function idle() {
     await page.clock.runFor(1100);
     await page.clock.fastForward(46000);
@@ -42,7 +42,7 @@ try {
   for (const mission of ['apollo', 'viking', 'sojourner']) {
     await page.locator('.' + mission + '-card .mission-button').click();
     await page.locator('#room-page').waitFor({ state: 'visible' });
-    const help = page.locator('.guide-help');
+    const help = page.locator('.guide-help:not(.guide-fact)');
     await page.waitForFunction(m => document.querySelector('.guide-help').dataset.guide === m, mission);
     const badge = await help.boundingBox();
     assert.ok(badge.y < 120 && Math.abs(badge.width - badge.height) < 1);
@@ -70,7 +70,7 @@ try {
     }
     const missionTips = new Set();
     for (let i = 0; i < 4; i++) {
-      await page.locator('.guide-help').click();
+      await page.locator('.guide-help:not(.guide-fact)').click();
       missionTips.add(await guide.locator('.guide-message').innerText());
     }
     assert.equal(missionTips.size, 4, mission);
@@ -92,29 +92,29 @@ try {
   await guide.waitFor({ state: 'visible' });
   const manualTips = new Set();
   for (let i = 0; i < 4; i++) {
-    await page.locator('.guide-help').click();
+    await page.locator('.guide-help:not(.guide-fact)').click();
     manualTips.add(await guide.locator('.guide-message').innerText());
   }
   assert.equal(manualTips.size, 4);
-  assert.equal(await page.locator('.guide-help').getAttribute('aria-expanded'), 'true');
+  assert.equal(await page.locator('.guide-help:not(.guide-fact)').getAttribute('aria-expanded'), 'true');
   await guide.locator('.guide-disable').click();
   await page.clock.fastForward(240000);
   assert.equal(await guide.isVisible(), false);
-  await page.locator('.guide-help').click();
+  await page.locator('.guide-help:not(.guide-fact)').click();
   await guide.waitFor({ state: 'visible' });
   await page.keyboard.press('Escape');
   assert.equal(await guide.isVisible(), false);
-  await page.locator('.guide-help').click();
+  await page.locator('.guide-help:not(.guide-fact)').click();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.clock.fastForward(60000);
   assert.equal(await guide.isVisible(), false);
-  assert.equal(await page.locator('.guide-help').isVisible(), false);
+  assert.equal(await page.locator('.guide-help:not(.guide-fact)').isVisible(), false);
   const small = await browser.newPage({ viewport: { width: 844, height: 390 }, reducedMotion: 'reduce' });
   await small.clock.install();
   await small.goto(base);
   await small.locator('#application').waitFor({ state: 'visible', timeout: 60000 });
   await small.clock.fastForward(11000);
-  const smallInvite = small.locator('.guide-invitation');
+  const smallInvite = small.locator('.guide-invitation:not(.guide-fact-invitation)');
   await smallInvite.waitFor({ state: 'visible' });
   const inviteBounds = await smallInvite.boundingBox();
   assert.ok(inviteBounds.x >= 0 && inviteBounds.y >= 0 && inviteBounds.x + inviteBounds.width <= 844 && inviteBounds.y + inviteBounds.height <= 390);
@@ -125,7 +125,7 @@ try {
   assert.equal(await smallInvite.isVisible(), false);
   await small.keyboard.press('Escape');
   assert.equal(await small.locator('.guide-shade').isVisible(), false);
-  assert.equal(await small.locator('.guide-help').evaluate(el => el === document.activeElement), true);
+  assert.equal(await small.locator('.guide-help:not(.guide-fact)').evaluate(el => el === document.activeElement), true);
   await small.close();
   assert.deepEqual(errors, []);
   await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Idle-only appearance on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));

@@ -2,22 +2,22 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261114-guides4";
+} from "./progress-store.js?v=20261114-guides5";
 import {
   renderLearningGuide,
   mountPartLesson,
-} from "./learning-guide.js?v=20261114-guides4";
-import { createCassettePlayer } from "./cassette-player.js?v=20261114-guides4";
-import { sojournerItems } from "./sojourner-room.js?v=20261114-guides4";
-import { createCRTIntro } from "./crt-intro.js?v=20261114-guides4";
-import { createSideScreens } from "./side-screens.js?v=20261114-guides4";
+} from "./learning-guide.js?v=20261114-guides5";
+import { createCassettePlayer } from "./cassette-player.js?v=20261114-guides5";
+import { sojournerItems } from "./sojourner-room.js?v=20261114-guides5";
+import { createCRTIntro } from "./crt-intro.js?v=20261114-guides5";
+import { createSideScreens } from "./side-screens.js?v=20261114-guides5";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261114-guides4";
+} from "./mission-room.js?v=20261114-guides5";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261114-guides4";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261114-guides5";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
@@ -45,6 +45,7 @@ let archive;
 let learning;
 const savedProgress = loadProgress();
 const goalsSolved = new Set();
+const storiesRead = new Set(safeIds(savedProgress.stories, ["sojourner-name"]));
 let progressSaved = false;
 let media;
 let lastFocus;
@@ -381,6 +382,7 @@ async function prepare() {
         return {
           page,
           solved: learning[page]?.goals.filter(g => goalsSolved.has(page + ":" + g.id)).length || 0,
+          namingSeen: storiesRead.has("sojourner-name"),
           blocked: document.hidden || orientationQuery.matches || dialog.open || briefingActive || arrivalActive || crtIntro?.active || !prepared,
         };
       },
@@ -463,6 +465,7 @@ function saveAllProgress() {
       sojourner: [...sojournerDiscoveries],
     },
     goals: [...goalsSolved],
+    stories: [...storiesRead],
     quiz: Object.fromEntries(quizProgress),
     entries: Object.fromEntries([
       ...entryVisits,
@@ -1318,6 +1321,27 @@ function updateStoryControls() {
 for (const event of ["play", "pause", "ended", "timeupdate"])
   storyVoice.addEventListener(event, updateStoryControls);
 
+function renderNamingStory() {
+  const panel = archive.panels["sojourner-name"];
+  content.append(node("p", "panel-tag", panel.tag));
+  const title = node("h2", "", panel.title);
+  title.id = "exhibit-title";
+  content.append(title, node("p", "panel-intro", panel.intro));
+  const layout = node("div", "naming-story");
+  const guide = node("figure", "naming-story-guide");
+  const portrait = node("img");
+  portrait.src = asset("assets/art/guide-astronaut.webp");
+  portrait.alt = "Our illustrated child astronaut introduces the story.";
+  guide.append(portrait, node("figcaption", "", "Your explorer guide"));
+  const copy = node("div", "naming-story-copy");
+  for (const paragraph of panel.paragraphs) copy.append(node("p", "", paragraph));
+  layout.append(guide, copy);
+  content.append(layout, sourceNotes(panel.sources));
+  const nav = node("div", "panel-navigation");
+  nav.append(action("Explore the little rover →", () => openExhibit("sojourner-rover")));
+  content.append(nav);
+}
+
 function openExhibit(id) {
   explorerGuide?.reset();
   if (!archive) return;
@@ -1342,6 +1366,7 @@ function openExhibit(id) {
   content.replaceChildren();
   if (storyPanels.has(id)) renderMissionStory(id);
   else if (id === "learning-guide") openLearningGuide();
+  else if (id === "sojourner-name") renderNamingStory();
   else if (id === "sources") renderSources();
   else if (id === "objects") {
     const viking = location.hash === "#viking";
@@ -1648,6 +1673,7 @@ function openExhibit(id) {
   }
   document.body.classList.add("exhibit-open");
   if (!dialog.open) dialog.showModal();
+  if (id === "sojourner-name") storiesRead.add(id);
   if (id === "sojourner-cassette") cassettePlayer?.start();
   if (storyPanels.has(id)) {
     if (location.hash === "#apollo") {
@@ -1728,6 +1754,7 @@ dialog.addEventListener("close", () => {
   sojournerExplorer?.selectModel(0);
   sojournerExplorer?.preview();
   document.body.classList.remove("exhibit-open");
+  explorerGuide?.reset();
   syncMusic();
   if (lastFocus?.isConnected && lastFocus.getClientRects().length)
     lastFocus.focus();

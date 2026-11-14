@@ -1,6 +1,12 @@
 {
   "reviewed": "2026-11-14",
   "sources": {
+    "sojourner-name": {
+      "title": "NASA/JPL — NASA Names First Rover to Explore the Surface of Mars (14 July 1995)",
+      "url": "https://www.jpl.nasa.gov/news/nasa-names-first-rover-to-explore-the-surface-of-mars/",
+      "usedFor": "Student essay competition; winning essay by 12-year-old Valerie Ambroise of Bridgeport, Connecticut; Sojourner Truth namesake and traveler meaning. Original announcement paragraphs 4–8. Child-friendly story is a paraphrase, not a quotation or historical recording.",
+      "accessed": "2026-11-14"
+    },
     "catalog": {
       "title": "NASA NSSDCA — Apollo 11 LM / EASEP",
       "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
@@ -177,6 +183,19 @@
     }
   },
   "panels": {
+    "sojourner-name": {
+      "tag": "YOUR EXPLORER GUIDE / A TRUE NAMING STORY",
+      "title": "A Child Helped Name a Mars Rover",
+      "intro": "A student's idea became part of a Mars adventure.",
+      "paragraphs": [
+        "Hello, explorer! This little rover has a story that started with a child, right here on Earth.",
+        "In a worldwide student essay contest, 12-year-old Valerie Ambroise from Bridgeport, Connecticut, wrote about Sojourner Truth.",
+        "Sojourner Truth spoke out against slavery and worked for women's rights. Valerie's essay won the contest. NASA named the rover after Sojourner Truth.",
+        "Sojourner means traveler. A young person's thoughtful words helped give a Mars explorer its name!",
+        "Your ideas matter, too. What would you name a future explorer — and why?"
+      ],
+      "sources": ["sojourner-name", "sojourner-podcast"]
+    },
     "mission": {
       "title": "A journey to the Moon",
       "tag": "01 / MISSION LOG",

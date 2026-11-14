@@ -5221,6 +5221,37 @@ a:hover {
 .guide-help[hidden] { display: none; }
 .guide-help:hover { background: #fff0ab; transform: scale(1.06); }
 .guide-help[aria-expanded="true"] { background: #d7e6b4; }
+.guide-fact {
+  top: calc(clamp(78px, 10vh, 100px) + 92px);
+  padding: 0;
+}
+.guide-fact img { object-fit: cover; object-position: center 12%; }
+.guide-fact-status {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #496348;
+  border-radius: 50%;
+  background: #ffdc69;
+  color: #23493a;
+  font: 700 17px/1 ArchiveHeading;
+}
+.guide-fact.is-read .guide-fact-status { background: #d6e6b6; }
+.guide-fact-invitation {
+  top: calc(clamp(78px, 10vh, 100px) + 107px);
+  width: 235px;
+  text-align: left;
+}
+.naming-story { display: grid; grid-template-columns: 175px minmax(0, 1fr); gap: 26px; margin: 20px 0; }
+.naming-story-guide { margin: 0; align-self: start; text-align: center; }
+.naming-story-guide img { display: block; width: 100%; height: 280px; object-fit: contain; }
+.naming-story-guide figcaption { color: #626b4a; font: 16px ArchiveHand; }
+.naming-story-copy { border: 1px solid #cbbb87; border-radius: 18px 18px 18px 4px; padding: 4px 22px; background: #fff4d1; }
+.naming-story-copy p { font: 20px/1.5 ArchiveHand; margin: 15px 0; }
 .guide-character {
   width: 195px;
   max-height: 270px;
@@ -5296,6 +5327,13 @@ a:hover {
   .field-guide-dots i { width: 6px; height: 6px; }
   .explorer-guide { width: min(440px, 72vw); bottom: 60px; right: 16px; }
   .guide-help { width: 56px; height: 56px; top: 44px; right: 15px; padding: 3px; }
+  .guide-fact { top: 110px; padding: 0; }
+  .guide-invitation.guide-fact-invitation { top: 116px; }
+  .guide-fact-status { width: 18px; height: 18px; right: 2px; bottom: 2px; font-size: 14px; }
+  .naming-story { grid-template-columns: 110px minmax(0, 1fr); gap: 15px; }
+  .naming-story-guide img { height: 180px; }
+  .naming-story-copy { padding: 2px 16px; }
+  .naming-story-copy p { font-size: 18px; }
   .guide-invitation { top: 49px; right: 88px; padding: 9px 13px; font-size: 16px; }
   .guide-character { width: 125px; max-height: 170px; }
   .guide-bubble { padding: 13px 16px 10px; margin-bottom: 5px; }

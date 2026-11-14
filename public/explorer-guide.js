@@ -33,6 +33,17 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   invitation.textContent = 'Need a clue? Tap me!';
   invitation.setAttribute('aria-label', 'Open your explorer guide');
   document.querySelector('#application').append(invitation);
+  const fact = document.createElement('button');
+  fact.className = 'guide-help guide-fact';
+  fact.hidden = true;
+  fact.innerHTML = '<img alt=""><span class="guide-fact-status" aria-hidden="true">!</span>';
+  fact.querySelector('img').src = asset('assets/art/guide-astronaut.webp');
+  fact.setAttribute('aria-haspopup', 'dialog');
+  const factInvitation = document.createElement('button');
+  factInvitation.className = 'guide-invitation guide-fact-invitation';
+  factInvitation.textContent = 'Did you know? A child helped name this rover!';
+  factInvitation.hidden = true;
+  document.querySelector('#application').append(fact, factInvitation);
   const image = root.querySelector('img');
   const message = root.querySelector('.guide-message');
   const action = root.querySelector('.guide-action');
@@ -49,7 +60,17 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   let inviteAt = performance.now() + 10000;
   let inviteShownAt = 0;
   const inviteCounts = new Map();
+  let factAt = performance.now() + 25000;
+  let factShownAt = 0;
+  let factExposures = 0;
   function updateControl(state) {
+    fact.hidden = state.blocked || state.page !== 'sojourner';
+    fact.classList.toggle('is-read', Boolean(state.namingSeen));
+    fact.dataset.read = String(Boolean(state.namingSeen));
+    fact.title = state.namingSeen ? 'The story behind Sojourner’s name' : 'Did you know? Discover Sojourner’s name';
+    fact.setAttribute('aria-label', state.namingSeen ? 'Read the story of Sojourner’s name again' : 'Did you know? A child helped name Sojourner');
+    fact.querySelector('.guide-fact-status').textContent = state.namingSeen ? '✓' : '!';
+    if (fact.hidden || state.namingSeen) factInvitation.hidden = true;
     help.hidden = state.blocked || !cast[state.page];
     if (cast[state.page] && help.dataset.guide !== state.page) {
       const [name, file] = cast[state.page];
@@ -72,7 +93,9 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     updateControl(context());
     lastActivity = performance.now();
     invitation.hidden = true;
+    factInvitation.hidden = true;
     inviteAt = Math.max(inviteAt, lastActivity + 10000);
+    factAt = Math.max(factAt, lastActivity + 25000);
   }
   function show(state, manual = false) {
     pinned = manual;
@@ -119,6 +142,7 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     root.hidden = false;
     shade.hidden = false;
     invitation.hidden = true;
+    factInvitation.hidden = true;
     inviteAt = performance.now() + 75000;
     help.setAttribute('aria-expanded', 'true');
     tipIndices.set(state.page, iteration + 1);
@@ -134,6 +158,7 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       key = state.page;
       nextAllowed = 0;
       inviteAt = now + 10000;
+      factAt = now + 25000;
       reset();
     }
     updateControl(state);
@@ -143,17 +168,27 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     }
     if (!root.hidden) {
       invitation.hidden = true;
+      factInvitation.hidden = true;
+      factAt = now + 110000;
       inviteAt = now + 75000;
       if (!pinned && now - shownAt >= visibleMs && !root.contains(document.activeElement)) reset();
       return;
     }
     if (!invitation.hidden && now - inviteShownAt >= 5500 && document.activeElement !== invitation)
       invitation.hidden = true;
-    if (!disabled && invitation.hidden && now >= inviteAt && (inviteCounts.get(key) || 0) < 3) {
+    if (!disabled && invitation.hidden && factInvitation.hidden && now >= inviteAt && (inviteCounts.get(key) || 0) < 3) {
       invitation.hidden = false;
       inviteShownAt = now;
       inviteAt = now + 75000;
       inviteCounts.set(key, (inviteCounts.get(key) || 0) + 1);
+    }
+    if (!factInvitation.hidden && now - factShownAt >= 6500 && document.activeElement !== factInvitation)
+      factInvitation.hidden = true;
+    if (!disabled && !state.namingSeen && state.page === 'sojourner' && invitation.hidden && factInvitation.hidden && now >= factAt && factExposures < 3) {
+      factInvitation.hidden = false;
+      factShownAt = now;
+      factAt = now + 110000;
+      factExposures++;
     }
     if (!disabled && (counts.get(key) || 0) < 2 && now - lastActivity >= idleMs && now >= nextAllowed)
       show(state);
@@ -171,6 +206,16 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   }
   help.addEventListener('click', requestTip);
   invitation.addEventListener('click', requestTip);
+  function requestFact() {
+    const state = context();
+    if (!state.blocked && state.page === 'sojourner') {
+      fact.focus({ preventScroll: true });
+      reset();
+      open('sojourner-name');
+    }
+  }
+  fact.addEventListener('click', requestFact);
+  factInvitation.addEventListener('click', requestFact);
   root.querySelector('.guide-disable').addEventListener('click', () => {
     disabled = true;
     reset();
@@ -192,6 +237,8 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       help.remove();
       shade.remove();
       invitation.remove();
+      fact.remove();
+      factInvitation.remove();
     },
   };
 }
