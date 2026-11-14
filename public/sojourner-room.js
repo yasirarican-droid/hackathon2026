@@ -6,12 +6,10 @@ export const sojournerItems = [
   "barnacle",
   "yogi",
   "landing",
-  "timeline",
   "message",
   "legacy",
   "cassette",
-  "solar",
-  "relay",
+  "signal",
 ].map((id) => "sojourner-" + id);
 
 export function durationChart(data, compact = false) {

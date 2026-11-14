@@ -31,10 +31,10 @@ export function renderLearningGuide({
   saved,
 }) {
   const spec = data[mission];
-  host.append(node("p", "panel-tag", "YOUR FIELD GUIDE"));
+  host.append(node("p", "panel-tag", "YOUR FIELD GUIDE / PRACTICE CLUES"));
   const heading = node("h2", "", spec.title);
   heading.id = "exhibit-title";
-  host.append(heading, node("p", "panel-intro", spec.question));
+  host.append(heading, node("p", "panel-intro", spec.question), action("Take the mission quiz · Earn a certificate →", () => open(mission === "apollo" ? "legacy" : mission + "-legacy")));
   const total = spec.goals.filter((goal) =>
     solved.has(mission + ":" + goal.id),
   ).length;

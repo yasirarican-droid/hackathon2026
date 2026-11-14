@@ -87,6 +87,58 @@
       "planAtCreation": "Paid plan, confirmed by project owner",
       "sourceOriginalSHA256": "dcd02a3ca784fbec5231b92e5f5f601122e29cdd82d2fb17ee54d5d0c051b067",
       "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    },
+    {
+      "file": "assets/audio/eagle-last-signal.mp3",
+      "originalFilename": "eagle-last-signal.mp3",
+      "sha256": "b5a06ac2c0d947a53d26d1e0381be3727cfc63222f7fe91b7cea08bdc738a9de",
+      "bytes": 1319486,
+      "durationSeconds": 54.909,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration supplied under the project owner-declared ElevenLabs workflow. Per-file generation tool and plan are not independently established from MP3 bytes.",
+      "disclosure": "Modern NASA-based narrator story, not historical spacecraft speech.",
+      "sourceOriginalSHA256": "df965063b72fddc11a574c105573a113a1ac4ba98110b2a70cd7babd3fd89e4b",
+      "modifications": "AI disclosure added to ID3; encoded audio packet bytes verified unchanged. Original owner Downloads file left intact.",
+      "audioPacketsUnchanged": true
+    },
+    {
+      "file": "assets/audio/viking-last-signal.mp3",
+      "originalFilename": "viking-last-signal.mp3",
+      "sha256": "6c9153de612a618b146a1941245ff6dedf7ebc168a05184117260d779791b427",
+      "bytes": 1441112,
+      "durationSeconds": 59.96,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration supplied under the project owner-declared ElevenLabs workflow. Per-file generation tool and plan are not independently established from MP3 bytes.",
+      "disclosure": "Modern NASA-based narrator story, not historical spacecraft speech.",
+      "sourceOriginalSHA256": "02d29e6a4e11278afa65096a3964fc4389b1793602bef7a43ce39298e35073b5",
+      "modifications": "AI disclosure added to ID3; encoded audio packet bytes verified unchanged. Original owner Downloads file left intact.",
+      "audioPacketsUnchanged": true
+    },
+    {
+      "file": "assets/audio/sojorner-last-signal.mp3",
+      "originalFilename": "sojorner-last-signal.mp3",
+      "sha256": "d6c03e8ead02eebe88b96ca4c93787e6457afd623c10178f7194eea5b1db0c8a",
+      "bytes": 1643613,
+      "durationSeconds": 68.411,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration supplied under the project owner-declared ElevenLabs workflow. Per-file generation tool and plan are not independently established from MP3 bytes.",
+      "disclosure": "Modern NASA-based narrator story, not historical spacecraft speech.",
+      "sourceOriginalSHA256": "4ea7eac6e148aef5f95e1691ace6f46bf6e928d573538a1ff9546dbcc6128a32",
+      "modifications": "AI disclosure added to ID3; encoded audio packet bytes verified unchanged. Original owner Downloads file left intact.",
+      "audioPacketsUnchanged": true
+    },
+    {
+      "file": "assets/audio/sojorner-name.mp3",
+      "originalFilename": "sojorner-name.mp3",
+      "sha256": "2eb143db7e1456cfa931874c24ac5a804fe3f208728dd544982b2597211b6770",
+      "bytes": 991597,
+      "durationSeconds": 41.247,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration supplied under the project owner-declared ElevenLabs workflow. Per-file generation tool and plan are not independently established from MP3 bytes.",
+      "disclosure": "Modern NASA-based narrator story, not historical spacecraft speech.",
+      "sourceOriginalSHA256": "749401714ca798b0337e17940a06f737f6741f800fc7517d4297ebe92e434284",
+      "modifications": "AI disclosure added to ID3; encoded audio packet bytes verified unchanged. Original owner Downloads file left intact.",
+      "audioPacketsUnchanged": true
     }
   ],
   "alignment": "Local speech-recognition word estimates aligned to the approved script; playback follows audio.currentTime. Not archival timestamps.",

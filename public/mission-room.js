@@ -1,4 +1,4 @@
-import { createSojournerRoom } from "./sojourner-room.js?v=20261115-desk3";
+import { createSojournerRoom } from "./sojourner-room.js?v=20261115-reward2";
 export const vikingItems = [
   "viking-mission",
   "viking-lander",
@@ -7,9 +7,9 @@ export const vikingItems = [
   "viking-color",
   "viking-panorama",
   "viking-soil",
-  "viking-timeline",
   "viking-message",
   "viking-legacy",
+  "viking-signal",
 ];
 
 export function pressureChart(data) {
@@ -212,6 +212,7 @@ export function createMissionRoom({ asset, pressure, duration }) {
       "Mission Archive — 1976",
     );
     get(".folder .prop-label").textContent = "MISSION FILE";
+    get(".event-paper").dataset.open = "viking-weather";
     get(".event-paper").replaceChildren();
     const label = document.createElement("span");
     label.textContent = "WEATHER RECORD";

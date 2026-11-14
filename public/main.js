@@ -2,27 +2,27 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261115-desk3";
+} from "./progress-store.js?v=20261115-reward2";
 import {
   renderLearningGuide,
   mountPartLesson,
   renderCompletionBadge,
-} from "./learning-guide.js?v=20261115-desk3";
-import { createCassettePlayer } from "./cassette-player.js?v=20261115-desk3";
-import { sojournerItems } from "./sojourner-room.js?v=20261115-desk3";
-import { createCRTIntro } from "./crt-intro.js?v=20261115-desk3";
-import { createSideScreens } from "./side-screens.js?v=20261115-desk3";
+} from "./learning-guide.js?v=20261115-reward2";
+import { createCassettePlayer } from "./cassette-player.js?v=20261115-reward2";
+import { sojournerItems } from "./sojourner-room.js?v=20261115-reward2";
+import { createCRTIntro } from "./crt-intro.js?v=20261115-reward2";
+import { createSideScreens } from "./side-screens.js?v=20261115-reward2";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261115-desk3";
+} from "./mission-room.js?v=20261115-reward2";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261115-desk3";
-import { renderMissionStatus } from "./mission-status.js?v=20261115-desk3";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261115-reward2";
+import { renderMissionStatus } from "./mission-status.js?v=20261115-reward2";
 
-import { createFinalSignal } from "./final-signal.js?v=20261115-desk3";
-import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-desk3";
+import { createFinalSignal } from "./final-signal.js?v=20261115-reward2";
+import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-reward2";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
@@ -39,7 +39,7 @@ const roomItems = [
   "footprint",
   "samples",
   "timeline",
-  "radio",
+  "apollo-signal",
   "apollo-story",
   "legacy",
 ];
@@ -52,10 +52,11 @@ let missionStatus;
 let finalSignalStories;
 let finalSignal;
 let certificateWasReady = false;
-let archivalVoice;
+let panelVoice;
 let learning;
 const savedProgress = loadProgress();
 const goalsSolved = new Set();
+const missionsCompleted = new Set(safeIds(savedProgress.completedMissions, ["apollo", "viking", "sojourner"]));
 const storiesRead = new Set(safeIds(savedProgress.stories, ["sojourner-name"]));
 const screensRead = new Set(safeIds(savedProgress.screens, ["apollo-status", "viking-status", "sojourner-status", "apollo-signal", "viking-signal", "sojourner-signal"]));
 let progressSaved = false;
@@ -158,7 +159,7 @@ async function syncMusic() {
   crtIntro?.sync();
   syncBriefing();
   syncArrival();
-  if (document.hidden || orientationQuery.matches) storyVoice.pause();
+  if (document.hidden || orientationQuery.matches) { storyVoice.pause(); panelVoice?.pause(); }
   eagleExplorer?.sync();
   vikingExplorer?.sync();
   sojournerExplorer?.sync();
@@ -440,9 +441,11 @@ function restoreLearningProgress() {
     ["apollo", roomItems, discoveries],
     ["viking", vikingItems, vikingDiscoveries],
     ["sojourner", sojournerItems, sojournerDiscoveries],
-  ])
+  ]) {
     for (const id of safeIds(savedProgress.visited?.[mission], ids))
       set.add(id);
+    if (screensRead.has(mission + "-signal")) set.add(mission + "-signal");
+  }
   const allowed = ["apollo", "viking", "sojourner"].flatMap((m) =>
     learning[m].goals.map((g) => m + ":" + g.id),
   );
@@ -457,6 +460,8 @@ function restoreLearningProgress() {
       quizProgress.set(id, step);
   }
   for (const mission of ["apollo", "viking", "sojourner"]) {
+    const quizId = mission === "apollo" ? "legacy" : mission + "-legacy";
+    if ((quizProgress.get(quizId) || 0) >= archive.panels[quizId].quiz.length) missionsCompleted.add(mission);
     const saved = savedProgress.entries?.[mission];
     if (saved && typeof saved === "object")
       entryVisits.set(mission, {
@@ -481,6 +486,7 @@ function saveAllProgress() {
       sojourner: [...sojournerDiscoveries],
     },
     goals: [...goalsSolved],
+    completedMissions: [...missionsCompleted],
     screens: [...screensRead],
     stories: [...storiesRead],
     quiz: Object.fromEntries(quizProgress),
@@ -505,13 +511,13 @@ function updateLearningUI() {
       `[data-learning-progress="${mission}"]`,
     );
     if (label)
-      label.textContent = `${set.size} ${set.size === 1 ? "object" : "objects"} opened · ${count} / 3 learning goals`;
+      label.textContent = `${set.size} ${set.size === 1 ? "object" : "objects"} opened · Quiz ${getCertificateRows().find(row => row.mission === mission).answers} / 3${missionsCompleted.has(mission) ? " · ✓ Certificate" : ""}`;
   }
   const ready = certificateEarned(getCertificateRows());
   const certificateButton = $("#certificate-open");
   certificateButton.classList.toggle("certificate-earned", ready);
   certificateButton.textContent = ready ? "✦ Your certificate is ready →" : "✦ Explorer certificate";
-  if (ready && !certificateWasReady && prepared) notify("All three archives explored. Your explorer certificate is ready on the timeline!");
+  if (ready && !certificateWasReady && prepared) notify("All three mission quizzes passed! Your explorer certificate is ready.");
   certificateWasReady = ready;
   const mission = currentMission();
   const count = learning[mission].goals.filter((g) =>
@@ -533,11 +539,11 @@ function updateLearningUI() {
   }
 }
 function getCertificateRows() {
-  return certificateRequirements({ items: { apollo: roomItems, viking: vikingItems, sojourner: sojournerItems }, visited: { apollo: discoveries, viking: vikingDiscoveries, sojourner: sojournerDiscoveries }, solved: goalsSolved, learning, quizzes: quizProgress, archive, screens: screensRead });
+  return certificateRequirements({ items: { apollo: roomItems, viking: vikingItems, sojourner: sojournerItems }, visited: { apollo: discoveries, viking: vikingDiscoveries, sojourner: sojournerDiscoveries }, solved: goalsSolved, learning, quizzes: quizProgress, archive, screens: screensRead, completedMissions: missionsCompleted });
 }
 function resetAllProgress(reopen) {
   if (!confirm("Reset all mission visits, answers, stories and certificate progress saved on this device?")) return;
-  for (const set of [discoveries, vikingDiscoveries, sojournerDiscoveries, goalsSolved, storiesRead, screensRead]) set.clear();
+  for (const set of [discoveries, vikingDiscoveries, sojournerDiscoveries, goalsSolved, storiesRead, screensRead, missionsCompleted]) set.clear();
   quizProgress.clear();
   entryVisits.clear();
   briefingSeen = arrivalSeen = crtIntroSeen = false;
@@ -966,63 +972,55 @@ function showObjects() {
   openExhibit("objects");
 }
 
-function renderQuiz(host, questions) {
-  let quizStep = quizProgress.get(activePanel) || 0;
+function navigateToMissionQuiz(mission) {
+  const quizId = mission === "apollo" ? "legacy" : mission + "-legacy";
+  const reveal = () => requestAnimationFrame(() => { if (location.hash === "#" + mission) openExhibit(quizId); });
+  if (dialog.open) dialog.close();
+  if (location.hash === "#" + mission) { enterMission(mission, false); reveal(); }
+  else { window.addEventListener("hashchange", reveal, { once: true }); enterMission(mission, false); }
+}
+
+function renderQuiz(host, questions, celebrate = false) {
+  const quizId = activePanel;
+  const mission = quizId === "legacy" ? "apollo" : quizId.startsWith("viking-") ? "viking" : "sojourner";
+  const step = quizProgress.get(quizId) || 0;
   host.replaceChildren();
-  if (quizStep >= questions.length) {
-    renderCompletionBadge({ host, label: currentMission() === "apollo" ? "Apollo 11" : currentMission() === "viking" ? "Viking 1" : "Sojourner", node, action });
-    host.append(
-      node("p", "panel-tag", "THREE DISCOVERIES MADE"),
-      node("h3", "", "Curiosity looks good on you."),
-      node("p", "", "You followed the objects, measurements and evidence."),
-      action("Explore again", () => {
-        quizProgress.set(activePanel, 0);
-        saveAllProgress();
-        renderQuiz(host, questions);
-      }),
-    );
-    const recap = node("ul", "quiz-recap");
-    for (const question of questions)
-      recap.append(node("li", "", question.explanation));
-    host.append(
-      recap,
-      action("Open my field guide →", () => openExhibit("learning-guide")),
-    );
+  if (step >= questions.length) {
+    const rows = getCertificateRows();
+    renderCertificate({ host, rows, mission: certificateEarned(rows) ? undefined : mission, embedded: true, celebrate, node, action, open: openExhibit, navigate: navigateToMissionQuiz });
+    const recap = node("details", "quiz-recap");
+    recap.append(node("summary", "", "What you discovered"));
+    for (const question of questions) recap.append(node("p", "", question.explanation));
+    host.append(recap, action("Practice this quiz again", () => { quizProgress.set(quizId, 0); saveAllProgress(); renderQuiz(host, questions); }), action("Keep exploring the objects →", () => openExhibit("objects")));
+    if (celebrate) { host.scrollIntoView({ block: "start" }); host.querySelector('.certificate-heading').tabIndex = -1; host.querySelector('.certificate-heading').focus({ preventScroll: true }); }
     return;
   }
-  const item = questions[quizStep];
-  host.append(
-    node("p", "panel-tag", `DISCOVERY ${quizStep + 1} / ${questions.length}`),
-    node("h3", "", item.question),
-  );
+  const steps = node("div", "quiz-steps");
+  for (let i = 0; i < questions.length; i++) steps.append(node("span", i < step ? "is-complete" : i === step ? "is-current" : "", i < step ? "✓" : String(i + 1)));
+  steps.setAttribute("aria-label", `Question ${step + 1} of ${questions.length}`);
+  const question = questions[step];
+  host.append(node("p", "quiz-instruction", "Find a clue. Choose an answer. Earn your mission certificate!"), steps, node("p", "panel-tag", `QUESTION ${step + 1} OF ${questions.length}`), node("h3", "quiz-question", question.question));
+  if (question.evidence) host.append(action("Look at the clue →", () => openExhibit(question.evidence, quizId)));
   const choices = node("div", "choices");
   const feedback = node("p", "quiz-feedback");
-  feedback.setAttribute("aria-live", "polite");
-  for (const [index, label] of item.choices.entries()) {
+  feedback.setAttribute("role", "status");
+  for (const [index, label] of question.choices.entries()) {
     const button = action(label, () => {
-      if (index !== item.answer) {
+      if (index !== question.answer) {
         button.classList.add("incorrect");
-        feedback.textContent = "Take another look. You can try again.";
+        feedback.textContent = "Not yet — follow the clue and try again. You can take your time.";
         return;
       }
-      button.classList.add("correct");
-      choices
-        .querySelectorAll("button")
-        .forEach((control) => (control.disabled = true));
-      feedback.textContent = item.explanation;
-      const next = action(
-        quizStep === questions.length - 1
-          ? "See your discoveries →"
-          : "Next discovery →",
-        () => {
-          quizStep++;
-          quizProgress.set(activePanel, quizStep);
-          saveAllProgress();
-          renderQuiz(host, questions);
-          host.querySelector("h3").tabIndex = -1;
-          host.querySelector("h3").focus();
-        },
-      );
+      choices.querySelectorAll('button').forEach(b => b.disabled = true);
+      button.classList.add('correct');
+      feedback.textContent = "✓ You found it! " + question.explanation;
+      feedback.classList.add('is-correct');
+      quizProgress.set(quizId, step + 1);
+      if (step + 1 === questions.length) missionsCompleted.add(mission);
+      saveAllProgress();
+      if (step + 1 === questions.length) { renderQuiz(host, questions, true); return; }
+      const next = action("Next discovery →", () => { renderQuiz(host, questions); host.querySelector('.quiz-question').tabIndex = -1; host.querySelector('.quiz-question').focus(); });
+      next.className = 'quiz-next paper-button';
       host.append(next);
       next.focus();
     });
@@ -1423,6 +1421,12 @@ function renderNamingStory() {
   const title = node("h2", "", panel.title);
   title.id = "exhibit-title";
   content.append(title, node("p", "panel-intro", panel.intro));
+  const recording = node("audio", "naming-story-audio");
+  recording.controls = true;
+  recording.preload = "auto";
+  recording.src = asset(panel.narration.file);
+  recording.setAttribute("aria-label", "Listen to the story behind Sojourner’s name");
+  content.append(recording);
   const layout = node("div", "naming-story");
   const guide = node("figure", "naming-story-guide");
   const portrait = node("img");
@@ -1438,17 +1442,18 @@ function renderNamingStory() {
   content.append(nav);
 }
 
-function openExhibit(id) {
+function openExhibit(id, returnToQuiz) {
   if (id === "mission-status") id = currentMission() + "-status";
   if (id === "last-signal") id = currentMission() + "-signal";
   finalSignal?.stop();
   finalSignal = null;
   dialog.classList.toggle("signal-dialog", id.endsWith("-signal"));
+  dialog.classList.toggle("certificate-dialog", id === "certificate" || id.startsWith("certificate-"));
   if (id === "about") id = "art-info";
   explorerGuide?.reset();
   if (!archive) return;
-  archivalVoice?.pause();
-  archivalVoice = null;
+  panelVoice?.pause();
+  panelVoice = null;
   sideScreens?.closePanel();
   cassettePlayer?.close();
   if (!dialog.open) lastFocus = document.activeElement;
@@ -1468,10 +1473,10 @@ function openExhibit(id) {
   sojournerExplorer?.selectModel(0);
   sojournerExplorer?.preview();
   content.replaceChildren();
-  if (id === "certificate") renderCertificate({ host: content, rows: getCertificateRows(), node, action, open: openExhibit, navigate: mission => { dialog.close(); enterMission(mission, false); } });
+  if (id === "certificate" || id.startsWith("certificate-")) renderCertificate({ host: content, rows: getCertificateRows(), mission: id.startsWith("certificate-") ? id.slice(12) : undefined, node, action, open: openExhibit, navigate: navigateToMissionQuiz });
   else if (["apollo-signal", "viking-signal", "sojourner-signal"].includes(id)) {
     const mission = id.split("-")[0];
-    finalSignal = createFinalSignal({ host: content, spec: finalSignalStories[mission], node, action, sources: sourceNotes, blocked: () => document.hidden || orientationQuery.matches || !dialog.open, complete: finished => {
+    finalSignal = createFinalSignal({ host: content, spec: finalSignalStories[mission], audioURL: asset(finalSignalStories[mission].audio.file), node, action, sources: sourceNotes, blocked: () => document.hidden || orientationQuery.matches || !dialog.open, complete: finished => {
       finalSignal?.stop();
       if (finished) screensRead.add(id);
       saveAllProgress();
@@ -1486,6 +1491,17 @@ function openExhibit(id) {
   else if (["apollo-status", "viking-status", "sojourner-status"].includes(id))
     renderMissionStatus({ host: content, mission: id.split("-")[0], data: missionStatus, imageFigure, sources: sourceNotes, node });
   else if (id === "sources") renderSources();
+  else if (["legacy", "viking-legacy", "sojourner-legacy"].includes(id)) {
+    const panel = archive.panels[id];
+    const heading = node("h2", "", panel.title);
+    heading.id = "exhibit-title";
+    content.append(heading, node("p", "panel-intro", panel.intro));
+    const quiz = node("section", "quiz");
+    renderQuiz(quiz, panel.quiz);
+    const evidence = node("details", "quiz-sources");
+    evidence.append(node("summary", "", "NASA sources for this quiz"), sourceNotes(panel.sources));
+    content.append(quiz, evidence);
+  }
   else if (id === "objects") {
     const viking = location.hash === "#viking";
     const sojourner = location.hash === "#sojourner";
@@ -1503,18 +1519,29 @@ function openExhibit(id) {
     const heading = node("h2", "", "Choose a discovery");
     heading.id = "exhibit-title";
     const list = node("div", "object-list");
-    for (const key of sojourner
-      ? sojournerItems
-      : viking
-        ? vikingItems
-        : [...roomItems, "reflector", "olive", "disc"])
-      list.append(action(archive.panels[key].title, () => openExhibit(key)));
+    const items = sojourner ? sojournerItems : viking ? vikingItems : roomItems;
+    const visited = sojourner ? sojournerDiscoveries : viking ? vikingDiscoveries : discoveries;
+    for (const key of items) {
+      const title = key.endsWith("-signal") ? "Telephone · Last Signal" : archive.panels[key].title;
+      const seen = visited.has(key);
+      const button = action("", () => openExhibit(key));
+      button.dataset.object = key;
+      button.dataset.visited = String(seen);
+      button.setAttribute("aria-label", title);
+      button.setAttribute("aria-description", seen ? "Already explored" : "Not opened yet");
+      const tick = node("span", "object-check", seen ? "✓" : "○");
+      tick.setAttribute("aria-hidden", "true");
+      const copy = node("span", "object-menu-copy");
+      copy.append(node("strong", "", title), node("small", "", seen ? "Explored" : key.endsWith("legacy") ? "Quiz · Earn your certificate" : "Open this desk object"));
+      button.append(tick, copy);
+      list.append(button);
+    }
     content.append(
       heading,
       node(
         "p",
         "panel-intro",
-        "Every object has a story. Every story has a source.",
+        "These are the objects in this room. A check means you opened it. The notebook quiz earns your certificate.",
       ),
       list,
     );
@@ -1713,13 +1740,13 @@ function openExhibit(id) {
       if (id === "radio") {
         const player = node("section", "original-audio");
         player.append(node("h3", "", "Hear the real landing call"), node("p", "", "NASA historical audio · Neil Armstrong · 20 July 1969"));
-        archivalVoice = document.createElement("audio");
-        archivalVoice.controls = true;
-        archivalVoice.preload = "auto";
-        archivalVoice.volume = 0.5;
-        archivalVoice.src = asset("assets/audio/apollo-original-landing.mp3");
-        archivalVoice.setAttribute("aria-label", "Play the original NASA Apollo 11 landing call");
-        player.append(archivalVoice);
+        panelVoice = document.createElement("audio");
+        panelVoice.controls = true;
+        panelVoice.preload = "auto";
+        panelVoice.volume = 0.5;
+        panelVoice.src = asset("assets/audio/apollo-original-landing.mp3");
+        panelVoice.setAttribute("aria-label", "Play the original NASA Apollo 11 landing call");
+        player.append(panelVoice);
         content.append(player);
       }
       const transcript = node("div", "transcript");
@@ -1790,6 +1817,7 @@ function openExhibit(id) {
         `${discoveries.size} / ${roomItems.length} discoveries`;
     }
   }
+  if (returnToQuiz) { const back = action("Back to mission quiz →", () => openExhibit(returnToQuiz)); back.className = "paper-button quiz-return"; content.prepend(back); }
   content.scrollTop = 0;
   if (["apollo-status", "viking-status", "sojourner-status"].includes(id)) screensRead.add(id);
   if (location.hash === "#apollo" && roomItems.includes(id)) discoveries.add(id);
@@ -1804,8 +1832,20 @@ function openExhibit(id) {
       `${sojournerDiscoveries.size} / ${sojournerItems.length} discoveries`;
   }
   document.body.classList.add("exhibit-open");
-  if (!dialog.open) dialog.showModal();
-  if (id === "sojourner-name") storiesRead.add(id);
+  if (!dialog.open) {
+    dialog.showModal();
+    content.scrollTop = 0;
+  }
+  if (id === "sojourner-name") {
+    storiesRead.add(id);
+    panelVoice = content.querySelector('.naming-story-audio');
+    const recording = panelVoice;
+    recording.play().catch(() => {
+      if (dialog.open && activePanel === "sojourner-name" && panelVoice === recording)
+        notify("Press Play to hear the naming story.");
+    });
+  }
+  if (id.endsWith("-signal")) finalSignal?.start();
   if (id === "sojourner-cassette") cassettePlayer?.start();
   if (storyPanels.has(id)) {
     if (location.hash === "#apollo") {
@@ -1817,7 +1857,7 @@ function openExhibit(id) {
   }
   saveAllProgress();
   syncMusic();
-  $("#close-exhibit").focus();
+  $("#close-exhibit").focus({ preventScroll: true });
 }
 
 function notify(text) {
@@ -1880,7 +1920,7 @@ dialog.addEventListener("close", () => {
   finalSignal?.stop();
   finalSignal = null;
   dialog.classList.remove("signal-dialog");
-  archivalVoice?.pause();
+  panelVoice?.pause();
   sideScreens?.closePanel();
   cassettePlayer?.close();
   storyVoice.pause();
@@ -1910,7 +1950,7 @@ $("#lamp-toggle").addEventListener("click", () => {
   );
 });
 document.addEventListener("visibilitychange", () => {
-  if (document.hidden) archivalVoice?.pause();
+  if (document.hidden) panelVoice?.pause();
   document.body.classList.toggle(
     "exhibit-open",
     document.hidden || dialog.open,

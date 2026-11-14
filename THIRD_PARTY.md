@@ -21,3 +21,6 @@ Provider-plan and original media production information is based on the owner's 
 
 - Trial cartoon font assets: Bubblegum Sans and Comic Neue regular/bold, SIL Open Font License 1.1. Direct Google Fonts source URLs and exact hashes in content/archive-desk-media.json; licenses under assets/fonts/. Owner-selected current interface: Kalam Bold headings and Patrick Hand body text. Share Tech Mono remains on CRT contents.
 - Three new disk/CD illustrations: built-in OpenAI ImageGen, transparent outputs generated 15 November local time, registered in content/archive-desk-media.json and production-audit.json. Retrospective fictional archive props, not period mission equipment.
+
+- Four additional owner-supplied narrator MP3s (naming story and three Last Signal stories): exact source/deployed hashes, durations and unchanged encoded-packet verification in content/narration.json. ID3 identifies AI narration under the project-declared workflow; file bytes alone do not independently establish tool or plan.
+- Discovery certificates and confetti: project-authored SVG/CSS code, with independent-project attribution. No NASA logos or official NASA award are used. Personalization stays in the visitor browser.

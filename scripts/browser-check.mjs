@@ -155,15 +155,15 @@ await page.getByRole("button", { name: "Next discovery →" }).click();
 await page
   .getByRole("button", { name: "Lunar rock and soil samples", exact: true })
   .click();
-await page.getByRole("button", { name: "See your discoveries →" }).click();
+
 assert.ok(
   (await page.locator(".quiz").innerText()).includes(
-    "Curiosity looks good on you.",
+    "Mission complete!",
   ),
 );
 await page.keyboard.press("Escape");
 await page.locator("#objects-button").click();
-assert.equal(await page.locator(".object-list button").count(), 14);
+assert.equal(await page.locator(".object-list button").count(), 11);
 await page.keyboard.press("Escape");
 await page.locator('.room-toolbar [data-open="sources"]').click();
 assert.ok(
@@ -194,9 +194,8 @@ assert.equal(
 await page.screenshot({ path: "docs/qa/home-landscape.png", fullPage: true });
 await page.locator(".apollo-card .mission-button").click();
 await page.locator("#objects-button").click();
-await page
-  .getByRole("button", { name: "Words from the landing", exact: true })
-  .click();
+await page.locator('[data-object="apollo-story"]').click();
+await page.getByRole("button", { name: "Hear the real landing call →", exact: true }).click();
 assert.ok(await page.locator(".transcript").isVisible());
 await page.screenshot({ path: "docs/qa/radio-landscape.png", fullPage: true });
 await page.setViewportSize({ width: 768, height: 1024 });

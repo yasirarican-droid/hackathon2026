@@ -210,6 +210,11 @@
     "sha256": "eaedbc0cd9098d67b8b7afe3150a1b1af1494eb91b3df7048d2056046330d1d4"
   },
   {
+    "path": "assets/audio/eagle-last-signal.mp3",
+    "bytes": 1319486,
+    "sha256": "b5a06ac2c0d947a53d26d1e0381be3727cfc63222f7fe91b7cea08bdc738a9de"
+  },
+  {
     "path": "assets/audio/lets-explore.mp3",
     "bytes": 872588,
     "sha256": "658c38cda3ee1974c6f38d16a06f717358f9d19223a860b268c91ea7fff55852"
@@ -218,6 +223,16 @@
     "path": "assets/audio/sojorner-crt.mp3",
     "bytes": 1175293,
     "sha256": "f6704cb3cc0a9362fb494a50888c9fe804373aef536c4029fee580c2132c3482"
+  },
+  {
+    "path": "assets/audio/sojorner-last-signal.mp3",
+    "bytes": 1643613,
+    "sha256": "d6c03e8ead02eebe88b96ca4c93787e6457afd623c10178f7194eea5b1db0c8a"
+  },
+  {
+    "path": "assets/audio/sojorner-name.mp3",
+    "bytes": 991597,
+    "sha256": "2eb143db7e1456cfa931874c24ac5a804fe3f208728dd544982b2597211b6770"
   },
   {
     "path": "assets/audio/sojorner-phone.mp3",
@@ -248,6 +263,11 @@
     "path": "assets/audio/viking-intro-crt.mp3",
     "bytes": 1241748,
     "sha256": "6703180f284d5f93f59f81c7c5520d84c3d59a75384723bc8b7a62e3903970e1"
+  },
+  {
+    "path": "assets/audio/viking-last-signal.mp3",
+    "bytes": 1441112,
+    "sha256": "6c9153de612a618b146a1941245ff6dedf7ebc168a05184117260d779791b427"
   },
   {
     "path": "assets/audio/viking1-phone.mp3",
@@ -341,8 +361,8 @@
   },
   {
     "path": "content/ai-usage.json",
-    "bytes": 20886,
-    "sha256": "38b16394ab91ad8578aed4381ad186996c07be123b723bab02dfa83e1d55b778"
+    "bytes": 21492,
+    "sha256": "b1be24dcc1677c1f146604b1974ba140166df27a923f2d519f7e84d79eb7b5f6"
   },
   {
     "path": "content/archival-audio.json",
@@ -356,8 +376,8 @@
   },
   {
     "path": "content/archive.json",
-    "bytes": 106872,
-    "sha256": "27cdc3202eadb90aee0b2e98e0a0b8c166bc06f71e3277eee8a1641861fb569e"
+    "bytes": 107690,
+    "sha256": "3d4dc5eb61a095e022b0174bfbe56a8c2f1f6b0ff6d13b55827b2f701ebff160"
   },
   {
     "path": "content/explorer-guides.json",
@@ -366,13 +386,13 @@
   },
   {
     "path": "content/final-signals.json",
-    "bytes": 3727,
-    "sha256": "05b3508168f906da6eb4b78a63364b0e50c34a53d90f15823741792ddc2959d2"
+    "bytes": 59465,
+    "sha256": "f8a3b93b266080f6104834ce7c7cfa1e5dc661324ace6d2258b750cfe88b1994"
   },
   {
     "path": "content/learning.json",
-    "bytes": 15476,
-    "sha256": "faf109c65002c5fc044db46eaed8570cbf02b347a1ef5ce81f72da5e8416e8bd"
+    "bytes": 15518,
+    "sha256": "33b6115119e99436068bfdbfaade306522583f561e6c01f4b2363ae898e357d2"
   },
   {
     "path": "content/media.json",
@@ -391,8 +411,8 @@
   },
   {
     "path": "content/narration.json",
-    "bytes": 6525,
-    "sha256": "1d877181cb6c248b7ed10cc73e797d7c4ae8e0fe1ea58b020cda0acb41345d14"
+    "bytes": 10007,
+    "sha256": "6f2e1c7dd233455bbbd62636ac108cb45656c95e449bded92f6ce77bf612d82d"
   },
   {
     "path": "content/orbital-images.json",
@@ -406,8 +426,8 @@
   },
   {
     "path": "content/project-info.json",
-    "bytes": 5484,
-    "sha256": "86cf212d2e18fa9d647e902945e99810caf50d437afdd2adce68c5d4d1e4ea67"
+    "bytes": 5632,
+    "sha256": "25c10c1cfabb9d879c8978d233f964d55201c975bfc867ca8dcf133d5d87a03a"
   },
   {
     "path": "content/sojourner-art.json",

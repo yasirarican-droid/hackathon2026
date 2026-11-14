@@ -155,8 +155,8 @@
       {
         "id": "team",
         "title": "Meet the rover’s teammate",
-        "objective": "Compare the Sojourner rover and Pathfinder lander models.",
-        "evidence": "sojourner-relay",
+        "objective": "Open the rover screen and choose Pathfinder to explore how the lander helped the rover communicate.",
+        "evidence": "sojourner-rover",
         "prompt": "How did the rover’s discoveries reach Earth?",
         "choices": [
           "Through the Pathfinder lander’s communications link",

@@ -73,7 +73,7 @@
     "narration": {
       "included": true,
       "metadata": "content/narration.json",
-      "status": "Six ElevenLabs AI-generated narration recordings. Paid plan at creation confirmed by owner. ID3 and descriptive disclosure included; audio packet bytes unchanged.",
+      "status": "Ten owner-supplied narrator recordings: six original story/CRT recordings plus three Last Signal recordings and the Sojourner naming story. AI disclosure is present in descriptive text and MP3 metadata. Encoded audio packets are preserved.",
       "disclosure": "AI-generated narration · ElevenLabs. NASA-based educational stories, not original NASA mission transmissions.",
       "tools": [
         "ElevenLabs"
@@ -252,5 +252,11 @@
     "tool": "OpenAI built-in ImageGen",
     "record": "content/explorer-guides.json",
     "description": "Four transparent-background, friendly navigation characters. Three mission mascots derive from existing project illustrations; homepage astronaut is an original imagined child character. Not historical people, transmissions, evidence or NASA-provided assets."
+  },
+  "quizRewards": {
+    "generation": "AI-assisted code, layout and explanatory instructions; no synthetic scientific measurements.",
+    "eligibility": "Three correct mission-quiz answers earn the mission award; three passed quizzes earn the combined award. Exploration is optional support.",
+    "personalization": "Name and theme rendered locally into SVG. No name persistence or server upload.",
+    "award": "Independent educational project completion award; not NASA-issued and not a formal measure of learning."
   }
 }

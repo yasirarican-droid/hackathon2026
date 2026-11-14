@@ -248,16 +248,21 @@
       "title": "A Child Helped Name a Mars Rover",
       "intro": "A student's idea became part of a Mars adventure.",
       "paragraphs": [
-        "Hello, explorer! This little rover has a story that started with a child, right here on Earth.",
+        "Hello, explorer! This little rover has a very special story, a story that started with a child right here on Earth.",
         "In a worldwide student essay contest, 12-year-old Valerie Ambroise from Bridgeport, Connecticut, wrote about Sojourner Truth.",
         "Sojourner Truth spoke out against slavery and worked for women's rights. Valerie's essay won the contest. NASA named the rover after Sojourner Truth.",
-        "Sojourner means traveler. A young person's thoughtful words helped give a Mars explorer its name!",
-        "Your ideas matter, too. What would you name a future explorer — and why?"
+        "Sojourner means traveler. A young person's thoughtful words helped to give a Mars explorer its name.",
+        "Your ideas matter, too. What would you name a future explorer, and why?"
       ],
       "sources": [
         "sojourner-name",
         "sojourner-podcast"
-      ]
+      ],
+      "narration": {
+        "file": "assets/audio/sojorner-name.mp3",
+        "status": "owner-recording-loaded",
+        "generation": "Owner-supplied AI narrator recording; see shared production information and MP3 metadata."
+      }
     },
     "mission": {
       "title": "A journey to the Moon",
@@ -484,9 +489,9 @@
       ]
     },
     "legacy": {
-      "title": "The story keeps going",
+      "title": "Apollo 11 · Mission quiz & certificate",
       "tag": "DISCOVERY NOTEBOOK",
-      "intro": "A mission can end while its questions live on.",
+      "intro": "Three questions. Clues whenever you need them. Your certificate appears as soon as you answer all three.",
       "paragraphs": [
         "The crew returned, Eagle's lower stage stayed, and samples reached Earth. Instruments, pictures and measurements helped people ask new questions about the Moon.",
         "Try three discoveries. There is no timer, and you can always try again."
@@ -505,7 +510,8 @@
             "Columbia"
           ],
           "answer": 0,
-          "explanation": "The lower stage became the launch platform. The upper stage lifted the astronauts back to lunar orbit."
+          "explanation": "The lower stage became the launch platform. The upper stage lifted the astronauts back to lunar orbit.",
+          "evidence": "eagle"
         },
         {
           "question": "Where is the laser used for lunar ranging?",
@@ -515,7 +521,8 @@
             "Inside an astronaut's camera"
           ],
           "answer": 1,
-          "explanation": "The Earth-based laser sends light to a passive reflector on the Moon."
+          "explanation": "The Earth-based laser sends light to a passive reflector on the Moon.",
+          "evidence": "science"
         },
         {
           "question": "Which kind of evidence can travel home?",
@@ -525,7 +532,8 @@
             "An invented weather chart"
           ],
           "answer": 1,
-          "explanation": "The returned samples let laboratories study real lunar material."
+          "explanation": "The returned samples let laboratories study real lunar material.",
+          "evidence": "samples"
         }
       ]
     },
@@ -818,9 +826,9 @@
       }
     },
     "viking-legacy": {
-      "title": "Quiet hardware, lasting discoveries",
+      "title": "Viking 1 · Mission quiz & certificate",
       "tag": "VIKING 1 / DISCOVERY NOTEBOOK",
-      "intro": "The explorer stopped. The questions continued.",
+      "intro": "Three questions. Clues whenever you need them. Your certificate appears as soon as you answer all three.",
       "paragraphs": [
         "Viking 1’s final transmission reached Earth on November 11, 1982. Its photographs and measurements remain available to explore.",
         "Try these three questions, then return to the archive and follow another clue."
@@ -838,7 +846,8 @@
             "It carried astronauts."
           ],
           "answer": 1,
-          "explanation": "Viking was a stationary robotic lander, with cameras and instruments."
+          "explanation": "Viking was a stationary robotic lander, with cameras and instruments.",
+          "evidence": "viking-lander"
         },
         {
           "question": "What does the green chart show?",
@@ -848,7 +857,8 @@
             "A live message from Mars."
           ],
           "answer": 0,
-          "explanation": "The chart uses archived Viking 1 pressure measurements in millibars."
+          "explanation": "The chart uses archived Viking 1 pressure measurements in millibars.",
+          "evidence": "viking-weather"
         },
         {
           "question": "Did the biology tests clearly prove life existed?",
@@ -858,7 +868,8 @@
             "Viking never tested soil."
           ],
           "answer": 1,
-          "explanation": "Interesting chemical activity needs careful interpretation and more evidence."
+          "explanation": "Interesting chemical activity needs careful interpretation and more evidence.",
+          "evidence": "viking-soil"
         }
       ]
     },
@@ -1099,9 +1110,9 @@
       ]
     },
     "sojourner-legacy": {
-      "title": "What did we discover?",
+      "title": "Sojourner · Mission quiz & certificate",
       "tag": "1997 / DISCOVERY NOTEBOOK",
-      "intro": "Keep asking questions after the signals fall silent.",
+      "intro": "Three questions. Clues whenever you need them. Your certificate appears as soon as you answer all three.",
       "paragraphs": [
         "Sojourner demonstrated mobile exploration on Mars. Its pictures and rock investigations became part of a lasting scientific record.",
         "The rover remains on Mars. Its historical work continues through the evidence we can study today."
@@ -1120,7 +1131,8 @@
             "A camera photograph"
           ],
           "answer": 1,
-          "explanation": "Sojourner was the rover. Pathfinder was the lander and communications partner."
+          "explanation": "Sojourner was the rover. Pathfinder was the lander and communications partner.",
+          "evidence": "sojourner-rover"
         },
         {
           "question": "What do 7 and 83 compare here?",
@@ -1130,7 +1142,8 @@
             "A distance in kilometers"
           ],
           "answer": 0,
-          "explanation": "These are NASA mission-summary durations in days, not sols or a weather record."
+          "explanation": "These are NASA mission-summary durations in days, not sols or a weather record.",
+          "evidence": "sojourner-duration"
         },
         {
           "question": "Who took the close-up color image of Yogi?",
@@ -1140,7 +1153,8 @@
             "Sojourner’s rear color camera"
           ],
           "answer": 2,
-          "explanation": "NASA identifies the camera as Sojourner’s rear color camera."
+          "explanation": "NASA identifies the camera as Sojourner’s rear color camera.",
+          "evidence": "sojourner-yogi"
         }
       ]
     },

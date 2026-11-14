@@ -141,3 +141,21 @@ for (const record of narration.recordings) {
       bytes.includes(Buffer.from("AI-generated", "utf16le")),
   );
 }
+
+const finalSignals = JSON.parse(await readFile("public/content/final-signals.json", "utf8"));
+for (const mission of ["apollo", "viking", "sojourner"]) {
+  const spec = finalSignals[mission];
+  assert.equal(spec.audio.paragraphs.length, spec.paragraphs.length);
+  const record = narration.recordings.find(r => r.file === spec.audio.file);
+  assert.ok(record);
+  assert.equal(record.durationSeconds, spec.audio.durationSeconds);
+  let previous = -1;
+  for (const [i, paragraph] of spec.audio.paragraphs.entries()) {
+    assert.equal(paragraph.cues.map(c => c.text).join(""), spec.paragraphs[i]);
+    for (const cue of paragraph.cues) {
+      assert.ok(cue.start >= previous && cue.end > cue.start && cue.end <= spec.audio.durationSeconds + .001);
+      previous = cue.start;
+    }
+  }
+}
+assert.ok(narration.recordings.some(r => r.file === archive.panels["sojourner-name"].narration.file));

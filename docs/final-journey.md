@@ -17,15 +17,13 @@ Catalog history does not establish present exact rover coordinates. Dated LRO/Hi
 
 Each console telephone and the toolbar Last Signal button open the farewell. The former phone recordings now open from the illustrated floppy/CD story archives. Four short paragraphs use a modern narrator, not invented robot dialogue or a claimed archival last transmission. Sources remain available below the CRT. The device is thanked for its contribution; location and present inactivity are explained, with upper-stage and final-rover-position uncertainty preserved.
 
-Normal motion types each paragraph at 22 ms per character, then allows 5.5 seconds before continuing. Pause and Next are available. Reduced motion shows complete paragraphs and requires Next, avoiding forced timing. Full text is also available as a readable transcript. Completing the final paragraph runs a gentle 1.9-second static-to-black transition and returns home. Skip returns home without marking the story complete. Close/Escape returns to the console and stops the sequence. Hidden pages suspend its clock and sound. The optional, low-volume 1.5-second procedural static is an interface effect, not original mission audio. No new narration recording has been generated or substituted. External recording scripts are in the owner's Downloads/Last Signal Seslendirme Metinleri directory.
+Owner-supplied voice recordings now drive the text using audio.currentTime and matched word cues. Pause, seek, mute and paragraph Next follow the recording. Reduced motion shows the complete current paragraph. The recording end starts the 1.9-second static-to-black transition and return home; Next cannot skip the final audio into an earned completion. Skip and close still cleanly stop the player. See docs/last-signal-narration.md for file mapping, durations, timing estimates and exact packet preservation.
 
 ## Explorer certificate and reset
 
-The home certificate button is always available. Its checklist shows the remaining requirements. Unlock requires all 34 listed mission objects (11 Apollo, 10 Viking, 13 Sojourner), all nine Field Guide answers, all nine notebook discovery answers, all three status cards and all three completed Last Signal stories. Cinematic playback is optional and does not prevent accessible direct exploration.
+Each three-question mission quiz immediately earns its mission certificate; all three earn the combined certificate. Objects, Field Guide practice and the stories are supporting clues, not extra certificate locks. Visited objects have checkmarks and only real console/desk controls are listed. Correct quiz progress and permanently earned awards are saved separately. Name and three theme choices update a downloadable SVG preview; names stay in the browser and are not persisted. The certificate is an independent project award, not NASA-issued. See docs/quiz-rewards.md.
 
-The earned certificate is a downloadable, printable SVG with an optional name and local download date. The name is neither persisted nor uploaded. It is an independent project acknowledgment, not a NASA-issued certificate or evidence of measured learning. Existing per-mission badges remain separate. Visits, answers and story completion persist locally when storage is available; they remain usable in memory if blocked.
-
-Reset missions on home asks once before clearing all mission visits, goals, quizzes, naming-story read state, farewell/status completion and entry preferences on this device. Cancellation preserves progress. It does not clear unrelated browser data or download caches.
+Reset missions asks once and clears project visits, answers, earned awards, naming read state and story/entry preferences on this device. It does not clear unrelated browser data or the prepared asset cache.
 
 ## Deferred idea — not implemented
 
@@ -33,4 +31,4 @@ Owner requested a future visual idea: two small, distant locked monitors branchi
 
 ## Verification
 
-scripts/final-journey-check.mjs exercises real object openings, all answers, three full endings, skip without credit, pause, saved progress, locked/unlocked certificate, download contents, name privacy, reset cancellation and full reset. It also checks digital font selection and 844×390 CRT bounds. Screenshots are reviewed locally; automated checks do not replace observation with children.
+scripts/final-journey-check.mjs runs the guided quiz/certificate suite and the four-recording narration suite. Screenshots are reviewed locally; automated checks do not replace observation with children.
