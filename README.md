@@ -1,6 +1,6 @@
 # NASA Starboard — Abandoned, But Not Forgotten
 
-The round character portrait in the top-right opens four rotating explorer tips per screen. Manually opened tips remain visible when the mouse moves. Quiet idle guides and the prominent yellow Field Guide help visitors find evidence and track three learning goals per mission. [Guide behavior and controls](docs/explorer-guides.md).
+The round character portrait in the top-right opens four rotating explorer tips per screen. A brief invitation explains the control, and a dimmed backdrop keeps the open guide easy to read. Manually opened tips remain visible when the mouse moves. Quiet idle guides and the prominent yellow Field Guide help visitors find evidence and track three learning goals per mission. [Guide behavior and controls](docs/explorer-guides.md).
 
 An interactive Moon and Mars archive for school-age explorers. Three illustrated rooms connect equipment left behind with original NASA photographs, mission records and scientific evidence.
 

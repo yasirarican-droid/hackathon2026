@@ -13,13 +13,26 @@ try {
   await page.goto(base);
   await page.locator('#application').waitFor({ state: 'visible', timeout: 60000 });
   const guide = page.locator('.explorer-guide');
+  const shade = page.locator('.guide-shade');
+  const invitation = page.locator('.guide-invitation');
   async function idle() {
     await page.clock.runFor(1100);
     await page.clock.fastForward(46000);
   }
   const focus = await page.evaluate(() => document.activeElement.tagName);
+  await page.clock.runFor(1100);
+  await page.clock.fastForward(10000);
+  await invitation.waitFor({ state: 'visible' });
+  assert.equal(await guide.isVisible(), false);
+  assert.equal(await shade.isVisible(), false);
+  await page.screenshot({ path: 'docs/qa/explorer-invitation-desktop.png', animations: 'disabled' });
+  await page.clock.fastForward(6000);
+  assert.equal(await invitation.isVisible(), false);
   await idle();
   await guide.waitFor({ state: 'visible' });
+  assert.equal(await shade.isVisible(), true);
+  assert.equal(await invitation.isVisible(), false);
+  assert.equal(await shade.evaluate(el => getComputedStyle(el).pointerEvents), 'none');
   assert.equal(await guide.getAttribute('data-guide'), 'home');
   assert.equal(await page.evaluate(() => document.activeElement.tagName), focus);
   await page.screenshot({ path: 'docs/qa/explorer-home-desktop.png', animations: 'disabled' });
@@ -40,6 +53,7 @@ try {
     assert.equal(await button.locator('.field-guide-dots i').count(), 3);
     await idle();
     await guide.waitFor({ state: 'visible' });
+    assert.equal(await shade.isVisible(), true);
     assert.equal(await guide.getAttribute('data-guide'), mission);
     const image = guide.locator('img');
     assert.ok(await image.evaluate(element => element.complete && element.naturalWidth > 0));
@@ -63,6 +77,7 @@ try {
     assert.equal(await guide.isVisible(), true, 'Manual tip must survive mouse movement and timeout');
     await guide.locator('.guide-action').click();
     await page.locator('#exhibit-dialog').waitFor({ state: 'visible' });
+    assert.equal(await shade.isVisible(), false);
     assert.equal(await page.locator('.learning-card').count(), 3);
     await page.clock.fastForward(130000);
     assert.equal(await guide.isVisible(), false);
@@ -91,9 +106,27 @@ try {
   await page.clock.fastForward(60000);
   assert.equal(await guide.isVisible(), false);
   assert.equal(await page.locator('.guide-help').isVisible(), false);
+  const small = await browser.newPage({ viewport: { width: 844, height: 390 }, reducedMotion: 'reduce' });
+  await small.clock.install();
+  await small.goto(base);
+  await small.locator('#application').waitFor({ state: 'visible', timeout: 60000 });
+  await small.clock.fastForward(11000);
+  const smallInvite = small.locator('.guide-invitation');
+  await smallInvite.waitFor({ state: 'visible' });
+  const inviteBounds = await smallInvite.boundingBox();
+  assert.ok(inviteBounds.x >= 0 && inviteBounds.y >= 0 && inviteBounds.x + inviteBounds.width <= 844 && inviteBounds.y + inviteBounds.height <= 390);
+  await small.screenshot({ path: 'docs/qa/explorer-invitation-landscape.png', animations: 'disabled' });
+  await smallInvite.click();
+  assert.equal(await small.locator('.explorer-guide').isVisible(), true);
+  assert.equal(await small.locator('.guide-shade').isVisible(), true);
+  assert.equal(await smallInvite.isVisible(), false);
+  await small.keyboard.press('Escape');
+  assert.equal(await small.locator('.guide-shade').isVisible(), false);
+  assert.equal(await small.locator('.guide-help').evaluate(el => el === document.activeElement), true);
+  await small.close();
   assert.deepEqual(errors, []);
   await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Idle-only appearance on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
-  console.log('Explorer guides passed: four characters, idle timing, actions, focus, dialogs, suppression and responsive bounds.');
+  console.log('Explorer guides passed: four characters, idle timing, actions, focus, dialogs, responsive bounds, dimmed background and launcher invitation.');
 } finally {
   await browser.close();
 }

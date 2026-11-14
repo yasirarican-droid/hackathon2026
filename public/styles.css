@@ -5155,6 +5155,46 @@ a:hover {
   animation: guide-pop .6s cubic-bezier(.2,.8,.25,1.15) both;
 }
 .explorer-guide[hidden] { display: none; }
+.guide-shade {
+  position: fixed;
+  inset: 0;
+  z-index: 1099;
+  background: #06171f99;
+  pointer-events: none;
+}
+.guide-shade[hidden] { display: none; }
+.guide-invitation {
+  position: fixed;
+  z-index: 1101;
+  top: calc(clamp(78px, 10vh, 100px) + 15px);
+  right: 112px;
+  max-width: calc(100vw - 130px);
+  padding: 12px 17px;
+  background: #fff1c8;
+  color: #2c4e3d;
+  border: 2px solid #c7b670;
+  border-radius: 16px 16px 4px 16px;
+  box-shadow: 0 4px 14px #06262b55;
+  font: 19px/1.3 ArchiveHand;
+  animation: guide-invite-pop .35s ease-out both;
+}
+.guide-invitation::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 18px;
+  width: 12px;
+  height: 12px;
+  background: #fff1c8;
+  border-top: 2px solid #c7b670;
+  border-right: 2px solid #c7b670;
+  transform: rotate(45deg);
+}
+.guide-invitation[hidden] { display: none; }
+@keyframes guide-invite-pop {
+  from { opacity: 0; transform: translateX(9px) scale(.9); }
+  to { opacity: 1; transform: none; }
+}
 .guide-help {
   position: fixed;
   right: max(18px, env(safe-area-inset-right));
@@ -5253,6 +5293,7 @@ a:hover {
   .field-guide-dots i { width: 6px; height: 6px; }
   .explorer-guide { width: min(440px, 72vw); bottom: 60px; right: 16px; }
   .guide-help { width: 56px; height: 56px; top: 44px; right: 15px; padding: 3px; }
+  .guide-invitation { top: 49px; right: 88px; padding: 9px 13px; font-size: 16px; }
   .guide-character { width: 125px; max-height: 170px; }
   .guide-bubble { padding: 13px 16px 10px; margin-bottom: 5px; }
   .guide-name { font-size: 17px; }
@@ -5260,7 +5301,8 @@ a:hover {
   .guide-action { font-size: 15px; padding: 6px 8px; }
 }
 .motion-paused .learning-guide-open,
-.motion-paused .explorer-guide { animation: none; }
+.motion-paused .explorer-guide,
+.motion-paused .guide-invitation { animation: none; }
 @media (prefers-reduced-motion: reduce) {
-  .learning-guide-open, .explorer-guide { animation: none; }
+  .learning-guide-open, .explorer-guide, .guide-invitation { animation: none; }
 }

@@ -12,6 +12,11 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   root.setAttribute('aria-label', 'Explorer tip');
   root.innerHTML = '<img class="guide-character" alt=""><div class="guide-bubble"><button class="guide-close" aria-label="Dismiss explorer tip">×</button><span class="guide-name"></span><p class="guide-message" role="status" aria-live="polite"></p><button class="guide-action"></button><button class="guide-disable">Hide automatic tips for this visit</button></div>';
   document.querySelector('#application').append(root);
+  const shade = document.createElement('div');
+  shade.className = 'guide-shade';
+  shade.hidden = true;
+  shade.setAttribute('aria-hidden', 'true');
+  document.querySelector('#application').append(shade);
   const help = document.createElement('button');
   help.className = 'guide-help';
   const portrait = document.createElement('img');
@@ -22,6 +27,12 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   help.setAttribute('aria-controls', root.id);
   help.setAttribute('aria-expanded', 'false');
   document.querySelector('#application').append(help);
+  const invitation = document.createElement('button');
+  invitation.className = 'guide-invitation';
+  invitation.hidden = true;
+  invitation.textContent = 'Need a clue? Tap me!';
+  invitation.setAttribute('aria-label', 'Open your explorer guide');
+  document.querySelector('#application').append(invitation);
   const image = root.querySelector('img');
   const message = root.querySelector('.guide-message');
   const action = root.querySelector('.guide-action');
@@ -35,6 +46,9 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   let previousFocus;
   let runAction;
   let pinned = false;
+  let inviteAt = performance.now() + 10000;
+  let inviteShownAt = 0;
+  const inviteCounts = new Map();
   function updateControl(state) {
     help.hidden = state.blocked || !cast[state.page];
     if (cast[state.page] && help.dataset.guide !== state.page) {
@@ -48,6 +62,7 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
   function hide() {
     const hadFocus = root.contains(document.activeElement);
     root.hidden = true;
+    shade.hidden = true;
     help.setAttribute('aria-expanded', 'false');
     if (hadFocus && previousFocus?.isConnected && previousFocus.getClientRects().length)
       previousFocus.focus({ preventScroll: true });
@@ -56,6 +71,8 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     hide();
     updateControl(context());
     lastActivity = performance.now();
+    invitation.hidden = true;
+    inviteAt = Math.max(inviteAt, lastActivity + 10000);
   }
   function show(state, manual = false) {
     pinned = manual;
@@ -98,8 +115,11 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     message.textContent = text;
     action.textContent = label;
     runAction = run;
-    previousFocus = document.activeElement;
+    previousFocus = document.activeElement === invitation ? help : document.activeElement;
     root.hidden = false;
+    shade.hidden = false;
+    invitation.hidden = true;
+    inviteAt = performance.now() + 75000;
     help.setAttribute('aria-expanded', 'true');
     tipIndices.set(state.page, iteration + 1);
     if (!manual) counts.set(state.page, (counts.get(state.page) || 0) + 1);
@@ -113,6 +133,7 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
     if (state.page !== key) {
       key = state.page;
       nextAllowed = 0;
+      inviteAt = now + 10000;
       reset();
     }
     updateControl(state);
@@ -121,23 +142,35 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       return;
     }
     if (!root.hidden) {
+      invitation.hidden = true;
+      inviteAt = now + 75000;
       if (!pinned && now - shownAt >= visibleMs && !root.contains(document.activeElement)) reset();
       return;
+    }
+    if (!invitation.hidden && now - inviteShownAt >= 5500 && document.activeElement !== invitation)
+      invitation.hidden = true;
+    if (!disabled && invitation.hidden && now >= inviteAt && (inviteCounts.get(key) || 0) < 3) {
+      invitation.hidden = false;
+      inviteShownAt = now;
+      inviteAt = now + 75000;
+      inviteCounts.set(key, (inviteCounts.get(key) || 0) + 1);
     }
     if (!disabled && (counts.get(key) || 0) < 2 && now - lastActivity >= idleMs && now >= nextAllowed)
       show(state);
   }
   function activity(event) {
     lastActivity = performance.now();
-    if (event.type === 'keydown' && event.key === 'Escape') hide();
+    if (event.type === 'keydown' && event.key === 'Escape') reset();
   }
   for (const type of ['pointerdown', 'pointermove', 'keydown', 'scroll'])
     document.addEventListener(type, activity, { passive: true });
   root.querySelector('.guide-close').addEventListener('click', reset);
-  help.addEventListener('click', () => {
+  function requestTip() {
     const state = context();
     if (!state.blocked && cast[state.page]) show(state, true);
-  });
+  }
+  help.addEventListener('click', requestTip);
+  invitation.addEventListener('click', requestTip);
   root.querySelector('.guide-disable').addEventListener('click', () => {
     disabled = true;
     reset();
@@ -157,6 +190,8 @@ export function createExplorerGuide({ asset, context, open, navigate, idleMs = 4
       hide();
       root.remove();
       help.remove();
+      shade.remove();
+      invitation.remove();
     },
   };
 }

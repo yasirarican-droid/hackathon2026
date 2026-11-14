@@ -2,22 +2,22 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261114-guides2";
+} from "./progress-store.js?v=20261114-guides3";
 import {
   renderLearningGuide,
   mountPartLesson,
-} from "./learning-guide.js?v=20261114-guides2";
-import { createCassettePlayer } from "./cassette-player.js?v=20261114-guides2";
-import { sojournerItems } from "./sojourner-room.js?v=20261114-guides2";
-import { createCRTIntro } from "./crt-intro.js?v=20261114-guides2";
-import { createSideScreens } from "./side-screens.js?v=20261114-guides2";
+} from "./learning-guide.js?v=20261114-guides3";
+import { createCassettePlayer } from "./cassette-player.js?v=20261114-guides3";
+import { sojournerItems } from "./sojourner-room.js?v=20261114-guides3";
+import { createCRTIntro } from "./crt-intro.js?v=20261114-guides3";
+import { createSideScreens } from "./side-screens.js?v=20261114-guides3";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261114-guides2";
+} from "./mission-room.js?v=20261114-guides3";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261114-guides2";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261114-guides3";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
