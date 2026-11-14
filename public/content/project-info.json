@@ -1,0 +1,37 @@
+{
+  "title": "About this project",
+  "name": "NASA Starboard — Abandoned, But Not Forgotten",
+  "purpose": "A child-friendly archive connecting Apollo 11, Viking 1 and Sojourner with original NASA evidence and the stories of equipment left behind.",
+  "event": {
+    "name": "2026 NASA Space Apps Challenge",
+    "dates": "14–15 November 2026",
+    "participation": "Universal Event",
+    "source": "https://science.nasa.gov/universe/nasa-welcomes-all-ages-experience-levels-for-space-apps-challenge/",
+    "registrationBasis": "Universal Event participation reported by the project owner."
+  },
+  "team": [
+    {"name": "Enes Yasir ARICAN", "role": "Project Lead & Technical Coordinator", "responsibility": "Software engineering, application integration and technical review."},
+    {"name": "Semih KARTAL", "role": "Research & Fact-Checking Lead", "responsibility": "NASA source research and factual content verification."},
+    {"name": "Görkem AYGEL", "role": "Art Direction & Visual Review", "responsibility": "Illustration style, visual consistency and artistic review."},
+    {"name": "Emre ARICAN", "role": "Usability & Testing Lead", "responsibility": "Application usability, interaction review and testing."}
+  ],
+  "teamBasis": "Names and responsibilities supplied by the project owner; these are project team roles, not NASA appointments.",
+  "tools": [
+    {"name": "OpenAI Codex", "use": "AI-assisted software development, explanatory text and implementation checks."},
+    {"name": "OpenAI ImageGen", "use": "AI-generated illustrated rooms, interface artwork and fictional guide characters."},
+    {"name": "ChatGPT + Kling AI", "use": "Owner-supplied AI-generated illustrated arrival films; not original NASA footage."},
+    {"name": "ElevenLabs", "use": "Six AI-generated phone and CRT narrator recordings; not historical spacecraft transmissions."},
+    {"name": "Suno", "use": "AI-generated homepage music."}
+  ],
+  "audioTerms": "The owner confirms paid-plan production for Suno and ElevenLabs. Their service terms apply to those recordings; they are separate from the project's code license.",
+  "archives": [
+    {"name": "NASA Space Science Data Coordinated Archive (NSSDCA)", "use": "Spacecraft catalog records, mission history and equipment status.", "sources": ["catalog"], "url": "https://nssdc.gsfc.nasa.gov/"},
+    {"name": "NASA Science, NASA History and JPL", "use": "Mission accounts and original photographs. Each exhibit links its evidence and image credits.", "sources": ["mission", "viking", "pathfinder", "images"]},
+    {"name": "NASA Planetary Data System (PDS)", "use": "Measured Viking pressure data and documented mission context. No synthetic measurements are presented.", "sources": ["viking-pressure", "sojourner-distance"]},
+    {"name": "NASA 3D Resources", "use": "Original Apollo and Viking models credited to NASA / Michael D. Carbajal. Viewing colors and lighting are adjusted; educational Sojourner and Pathfinder reconstructions are project-authored.", "sources": ["model", "viking-model", "pathfinder-model-reference"]},
+    {"name": "NASA/JPL — On a Mission", "use": "First Steps: Sojourner podcast excerpts and transcripts in the cassette, separately credited from synthetic narration.", "sources": ["sojourner-podcast"]}
+  ],
+  "software": "Three.js (MIT), Draco (Apache-2.0), FFmpeg for media processing, esbuild for the viewer bundle and Playwright for browser checks. Patrick Hand, Kalam and Share Tech Mono fonts use the SIL Open Font License.",
+  "license": "Apache-2.0 covers project-authored code. NASA evidence, original models, fonts, supplied media and generated recordings retain their own credits and applicable terms.",
+  "distinction": "Illustrated scenes and smiling characters are creative guides, not historical photographs. Real NASA images, measurements and recordings are credited individually. This is an independent team project, not a NASA product or endorsement."
+}

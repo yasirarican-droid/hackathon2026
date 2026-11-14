@@ -325,6 +325,11 @@
     "sha256": "f07e229783827f5ce6cc974dd87c65d8db27948deb0d3f7634068463f83e6642"
   },
   {
+    "path": "content/project-info.json",
+    "bytes": 3954,
+    "sha256": "bc41229decb86ea9861a74ecb7307729387971c3221e857b84e1f2b41bc4cf5d"
+  },
+  {
     "path": "content/sojourner-art.json",
     "bytes": 4300,
     "sha256": "2e0514a0ff3f870ab4518b8313e4c3d476c178b64f27f6fedabbb2acf6cfe2f6"

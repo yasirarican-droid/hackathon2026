@@ -2,22 +2,22 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261114-guides5";
+} from "./progress-store.js?v=20261114-info1";
 import {
   renderLearningGuide,
   mountPartLesson,
-} from "./learning-guide.js?v=20261114-guides5";
-import { createCassettePlayer } from "./cassette-player.js?v=20261114-guides5";
-import { sojournerItems } from "./sojourner-room.js?v=20261114-guides5";
-import { createCRTIntro } from "./crt-intro.js?v=20261114-guides5";
-import { createSideScreens } from "./side-screens.js?v=20261114-guides5";
+} from "./learning-guide.js?v=20261114-info1";
+import { createCassettePlayer } from "./cassette-player.js?v=20261114-info1";
+import { sojournerItems } from "./sojourner-room.js?v=20261114-info1";
+import { createCRTIntro } from "./crt-intro.js?v=20261114-info1";
+import { createSideScreens } from "./side-screens.js?v=20261114-info1";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261114-guides5";
+} from "./mission-room.js?v=20261114-info1";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261114-guides5";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261114-info1";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
@@ -42,6 +42,7 @@ const galleryItems = ["photos", "footprint", "seismometer", "reflector"];
 const dialog = $("#exhibit-dialog");
 const content = $("#exhibit-content");
 let archive;
+let projectInfo;
 let learning;
 const savedProgress = loadProgress();
 const goalsSolved = new Set();
@@ -273,6 +274,7 @@ async function prepare() {
     arrivalVideo.src = asset("assets/video/moon-arrival-web.mp4");
     arrivalVideo.load();
     archive = await (await fetch(asset("content/archive.json"))).json();
+    projectInfo = await (await fetch(asset("content/project-info.json"))).json();
     learning = await (await fetch(asset("content/learning.json"))).json();
     restoreLearningProgress();
     const storyFile = archive.panels["apollo-story"].narration.file;
@@ -1321,6 +1323,68 @@ function updateStoryControls() {
 for (const event of ["play", "pause", "ended", "timeupdate"])
   storyVoice.addEventListener(event, updateStoryControls);
 
+function renderProjectInfo() {
+  const info = projectInfo;
+  content.append(node("p", "panel-tag", "THE PROJECT / PEOPLE / TOOLS / EVIDENCE"));
+  const title = node("h2", "", info.title);
+  title.id = "exhibit-title";
+  content.append(title, node("p", "project-name", info.name), node("p", "panel-intro", info.purpose));
+  const event = node("section", "project-event");
+  event.append(node("strong", "", "Created for the " + info.event.name), node("span", "", info.event.dates + " · " + info.event.participation), link("Official event information ↗", info.event.source));
+  content.append(event);
+  const shortcuts = node("nav", "project-info-links");
+  shortcuts.setAttribute("aria-label", "Project information sections");
+  const sections = new Map();
+  for (const [key, label] of [["team", "The team"], ["tools", "AI & production"], ["archives", "NASA archives"], ["licenses", "Licenses"]]) {
+    const section = node("section", "project-info-section");
+    section.tabIndex = -1;
+    sections.set(key, section);
+    shortcuts.append(action(label, () => {
+      section.scrollIntoView({ behavior: "instant", block: "start" });
+      section.focus({ preventScroll: true });
+    }));
+  }
+  content.append(shortcuts);
+  const team = sections.get("team");
+  team.append(node("h3", "", "Meet the team"));
+  const cards = node("div", "project-team");
+  for (const person of info.team) {
+    const card = node("article", "project-person");
+    card.append(node("h4", "", person.name), node("strong", "", person.role), node("p", "", person.responsibility));
+    cards.append(card);
+  }
+  team.append(cards);
+  const tools = sections.get("tools");
+  tools.append(node("h3", "", "How this archive was made"));
+  for (const tool of info.tools) {
+    const row = node("div", "project-tool");
+    row.append(node("h4", "", tool.name), node("p", "", tool.use));
+    tools.append(row);
+  }
+  tools.append(node("p", "project-note", info.audioTerms));
+  const archives = sections.get("archives");
+  archives.append(node("h3", "", "Original NASA evidence & archives"));
+  for (const record of info.archives) {
+    const row = node("div", "project-archive");
+    row.append(node("h4", "", record.name), node("p", "", record.use));
+    if (record.url) row.append(link("Open the archive ↗", record.url));
+    for (const id of record.sources) row.append(link(archive.sources[id].title, archive.sources[id].url));
+    archives.append(row);
+  }
+  archives.append(action("View NASA sources →", () => openExhibit("sources")));
+  const licenses = sections.get("licenses");
+  const codeLicense = node("a", "", "Apache-2.0 code license");
+  codeLicense.href = "licenses/APACHE-2.0.txt";
+  codeLicense.target = "_blank";
+  codeLicense.rel = "noopener noreferrer";
+  const thirdParty = node("a", "", "Third-party credits and media terms");
+  thirdParty.href = "licenses/THIRD_PARTY.txt";
+  thirdParty.target = "_blank";
+  thirdParty.rel = "noopener noreferrer";
+  licenses.append(node("h3", "", "Software, credits & licenses"), node("p", "", info.software), node("p", "", info.license), codeLicense, thirdParty, node("p", "project-note", info.distinction));
+  content.append(...sections.values());
+}
+
 function renderNamingStory() {
   const panel = archive.panels["sojourner-name"];
   content.append(node("p", "panel-tag", panel.tag));
@@ -1343,6 +1407,7 @@ function renderNamingStory() {
 }
 
 function openExhibit(id) {
+  if (id === "about") id = "art-info";
   explorerGuide?.reset();
   if (!archive) return;
   sideScreens?.closePanel();
@@ -1367,6 +1432,7 @@ function openExhibit(id) {
   if (storyPanels.has(id)) renderMissionStory(id);
   else if (id === "learning-guide") openLearningGuide();
   else if (id === "sojourner-name") renderNamingStory();
+  else if (id === "art-info") renderProjectInfo();
   else if (id === "sources") renderSources();
   else if (id === "objects") {
     const viking = location.hash === "#viking";
@@ -1727,6 +1793,7 @@ document.addEventListener("click", async (event) => {
       if (document.fullscreenElement) await document.exitFullscreen();
       else await document.documentElement.requestFullscreen();
     } catch {
+      document.querySelectorAll("[data-fullscreen]").forEach(button => button.hidden = true);
       notify(
         "Fullscreen is unavailable in this browser. You can keep exploring here.",
       );
@@ -1828,6 +1895,15 @@ $("#briefing-pause").addEventListener("click", () => {
 });
 briefingReducedMotion.addEventListener("change", syncBriefing);
 orientationQuery.addEventListener("change", syncOrientation);
+function syncFullscreenControls() {
+  const supported = Boolean(document.fullscreenEnabled && document.documentElement.requestFullscreen);
+  document.querySelectorAll("[data-fullscreen]").forEach(button => {
+    button.hidden = !supported;
+    button.setAttribute("aria-label", document.fullscreenElement ? "Exit fullscreen" : "Enter fullscreen");
+  });
+}
+document.addEventListener("fullscreenchange", syncFullscreenControls);
+syncFullscreenControls();
 syncOrientation();
 $("#prepare-retry").addEventListener("click", prepare);
 prepare();
