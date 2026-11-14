@@ -1,0 +1,202 @@
+{
+  "dataset": "VL1/VL2-M-MET-4-DAILY-AVG-PRESSURE-V1.0",
+  "unit": "mbar",
+  "source": "https://pds-atmospheres.nmsu.edu/PDS/data/vl_1001/data/vl_avep.dat",
+  "label": "https://pds-atmospheres.nmsu.edu/PDS/data/vl_1001/data/vl_avep.lbl",
+  "catalog": "https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1/VL2-M-MET-4-DAILY-AVG-PRESSURE-V1.0",
+  "selection": "VL1 only, sols 1–30, PRESS_MEAN in millibars, positive values only. Original warning flags retained. Straight segments join samples; no smoothing or inferred observations.",
+  "samples": [
+    {
+      "sol": 1,
+      "pressure": 7.629,
+      "flags": "BB",
+      "sourceLine": 2
+    },
+    {
+      "sol": 2,
+      "pressure": 7.606,
+      "flags": "BB",
+      "sourceLine": 3
+    },
+    {
+      "sol": 3,
+      "pressure": 7.581,
+      "flags": "BB",
+      "sourceLine": 4
+    },
+    {
+      "sol": 4,
+      "pressure": 7.579,
+      "flags": "BB",
+      "sourceLine": 5
+    },
+    {
+      "sol": 5,
+      "pressure": 7.564,
+      "flags": "BB",
+      "sourceLine": 6
+    },
+    {
+      "sol": 6,
+      "pressure": 7.564,
+      "flags": ".I",
+      "sourceLine": 7
+    },
+    {
+      "sol": 7,
+      "pressure": 7.554,
+      "flags": "BB",
+      "sourceLine": 8
+    },
+    {
+      "sol": 8,
+      "pressure": 7.544,
+      "flags": "BB",
+      "sourceLine": 9
+    },
+    {
+      "sol": 9,
+      "pressure": 7.514,
+      "flags": "BB",
+      "sourceLine": 10
+    },
+    {
+      "sol": 10,
+      "pressure": 7.509,
+      "flags": "BB",
+      "sourceLine": 11
+    },
+    {
+      "sol": 11,
+      "pressure": 7.498,
+      "flags": "BB",
+      "sourceLine": 12
+    },
+    {
+      "sol": 12,
+      "pressure": 7.482,
+      "flags": "BB",
+      "sourceLine": 13
+    },
+    {
+      "sol": 13,
+      "pressure": 7.473,
+      "flags": "BB",
+      "sourceLine": 14
+    },
+    {
+      "sol": 14,
+      "pressure": 7.473,
+      "flags": "BB",
+      "sourceLine": 15
+    },
+    {
+      "sol": 15,
+      "pressure": 7.462,
+      "flags": "BB",
+      "sourceLine": 16
+    },
+    {
+      "sol": 16,
+      "pressure": 7.45,
+      "flags": "BB",
+      "sourceLine": 17
+    },
+    {
+      "sol": 17,
+      "pressure": 7.436,
+      "flags": ".I",
+      "sourceLine": 18
+    },
+    {
+      "sol": 18,
+      "pressure": 7.412,
+      "flags": "BB",
+      "sourceLine": 19
+    },
+    {
+      "sol": 19,
+      "pressure": 7.408,
+      "flags": "BB",
+      "sourceLine": 20
+    },
+    {
+      "sol": 20,
+      "pressure": 7.398,
+      "flags": ".I",
+      "sourceLine": 21
+    },
+    {
+      "sol": 21,
+      "pressure": 7.392,
+      "flags": ".I",
+      "sourceLine": 22
+    },
+    {
+      "sol": 22,
+      "pressure": 7.372,
+      "flags": ".I",
+      "sourceLine": 23
+    },
+    {
+      "sol": 23,
+      "pressure": 7.355,
+      "flags": ".I",
+      "sourceLine": 24
+    },
+    {
+      "sol": 24,
+      "pressure": 7.351,
+      "flags": ".C",
+      "sourceLine": 25
+    },
+    {
+      "sol": 25,
+      "pressure": 7.351,
+      "flags": ".C",
+      "sourceLine": 26
+    },
+    {
+      "sol": 26,
+      "pressure": 7.325,
+      "flags": "BB",
+      "sourceLine": 27
+    },
+    {
+      "sol": 27,
+      "pressure": 7.316,
+      "flags": "BB",
+      "sourceLine": 28
+    },
+    {
+      "sol": 28,
+      "pressure": 7.308,
+      "flags": "BB",
+      "sourceLine": 29
+    },
+    {
+      "sol": 29,
+      "pressure": 7.305,
+      "flags": ".I",
+      "sourceLine": 30
+    },
+    {
+      "sol": 30,
+      "pressure": 7.286,
+      "flags": ".I",
+      "sourceLine": 31
+    }
+  ],
+  "rawFiles": [
+    {
+      "file": "docs/provenance/vl_avep.dat",
+      "sha256": "6307b96c1a211b36b5d9001a5efeeb1b6ab4407e06f95aa18d667c38c52acd30",
+      "bytes": 293433
+    },
+    {
+      "file": "docs/provenance/vl_avep.lbl",
+      "sha256": "3ba63b391309f5807b9a2f14bbe3d44e5a2ec8b6b1564733e9182b3d8a815e63",
+      "bytes": 15600
+    }
+  ]
+}

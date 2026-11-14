@@ -1,2 +1,783 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NASA Starboard</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#10172b;color:#f5eddc;font:20px system-ui;text-align:center}main{padding:2rem}h1{font-size:clamp(2rem,8vw,4rem)}p{color:#b9c7df}</style><main><h1>NASA Starboard</h1><p>Our space exploration experience is coming soon.</p></main></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Small objects. Extraordinary stories. Explore hardware and original NASA evidence from the Moon and Mars."
+    />
+    <meta
+      name="ai-disclosure"
+      content="AI-assisted code and explanatory text; AI-generated illustrative UI art. NASA evidence separately credited. AI-generated narration: ElevenLabs; AI-generated music: Suno. NASA archive audio separately credited."
+    />
+    <meta name="theme-color" content="#253952" />
+    <title>Abandoned, But Not Forgotten — Moon & Mars Archive</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css?v=20261114-learning1" />
+    <script type="module" src="main.js?v=20261114-learning1"></script>
+  </head>
+  <body>
+    <section
+      id="orientation-guard"
+      class="orientation-guard"
+      aria-labelledby="orientation-title"
+    >
+      <div class="rotate-drawing" aria-hidden="true">
+        <span class="rotate-arrow">↻</span
+        ><span class="rotate-phone"><i></i></span
+        ><span class="rotate-star">✦</span>
+      </div>
+      <p class="eyebrow">A LITTLE TURN. A BIG ADVENTURE.</p>
+      <h1 id="orientation-title" tabindex="-1">Rotate your device</h1>
+      <p>Please turn your device sideways to explore.</p>
+      <span class="orientation-note"
+        >Your expedition will continue right here.</span
+      >
+    </section>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <section
+      class="preparation"
+      id="preparation"
+      aria-labelledby="prepare-title"
+    >
+      <div class="loading-stars" aria-hidden="true">
+        <span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span
+        ><span>✧</span>
+      </div>
+      <div class="loading-card">
+        <h1 id="prepare-title">Loading…</h1>
+        <div class="launch-scene" aria-hidden="true">
+          <div class="loading-earth"><span></span><i></i></div>
+          <div class="loading-moon"><i></i><b></b><span></span></div>
+          <span class="launch-star launch-star-one">✦</span
+          ><span class="launch-star launch-star-two">✧</span>
+          <div class="flight-lane">
+            <svg
+              class="loading-route"
+              viewBox="0 0 600 30"
+              preserveAspectRatio="none"
+            >
+              <path d="M2 17Q130 8 290 17T598 17" />
+            </svg>
+            <div class="loading-trail"></div>
+            <div class="loading-ship">
+              <svg
+                class="loading-rocket-art"
+                aria-hidden="true"
+                viewBox="0 0 80 80"
+              >
+                <g stroke="#153049" stroke-width="2.5" stroke-linejoin="round">
+                  <path
+                    class="loading-flame"
+                    fill="#ed7c32"
+                    stroke="#d45e2a"
+                    d="M30 46 5 75l29-13 10-17Z"
+                  />
+                  <path
+                    class="loading-flame-inner"
+                    fill="#ffdb58"
+                    stroke="none"
+                    d="m31 49-14 18 22-13Z"
+                  />
+                  <path
+                    fill="#f8ecd0"
+                    d="M27 47C30 22 48 9 71 7c-1 24-15 44-39 49Z"
+                  />
+                  <path fill="#dc5e3e" d="m53 11 14 16 4-20Z" />
+                  <path fill="#e76c48" d="m30 32-15 6 13 8m15 7-4 15 16-24" />
+                  <circle cx="47" cy="32" r="8" fill="#a3d0db" />
+                  <path fill="none" d="m30 48 6 5" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <span class="loading-percent" aria-hidden="true"
+            ><strong id="prepare-percent">0</strong><small>%</small></span
+          >
+        </div>
+        <p id="prepare-stage" class="visually-hidden" role="status">Loading…</p>
+        <progress
+          id="prepare-progress"
+          value="0"
+          max="1"
+          aria-label="Archive download progress"
+        ></progress>
+        <p id="prepare-status" class="loading-bytes" hidden>
+          Preparing the flight plan.
+        </p>
+        <button id="prepare-retry" class="paper-button" hidden>
+          Try again
+        </button>
+      </div>
+    </section>
+    <div id="application" hidden>
+      <section
+        id="briefing-screen"
+        class="briefing-screen"
+        hidden
+        aria-labelledby="briefing-title"
+      >
+        <header class="briefing-toolbar">
+          <span class="console-button">MISSION BRIEFING</span
+          ><button
+            id="briefing-pause"
+            class="console-button"
+            aria-pressed="false"
+          >
+            Pause animation
+          </button>
+        </header>
+        <div class="briefing-content">
+          <p class="briefing-eyebrow">A JOURNEY THROUGH TIME</p>
+          <h1 id="briefing-title" tabindex="-1">APOLLO 11</h1>
+          <p class="briefing-subtitle">Meet Eagle <span>· 1969</span></p>
+          <div class="briefing-flight" aria-hidden="true">
+            <div class="briefing-earth loading-earth"><span></span><i></i></div>
+            <div class="briefing-moon loading-moon">
+              <i></i><b></b><span></span>
+            </div>
+            <div class="briefing-flight-path">
+              <div class="briefing-flight-trail"></div>
+              <div id="briefing-ship" class="briefing-ship">
+                <svg
+                  class="briefing-rocket-art"
+                  aria-hidden="true"
+                  viewBox="0 0 80 80"
+                >
+                  <g
+                    stroke="#153049"
+                    stroke-width="2.5"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      class="briefing-flame"
+                      fill="#ed7c32"
+                      stroke="#d45e2a"
+                      d="M30 46 5 75l29-13 10-17Z"
+                    />
+                    <path
+                      class="briefing-flame-inner"
+                      fill="#ffdb58"
+                      stroke="none"
+                      d="m31 49-14 18 22-13Z"
+                    />
+                    <path
+                      fill="#f8ecd0"
+                      d="M27 47C30 22 48 9 71 7c-1 24-15 44-39 49Z"
+                    />
+                    <path fill="#dc5e3e" d="m53 11 14 16 4-20Z" />
+                    <path fill="#e76c48" d="m30 32-15 6 13 8m15 7-4 15 16-24" />
+                    <circle cx="47" cy="32" r="8" fill="#a3d0db" />
+                    <path fill="none" d="m30 48 6 5" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <span class="briefing-earth-label">EARTH</span
+            ><span class="briefing-moon-label">MOON</span>
+          </div>
+          <p id="briefing-distance" class="briefing-distance">≈384,400 km</p>
+          <p id="briefing-distance-context" class="briefing-distance-context">
+            238,855 miles · Average Earth–Moon distance
+          </p>
+          <p id="briefing-landing" class="briefing-landing">
+            Eagle landed · 20 July 1969
+          </p>
+          <div id="briefing-facts" class="briefing-facts"></div>
+          <button
+            id="briefing-sources"
+            class="briefing-source-link"
+            data-open="sources"
+          >
+            Distance & mission sources ↗
+          </button>
+        </div>
+        <footer class="briefing-footer">
+          <span id="briefing-note"
+            >7-second illustrated journey · not to scale or actual flight
+            time</span
+          ><button id="briefing-skip" class="paper-button">Skip →</button>
+        </footer>
+      </section>
+
+      <section
+        id="arrival-screen"
+        class="arrival-screen"
+        hidden
+        aria-labelledby="arrival-title"
+      >
+        <video
+          id="arrival-video"
+          playsinline
+          preload="auto"
+          aria-label="Owner-provided illustrated Eagle arrival animation"
+        ></video>
+        <header class="arrival-toolbar">
+          <h1 id="arrival-title" tabindex="-1" class="console-button">
+            ILLUSTRATED ARRIVAL
+          </h1>
+          <div>
+            <button id="arrival-play" class="console-button">Pause</button
+            ><button
+              id="arrival-sound"
+              class="console-button"
+              aria-pressed="true"
+            >
+              Sound on</button
+            ><button id="arrival-restart" class="console-button">Replay</button
+            ><button
+              class="console-button"
+              data-fullscreen
+              aria-label="Enter fullscreen"
+            >
+              ⛶
+            </button>
+          </div>
+        </header>
+        <footer class="arrival-footer">
+          <div class="arrival-readout">
+            <span id="arrival-status" role="status"
+              >Eagle approaches the Moon.</span
+            ><input
+              id="arrival-seek"
+              type="range"
+              min="0"
+              max="100"
+              step="0.1"
+              value="0"
+              aria-label="Arrival video playback position"
+            />
+            <small id="arrival-ai-credit" class="arrival-ai-credit" hidden
+              >AI-GENERATED VISUAL · CHATGPT + KLING AI</small
+            >
+          </div>
+          <button id="arrival-skip" class="paper-button">Skip →</button>
+        </footer>
+      </section>
+      <section
+        id="crt-intro-screen"
+        class="crt-intro-screen"
+        hidden
+        aria-label="Apollo CRT introduction"
+      >
+        <header class="crt-intro-hud">
+          <div>
+            <span class="console-button">MISSION ARCHIVE / 20 JUL 1969</span
+            ><small id="crt-intro-status"
+              >TEXT PREVIEW · NARRATION PENDING</small
+            >
+          </div>
+          <nav aria-label="Introduction controls">
+            <button
+              id="crt-intro-sound"
+              class="console-button"
+              aria-pressed="true"
+            >
+              Sound on</button
+            ><button id="crt-intro-pause" class="console-button">Pause</button
+            ><button id="crt-intro-replay" class="console-button">Replay</button
+            ><button class="console-button" data-open="crt-intro-text">
+              Read text
+            </button>
+          </nav>
+        </header>
+        <p id="crt-intro-accessible" class="visually-hidden"></p>
+        <button id="crt-intro-skip" class="paper-button crt-intro-skip">
+          Skip intro →
+        </button>
+        <div class="crt-intro-track" aria-hidden="true">
+          <div id="crt-intro-progress"></div>
+        </div>
+      </section>
+      <section id="home-page" class="home-page">
+        <header class="home-header">
+          <a
+            href="#home"
+            class="small-brand"
+            aria-label="Abandoned, But Not Forgotten home"
+            ><svg class="brand-rocket" aria-hidden="true" viewBox="0 0 80 80">
+              <g stroke="#153049" stroke-width="2.5" stroke-linejoin="round">
+                <path
+                  class="rocket-flame"
+                  fill="#ed7c32"
+                  stroke="#d45e2a"
+                  d="M30 46 5 75l29-13 10-17Z"
+                />
+                <path
+                  class="rocket-flame-inner"
+                  fill="#ffdb58"
+                  stroke="none"
+                  d="m31 49-14 18 22-13Z"
+                />
+                <path
+                  fill="#f8ecd0"
+                  d="M27 47C30 22 48 9 71 7c-1 24-15 44-39 49Z"
+                />
+                <path fill="#dc5e3e" d="m53 11 14 16 4-20Z" />
+                <path fill="#e76c48" d="m30 32-15 6 13 8m15 7-4 15 16-24" />
+                <circle cx="47" cy="32" r="8" fill="#a3d0db" />
+                <path fill="none" d="m30 48 6 5" />
+              </g></svg
+            ><img
+              data-asset="assets/art/wordmark.webp"
+              alt="Abandoned, But Not Forgotten"
+          /></a>
+          <nav aria-label="Main navigation">
+            <a href="#missions">Explore</a
+            ><button data-open="about">Our story</button
+            ><button data-open="sources">Sources</button
+            ><button
+              class="home-art-info"
+              data-open="art-info"
+              aria-label="How this archive was made"
+            >
+              i</button
+            ><button
+              id="music-toggle"
+              aria-pressed="false"
+              aria-label="Play homepage music"
+            >
+              ♫ Music off</button
+            ><span class="nav-divider"></span
+            ><button class="motion-toggle" aria-pressed="false">
+              Pause motion</button
+            ><button data-fullscreen aria-label="Enter fullscreen">⛶</button>
+          </nav>
+        </header>
+        <main id="main" tabindex="-1">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+              <p class="eyebrow">A LITTLE CURIOSITY. A BIG ADVENTURE.</p>
+              <h1 id="hero-title">
+                <img
+                  data-asset="assets/art/wordmark.webp"
+                  alt="Abandoned, But Not Forgotten"
+                />
+              </h1>
+
+              <p class="hero-invitation">
+                Choose a year. Tap a screen. Start exploring.
+              </p>
+            </div>
+            <div class="space-illustration" aria-hidden="true">
+              <div class="hero-artboard">
+                <img data-asset="assets/art/space-planets.webp" alt="" />
+                <div class="hero-rocket">
+                  <img
+                    class="hero-rocket-flame"
+                    data-asset="assets/art/space-hero.webp"
+                    alt=""
+                  />
+                  <img
+                    class="hero-rocket-body"
+                    data-asset="assets/art/space-hero.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="keepsake-invitation">
+              Small objects. Extraordinary stories.
+            </div>
+          </section>
+          <section
+            class="missions"
+            id="missions"
+            aria-label="Three mission chapters"
+          >
+            <svg
+              class="timeline-path"
+              aria-hidden="true"
+              viewBox="0 0 1200 90"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M10 52C210-18 270 100 440 52S740 0 840 50 1060 105 1190 35"
+              />
+            </svg>
+            <article class="mission-card apollo-card">
+              <a class="year-label" href="#apollo" data-explore-mission="apollo"
+                >1969</a
+              ><a
+                href="#apollo"
+                data-explore-mission="apollo"
+                class="monitor-link"
+                aria-label="Explore Apollo 11"
+                ><img
+                  class="timeline-monitor"
+                  data-asset="assets/art/timeline-apollo-v2.webp"
+                  alt="Hand-drawn Apollo lunar module on the Moon inside a vintage television; decorative illustration."
+                /><span class="screen-arrow">↗</span></a
+              >
+
+              <p class="mission-kicker">01 / ONE SMALL STEP</p>
+              <h2>APOLLO 11</h2>
+              <p class="mission-description">
+                First footsteps. A lasting legacy.
+              </p>
+              <a
+                class="mission-button"
+                href="#apollo"
+                data-explore-mission="apollo"
+                >Explore archive <span>→</span></a
+              >
+              <a class="watch-story" href="#apollo" data-story-mission="apollo"
+                >Watch the story →</a
+              ><small
+                class="card-learning-progress"
+                data-learning-progress="apollo"
+                >0 objects opened · 0 / 3 learning goals</small
+              >
+            </article>
+            <article class="mission-card viking-card">
+              <a class="year-label" href="#viking" data-explore-mission="viking"
+                >1976</a
+              ><a
+                class="monitor-link"
+                href="#viking"
+                data-explore-mission="viking"
+                aria-label="Explore the Viking 1 Mars archive"
+              >
+                <img
+                  class="timeline-monitor"
+                  data-asset="assets/art/timeline-viking.webp"
+                  alt="Hand-drawn Viking lander on Mars inside an olive vintage television; decorative illustration."
+                /><span class="screen-arrow">↗</span>
+              </a>
+
+              <p class="mission-kicker">02 / THE FIRST PICTURE</p>
+              <h2>VIKING 1</h2>
+              <p class="mission-description">
+                A new world, seen from the ground.
+              </p>
+              <a
+                class="mission-button"
+                href="#viking"
+                data-explore-mission="viking"
+              >
+                Explore archive <span>→</span>
+              </a>
+              <a class="watch-story" href="#viking" data-story-mission="viking"
+                >Watch the story →</a
+              ><small
+                class="card-learning-progress"
+                data-learning-progress="viking"
+                >0 objects opened · 0 / 3 learning goals</small
+              >
+            </article>
+            <article class="mission-card sojourner-card">
+              <a
+                class="year-label"
+                href="#sojourner"
+                data-explore-mission="sojourner"
+              >
+                1997</a
+              ><a
+                class="monitor-link"
+                href="#sojourner"
+                data-explore-mission="sojourner"
+                aria-label="Explore the Sojourner mission archive"
+              >
+                <img
+                  class="timeline-monitor"
+                  data-asset="assets/art/timeline-sojourner-v2.webp"
+                  alt="Hand-drawn Sojourner rover inside a beige CRT monitor; decorative illustration."
+                /><span class="screen-arrow">↗</span>
+              </a>
+
+              <p class="mission-kicker">03 / LITTLE WHEELS, BIG DREAMS</p>
+              <h2>SOJOURNER</h2>
+              <p class="mission-description">
+                Small wheels. A world of questions.
+              </p>
+              <a
+                class="mission-button"
+                href="#sojourner"
+                data-explore-mission="sojourner"
+              >
+                Explore archive <span>→</span>
+              </a>
+              <a
+                class="watch-story"
+                href="#sojourner"
+                data-story-mission="sojourner"
+                >Watch the story →</a
+              ><small
+                class="card-learning-progress"
+                data-learning-progress="sojourner"
+                >0 objects opened · 0 / 3 learning goals</small
+              >
+            </article>
+          </section>
+        </main>
+        <button
+          class="floating-object olive-object"
+          data-open="olive"
+          aria-label="Discover the Apollo 11 golden olive branch"
+        >
+          <span class="sprite olive-sprite" aria-hidden="true"></span
+          ><span class="object-name">A wish for peace</span>
+        </button>
+        <button
+          class="floating-object disc-object"
+          data-open="disc"
+          aria-label="Discover the Apollo 11 goodwill disc"
+        >
+          <span class="message-disc" aria-hidden="true"><i></i></span
+          ><span class="object-name">Messages from Earth</span>
+        </button>
+        <button
+          class="floating-object reflector-object"
+          data-open="reflector"
+          aria-label="Discover the Apollo 11 laser reflector"
+        >
+          <span class="mini-print"
+            ><img data-asset="assets/archive/reflector.jpg" alt="" /><span
+              >NASA / AS11-40-5952</span
+            ></span
+          ><span class="object-name">A light that returns</span>
+        </button>
+        <footer class="home-footer">
+          <p><span>✦</span> Every explorer has a story.</p>
+          <span>THREE CHAPTERS. ONE SHARED CURIOSITY.</span
+          ><button data-open="help">How to explore ↗</button>
+        </footer>
+      </section>
+      <section
+        id="room-page"
+        class="room-page"
+        hidden
+        aria-label="Apollo 11 illustrated archive"
+      >
+        <div class="room-stage" id="room-stage">
+          <div
+            class="room-backdrop"
+            role="img"
+            aria-label="AI-generated fictional archive: three ivory CRT monitors above a warm wooden desk"
+          ></div>
+          <nav class="room-toolbar" aria-label="Archive navigation">
+            <a class="console-button" href="#home">← Timeline</a>
+            <h1>APOLLO 11 / MOON ARCHIVE</h1>
+            <div>
+              <button id="briefing-replay" class="console-button">
+                Briefing</button
+              ><button id="arrival-replay" class="console-button">
+                Arrival</button
+              ><button id="crt-intro-restart" class="console-button">
+                Intro
+              </button>
+              <button class="console-button motion-toggle" aria-pressed="false">
+                Pause motion</button
+              ><button class="console-button" id="objects-button">
+                Objects</button
+              ><button class="console-button" data-open="sources">
+                Sources</button
+              ><button
+                class="console-button"
+                data-fullscreen
+                aria-label="Enter fullscreen"
+              >
+                ⛶
+              </button>
+            </div>
+          </nav>
+          <div class="room-console">
+            <div class="room-console-art" aria-hidden="true"></div>
+            <section
+              id="crt-intro-terminal"
+              class="crt-intro-terminal"
+              hidden
+              aria-hidden="true"
+            >
+              <h2 id="crt-intro-label"></h2>
+              <div id="crt-intro-scroll">
+                <span id="crt-intro-text"></span
+                ><span class="crt-intro-cursor"> ▮</span>
+              </div>
+            </section>
+            <button class="crt crt-left" data-open="mission">
+              <span class="crt-heading">MISSION LOG</span
+              ><span class="terminal-lines"
+                >16 JUL 1969 / LAUNCH<br />20 JUL / EAGLE LANDED<br />21 JUL UTC
+                / FIRST STEP<br />24 JUL / SAFE RETURN</span
+              ><span class="crt-hint">› EXPLORE RECORD <i>▮</i></span>
+            </button>
+            <button class="crt crt-center" data-open="eagle">
+              <span class="crt-heading">MEET EAGLE</span
+              ><span id="eagle-preview" class="center-model"
+                ><img data-asset="assets/archive/eagle.jpg" alt="" /></span
+              ><span id="eagle-preview-hint" class="crt-hint"
+                >NASA / AS11-40-5961 · EXPLORE ↗</span
+              >
+            </button>
+            <button class="crt crt-right" data-open="science">
+              <span class="crt-heading">SCIENCE LEFT BEHIND</span
+              ><span class="science-lines"
+                ><b>LIGHT</b> A laser reflector<br /><b>MOVEMENT</b> A
+                seismometer<br /><b>QUESTIONS</b> A lasting legacy</span
+              ><span class="crt-hint">› OPEN THE SCIENCE FILE <i>▮</i></span>
+            </button>
+            <div class="console-plaque">
+              <svg
+                viewBox="0 0 500 40"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                aria-label="Mission Archive — 1969"
+              >
+                <text x="250" y="30.6" text-anchor="middle">
+                  MISSION ARCHIVE — 1969
+                </text>
+              </svg>
+            </div>
+            <div class="indicator-bank auxiliary-bank" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="crt-leds leds-left" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <div class="crt-leds leds-center" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <div class="crt-leds leds-right" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <div class="indicator-bank" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="desk-plane">
+            <button
+              id="lamp-toggle"
+              class="desk-object lamp"
+              aria-label="Turn desk lamp off"
+              aria-pressed="true"
+            >
+              <span class="sprite lamp-sprite"></span
+              ><span class="desk-tip">Desk lamp</span>
+            </button>
+            <button
+              class="desk-object mug"
+              data-open="about"
+              aria-label="About the archive"
+            >
+              <span class="sprite mug-sprite"></span
+              ><span class="desk-tip">Our story</span>
+            </button>
+            <button
+              class="desk-object folder"
+              data-open="samples"
+              aria-label="Open the returned samples file"
+            >
+              <span class="sprite folder-sprite"></span
+              ><span class="prop-label">FLIGHT FILE<br />ROCKS + SOIL</span
+              ><span class="desk-tip">Open field file</span>
+            </button>
+            <button class="desk-print print-eagle" data-open="photos">
+              <img
+                data-asset="assets/archive/eagle.jpg"
+                alt="Eagle on the lunar surface"
+              /><span>EAGLE · NASA / AS11-40-5961</span>
+            </button>
+            <button
+              class="desk-print print-instruments"
+              data-open="seismometer"
+            >
+              <img
+                data-asset="assets/archive/seismometer.jpg"
+                alt="Buzz Aldrin setting out the seismic experiment"
+              /><span>LUNAR SCIENCE · NASA</span>
+            </button>
+            <button class="desk-print print-footprint" data-open="footprint">
+              <img
+                data-asset="assets/archive/bootprint.jpg"
+                alt="Buzz Aldrin's bootprint photograph"
+              /><span>A PRINT WITH A STORY</span>
+            </button>
+            <button class="event-paper" data-open="timeline">
+              <span>LUNAR EVENT RECORD</span><b>16 JUL → 20 JUL</b
+              ><i>Earth → the Moon</i><b>21 JUL → 24 JUL</b
+              ><i>Lift off → home</i><small>NASA chronology · UTC</small>
+            </button>
+            <button
+              class="desk-object notebook"
+              data-open="legacy"
+              aria-label="Open the discovery notebook"
+            >
+              <span class="sprite notebook-sprite"></span
+              ><span class="prop-label">What did<br />we discover?</span
+              ><span class="notebook-invitation" aria-hidden="true"
+                ><span class="notebook-question">?</span
+                ><span class="notebook-quiz-label">Try the quiz</span
+                ><span class="notebook-spark spark-one">?</span
+                ><span class="notebook-spark spark-two">?</span
+                ><span class="notebook-spark spark-three">?</span></span
+              ><span class="desk-tip">Discovery notebook</span>
+            </button>
+            <button
+              class="desk-object telephone"
+              data-open="apollo-story"
+              aria-label="Open Eagle’s Apollo 11 story"
+            >
+              <span class="sprite phone-sprite"></span
+              ><span class="desk-tip">A call from Eagle</span>
+            </button>
+          </div>
+          <button
+            id="art-info"
+            class="art-info-button"
+            data-open="art-info"
+            aria-label="About the illustrations and NASA sources"
+          >
+            i
+          </button>
+          <button
+            id="learning-guide-open"
+            class="console-button learning-guide-open"
+            data-open="learning-guide"
+          >
+            Field guide · 0 / 3 goals
+          </button>
+          <footer class="room-footer">
+            <span id="discovery-count">0 / 11 discoveries</span
+            ><span>ARCHIVE EXPLORATION · NOT LIVE TELEMETRY</span
+            ><button class="console-button" data-open="legacy">
+              Mission legacy →
+            </button>
+          </footer>
+        </div>
+        <div class="compact-guide">
+          <p>Apollo 11 · Illustrated archive</p>
+          <p>Tap an object, or use the Objects menu to explore every record.</p>
+          <button class="paper-button" id="compact-objects">
+            Explore the objects →
+          </button>
+        </div>
+      </section>
+      <dialog
+        id="exhibit-dialog"
+        class="exhibit-dialog"
+        aria-labelledby="exhibit-title"
+      >
+        <div class="notebook-shell">
+          <div class="notebook-spine" aria-hidden="true"></div>
+          <button
+            id="close-exhibit"
+            class="close-exhibit"
+            aria-label="Close exhibit"
+          >
+            ×
+          </button>
+          <article id="exhibit-content" class="exhibit-content"></article>
+        </div>
+      </dialog>
+      <p id="notice" class="notice" role="status" hidden></p>
+    </div>
+    <noscript
+      ><p>
+        This archive needs JavaScript. Original records are available at
+        <a href="https://nssdc.gsfc.nasa.gov/">NASA NSSDCA</a>.
+      </p></noscript
+    >
+  </body>
+</html>

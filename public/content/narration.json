@@ -1,0 +1,98 @@
+{
+  "recordings": [
+    {
+      "file": "assets/audio/apollo-intro-crt.mp3",
+      "originalFilename": "apollo-intro-crt.mp3",
+      "sha256": "f6df3b87abf065a18e4ff93f7721df9db47b4c2186a266b3d84394be0990b8db",
+      "bytes": 1112599,
+      "durationSeconds": 46.28,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration created with ElevenLabs; confirmed by project owner.",
+      "disclosure": "Original NASA-based explanatory narration, not historic mission audio.",
+      "tool": "ElevenLabs",
+      "planAtCreation": "Paid plan, confirmed by project owner",
+      "sourceOriginalSHA256": "97c057fd59aed88524d5d6e34e97dfb73a539f30a3d948715ca1cf1e7a79ab0e",
+      "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    },
+    {
+      "file": "assets/audio/apollo-phone.mp3",
+      "originalFilename": "apollo-phone.mp3",
+      "sha256": "eaedbc0cd9098d67b8b7afe3150a1b1af1494eb91b3df7048d2056046330d1d4",
+      "bytes": 1264318,
+      "durationSeconds": 52.61,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration created with ElevenLabs; confirmed by project owner.",
+      "disclosure": "Original NASA-based explanatory narration, not historic mission audio.",
+      "tool": "ElevenLabs",
+      "planAtCreation": "Paid plan, confirmed by project owner",
+      "sourceOriginalSHA256": "7fd44ca9d68e1eaa5fe84c985467816503f127e1652a8cd196b578b9aeba6402",
+      "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    },
+    {
+      "file": "assets/audio/viking-intro-crt.mp3",
+      "originalFilename": "viking-intro-crt.mp3",
+      "sha256": "6703180f284d5f93f59f81c7c5520d84c3d59a75384723bc8b7a62e3903970e1",
+      "bytes": 1241748,
+      "durationSeconds": 51.664,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration created with ElevenLabs; confirmed by project owner.",
+      "disclosure": "Original NASA-based explanatory narration, not historic mission audio.",
+      "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Year and mission numerals normalized, Chryse and plain spelling preserved from approved script. Playback follows audio.currentTime; these are editorial estimates, not archival timestamps.",
+      "tool": "ElevenLabs",
+      "planAtCreation": "Paid plan, confirmed by project owner",
+      "sourceOriginalSHA256": "1830c2b1f3944d6020eece748681941f7417238b4bbce88a05087f6cbc579ebb",
+      "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    },
+    {
+      "file": "assets/audio/viking1-phone.mp3",
+      "originalFilename": "viking1-phone.mp3",
+      "sha256": "d5b9f1825cc37495731a60f6f205db883ec002f0210f3c1a468c001b44f62b15",
+      "bytes": 1427322,
+      "durationSeconds": 59.4,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration created with ElevenLabs; confirmed by project owner.",
+      "disclosure": "Original NASA-based phone-story narration, not historic mission audio.",
+      "playback": "Automatically starts when the Viking telephone opens its story. Pause, replay and seek available; stops and resets on close or changing exhibits.",
+      "tool": "ElevenLabs",
+      "planAtCreation": "Paid plan, confirmed by project owner",
+      "sourceOriginalSHA256": "11548d7faf7255ec2a988b0c4e860476a550a2ed6104b4e6bf09d30d2e82749d",
+      "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    },
+    {
+      "file": "assets/audio/sojorner-crt.mp3",
+      "originalFilename": "sojorner-crt.mp3",
+      "sha256": "f6704cb3cc0a9362fb494a50888c9fe804373aef536c4029fee580c2132c3482",
+      "bytes": 1175293,
+      "durationSeconds": 48.885011,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration created with ElevenLabs; confirmed by project owner.",
+      "disclosure": "Original NASA-based explanatory narration, not historic mission audio.",
+      "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Spoken year normalized; Ares Vallis spelling retained from NASA sources. Playback follows audio.currentTime, including pauses and seeking. Editorial word timings, not historical mission timestamps.",
+      "tool": "ElevenLabs",
+      "planAtCreation": "Paid plan, confirmed by project owner",
+      "sourceOriginalSHA256": "0dd5ab851153bf9967acc4d64e1307d95372a93e158614fc8f300778f948e5ee",
+      "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    },
+    {
+      "file": "assets/audio/sojorner-phone.mp3",
+      "originalFilename": "sojorner-phone.mp3",
+      "sha256": "efa4de6bc0d7549a2747ce55ae2c6827b988f35afca783bf97010aaa44044d28",
+      "bytes": 1125138,
+      "durationSeconds": 46.8,
+      "providedBy": "Project owner",
+      "aiGeneration": "AI-generated narration created with ElevenLabs; confirmed by project owner.",
+      "disclosure": "Original NASA-based explanatory narration, not historic mission audio.",
+      "playback": "Automatically starts on Sojourner telephone activation. Shared pause, replay and seek controls; stopped/reset on close, route or exhibit change.",
+      "tool": "ElevenLabs",
+      "planAtCreation": "Paid plan, confirmed by project owner",
+      "sourceOriginalSHA256": "dcd02a3ca784fbec5231b92e5f5f601122e29cdd82d2fb17ee54d5d0c051b067",
+      "modifications": "ID3 AI disclosure added without changing encoded audio packet bytes. Original owner MP3 retained outside published project."
+    }
+  ],
+  "alignment": "Local speech-recognition word estimates aligned to the approved script; playback follows audio.currentTime. Not archival timestamps.",
+  "productionTimeOwnerStatement": {
+    "statement": "Owner confirms all supplied homepage music, arrival films and Apollo/Viking/Sojourner narrator recordings were produced after 2026-11-14 09:00 Europe/Istanbul.",
+    "recordedOn": "2026-11-14",
+    "verification": "Owner statement; exact original production timestamps are not independently established. Original bytes retained."
+  }
+}

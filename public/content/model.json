@@ -1,0 +1,30 @@
+{
+  "title": "Apollo Lunar Module",
+  "credit": "NASA / Michael D. Carbajal",
+  "source": "https://science.nasa.gov/3d-resources/apollo-lunar-module/",
+  "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/apollo-lunar-module/Apollo%20Lunar%20Module.glb",
+  "file": "assets/models/apollo-lunar-module.glb",
+  "bytes": 716840,
+  "sha256": "379101dfcee399267addf771709107c35e826b0b9e5233272f123e4c8a585c4e",
+  "verified": "2026-11-14",
+  "verification": "The user-supplied GLB and the separately retrieved NASA download are byte-for-byte identical.",
+  "fidelity": "NASA labels this a generic Apollo Lunar Module. Its page does not certify every detail as Apollo 11 LM-5 Eagle. It is a simplified visualisation, not an engineering model.",
+  "materials": "Original GLB contains 12 materials and embedded image textures. Runtime viewing mode increases gold/amber, silver and dark material contrast and uses environment lighting. Original model colors are available through a control. These adjustments are illustrative display choices, not exact historical surface-color measurements.",
+  "colorReferences": [
+    "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/images11.html#5915",
+    "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/images11.html#5922"
+  ],
+  "libraries": [
+    {
+      "name": "Three.js",
+      "version": "0.187.0",
+      "license": "MIT",
+      "localLicense": "vendor/three-LICENSE.txt"
+    },
+    {
+      "name": "Google Draco decoder",
+      "license": "Apache-2.0",
+      "localLicense": "vendor/draco-LICENSE.txt"
+    }
+  ]
+}

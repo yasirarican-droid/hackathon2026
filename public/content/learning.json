@@ -1,0 +1,337 @@
+{
+  "apollo": {
+    "title": "Apollo 11 · What stayed on the Moon?",
+    "question": "The astronauts came home. Which objects kept their story on the Moon?",
+    "goals": [
+      {
+        "id": "stages",
+        "title": "Follow Eagle home",
+        "objective": "Compare the landing stage and the crew cabin.",
+        "evidence": "eagle",
+        "prompt": "Which part stayed on the Moon?",
+        "choices": [
+          "The lower landing stage",
+          "The crew cabin with the astronauts",
+          "Columbia"
+        ],
+        "answer": 0,
+        "explanation": "The lower stage stayed behind and served as the launch platform. The upper stage carried the astronauts back to lunar orbit.",
+        "hint": "Look for the lower stage and landing legs.",
+        "sources": [
+          "catalog",
+          "mission"
+        ],
+        "takeaway": "Eagle’s lower stage stayed; its upper stage lifted off."
+      },
+      {
+        "id": "light",
+        "title": "Send a light pulse",
+        "objective": "Use the science screen to follow light from Earth to the reflector.",
+        "evidence": "science",
+        "prompt": "Where is the laser that starts this measurement?",
+        "choices": [
+          "Inside the Moon",
+          "At an observatory on Earth",
+          "Inside Eagle’s cabin"
+        ],
+        "answer": 1,
+        "explanation": "An Earth-based laser sends light to a passive reflector. The reflector does not need a radio transmitter to return that light.",
+        "hint": "Follow the light path from its starting point.",
+        "sources": [
+          "reflector",
+          "reflector-array"
+        ],
+        "takeaway": "The lunar reflector returns light sent from Earth."
+      },
+      {
+        "id": "samples",
+        "title": "Bring evidence to a laboratory",
+        "objective": "Open the returned samples file.",
+        "evidence": "samples",
+        "prompt": "Which evidence could scientists study in laboratories on Earth?",
+        "choices": [
+          "A made-up picture",
+          "Returned lunar rock and soil",
+          "Only a memory"
+        ],
+        "answer": 1,
+        "explanation": "Returned rock and soil samples are physical evidence that laboratories can study. A story illustration is not a lunar sample.",
+        "hint": "Compare an original sample with an imagined illustration.",
+        "sources": [
+          "mission",
+          "science"
+        ],
+        "takeaway": "Returned lunar samples let laboratories investigate real material."
+      }
+    ]
+  },
+  "viking": {
+    "title": "Viking 1 · What counts as evidence?",
+    "question": "Can one exciting signal answer every scientific question?",
+    "goals": [
+      {
+        "id": "pressure",
+        "title": "Read a real Mars measurement",
+        "objective": "Open Science Data and compare the first and last displayed sols.",
+        "evidence": "viking-weather",
+        "prompt": "Which displayed day has the higher daily mean pressure?",
+        "choices": [
+          "Sol 30",
+          "Both are identical",
+          "Sol 1"
+        ],
+        "answer": 2,
+        "explanation": "The recorded mean is 7.629 mbar on Sol 1 and 7.286 mbar on Sol 30. This compares two archived observations, not live weather or a prediction.",
+        "hint": "Compare the two recorded numbers; do not guess the trend beyond this archive.",
+        "sources": [
+          "viking-pressure"
+        ],
+        "takeaway": "I can compare two original NASA PDS pressure measurements."
+      },
+      {
+        "id": "biology",
+        "title": "Question an exciting result",
+        "objective": "Read what Viking’s soil experiments could and could not establish.",
+        "evidence": "viking-soil",
+        "prompt": "What is supported by these results?",
+        "choices": [
+          "Life was definitely proved",
+          "Puzzling chemistry, without clear proof of living microorganisms",
+          "Nothing worth investigating"
+        ],
+        "answer": 1,
+        "explanation": "The experiments revealed puzzling chemistry but did not provide clear evidence of living microorganisms. An interesting signal calls for careful investigation.",
+        "hint": "A signal and a proven explanation are different things.",
+        "sources": [
+          "viking-science"
+        ],
+        "takeaway": "Interesting chemistry did not establish clear proof of life."
+      },
+      {
+        "id": "image",
+        "title": "Look closely at the first photograph",
+        "objective": "Open the first surface view and find the lander footpad.",
+        "evidence": "viking-photos",
+        "prompt": "What kind of evidence is the first black-and-white surface view?",
+        "choices": [
+          "A NASA mission photograph",
+          "An AI-generated Mars painting",
+          "A live view from today"
+        ],
+        "answer": 0,
+        "explanation": "It is an original NASA mission photograph. The archive preserves its source and credit, while the drawn room is an illustration.",
+        "hint": "Read the photograph’s image identifier and source caption.",
+        "sources": [
+          "viking-first"
+        ],
+        "takeaway": "Original mission photographs and AI illustrations serve different purposes."
+      }
+    ]
+  },
+  "sojourner": {
+    "title": "Sojourner · How does a small rover explore?",
+    "question": "Six wheels, a solar panel and a teammate: what does each contribute?",
+    "goals": [
+      {
+        "id": "rover",
+        "title": "Match a part to its job",
+        "objective": "Turn the educational rover model and select its solar array.",
+        "evidence": "sojourner-rover",
+        "prompt": "Which part helps provide power?",
+        "choices": [
+          "A wheel tread",
+          "The solar array",
+          "A paper notebook"
+        ],
+        "answer": 1,
+        "explanation": "Sojourner’s solar array helped provide power. Its wheels helped it travel, while its instruments investigated the surroundings.",
+        "hint": "Choose Solar array in Explore the parts.",
+        "sources": [
+          "sojourner-hardware"
+        ],
+        "takeaway": "Different rover parts perform different jobs; the solar array helps provide power."
+      },
+      {
+        "id": "team",
+        "title": "Meet the rover’s teammate",
+        "objective": "Compare the Sojourner rover and Pathfinder lander models.",
+        "evidence": "sojourner-relay",
+        "prompt": "How did the rover’s discoveries reach Earth?",
+        "choices": [
+          "Through the Pathfinder lander’s communications link",
+          "By carrying postcards back to Earth",
+          "Without any radio link"
+        ],
+        "answer": 0,
+        "explanation": "The rover and lander worked as a team. Pathfinder supported communications between Sojourner and Earth.",
+        "hint": "The rover explored nearby; the lander supported the link home.",
+        "sources": [
+          "sojourner-hardware",
+          "pathfinder"
+        ],
+        "takeaway": "Sojourner explored nearby and Pathfinder supported communication with Earth."
+      },
+      {
+        "id": "days",
+        "title": "Compare a plan with the reported result",
+        "objective": "Use Beyond the Plan to compare the two mission-summary bars.",
+        "evidence": "sojourner-duration",
+        "prompt": "What do 7 and 83 compare in this chart?",
+        "choices": [
+          "Wheel counts",
+          "Distance in kilometres",
+          "Planned and NASA-reported rover days"
+        ],
+        "answer": 2,
+        "explanation": "This chart compares seven planned days with 83 days reported by the NASA source. These are mission-summary durations, not a series of daily measurements.",
+        "hint": "Read the unit and both bar labels.",
+        "sources": [
+          "sojourner-barnacle"
+        ],
+        "takeaway": "A mission-summary comparison is different from a measured time-series graph."
+      }
+    ]
+  },
+  "sourceURLs": {
+    "catalog": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+    "mission": "https://www.nasa.gov/mission/apollo-11/",
+    "science": "https://www.nasa.gov/history/50-years-ago-one-small-step-one-giant-leap/",
+    "reflector": "https://ilrs.cddis.eosdis.nasa.gov/missions/satellite_missions/current_missions/ap11_general.html",
+    "images": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/images11.html",
+    "bootprint": "https://science.nasa.gov/resource/apollo-11-bootprint/",
+    "memorials": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11memorials.html",
+    "transcript": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.landing.html",
+    "viking": "https://science.nasa.gov/mission/viking-1/",
+    "pathfinder": "https://science.nasa.gov/mission/mars-pathfinder/",
+    "model": "https://science.nasa.gov/3d-resources/apollo-lunar-module/",
+    "moon-distance": "https://spaceplace.nasa.gov/moon-distance/en/",
+    "viking-model": "https://science.nasa.gov/3d-resources/viking-lander/",
+    "viking-first": "https://science.nasa.gov/photojournal/first-photograph-taken-on-mars-surface/",
+    "viking-color": "https://science.nasa.gov/resource/first-color-image-from-viking-lander-1/",
+    "viking-panorama": "https://science.nasa.gov/resource/first-panoramic-view-from-the-surface-of-mars/",
+    "viking-pressure": "https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1/VL2-M-MET-4-DAILY-AVG-PRESSURE-V1.0",
+    "viking-science": "https://science.nasa.gov/resource/viking-lander-model/",
+    "viking-messages": "https://www.nasa.gov/image-article/our-first-view-of-the-surface-of-mars/",
+    "viking-hardware": "https://www.nasa.gov/image-article/viking-lander-model/",
+    "viking-distance": "https://science.nasa.gov/mission/viking/viking-50-years-on-mars/",
+    "viking-hardware-description": "https://planetarydata.jpl.nasa.gov/img/data/viking_lander/vl_0001/document/volinfo.htm",
+    "reflector-array": "https://ilrs.cddis.eosdis.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html",
+    "timeline-source": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.step.html",
+    "sojourner-barnacle": "https://science.nasa.gov/photojournal/sojourner-near-barnacle-bill/",
+    "sojourner-airbags": "https://science.nasa.gov/resource/pathfinders-rover-airbags-martian-terrain/",
+    "sojourner-yogi": "https://science.nasa.gov/resource/sojourner-at-yogi-color/",
+    "sojourner-history": "https://www.nasa.gov/history/25-years-ago-mars-pathfinder-launches-to-mars-to-deploy-sojourner-the-first-planetary-rover/",
+    "sojourner-hardware": "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/pathfinder/",
+    "sojourner-podcast": "https://www.nasa.gov/podcasts/on-a-mission/first-steps-sojourner-s4e2/",
+    "pathfinder-model-reference": "https://www.jpl.nasa.gov/news/press_kits/mpfland.pdf",
+    "sojourner-distance": "https://planetarydata.jpl.nasa.gov/img/data/mpf/rover/mprv_0001/document/mission.htm"
+  },
+  "parts": {
+    "apollo": {
+      "instruction": "Use the labels to compare the two stages. These guided views explain functions; they are not engineering measurements.",
+      "parts": [
+        {
+          "id": "upper",
+          "title": "Upper stage",
+          "text": "The upper stage carried the astronauts back to lunar orbit. It separated from the lower landing stage.",
+          "sources": [
+            "catalog",
+            "mission"
+          ]
+        },
+        {
+          "id": "lower",
+          "title": "Lower landing stage",
+          "text": "The lower stage and landing legs stayed on the Moon. The stage served as the launch platform.",
+          "sources": [
+            "catalog",
+            "mission"
+          ]
+        }
+      ]
+    },
+    "viking": {
+      "instruction": "Use the labels to connect hardware with a job. Explore real surface photographs and the weather archive for the scientific evidence.",
+      "parts": [
+        {
+          "id": "radio",
+          "title": "Communication",
+          "text": "Viking’s radio system sent mission information to Earth. Antennas are part of that communication system.",
+          "sources": [
+            "viking-hardware-description"
+          ]
+        },
+        {
+          "id": "legs",
+          "title": "Landing legs",
+          "text": "Three landing legs supported the lander on the surface. Viking was a stationary lander, not a wheeled rover.",
+          "sources": [
+            "viking-hardware-description",
+            "viking"
+          ]
+        }
+      ]
+    },
+    "sojourner": {
+      "instruction": "Tap the rover’s wheels, solar array or APXS instrument in the 3D view, or use the matching buttons. The geometry is an educational reconstruction.",
+      "parts": [
+        {
+          "id": "wheels",
+          "title": "Wheels",
+          "text": "Six wheels helped Sojourner move across rocky ground. The suspension helped it travel over uneven terrain.",
+          "sources": [
+            "sojourner-hardware"
+          ]
+        },
+        {
+          "id": "solar",
+          "title": "Solar array",
+          "text": "The solar array helped supply electrical power. It is different from the wheels and the rock-analysis instrument.",
+          "sources": [
+            "sojourner-hardware"
+          ]
+        },
+        {
+          "id": "apxs",
+          "title": "APXS instrument",
+          "text": "This instrument examined the chemical composition of rocks and soil. It is shown in a simplified form at the rover’s rear.",
+          "sources": [
+            "sojourner-hardware",
+            "sojourner-barnacle"
+          ]
+        }
+      ]
+    },
+    "pathfinder": {
+      "instruction": "Tap a solar petal, camera mast or antenna, or use the buttons. Pathfinder is the stationary lander in this educational reconstruction.",
+      "parts": [
+        {
+          "id": "power",
+          "title": "Solar petals",
+          "text": "The open lander has three petal-shaped panels. Solar cells helped provide electrical power.",
+          "sources": [
+            "pathfinder-model-reference"
+          ]
+        },
+        {
+          "id": "camera",
+          "title": "Lander camera",
+          "text": "The lander’s camera photographed the landing site and rover. A lander photograph is different from a picture taken by the rover’s own cameras.",
+          "sources": [
+            "pathfinder",
+            "sojourner-airbags"
+          ]
+        },
+        {
+          "id": "relay",
+          "title": "Communications",
+          "text": "The lander supported the communication link between the little rover and Earth. Both spacecraft had different jobs.",
+          "sources": [
+            "sojourner-hardware",
+            "pathfinder"
+          ]
+        }
+      ]
+    }
+  }
+}

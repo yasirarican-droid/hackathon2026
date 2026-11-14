@@ -1,0 +1,11 @@
+{
+  "file": "submission/demo.mp4",
+  "durationSeconds": 29.0,
+  "bytes": 2309860,
+  "sha256": "7154d908c1a1c3c3be20490fd06276ed1b6c4f7453c099d59ce92d2f5165180a",
+  "kind": "Screen recording of the actual application with English explanatory captions",
+  "audio": "AI-generated music: Suno, owner paid-plan confirmation; low-volume excerpt with fade.",
+  "sourceVideo": "Actual application interaction; no simulated user-test results.",
+  "initialLoader": "Optional submission material, excluded from application asset preload.",
+  "sources": "Application Sources links the original NASA evidence and production tools."
+}

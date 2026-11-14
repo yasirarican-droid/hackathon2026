@@ -1,0 +1,34 @@
+{
+  "file": "assets/video/viking-arrival-web.mp4",
+  "originalFilename": "mars-viking-landed.mp4",
+  "origin": "Provided by the project owner",
+  "added": "2026-11-14",
+  "bytes": 3309713,
+  "sha256": "f0237696524535846ebb68659681e9270424fe1c23bf0c6f8e5dd42661f0acc1",
+  "durationSeconds": 8.041678,
+  "width": 1916,
+  "height": 1080,
+  "audioTrack": true,
+  "classification": "Owner-provided illustrated Viking landing animation, not original NASA mission footage or measured telemetry.",
+  "modifications": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit. Visible AI-GENERATED VISUAL - CHATGPT + KLING AI credit burned into lower-left picture area, original resolution/timing retained; AAC audio packet bytes unchanged.",
+  "use": "After seven-second Earth-to-Mars briefing and before Viking CRT introduction. Autoplay with sound attempted; same pause, replay, sound, seek, fullscreen and Skip controls as Apollo.",
+  "aiDisclosure": "AI-generated visual · ChatGPT + Kling AI. Tools confirmed by the project owner on 2026-11-14. Not original NASA mission footage.",
+  "displayCredit": "AI-GENERATED VISUAL · CHATGPT + KLING AI",
+  "productionTimeOwnerStatement": {
+    "statement": "Owner confirms all supplied homepage music, arrival films and Apollo/Viking/Sojourner narrator recordings were produced after 2026-11-14 09:00 Europe/Istanbul.",
+    "recordedOn": "2026-11-14",
+    "verification": "Owner statement; exact original production timestamps are not independently established. Original bytes retained."
+  },
+  "webOptimization": {
+    "originalSHA256": "de8af9d38c7536bbe6c5e0e00d2549832ea7db66153deb3626bdacde22ed02df",
+    "originalBytes": 6888513,
+    "processing": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+    "originalRetained": "Unchanged original retained outside published project."
+  },
+  "sourceOriginalFilename": "mars-viking-landed.mp4",
+  "sourceOriginalSHA256": "de8af9d38c7536bbe6c5e0e00d2549832ea7db66153deb3626bdacde22ed02df",
+  "sourceOriginalBytes": 6888513,
+  "watermarkEmbedded": true,
+  "watermarkProcessing": "Visible AI-GENERATED VISUAL - CHATGPT + KLING AI credit burned into lower-left picture area, original resolution/timing retained; AAC audio packet bytes unchanged.",
+  "preWatermarkSHA256": "fa18500e9acbdbeaf6b975d6ae7f57fb2d4472f0227089353f3bd3ae0b5eec40"
+}

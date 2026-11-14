@@ -1,0 +1,30 @@
+{
+  "file": "assets/video/moon-arrival-web.mp4",
+  "originalFilename": "moon-animation.mp4",
+  "origin": "Provided by the project owner",
+  "added": "2026-11-14",
+  "bytes": 2524090,
+  "sha256": "c2c5cee99e673c093b4318af97aab94811f676901ea93852f27e21a4af608cfa",
+  "durationSeconds": 10.041678,
+  "width": 1916,
+  "height": 1080,
+  "audioTrack": true,
+  "classification": "Illustrated lunar arrival animation, not original NASA mission footage or measured telemetry.",
+  "aiDisclosure": "The supplied clip visibly includes an AI-generated ChatGPT/Kling AI watermark. The file and embedded marking are retained unchanged. The exact generation workflow has not been independently established.",
+  "use": "After the seven-second briefing and before the Apollo room. Preloaded with all required assets. Audio enabled by default; automatic audible playback is attempted. User sound-off choice persists through replay during the visit. Browser-blocked autoplay retries on interaction; play/pause, sound, replay, seek and Skip remain available.",
+  "modifications": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+  "productionTimeOwnerStatement": {
+    "statement": "Owner confirms all supplied homepage music, arrival films and Apollo/Viking/Sojourner narrator recordings were produced after 2026-11-14 09:00 Europe/Istanbul.",
+    "recordedOn": "2026-11-14",
+    "verification": "Owner statement; exact original production timestamps are not independently established. Original bytes retained."
+  },
+  "webOptimization": {
+    "originalSHA256": "a83f6e3c1cdaaadbd07b12b5c7efe07bcfed98182c2cdbbba10d5a793ace1107",
+    "originalBytes": 14807402,
+    "processing": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+    "originalRetained": "Unchanged original retained outside published project."
+  },
+  "sourceOriginalFilename": "moon-animation.mp4",
+  "sourceOriginalSHA256": "a83f6e3c1cdaaadbd07b12b5c7efe07bcfed98182c2cdbbba10d5a793ace1107",
+  "sourceOriginalBytes": 14807402
+}

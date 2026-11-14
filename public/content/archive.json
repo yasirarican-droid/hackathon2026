@@ -1,0 +1,2826 @@
+{
+  "reviewed": "2026-11-14",
+  "sources": {
+    "catalog": {
+      "title": "NASA NSSDCA — Apollo 11 LM / EASEP",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+      "usedFor": "Eagle's two stages, landing, surface stay, returned samples and instrument status."
+    },
+    "mission": {
+      "title": "NASA — Apollo 11",
+      "url": "https://www.nasa.gov/mission/apollo-11/",
+      "usedFor": "Crew, first human lunar landing, launch and return dates."
+    },
+    "science": {
+      "title": "NASA History — One Small Step, One Giant Leap",
+      "url": "https://www.nasa.gov/history/50-years-ago-one-small-step-one-giant-leap/",
+      "usedFor": "Deployment of experiments, astronaut vibrations and return of solar-wind foil."
+    },
+    "reflector": {
+      "title": "NASA / ILRS — Apollo 11 reflector",
+      "url": "https://ilrs.cddis.eosdis.nasa.gov/missions/satellite_missions/current_missions/ap11_general.html",
+      "usedFor": "Passive laser ranging and continuing scientific use."
+    },
+    "images": {
+      "title": "NASA Apollo Lunar Surface Journal — Image Library",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/images11.html",
+      "usedFor": "Identification and context of AS11-40-5961 and AS11-40-5949. Captions are paraphrased, not reproduced."
+    },
+    "bootprint": {
+      "title": "NASA Science — Apollo 11 Bootprint",
+      "url": "https://science.nasa.gov/resource/apollo-11-bootprint/",
+      "usedFor": "AS11-40-5878; credited to Buzz Aldrin."
+    },
+    "memorials": {
+      "title": "NASA — Apollo 11 Memorial Items",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11memorials.html",
+      "usedFor": "Gold olive-branch replica, silicon disc and messages from 73 countries."
+    },
+    "transcript": {
+      "title": "NASA Apollo Lunar Surface Journal — First Lunar Landing",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.landing.html",
+      "usedFor": "Two short mission-transcript excerpts at GET 102:45:40 and 102:45:58. Editorial commentary is not quoted."
+    },
+    "viking": {
+      "title": "NASA Science — Viking 1",
+      "url": "https://science.nasa.gov/mission/viking-1/",
+      "usedFor": "Launch on 20 August 1975, Mars orbit on 19 June 1976, landing on 20 July 1976, weather instruments, sampler arm and lander operations ending on 11 November 1982."
+    },
+    "pathfinder": {
+      "title": "NASA Science — Mars Pathfinder",
+      "url": "https://science.nasa.gov/mission/mars-pathfinder/",
+      "usedFor": "1997 landing, rover/lander distinction and introductory mission description."
+    },
+    "model": {
+      "title": "NASA 3D Resources — Apollo Lunar Module",
+      "url": "https://science.nasa.gov/3d-resources/apollo-lunar-module/",
+      "accessed": "2026-11-14",
+      "usedFor": "Original Apollo Lunar Module GLB; credited to NASA / Michael D. Carbajal. The owner-supplied file matches NASA's download byte-for-byte. Used in Meet Eagle CRT and enlarged interactive viewer. Display materials adjusted; geometry and embedded textures remain unchanged."
+    },
+    "moon-distance": {
+      "title": "NASA Space Place — How Far Away Is the Moon?",
+      "url": "https://spaceplace.nasa.gov/moon-distance/en/",
+      "usedFor": "Briefing distance: average Earth–Moon distance of 384,400 km / 238,855 miles. Not Apollo 11 landing-day range, spacecraft path length or live telemetry.",
+      "accessed": "2026-11-14"
+    },
+    "viking-model": {
+      "title": "NASA 3D Resources — Viking Lander",
+      "url": "https://science.nasa.gov/3d-resources/viking-lander/",
+      "usedFor": "Original NASA/Michael D. Carbajal Viking GLB, verified byte-for-byte against owner-supplied file. Shared interactive 3D viewer in CRT and enlarged panel; runtime material colors adjusted for readability. No geometry changes.",
+      "accessed": "2026-11-14"
+    },
+    "viking-first": {
+      "title": "NASA Photojournal — PIA00381",
+      "url": "https://science.nasa.gov/photojournal/first-photograph-taken-on-mars-surface/",
+      "usedFor": "First Viking 1 surface photograph, rocks, fine material and footpad; Camera 2, 20 July 1976.",
+      "accessed": "2026-11-14"
+    },
+    "viking-color": {
+      "title": "NASA Science — PIA00563",
+      "url": "https://science.nasa.gov/resource/first-color-image-from-viking-lander-1/",
+      "usedFor": "First Viking 1 color surface image; preserved original image file.",
+      "accessed": "2026-11-14"
+    },
+    "viking-panorama": {
+      "title": "NASA Science — PIA00383",
+      "url": "https://science.nasa.gov/resource/first-panoramic-view-from-the-surface-of-mars/",
+      "usedFor": "Viking 1 surface panorama and original NASA caption context.",
+      "accessed": "2026-11-14"
+    },
+    "viking-pressure": {
+      "title": "NASA PDS — Viking daily average pressure",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=VL1/VL2-M-MET-4-DAILY-AVG-PRESSURE-V1.0",
+      "usedFor": "VMIS daily average pressure, VL1 sols 1–30, PRESS_MEAN in mbar. Raw table and label downloaded from the PDS Atmospheres node; flags and original rows retained.",
+      "accessed": "2026-11-14"
+    },
+    "viking-science": {
+      "title": "NASA Science — Viking Lander Model & science",
+      "url": "https://science.nasa.gov/resource/viking-lander-model/",
+      "usedFor": "Lander/orbiter distinction, Chryse Planitia landing site, biology results without clear evidence of living microorganisms, final lander transmission.",
+      "accessed": "2026-11-14"
+    },
+    "viking-messages": {
+      "title": "NASA History — Our First View of Mars",
+      "url": "https://www.nasa.gov/image-article/our-first-view-of-the-surface-of-mars/",
+      "usedFor": "Images assembled line by line at mission control; robot exploration and returned scientific evidence. No dialogue is reproduced.",
+      "accessed": "2026-11-14"
+    },
+    "viking-hardware": {
+      "title": "NASA — Viking Lander test hardware / PIA09703",
+      "url": "https://www.nasa.gov/image-article/viking-lander-model/",
+      "usedFor": "Homepage Viking monitor: original photograph of a test version of the Viking landers in the JPL Mars Yard in 1975. Physical hardware, not a digital render or a Mars surface photograph.",
+      "accessed": "2026-11-14"
+    },
+    "viking-distance": {
+      "title": "NASA — Viking: 50 Years on Mars",
+      "url": "https://science.nasa.gov/mission/viking/viking-50-years-on-mars/",
+      "usedFor": "212 million miles from Earth at the 20 July 1976 landing. Approximate km display derived using 1 mile = 1.609344 km and rounded to 341 million km. Not current distance or spacecraft route length.",
+      "accessed": "2026-11-14"
+    },
+    "viking-hardware-description": {
+      "title": "NASA PDS — Viking Lander spacecraft description",
+      "url": "https://planetarydata.jpl.nasa.gov/img/data/viking_lander/vl_0001/document/volinfo.htm",
+      "usedFor": "Section 3: hexagonal body, three landing legs with footpads, sampler arm, two cameras, antennas and weather instruments. Supports phone narration and hardware reference for illustrative story art.",
+      "accessed": "2026-11-14"
+    },
+    "reflector-array": {
+      "title": "NASA / ILRS — Apollo reflector characteristics",
+      "url": "https://ilrs.cddis.eosdis.nasa.gov/missions/satellite_missions/current_missions/ap11_reflector.html",
+      "usedFor": "Apollo 11 array contains 100 fused-silica corner-cube reflectors; supports the right CRT equipment count and interactive light-path explanation.",
+      "accessed": "2026-11-14"
+    },
+    "timeline-source": {
+      "title": "NASA Apollo Lunar Surface Journal — One Small Step",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.step.html",
+      "usedFor": "Apollo 11 first step around 02:56 UTC on 21 July 1969; exact historical transcript context for timeline.",
+      "accessed": "2026-11-14"
+    },
+    "sojourner-barnacle": {
+      "title": "NASA Photojournal - Sojourner near Barnacle Bill",
+      "url": "https://science.nasa.gov/photojournal/sojourner-near-barnacle-bill/",
+      "usedFor": "PIA00638 lander IMP image on sol 3; APXS at rear; seven planned and 83 reported rover days; last Pathfinder data on September 27, 1997 and formal termination March 10, 1998."
+    },
+    "sojourner-airbags": {
+      "title": "NASA Science - Pathfinder rover, airbags and terrain",
+      "url": "https://science.nasa.gov/resource/pathfinders-rover-airbags-martian-terrain/",
+      "usedFor": "PIA00611 lander camera image after landing: rover still on lander, deflated white airbags, surrounding terrain."
+    },
+    "sojourner-yogi": {
+      "title": "NASA Science - Sojourner at Yogi, color",
+      "url": "https://science.nasa.gov/resource/sojourner-at-yogi-color/",
+      "usedFor": "PIA00672, July 11, 1997: rover rear color camera close-up, not a lander-camera view."
+    },
+    "sojourner-history": {
+      "title": "NASA History - Mars Pathfinder launches with Sojourner",
+      "url": "https://www.nasa.gov/history/25-years-ago-mars-pathfinder-launches-to-mars-to-deploy-sojourner-the-first-planetary-rover/",
+      "usedFor": "Six-wheel rover deployment; rocks, mission accomplishments and last contact. Deployment calendar date differs from mission overview; UI uses sol 2."
+    },
+    "sojourner-hardware": {
+      "title": "NASA/JPL Robotics - Mars Pathfinder Rover: Sojourner",
+      "url": "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/pathfinder/",
+      "usedFor": "Solar power plus primary batteries, rover UHF communications through the lander, six-wheel mobility."
+    },
+    "sojourner-podcast": {
+      "title": "NASA/JPL - First Steps: Sojourner, On a Mission S4E2",
+      "url": "https://www.nasa.gov/podcasts/on-a-mission/first-steps-sojourner-s4e2/",
+      "usedFor": "Four edited owner-supplied podcast excerpts and their English transcripts: modern launch narration, ramp descent with 1997 mission control, Dave Gruel communications interview and modern legacy narration. Original source positions and processing in sojourner-recordings.json."
+    },
+    "pathfinder-model-reference": {
+      "title": "NASA/JPL - Mars Pathfinder Landing Press Kit, July 1997",
+      "url": "https://www.jpl.nasa.gov/news/press_kits/mpfland.pdf",
+      "usedFor": "Printed pages 7, 28-32: rover dimensions, 13cm aluminum wheels, component schematics, lander three-petal structure, 2.75m deployed span and approximately 1.5m camera mast. Basis for project-authored educational 3D reconstructions, not NASA model files."
+    },
+    "sojourner-distance": {
+      "title": "NASA PDS / JPL - Mars Pathfinder Mission Description",
+      "url": "https://planetarydata.jpl.nasa.gov/img/data/mpf/rover/mprv_0001/document/mission.htm",
+      "usedFor": "Earth-Mars range at arrival on July 4, 1997: 191,000,000 km, increasing. This is planet separation at arrival, not spacecraft flight path length. July 1997 NASA landing press kit also gives 191 million km / 119 million miles."
+    }
+  },
+  "panels": {
+    "mission": {
+      "title": "A journey to the Moon",
+      "tag": "01 / MISSION LOG",
+      "intro": "Three explorers. Two spacecraft. One extraordinary journey.",
+      "paragraphs": [
+        "Apollo 11 launched on July 16, 1969, carrying Neil Armstrong, Buzz Aldrin and Michael Collins. Four days later, Armstrong and Aldrin landed in Eagle while Collins orbited above in Columbia.",
+        "The landing site was called the Sea of Tranquility. It is a rocky lunar plain, not an ocean of water. The crew returned safely to Earth on July 24."
+      ],
+      "facts": [
+        ["LAUNCH", "16 JUL 1969"],
+        ["LANDING", "20 JUL 1969"],
+        ["RETURN", "24 JUL 1969"]
+      ],
+      "sources": ["mission", "catalog", "timeline-source"]
+    },
+    "eagle": {
+      "title": "Meet Eagle",
+      "tag": "02 / THE SPACECRAFT",
+      "intro": "Two parts, four feet, and a way back home.",
+      "paragraphs": [
+        "Eagle's lower stage carried its landing legs and descent engine. Its upper stage held Armstrong and Aldrin and the engine that would lift them back into lunar orbit.",
+        "When the astronauts left, the lower stage stayed on the Moon as a launch platform. Eagle had no wheels. The crew explored on foot."
+      ],
+      "image": "eagle",
+      "facts": [
+        ["STAGES", "2"],
+        ["LANDING LEGS", "4"],
+        ["SURFACE STAY", "21 h 36 min"]
+      ],
+      "sources": ["catalog", "images", "model"]
+    },
+    "science": {
+      "title": "Science stayed behind",
+      "tag": "03 / LUNAR SCIENCE",
+      "intro": "A short visit could begin a much longer scientific story.",
+      "paragraphs": [
+        "The astronauts set out instruments before leaving. A laser reflector returned light toward Earth. A seismometer detected movements of the lunar ground.",
+        "These devices had different working lives. The seismic experiment stopped operating in 1969. The passive reflector still supports measurements of the Earth–Moon distance."
+      ],
+      "image": "seismometer",
+      "sources": [
+        "science",
+        "catalog",
+        "reflector",
+        "images",
+        "reflector-array"
+      ]
+    },
+    "reflector": {
+      "title": "A light that comes back",
+      "tag": "EXPERIMENT / LASER REFLECTOR",
+      "intro": "This instrument does not need batteries to help us measure.",
+      "paragraphs": [
+        "Scientists on Earth aim pulses of laser light at the panel. Its special reflectors send some light back toward the telescope. Timing that journey helps measure the distance to the Moon.",
+        "The laser is on Earth. The panel on the Moon reflects it; it does not broadcast a radio message or create its own beam."
+      ],
+      "image": "reflector",
+      "question": "Where does the laser light begin its journey?",
+      "sources": ["reflector", "reflector-array"]
+    },
+    "seismometer": {
+      "title": "Feeling tiny shakes",
+      "tag": "EXPERIMENT / SEISMOMETER",
+      "intro": "The ground could tell a story, too.",
+      "paragraphs": [
+        "The seismometer measured vibrations of the lunar ground. While Armstrong and Aldrin were still nearby, it detected movements caused by their activities.",
+        "It sensed shaking rather than listening to sound in the air. This particular instrument had a short operating life and is no longer transmitting."
+      ],
+      "image": "seismometer",
+      "sources": ["science", "catalog", "images"]
+    },
+    "photos": {
+      "title": "Eagle at Tranquility Base",
+      "tag": "NASA PHOTO / AS11-40-5961",
+      "intro": "An actual photograph from the Apollo 11 moonwalk.",
+      "paragraphs": [
+        "Neil Armstrong photographed Eagle from near Little West Crater. The spacecraft still has both stages in this view; the upper stage had not yet lifted off.",
+        "Look for the wide landing feet and the ladder. The complete photograph is shown here, without generated additions."
+      ],
+      "image": "eagle",
+      "sources": ["images", "catalog"]
+    },
+    "footprint": {
+      "title": "A footprint with a story",
+      "tag": "NASA PHOTO / AS11-40-5878",
+      "intro": "A familiar photograph deserves its real caption.",
+      "paragraphs": [
+        "Buzz Aldrin photographed this bootprint during the Apollo 11 surface activities. It belongs to his study of the lunar soil, not a photograph of Armstrong taking the first step.",
+        "The person who took a picture and the reason it was taken are important parts of its evidence."
+      ],
+      "image": "bootprint",
+      "sources": ["bootprint", "science"]
+    },
+    "samples": {
+      "title": "What came home?",
+      "tag": "FIELD NOTES / RETURNED SAMPLES",
+      "intro": "Some discoveries travelled back to Earth.",
+      "paragraphs": [
+        "Armstrong and Aldrin brought back more than 20 kilograms of lunar rocks and soil. These samples gave scientists material to examine in laboratories on Earth.",
+        "They also recovered a foil that had collected particles from the solar wind. That foil came home; it was not left as a permanent lunar experiment."
+      ],
+      "sources": ["catalog", "science"]
+    },
+    "timeline": {
+      "title": "The lunar event record",
+      "tag": "ARCHIVE / UTC DATES",
+      "intro": "One mission, seen in the right order.",
+      "paragraphs": [
+        "Eagle landed on July 20, 1969. Armstrong's first step followed at about 02:56 UTC on July 21. In the eastern United States it was still July 20.",
+        "Eagle stayed on the surface for about 22 hours. Its upper stage then carried the two explorers back to meet Collins."
+      ],
+      "facts": [
+        ["20 JUL", "Eagle lands"],
+        ["21 JUL UTC", "First step; later, liftoff"],
+        ["24 JUL", "Crew returns to Earth"]
+      ],
+      "sources": ["catalog", "mission"]
+    },
+    "radio": {
+      "title": "Words from the landing",
+      "tag": "NASA TRANSCRIPT / APOLLO 11",
+      "intro": "Actual words, with the people and mission times attached.",
+      "paragraphs": [
+        "These short excerpts come from NASA's Apollo Lunar Surface Journal. GET means mission elapsed time: hours, minutes and seconds since launch.",
+        "This is a readable transcript selection. No original audio or synthetic voice is being played."
+      ],
+      "quotes": [
+        {
+          "speaker": "Buzz Aldrin",
+          "time": "GET 102:45:40",
+          "text": "Contact Light."
+        },
+        {
+          "speaker": "Neil Armstrong",
+          "time": "GET 102:45:58",
+          "text": "Houston, Tranquility Base here. The Eagle has landed."
+        }
+      ],
+      "sources": ["transcript"]
+    },
+    "olive": {
+      "title": "A small wish for peace",
+      "tag": "APOLLO 11 / A LUNAR KEEPSAKE",
+      "intro": "A small object could carry a very human hope.",
+      "paragraphs": [
+        "The Apollo 11 crew left a small gold replica of an olive branch on the Moon. It represented peace. It was a metal keepsake, not a living plant.",
+        "The NASA photograph below shows the object before the flight. The floating illustration is a symbolic drawing, not a photograph of the lunar surface."
+      ],
+      "image": "olive",
+      "sources": ["memorials", "science"]
+    },
+    "disc": {
+      "title": "Messages from planet Earth",
+      "tag": "APOLLO 11 / SILICON DISC",
+      "intro": "Many voices travelled together on one tiny disc.",
+      "paragraphs": [
+        "The silicon disc carried goodwill messages from leaders of 73 countries, along with other records. Very small etched writing let these messages fit on its surface.",
+        "This preflight NASA photograph includes a coin for scale. The coin is not being identified as an object left on the Moon."
+      ],
+      "image": "disc",
+      "sources": ["memorials"]
+    },
+    "legacy": {
+      "title": "The story keeps going",
+      "tag": "DISCOVERY NOTEBOOK",
+      "intro": "A mission can end while its questions live on.",
+      "paragraphs": [
+        "The crew returned, Eagle's lower stage stayed, and samples reached Earth. Instruments, pictures and measurements helped people ask new questions about the Moon.",
+        "Try three discoveries. There is no timer, and you can always try again."
+      ],
+      "sources": ["mission", "catalog", "reflector"],
+      "quiz": [
+        {
+          "question": "Which part of Eagle stayed on the Moon?",
+          "choices": [
+            "The lower landing stage",
+            "The crew cabin with the astronauts",
+            "Columbia"
+          ],
+          "answer": 0,
+          "explanation": "The lower stage became the launch platform. The upper stage lifted the astronauts back to lunar orbit."
+        },
+        {
+          "question": "Where is the laser used for lunar ranging?",
+          "choices": [
+            "Inside a battery on the Moon",
+            "At an observatory on Earth",
+            "Inside an astronaut's camera"
+          ],
+          "answer": 1,
+          "explanation": "The Earth-based laser sends light to a passive reflector on the Moon."
+        },
+        {
+          "question": "Which kind of evidence can travel home?",
+          "choices": [
+            "Only an astronaut's memory",
+            "Lunar rock and soil samples",
+            "An invented weather chart"
+          ],
+          "answer": 1,
+          "explanation": "The returned samples let laboratories study real lunar material."
+        }
+      ]
+    },
+    "sojourner-preview": {
+      "title": "Sojourner · 1997",
+      "tag": "MARS / MISSION ARCHIVE",
+      "intro": "Little wheels. A new way to explore.",
+      "paragraphs": [
+        "Pathfinder brought Sojourner to Mars in 1997. Open the 1997 mission monitor to explore its interactive archive."
+      ],
+      "image": "sojourner",
+      "sources": ["pathfinder"]
+    },
+    "about": {
+      "title": "Small objects. Extraordinary stories.",
+      "tag": "ABOUT THIS ARCHIVE",
+      "intro": "Look closer at what exploration leaves behind.",
+      "paragraphs": [
+        "Explore a mission, open an object and follow its evidence back to NASA. Scientific photographs stay separate from our illustrated archive setting.",
+        "The rooms and decorative artwork are AI-generated illustrations, not photographs of a historical control room. NASA does not endorse this project. Apollo and Viking include owner-provided illustrated arrival animations. Narration recordings are credited separately."
+      ],
+      "sources": ["catalog", "viking", "pathfinder"]
+    },
+    "help": {
+      "title": "Your explorer's guide",
+      "tag": "HOW TO EXPLORE",
+      "intro": "Follow your curiosity. Take your time.",
+      "paragraphs": [
+        "Choose Apollo 11, Viking 1 or Sojourner. Explore archive takes you straight to the room; Watch the story plays the illustrated journey and narrated welcome. The Objects menu lists the exhibits.",
+        "Use Tab to move between controls and Enter to open one. Press Escape to close a page. Every evidence image has a credit and a source. You can pause decorative motion at any time.",
+        "Use the Field guide to find evidence and complete three learning goals in each mission. Objects opened and learning goals are counted separately. Progress is saved on this device when browser storage is available."
+      ],
+      "sources": []
+    },
+    "art-info": {
+      "tag": "MAKING THIS ARCHIVE",
+      "title": "How this archive was made",
+      "intro": "AI-generated illustrations, films, narration and music. Original NASA evidence is credited separately.",
+      "paragraphs": [
+        "AI tools helped create the illustrative setting, films, narrator voices, music, code and explanatory text. These creative elements are separate from original NASA evidence.",
+        "Illustrations and imagined character portraits are not historical photographs. Narrator stories are modern educational explanations, not original mission transmissions. The cassette’s NASA/JPL archive excerpts are credited separately."
+      ],
+      "facts": [
+        ["ILLUSTRATIONS", "OpenAI ImageGen"],
+        ["ILLUSTRATED FILMS", "ChatGPT + Kling AI"],
+        ["NARRATOR VOICES", "ElevenLabs"],
+        ["HOMEPAGE MUSIC", "Suno"],
+        ["CODE & EXPLANATORY TEXT", "OpenAI Codex assistance"],
+        [
+          "HISTORICAL EVIDENCE",
+          "NASA photographs, mission records and measured data"
+        ],
+        ["APOLLO & VIKING 3D", "Original NASA models, with viewer adjustments"],
+        [
+          "SOJOURNER & PATHFINDER 3D",
+          "Project-authored educational reconstructions based on NASA references"
+        ]
+      ],
+      "sources": []
+    },
+    "apollo-story": {
+      "title": "Eagle’s Journey to the Moon",
+      "tag": "APOLLO 11 / A LITTLE STORY",
+      "intro": "A short narrated story based on NASA sources. Not an original mission transmission.",
+      "paragraphs": [
+        "Hello, explorer! Ready for a journey to the Moon?",
+        "Meet Eagle, Apollo Eleven’s lunar module. In July nineteen sixty-nine, Neil Armstrong and Buzz Aldrin flew Eagle down to the Moon. Michael Collins stayed in orbit, ready for their return.",
+        "Eagle had no wheels. It landed on four legs! The astronauts explored on foot, collected Moon rocks, and set up experiments.",
+        "When it was time to leave, Eagle’s upper cabin lifted off. Its lower stage stayed behind, serving as a launch platform.",
+        "And the story didn’t stop there. A special reflector left on the Moon still helps scientists measure the distance from Earth.",
+        "Some equipment stayed, but its story kept going.",
+        "Now it’s your turn. Look at the photographs, open the files, and follow the clues. What will you discover?"
+      ],
+      "sources": ["catalog", "mission", "reflector"],
+      "illustration": "assets/art/eagle-story.webp",
+      "narration": {
+        "file": "assets/audio/apollo-phone.mp3",
+        "status": "owner-recording-loaded",
+        "generation": "AI-generated narration · ElevenLabs",
+        "cues": []
+      }
+    },
+    "crt-intro-text": {
+      "title": "Welcome to the Apollo Eleven archive",
+      "tag": "CRT INTRODUCTION / READING TEXT",
+      "intro": "An original NASA-based introduction, not a historic transmission.",
+      "paragraphs": [
+        "The year is nineteen sixty-nine. Eagle has landed on the Moon.",
+        "Neil Armstrong and Buzz Aldrin have arrived in a spacecraft with two stages. The upper cabin will take them back into lunar orbit. The lower stage will stay behind.",
+        "But leaving equipment behind does not mean leaving its story behind.",
+        "Welcome to the Apollo Eleven archive.",
+        "Tap a screen to meet Eagle. Open the photographs to discover real NASA evidence. Pick up a file, explore an experiment, or answer a question in the notebook.",
+        "Each object holds a clue to how people reached the Moon—and what they left there.",
+        "Look closely, explorer. Your mission starts now."
+      ],
+      "sources": ["catalog", "mission"]
+    },
+    "viking-mission": {
+      "title": "A new chapter on Mars",
+      "tag": "VIKING 1 / MISSION LOG",
+      "intro": "A robot explorer, an orbiter and a new world.",
+      "paragraphs": [
+        "Viking 1 launched on August 20, 1975. It reached Mars orbit on June 19, 1976. The lander touched down on July 20.",
+        "The orbiter stayed above Mars while the lander worked on the ground. Each had a different job."
+      ],
+      "sources": [
+        "viking",
+        "viking-science",
+        "viking-first",
+        "viking-messages"
+      ],
+      "facts": [
+        ["LAUNCH", "20 AUG 1975"],
+        ["MARS ORBIT", "19 JUN 1976"],
+        ["LANDING", "20 JUL 1976"]
+      ]
+    },
+    "viking-lander": {
+      "title": "Meet Viking 1",
+      "tag": "VIKING 1 / THE LANDER",
+      "intro": "A science station that stayed in one place.",
+      "paragraphs": [
+        "Viking 1 was a lander, not a rover. It explored its surroundings with cameras, a sampling arm and scientific instruments.",
+        "Explore NASA’s original Viking lander model. Drag to rotate or use the controls to zoom. Display colors and lighting have been adjusted for clarity; use Original model colors to compare."
+      ],
+      "sources": ["viking", "viking-model"],
+      "image": "viking-lander"
+    },
+    "viking-weather": {
+      "title": "A weather station on Mars",
+      "tag": "VIKING 1 / MEASURED ARCHIVE DATA",
+      "intro": "Even a still explorer can watch a planet change.",
+      "paragraphs": [
+        "Viking measured temperature, pressure and wind. This chart shows its daily average air pressure for Mars days 1–30 after landing.",
+        "A Mars day is called a sol. Each plotted point comes from the archived VL1 table; the connecting lines do not add new measurements.",
+        "The archive includes warning flags about data coverage. Open the table to see the values and flags alongside the graph."
+      ],
+      "sources": ["viking", "viking-pressure"],
+      "facts": [
+        ["INSTRUMENT", "VMIS"],
+        ["SELECTION", "VL1 · SOLS 1–30"],
+        ["UNIT", "mbar"]
+      ]
+    },
+    "viking-photos": {
+      "title": "The first view from the ground",
+      "tag": "VIKING 1 / PIA00381",
+      "intro": "Rocks, dust—and a piece of the explorer itself.",
+      "paragraphs": [
+        "Look at the right side: part of Viking’s footpad appears in the first surface photograph. Nearby, its camera saw rocks and fine-grained material.",
+        "A small detail can tell a big story. This image is evidence from Mars, not a drawing."
+      ],
+      "sources": ["viking-first"],
+      "image": "viking-first",
+      "question": "Can you find the footpad? What does the photograph show clearly?"
+    },
+    "viking-color": {
+      "title": "Mars in color",
+      "tag": "VIKING 1 / PIA00563",
+      "intro": "A closer look at a rocky world.",
+      "paragraphs": [
+        "This is NASA’s first color image from Viking Lander 1. Compare it with the black-and-white view.",
+        "The original NASA file is preserved. The small print on the desk is a preview; this panel shows the full image."
+      ],
+      "sources": ["viking-color"],
+      "image": "viking"
+    },
+    "viking-panorama": {
+      "title": "Look a little further",
+      "tag": "VIKING 1 / PIA00383",
+      "intro": "A wider view of the landing site.",
+      "paragraphs": [
+        "A panorama brings a broad stretch of the surroundings into one image. Follow the horizon and look for changes in the rocky ground."
+      ],
+      "sources": ["viking-panorama"],
+      "image": "viking-panorama"
+    },
+    "viking-soil": {
+      "title": "Big questions in a little soil",
+      "tag": "VIKING 1 / SCIENCE FILE",
+      "intro": "Could Mars hold signs of life?",
+      "paragraphs": [
+        "Viking’s biology experiments tested Martian soil. The results revealed puzzling chemical activity, but did not provide clear evidence of living microorganisms.",
+        "An exciting signal is a reason to investigate carefully. It is not enough to announce that life has been found."
+      ],
+      "sources": ["viking-science"]
+    },
+    "viking-timeline": {
+      "title": "From launch to a lasting archive",
+      "tag": "VIKING 1 / EVENT RECORD",
+      "intro": "Different dates tell different parts of the story.",
+      "paragraphs": [
+        "20 August 1975: launch. 19 June 1976: Mars orbit. 20 July 1976: surface landing.",
+        "The lander stopped operating on November 11, 1982 after a faulty command. The lander and orbiter had separate operating histories."
+      ],
+      "sources": ["viking"]
+    },
+    "viking-message": {
+      "title": "Pictures that called home",
+      "tag": "VIKING 1 / A LITTLE STORY",
+      "intro": "A short narrated story based on NASA sources. Not an original mission transmission.",
+      "paragraphs": [
+        "Hello, explorer! Ready for a visit to Mars?",
+        "Meet Viking One. In July nineteen seventy-six, this robotic lander touched down on the Red Planet. No astronauts were aboard.",
+        "Viking had no wheels—just three landing legs! It stayed in one place and explored the ground around it.",
+        "Its cameras revealed rocks and dust. Its instruments measured the Martian weather, and a long arm collected soil.",
+        "Some experiments searched for signs of life. The results were puzzling, but they did not clearly prove that living things were there.",
+        "Viking One sent its final message home in nineteen eighty-two. Its radio grew quiet, but its photographs and measurements are still here to explore.",
+        "Now it’s your turn. Open the photographs, follow the weather record, and try the notebook quiz. What will you discover?"
+      ],
+      "sources": ["viking", "viking-hardware-description", "viking-science"],
+      "illustration": "assets/art/viking-story.webp",
+      "illustrationAlt": "An imagined friendly Viking lander on three legs on an illustrated Martian plain, saying Hello, explorer!",
+      "illustrationCaption": "An imagined Viking character. A story grounded in NASA facts.",
+      "narration": {
+        "file": "assets/audio/viking1-phone.mp3",
+        "status": "owner-recording-loaded",
+        "generation": "AI-generated narration · ElevenLabs"
+      }
+    },
+    "viking-legacy": {
+      "title": "Quiet hardware, lasting discoveries",
+      "tag": "VIKING 1 / DISCOVERY NOTEBOOK",
+      "intro": "The explorer stopped. The questions continued.",
+      "paragraphs": [
+        "Viking 1’s final transmission reached Earth on November 11, 1982. Its photographs and measurements remain available to explore.",
+        "Try these three questions, then return to the archive and follow another clue."
+      ],
+      "sources": ["viking-science", "viking-pressure"],
+      "quiz": [
+        {
+          "question": "How did Viking 1 explore Mars?",
+          "choices": [
+            "It drove around on wheels.",
+            "It worked from a fixed landing site.",
+            "It carried astronauts."
+          ],
+          "answer": 1,
+          "explanation": "Viking was a stationary robotic lander, with cameras and instruments."
+        },
+        {
+          "question": "What does the green chart show?",
+          "choices": [
+            "Daily average air pressure.",
+            "A drawing of a mountain.",
+            "A live message from Mars."
+          ],
+          "answer": 0,
+          "explanation": "The chart uses archived Viking 1 pressure measurements in millibars."
+        },
+        {
+          "question": "Did the biology tests clearly prove life existed?",
+          "choices": [
+            "Yes, a picture showed a living creature.",
+            "No; the results did not give clear evidence of living microorganisms.",
+            "Viking never tested soil."
+          ],
+          "answer": 1,
+          "explanation": "Interesting chemical activity needs careful interpretation and more evidence."
+        }
+      ]
+    },
+    "viking-crt-intro-text": {
+      "title": "Welcome to the Viking One archive",
+      "tag": "VIKING 1 / CRT INTRODUCTION",
+      "intro": "Original NASA-based explanatory narration, not historic radio audio.",
+      "paragraphs": [
+        "The year is nineteen seventy-six. Viking One has arrived on Mars.",
+        "No astronauts are aboard. This robotic lander has touched down on Chryse Planitia, a wide Martian plain.",
+        "Its cameras reveal rocks and dust. Its instruments study the weather, and its sampling arm gathers soil for experiments.",
+        "Viking One will stay at its landing site. Its job is to look closely, measure carefully, and send discoveries home.",
+        "Welcome to the Viking One archive.",
+        "Tap a screen to meet the lander. Compare the real NASA photographs, open the mission file, and explore the weather record.",
+        "See the glowing question mark? Open the notebook and try the discovery quiz.",
+        "Look closely, explorer. Your Mars mission starts now."
+      ],
+      "sources": ["viking", "viking-first", "viking-science"]
+    },
+    "sojourner-mission": {
+      "title": "A small rover, a long journey",
+      "tag": "1997 / MISSION LOG",
+      "intro": "Choose a moment. Follow the evidence.",
+      "paragraphs": [
+        "Pathfinder carried Sojourner to Mars. One stayed at the landing site; the other could move to nearby rocks.",
+        "The dates below mark different events: launch, landing, rover deployment and the final data received from Pathfinder."
+      ],
+      "sources": ["pathfinder", "sojourner-barnacle"]
+    },
+    "sojourner-rover": {
+      "title": "Meet Sojourner & Pathfinder",
+      "tag": "1997 / ROVER EXPLORER",
+      "intro": "A mobile rover and its landing partner. Turn them around and look closer.",
+      "paragraphs": [
+        "Choose the Sojourner rover or the Pathfinder lander in the 3D viewer. Both models are educational reconstructions created for this project using NASA diagrams and hardware photographs. They are not NASA-issued model files or engineering CAD.",
+        "The original NASA photograph below shows the real Sojourner rover near Barnacle Bill, taken by the Pathfinder lander. Use it to compare historical evidence with the simplified model."
+      ],
+      "sources": [
+        "pathfinder",
+        "sojourner-barnacle",
+        "sojourner-history",
+        "sojourner-hardware",
+        "pathfinder-model-reference"
+      ],
+      "image": "sojourner",
+      "facts": [
+        ["ROVER", "Sojourner"],
+        ["LANDER", "Pathfinder"],
+        ["ARRIVAL", "4 JUL 1997"]
+      ]
+    },
+    "sojourner-duration": {
+      "title": "Beyond the plan",
+      "tag": "1997 / MISSION SUMMARY",
+      "intro": "What can seven and eighty-three tell us?",
+      "paragraphs": [
+        "NASA reports a seven-day planned rover mission and 83 days of Sojourner operation. These bars compare those two summary values.",
+        "They are days, not Martian sols, a daily activity record or a series of sensor measurements. A longer bar means a longer reported duration."
+      ],
+      "sources": ["sojourner-barnacle"],
+      "facts": [
+        ["PLANNED", "7 days"],
+        ["REPORTED", "83 days"],
+        ["DATA TYPE", "Mission summary"]
+      ]
+    },
+    "sojourner-photos": {
+      "title": "Ready to roll",
+      "tag": "1997 / PIA00611",
+      "intro": "Before the little wheels touched the ground.",
+      "paragraphs": [
+        "Pathfinder took this early picture after landing. Sojourner is still on the lander; the white material nearby belongs to the deflated airbags.",
+        "Notice the difference between the rover, the lander and the landscape. They are three different parts of this picture."
+      ],
+      "sources": ["sojourner-airbags"],
+      "image": "sojourner-airbags"
+    },
+    "sojourner-barnacle": {
+      "title": "A rock called Barnacle Bill",
+      "tag": "1997 / PIA00638",
+      "intro": "A closer look, one rock at a time.",
+      "paragraphs": [
+        "The lander camera recorded this view on sol 3. The rover later moved into position to examine Barnacle Bill with its rear-mounted APXS instrument.",
+        "The instrument is not visible in this photograph. A photo and an instrument reading give us different kinds of evidence."
+      ],
+      "sources": ["sojourner-barnacle"],
+      "image": "sojourner"
+    },
+    "sojourner-yogi": {
+      "title": "A rover-eye view of Yogi",
+      "tag": "1997 / PIA00672",
+      "intro": "This time, the camera traveled with the rover.",
+      "paragraphs": [
+        "Sojourner used its rear color camera for this close view of Yogi. The image record is dated July 11, 1997.",
+        "Compare it with the lander photographs. The camera location changes what we can see."
+      ],
+      "sources": ["sojourner-yogi"],
+      "image": "sojourner-yogi"
+    },
+    "sojourner-landing": {
+      "title": "A landing with a soft bounce",
+      "tag": "1997 / LANDING FILE",
+      "intro": "How do you protect a rover on arrival?",
+      "paragraphs": [
+        "A parachute slowed Pathfinder during descent. Airbags cushioned the landing before opening the way for the rover.",
+        "On sol 2, Sojourner rolled down a ramp and onto Mars. The lander remained its partner for communications."
+      ],
+      "sources": ["pathfinder", "sojourner-history", "sojourner-hardware"],
+      "image": "sojourner-airbags"
+    },
+    "sojourner-timeline": {
+      "title": "Two dates, different meanings",
+      "tag": "1997 / ARCHIVE RECORD",
+      "intro": "Last contact is different from formal mission termination.",
+      "paragraphs": [
+        "NASA received the final Pathfinder data on September 27, 1997. The team continued trying to restore communications.",
+        "A NASA Photojournal note gives March 10, 1998 as formal mission termination. The mission overview lists September 27, 1997 as its end date; this archive labels both events separately."
+      ],
+      "sources": ["pathfinder", "sojourner-barnacle"],
+      "facts": [
+        ["LAST DATA", "27 SEP 1997"],
+        ["FORMAL TERMINATION", "10 MAR 1998"]
+      ]
+    },
+    "sojourner-message": {
+      "title": "A little rover and its big adventure",
+      "tag": "1997 / TELEPHONE STORY",
+      "intro": "Meet a little rover with six wheels and a big adventure.",
+      "paragraphs": [
+        "Hello, explorer! Meet Sojourner, a little rover with six wheels and a big adventure.",
+        "In nineteen ninety-seven, Pathfinder carried it all the way to Mars. Airbags cushioned their landing. Then Sojourner rolled down a ramp and onto the rocky ground.",
+        "Its solar panel helped provide power. Its cameras took pictures, and an instrument checked what rocks and soil were made of.",
+        "Sojourner and Pathfinder were a team. The rover explored nearby, while the lander helped its discoveries reach Earth.",
+        "Their radio signals are quiet now, but their pictures and discoveries are still here.",
+        "Look closely, little explorer. What clues will you find?"
+      ],
+      "sources": [
+        "pathfinder",
+        "sojourner-barnacle",
+        "sojourner-history",
+        "sojourner-hardware"
+      ],
+      "illustration": "assets/art/sojourner-hello-explorer-v2.webp",
+      "illustrationAlt": "Imagined smiling Sojourner character on Mars saying Hello, explorer; decorative story illustration.",
+      "illustrationCaption": "An imagined guide, not a NASA photograph. Story based on linked NASA records.",
+      "narration": {
+        "file": "assets/audio/sojorner-phone.mp3",
+        "status": "owner-recording-loaded",
+        "generation": "AI-generated narration · ElevenLabs"
+      }
+    },
+    "sojourner-cassette": {
+      "title": "Listen to the mission archive",
+      "tag": "SOJOURNER / AUDIO CHAPTERS",
+      "intro": "Choose a chapter. Hear the voices and read along.",
+      "paragraphs": [
+        "These excerpts come from NASA/JPL’s 2022 podcast First Steps: Sojourner. Modern narration and interviews are labeled separately from the 1997 mission-control excerpt.",
+        "The cassette is an illustrated archive prop. These are edited NASA/JPL recordings, not Sojourner speaking or sounds recorded by a microphone on Mars."
+      ],
+      "sources": ["sojourner-podcast", "sojourner-hardware"]
+    },
+    "sojourner-solar": {
+      "title": "Sunlight for a little rover",
+      "tag": "1997 / ROVER HARDWARE",
+      "intro": "The panel on top helped power exploration.",
+      "paragraphs": [
+        "Sojourner used solar power and batteries. Its solar panel helped turn sunlight into electrical energy.",
+        "Use the educational model to locate the solar array, then compare it with the original NASA hardware photograph. The small cell pattern and materials are simplified."
+      ],
+      "sources": ["sojourner-history", "pathfinder", "sojourner-hardware"],
+      "image": "sojourner"
+    },
+    "sojourner-relay": {
+      "title": "A team across space",
+      "tag": "1997 / COMMUNICATIONS",
+      "intro": "The rover had a partner.",
+      "paragraphs": [
+        "Sojourner communicated through the Pathfinder lander. The two vehicles had different jobs: one explored nearby ground; the other acted as a link with Earth.",
+        "A rover camera and a lander camera can show the same place from very different viewpoints."
+      ],
+      "sources": ["sojourner-history", "pathfinder", "sojourner-hardware"]
+    },
+    "sojourner-legacy": {
+      "title": "What did we discover?",
+      "tag": "1997 / DISCOVERY NOTEBOOK",
+      "intro": "Keep asking questions after the signals fall silent.",
+      "paragraphs": [
+        "Sojourner demonstrated mobile exploration on Mars. Its pictures and rock investigations became part of a lasting scientific record.",
+        "The rover remains on Mars. Its historical work continues through the evidence we can study today."
+      ],
+      "sources": ["pathfinder", "sojourner-history", "sojourner-yogi"],
+      "quiz": [
+        {
+          "question": "Which vehicle could move across the ground?",
+          "choices": [
+            "The Pathfinder lander",
+            "The Sojourner rover",
+            "A camera photograph"
+          ],
+          "answer": 1,
+          "explanation": "Sojourner was the rover. Pathfinder was the lander and communications partner."
+        },
+        {
+          "question": "What do 7 and 83 compare here?",
+          "choices": [
+            "Planned and reported rover operation in days",
+            "Two air temperatures",
+            "A distance in kilometers"
+          ],
+          "answer": 0,
+          "explanation": "These are NASA mission-summary durations in days, not sols or a weather record."
+        },
+        {
+          "question": "Who took the close-up color image of Yogi?",
+          "choices": [
+            "An Apollo astronaut",
+            "Only the lander camera",
+            "Sojourner’s rear color camera"
+          ],
+          "answer": 2,
+          "explanation": "NASA identifies the camera as Sojourner’s rear color camera."
+        }
+      ]
+    },
+    "sojourner-crt-intro-text": {
+      "title": "Sojourner - arrival record",
+      "tag": "1997 / INTRODUCTION TRANSCRIPT",
+      "intro": "The readable version of the CRT welcome. Modern NASA-based narration, not historical radio audio.",
+      "paragraphs": [
+        "The year is nineteen ninety-seven. Pathfinder has landed on Mars, carrying a small rover named Sojourner.",
+        "The landing place is Ares Vallis, an ancient floodplain filled with rocks.",
+        "Pathfinder stays in place. On the second Martian day, Sojourner rolls down a ramp and begins exploring on six little wheels.",
+        "Together, their cameras and instruments help people study this new world.",
+        "Welcome to the Sojourner archive.",
+        "Tap the middle screen to turn the educational three-dimensional models. Open the landing file and compare real NASA photographs.",
+        "Tap the cassette to hear NASA voices. See the glowing question mark? Open the notebook and try the discovery quiz.",
+        "Your little Mars adventure starts now."
+      ],
+      "sources": [
+        "pathfinder",
+        "sojourner-hardware",
+        "sojourner-barnacle",
+        "pathfinder-model-reference"
+      ]
+    }
+  },
+  "briefing": {
+    "title": "APOLLO 11",
+    "subtitle": "Meet Eagle",
+    "year": "1969",
+    "durationMs": 7000,
+    "distanceKm": 384400,
+    "distanceMiles": 238855,
+    "distanceContext": "Average Earth–Moon distance",
+    "landing": "Eagle landed · 20 July 1969",
+    "facts": [
+      ["SPACECRAFT", "Eagle"],
+      ["DESIGN", "2 stages"],
+      ["LANDING GEAR", "4 legs"]
+    ],
+    "sources": ["moon-distance", "catalog", "mission"],
+    "illustrationNote": "7-second illustrated journey · not to scale or actual flight time"
+  },
+  "crtIntro": {
+    "label": "APOLLO 11 / ARRIVAL RECORD / 20 JUL 1969",
+    "paragraphs": [
+      "The year is nineteen sixty-nine. Eagle has landed on the Moon.",
+      "Neil Armstrong and Buzz Aldrin have arrived in a spacecraft with two stages. The upper cabin will take them back into lunar orbit. The lower stage will stay behind.",
+      "But leaving equipment behind does not mean leaving its story behind.",
+      "Welcome to the Apollo Eleven archive.",
+      "Tap a screen to meet Eagle. Open the photographs to discover real NASA evidence. Pick up a file, explore an experiment, or answer a question in the notebook.",
+      "Each object holds a clue to how people reached the Moon—and what they left there.",
+      "Look closely, explorer. Your mission starts now."
+    ],
+    "previewDurationMs": 48000,
+    "revealMs": 1350,
+    "audio": {
+      "file": "assets/audio/apollo-intro-crt.mp3",
+      "status": "owner-recording-loaded",
+      "cues": [
+        {
+          "text": "The ",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "text": "year ",
+          "start": 0.18,
+          "end": 0.48
+        },
+        {
+          "text": "is ",
+          "start": 0.48,
+          "end": 0.9
+        },
+        {
+          "text": "nineteen ",
+          "start": 0.9,
+          "end": 1.407
+        },
+        {
+          "text": "sixty-",
+          "start": 1.407,
+          "end": 1.913
+        },
+        {
+          "text": "nine. ",
+          "start": 1.913,
+          "end": 2.42
+        },
+        {
+          "text": "Eagle ",
+          "start": 3.46,
+          "end": 3.78
+        },
+        {
+          "text": "has ",
+          "start": 3.78,
+          "end": 4.16
+        },
+        {
+          "text": "landed ",
+          "start": 4.16,
+          "end": 4.64
+        },
+        {
+          "text": "on ",
+          "start": 4.64,
+          "end": 5.06
+        },
+        {
+          "text": "the ",
+          "start": 5.06,
+          "end": 5.28
+        },
+        {
+          "text": "Moon.\n\n",
+          "start": 5.28,
+          "end": 5.64
+        },
+        {
+          "text": "Neil ",
+          "start": 6.68,
+          "end": 6.94
+        },
+        {
+          "text": "Armstrong ",
+          "start": 6.94,
+          "end": 7.24
+        },
+        {
+          "text": "and ",
+          "start": 7.24,
+          "end": 7.82
+        },
+        {
+          "text": "Buzz ",
+          "start": 7.82,
+          "end": 8.06
+        },
+        {
+          "text": "Aldrin ",
+          "start": 8.06,
+          "end": 8.52
+        },
+        {
+          "text": "have ",
+          "start": 8.52,
+          "end": 8.72
+        },
+        {
+          "text": "arrived ",
+          "start": 8.72,
+          "end": 9.0
+        },
+        {
+          "text": "in ",
+          "start": 9.0,
+          "end": 9.3
+        },
+        {
+          "text": "a ",
+          "start": 9.3,
+          "end": 9.38
+        },
+        {
+          "text": "spacecraft ",
+          "start": 9.38,
+          "end": 9.74
+        },
+        {
+          "text": "with ",
+          "start": 9.74,
+          "end": 10.3
+        },
+        {
+          "text": "two ",
+          "start": 10.3,
+          "end": 10.56
+        },
+        {
+          "text": "stages. ",
+          "start": 10.56,
+          "end": 10.94
+        },
+        {
+          "text": "The ",
+          "start": 11.68,
+          "end": 11.72
+        },
+        {
+          "text": "upper ",
+          "start": 11.72,
+          "end": 11.9
+        },
+        {
+          "text": "cabin ",
+          "start": 11.9,
+          "end": 12.28
+        },
+        {
+          "text": "will ",
+          "start": 12.28,
+          "end": 12.56
+        },
+        {
+          "text": "take ",
+          "start": 12.56,
+          "end": 12.78
+        },
+        {
+          "text": "them ",
+          "start": 12.78,
+          "end": 12.94
+        },
+        {
+          "text": "back ",
+          "start": 12.94,
+          "end": 13.22
+        },
+        {
+          "text": "into ",
+          "start": 13.22,
+          "end": 13.5
+        },
+        {
+          "text": "lunar ",
+          "start": 13.5,
+          "end": 13.68
+        },
+        {
+          "text": "orbit. ",
+          "start": 13.68,
+          "end": 14.16
+        },
+        {
+          "text": "The ",
+          "start": 14.82,
+          "end": 14.84
+        },
+        {
+          "text": "lower ",
+          "start": 14.84,
+          "end": 15.06
+        },
+        {
+          "text": "stage ",
+          "start": 15.06,
+          "end": 15.4
+        },
+        {
+          "text": "will ",
+          "start": 15.4,
+          "end": 16.12
+        },
+        {
+          "text": "stay ",
+          "start": 16.12,
+          "end": 16.36
+        },
+        {
+          "text": "behind.\n\n",
+          "start": 16.36,
+          "end": 16.7
+        },
+        {
+          "text": "But ",
+          "start": 17.56,
+          "end": 17.57
+        },
+        {
+          "text": "leaving ",
+          "start": 17.56,
+          "end": 17.76
+        },
+        {
+          "text": "equipment ",
+          "start": 17.76,
+          "end": 18.28
+        },
+        {
+          "text": "behind ",
+          "start": 18.28,
+          "end": 18.82
+        },
+        {
+          "text": "does ",
+          "start": 18.82,
+          "end": 19.56
+        },
+        {
+          "text": "not ",
+          "start": 19.56,
+          "end": 19.86
+        },
+        {
+          "text": "mean ",
+          "start": 19.86,
+          "end": 20.16
+        },
+        {
+          "text": "leaving ",
+          "start": 20.16,
+          "end": 20.56
+        },
+        {
+          "text": "its ",
+          "start": 20.56,
+          "end": 20.72
+        },
+        {
+          "text": "story ",
+          "start": 20.72,
+          "end": 21.1
+        },
+        {
+          "text": "behind.\n\n",
+          "start": 21.1,
+          "end": 21.5
+        },
+        {
+          "text": "Welcome ",
+          "start": 22.3,
+          "end": 22.76
+        },
+        {
+          "text": "to ",
+          "start": 22.76,
+          "end": 23.02
+        },
+        {
+          "text": "the ",
+          "start": 23.02,
+          "end": 23.14
+        },
+        {
+          "text": "Apollo ",
+          "start": 23.14,
+          "end": 23.36
+        },
+        {
+          "text": "Eleven ",
+          "start": 23.36,
+          "end": 24.08
+        },
+        {
+          "text": "archive.\n\n",
+          "start": 24.08,
+          "end": 24.48
+        },
+        {
+          "text": "Tap ",
+          "start": 25.32,
+          "end": 25.42
+        },
+        {
+          "text": "a ",
+          "start": 25.42,
+          "end": 25.58
+        },
+        {
+          "text": "screen ",
+          "start": 25.58,
+          "end": 25.82
+        },
+        {
+          "text": "to ",
+          "start": 25.82,
+          "end": 26.18
+        },
+        {
+          "text": "meet ",
+          "start": 26.18,
+          "end": 26.4
+        },
+        {
+          "text": "Eagle. ",
+          "start": 26.4,
+          "end": 26.66
+        },
+        {
+          "text": "Open ",
+          "start": 26.66,
+          "end": 27.44
+        },
+        {
+          "text": "the ",
+          "start": 27.44,
+          "end": 27.54
+        },
+        {
+          "text": "photographs ",
+          "start": 27.54,
+          "end": 27.96
+        },
+        {
+          "text": "to ",
+          "start": 27.96,
+          "end": 28.32
+        },
+        {
+          "text": "discover ",
+          "start": 28.32,
+          "end": 28.62
+        },
+        {
+          "text": "real ",
+          "start": 28.62,
+          "end": 29.1
+        },
+        {
+          "text": "NASA ",
+          "start": 29.1,
+          "end": 29.42
+        },
+        {
+          "text": "evidence. ",
+          "start": 29.42,
+          "end": 29.86
+        },
+        {
+          "text": "Pick ",
+          "start": 30.36,
+          "end": 30.52
+        },
+        {
+          "text": "up ",
+          "start": 30.52,
+          "end": 30.68
+        },
+        {
+          "text": "a ",
+          "start": 30.68,
+          "end": 30.74
+        },
+        {
+          "text": "file, ",
+          "start": 30.74,
+          "end": 31.1
+        },
+        {
+          "text": "explore ",
+          "start": 31.46,
+          "end": 31.86
+        },
+        {
+          "text": "an ",
+          "start": 31.86,
+          "end": 32.1
+        },
+        {
+          "text": "experiment, ",
+          "start": 32.1,
+          "end": 32.66
+        },
+        {
+          "text": "or ",
+          "start": 32.96,
+          "end": 33.16
+        },
+        {
+          "text": "answer ",
+          "start": 33.16,
+          "end": 33.56
+        },
+        {
+          "text": "a ",
+          "start": 33.56,
+          "end": 33.72
+        },
+        {
+          "text": "question ",
+          "start": 33.72,
+          "end": 34.1
+        },
+        {
+          "text": "in ",
+          "start": 34.1,
+          "end": 34.28
+        },
+        {
+          "text": "the ",
+          "start": 34.28,
+          "end": 34.36
+        },
+        {
+          "text": "notebook.\n\n",
+          "start": 34.36,
+          "end": 34.58
+        },
+        {
+          "text": "Each ",
+          "start": 35.2,
+          "end": 35.3
+        },
+        {
+          "text": "object ",
+          "start": 35.3,
+          "end": 35.7
+        },
+        {
+          "text": "holds ",
+          "start": 35.7,
+          "end": 36.16
+        },
+        {
+          "text": "a ",
+          "start": 36.16,
+          "end": 36.36
+        },
+        {
+          "text": "clue ",
+          "start": 36.36,
+          "end": 36.62
+        },
+        {
+          "text": "to ",
+          "start": 36.62,
+          "end": 36.88
+        },
+        {
+          "text": "how ",
+          "start": 36.88,
+          "end": 37.1
+        },
+        {
+          "text": "people ",
+          "start": 37.1,
+          "end": 37.44
+        },
+        {
+          "text": "reached ",
+          "start": 37.44,
+          "end": 37.72
+        },
+        {
+          "text": "the ",
+          "start": 37.72,
+          "end": 38.0
+        },
+        {
+          "text": "Moon—",
+          "start": 38.0,
+          "end": 38.2
+        },
+        {
+          "text": "and ",
+          "start": 38.2,
+          "end": 38.9
+        },
+        {
+          "text": "what ",
+          "start": 38.9,
+          "end": 39.16
+        },
+        {
+          "text": "they ",
+          "start": 39.16,
+          "end": 39.34
+        },
+        {
+          "text": "left ",
+          "start": 39.34,
+          "end": 39.54
+        },
+        {
+          "text": "there.\n\n",
+          "start": 39.54,
+          "end": 39.84
+        },
+        {
+          "text": "Look ",
+          "start": 40.44,
+          "end": 40.52
+        },
+        {
+          "text": "closely, ",
+          "start": 40.52,
+          "end": 41.04
+        },
+        {
+          "text": "explorer. ",
+          "start": 41.28,
+          "end": 41.5
+        },
+        {
+          "text": "Your ",
+          "start": 42.3,
+          "end": 42.48
+        },
+        {
+          "text": "mission ",
+          "start": 42.48,
+          "end": 42.82
+        },
+        {
+          "text": "starts ",
+          "start": 42.82,
+          "end": 43.34
+        },
+        {
+          "text": "now.",
+          "start": 43.34,
+          "end": 43.84
+        }
+      ],
+      "generation": "AI-generated narration · ElevenLabs",
+      "alignment": "Local speech-recognition word estimates aligned to the approved script; playback follows audio.currentTime. Not archival timestamps."
+    },
+    "sources": ["catalog", "mission"]
+  },
+  "vikingEntry": {
+    "name": "Viking 1",
+    "destination": "MARS",
+    "arrivalFile": "assets/video/viking-arrival-web.mp4",
+    "arrivalStatus": "Viking 1 approaches Mars.",
+    "briefing": {
+      "title": "VIKING 1",
+      "subtitle": "Meet the lander",
+      "year": "1976",
+      "durationMs": 7000,
+      "distanceText": "≈212 million miles",
+      "distanceContextText": "≈341 million km · Earth–Mars distance at landing",
+      "landing": "Viking 1 landed · 20 July 1976",
+      "facts": [
+        ["SPACECRAFT", "Robotic lander"],
+        ["LANDING SITE", "Chryse Planitia"],
+        ["FIRST VIEW", "20 JUL 1976"]
+      ],
+      "sources": ["viking", "viking-distance"],
+      "illustrationNote": "7-second illustrated journey · not to scale or actual flight time"
+    },
+    "crtIntro": {
+      "label": "VIKING 1 / ARRIVAL RECORD / 20 JUL 1976",
+      "hudLabel": "MISSION ARCHIVE / 20 JUL 1976",
+      "textPanel": "viking-crt-intro-text",
+      "paragraphs": [
+        "The year is nineteen seventy-six. Viking One has arrived on Mars.",
+        "No astronauts are aboard. This robotic lander has touched down on Chryse Planitia, a wide Martian plain.",
+        "Its cameras reveal rocks and dust. Its instruments study the weather, and its sampling arm gathers soil for experiments.",
+        "Viking One will stay at its landing site. Its job is to look closely, measure carefully, and send discoveries home.",
+        "Welcome to the Viking One archive.",
+        "Tap a screen to meet the lander. Compare the real NASA photographs, open the mission file, and explore the weather record.",
+        "See the glowing question mark? Open the notebook and try the discovery quiz.",
+        "Look closely, explorer. Your Mars mission starts now."
+      ],
+      "previewDurationMs": 52000,
+      "revealMs": 1350,
+      "audio": {
+        "file": "assets/audio/viking-intro-crt.mp3",
+        "status": "owner-recording-loaded",
+        "generation": "AI-generated narration · ElevenLabs",
+        "cues": [
+          {
+            "text": "The ",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "text": "year ",
+            "start": 0.2,
+            "end": 0.5
+          },
+          {
+            "text": "is ",
+            "start": 0.5,
+            "end": 0.76
+          },
+          {
+            "text": "nineteen ",
+            "start": 0.76,
+            "end": 1.287
+          },
+          {
+            "text": "seventy-",
+            "start": 1.287,
+            "end": 1.813
+          },
+          {
+            "text": "six. ",
+            "start": 1.813,
+            "end": 2.34
+          },
+          {
+            "text": "Viking ",
+            "start": 3.56,
+            "end": 3.92
+          },
+          {
+            "text": "One ",
+            "start": 3.92,
+            "end": 4.4
+          },
+          {
+            "text": "has ",
+            "start": 4.4,
+            "end": 4.76
+          },
+          {
+            "text": "arrived ",
+            "start": 4.76,
+            "end": 5.14
+          },
+          {
+            "text": "on ",
+            "start": 5.14,
+            "end": 5.46
+          },
+          {
+            "text": "Mars.\n\n",
+            "start": 5.46,
+            "end": 5.82
+          },
+          {
+            "text": "No ",
+            "start": 6.9,
+            "end": 7.22
+          },
+          {
+            "text": "astronauts ",
+            "start": 7.22,
+            "end": 7.56
+          },
+          {
+            "text": "are ",
+            "start": 7.56,
+            "end": 8.06
+          },
+          {
+            "text": "aboard. ",
+            "start": 8.06,
+            "end": 8.28
+          },
+          {
+            "text": "This ",
+            "start": 9.4,
+            "end": 9.56
+          },
+          {
+            "text": "robotic ",
+            "start": 9.56,
+            "end": 9.84
+          },
+          {
+            "text": "lander ",
+            "start": 9.84,
+            "end": 10.5
+          },
+          {
+            "text": "has ",
+            "start": 10.5,
+            "end": 10.68
+          },
+          {
+            "text": "touched ",
+            "start": 10.68,
+            "end": 10.88
+          },
+          {
+            "text": "down ",
+            "start": 10.88,
+            "end": 11.26
+          },
+          {
+            "text": "on ",
+            "start": 11.26,
+            "end": 11.52
+          },
+          {
+            "text": "Chryse ",
+            "start": 11.52,
+            "end": 12.0
+          },
+          {
+            "text": "Planitia, ",
+            "start": 12.0,
+            "end": 12.46
+          },
+          {
+            "text": "a ",
+            "start": 12.9,
+            "end": 13.02
+          },
+          {
+            "text": "wide ",
+            "start": 13.02,
+            "end": 13.34
+          },
+          {
+            "text": "Martian ",
+            "start": 13.34,
+            "end": 13.68
+          },
+          {
+            "text": "plain.\n\n",
+            "start": 13.68,
+            "end": 14.14
+          },
+          {
+            "text": "Its ",
+            "start": 15.0,
+            "end": 15.02
+          },
+          {
+            "text": "cameras ",
+            "start": 15.02,
+            "end": 15.42
+          },
+          {
+            "text": "reveal ",
+            "start": 15.42,
+            "end": 15.92
+          },
+          {
+            "text": "rocks ",
+            "start": 15.92,
+            "end": 16.32
+          },
+          {
+            "text": "and ",
+            "start": 16.32,
+            "end": 17.02
+          },
+          {
+            "text": "dust. ",
+            "start": 17.02,
+            "end": 17.28
+          },
+          {
+            "text": "Its ",
+            "start": 18.18,
+            "end": 18.24
+          },
+          {
+            "text": "instruments ",
+            "start": 18.24,
+            "end": 18.66
+          },
+          {
+            "text": "study ",
+            "start": 18.66,
+            "end": 19.1
+          },
+          {
+            "text": "the ",
+            "start": 19.1,
+            "end": 19.3
+          },
+          {
+            "text": "weather, ",
+            "start": 19.3,
+            "end": 19.58
+          },
+          {
+            "text": "and ",
+            "start": 19.58,
+            "end": 20.14
+          },
+          {
+            "text": "its ",
+            "start": 20.14,
+            "end": 20.24
+          },
+          {
+            "text": "sampling ",
+            "start": 20.24,
+            "end": 20.62
+          },
+          {
+            "text": "arm ",
+            "start": 20.62,
+            "end": 20.94
+          },
+          {
+            "text": "gathers ",
+            "start": 20.94,
+            "end": 21.28
+          },
+          {
+            "text": "soil ",
+            "start": 21.28,
+            "end": 21.74
+          },
+          {
+            "text": "for ",
+            "start": 21.74,
+            "end": 22.04
+          },
+          {
+            "text": "experiments.\n\n",
+            "start": 22.04,
+            "end": 22.24
+          },
+          {
+            "text": "Viking ",
+            "start": 23.46,
+            "end": 23.56
+          },
+          {
+            "text": "One ",
+            "start": 23.56,
+            "end": 24.02
+          },
+          {
+            "text": "will ",
+            "start": 24.02,
+            "end": 24.28
+          },
+          {
+            "text": "stay ",
+            "start": 24.28,
+            "end": 24.56
+          },
+          {
+            "text": "at ",
+            "start": 24.56,
+            "end": 24.78
+          },
+          {
+            "text": "its ",
+            "start": 24.78,
+            "end": 24.9
+          },
+          {
+            "text": "landing ",
+            "start": 24.9,
+            "end": 25.14
+          },
+          {
+            "text": "site. ",
+            "start": 25.14,
+            "end": 25.56
+          },
+          {
+            "text": "Its ",
+            "start": 26.28,
+            "end": 26.46
+          },
+          {
+            "text": "job ",
+            "start": 26.46,
+            "end": 26.72
+          },
+          {
+            "text": "is ",
+            "start": 26.72,
+            "end": 27.04
+          },
+          {
+            "text": "to ",
+            "start": 27.04,
+            "end": 27.22
+          },
+          {
+            "text": "look ",
+            "start": 27.22,
+            "end": 27.46
+          },
+          {
+            "text": "closely, ",
+            "start": 27.46,
+            "end": 27.74
+          },
+          {
+            "text": "measure ",
+            "start": 27.74,
+            "end": 28.74
+          },
+          {
+            "text": "carefully, ",
+            "start": 28.74,
+            "end": 29.16
+          },
+          {
+            "text": "and ",
+            "start": 29.68,
+            "end": 29.78
+          },
+          {
+            "text": "send ",
+            "start": 29.78,
+            "end": 30.08
+          },
+          {
+            "text": "discoveries ",
+            "start": 30.08,
+            "end": 30.4
+          },
+          {
+            "text": "home.\n\n",
+            "start": 30.4,
+            "end": 31.0
+          },
+          {
+            "text": "Welcome ",
+            "start": 31.98,
+            "end": 32.42
+          },
+          {
+            "text": "to ",
+            "start": 32.42,
+            "end": 32.66
+          },
+          {
+            "text": "the ",
+            "start": 32.66,
+            "end": 32.76
+          },
+          {
+            "text": "Viking ",
+            "start": 32.76,
+            "end": 33.04
+          },
+          {
+            "text": "One ",
+            "start": 33.04,
+            "end": 33.36
+          },
+          {
+            "text": "archive.\n\n",
+            "start": 33.36,
+            "end": 33.78
+          },
+          {
+            "text": "Tap ",
+            "start": 34.66,
+            "end": 34.76
+          },
+          {
+            "text": "a ",
+            "start": 34.76,
+            "end": 34.92
+          },
+          {
+            "text": "screen ",
+            "start": 34.92,
+            "end": 35.2
+          },
+          {
+            "text": "to ",
+            "start": 35.2,
+            "end": 35.46
+          },
+          {
+            "text": "meet ",
+            "start": 35.46,
+            "end": 35.62
+          },
+          {
+            "text": "the ",
+            "start": 35.62,
+            "end": 35.76
+          },
+          {
+            "text": "lander. ",
+            "start": 35.76,
+            "end": 36.16
+          },
+          {
+            "text": "Compare ",
+            "start": 36.9,
+            "end": 36.91
+          },
+          {
+            "text": "the ",
+            "start": 36.9,
+            "end": 37.16
+          },
+          {
+            "text": "real ",
+            "start": 37.16,
+            "end": 37.46
+          },
+          {
+            "text": "NASA ",
+            "start": 37.46,
+            "end": 37.74
+          },
+          {
+            "text": "photographs, ",
+            "start": 37.74,
+            "end": 38.24
+          },
+          {
+            "text": "open ",
+            "start": 39.0,
+            "end": 39.1
+          },
+          {
+            "text": "the ",
+            "start": 39.1,
+            "end": 39.24
+          },
+          {
+            "text": "mission ",
+            "start": 39.24,
+            "end": 39.46
+          },
+          {
+            "text": "file, ",
+            "start": 39.46,
+            "end": 39.76
+          },
+          {
+            "text": "and ",
+            "start": 39.76,
+            "end": 40.22
+          },
+          {
+            "text": "explore ",
+            "start": 40.22,
+            "end": 40.58
+          },
+          {
+            "text": "the ",
+            "start": 40.58,
+            "end": 40.9
+          },
+          {
+            "text": "weather ",
+            "start": 40.9,
+            "end": 41.1
+          },
+          {
+            "text": "record.\n\n",
+            "start": 41.1,
+            "end": 41.48
+          },
+          {
+            "text": "See ",
+            "start": 42.24,
+            "end": 42.32
+          },
+          {
+            "text": "the ",
+            "start": 42.32,
+            "end": 42.48
+          },
+          {
+            "text": "glowing ",
+            "start": 42.48,
+            "end": 42.64
+          },
+          {
+            "text": "question ",
+            "start": 42.64,
+            "end": 43.14
+          },
+          {
+            "text": "mark? ",
+            "start": 43.14,
+            "end": 43.36
+          },
+          {
+            "text": "Open ",
+            "start": 44.02,
+            "end": 44.2
+          },
+          {
+            "text": "the ",
+            "start": 44.2,
+            "end": 44.34
+          },
+          {
+            "text": "notebook ",
+            "start": 44.34,
+            "end": 44.5
+          },
+          {
+            "text": "and ",
+            "start": 44.5,
+            "end": 44.9
+          },
+          {
+            "text": "try ",
+            "start": 44.9,
+            "end": 45.12
+          },
+          {
+            "text": "the ",
+            "start": 45.12,
+            "end": 45.3
+          },
+          {
+            "text": "discovery ",
+            "start": 45.3,
+            "end": 45.6
+          },
+          {
+            "text": "quiz.\n\n",
+            "start": 45.6,
+            "end": 46.06
+          },
+          {
+            "text": "Look ",
+            "start": 46.88,
+            "end": 47.22
+          },
+          {
+            "text": "closely, ",
+            "start": 47.22,
+            "end": 47.54
+          },
+          {
+            "text": "explorer. ",
+            "start": 48.18,
+            "end": 48.44
+          },
+          {
+            "text": "Your ",
+            "start": 49.36,
+            "end": 49.6
+          },
+          {
+            "text": "Mars ",
+            "start": 49.6,
+            "end": 49.84
+          },
+          {
+            "text": "mission ",
+            "start": 49.84,
+            "end": 50.3
+          },
+          {
+            "text": "starts ",
+            "start": 50.3,
+            "end": 50.66
+          },
+          {
+            "text": "now.",
+            "start": 50.66,
+            "end": 51.22
+          }
+        ],
+        "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Year and mission numerals normalized, Chryse and plain spelling preserved from approved script. Playback follows audio.currentTime; these are editorial estimates, not archival timestamps."
+      },
+      "sources": ["viking", "viking-first", "viking-science"]
+    },
+    "arrivalWatermarkEmbedded": true
+  },
+  "screenActivities": {
+    "journeys": {
+      "apollo": [
+        {
+          "name": "Launch from Earth",
+          "shortDate": "16 JUL 1969",
+          "date": "16 July 1969",
+          "description": "Armstrong, Aldrin and Collins launch together on Apollo 11. Their goal: land people on the Moon and bring them home.",
+          "sources": ["mission"]
+        },
+        {
+          "name": "Eagle lands",
+          "shortDate": "20 JUL 1969",
+          "date": "20 July 1969",
+          "description": "Armstrong and Aldrin land in Eagle at the Sea of Tranquility. Collins remains in lunar orbit.",
+          "file": "assets/archive/eagle.jpg",
+          "caption": "AS11-40-5961 · NASA / Neil Armstrong. Eagle during the moonwalk, not a photograph of touchdown.",
+          "sources": ["mission", "catalog", "images"]
+        },
+        {
+          "name": "First step",
+          "shortDate": "21 JUL · UTC",
+          "date": "21 July 1969 · about 02:56 UTC",
+          "description": "Armstrong takes the first human step on the Moon. In the eastern United States it is still July 20. Dates depend on the time zone.",
+          "sources": ["timeline-source", "catalog"]
+        },
+        {
+          "name": "Safe return",
+          "shortDate": "24 JUL 1969",
+          "date": "24 July 1969",
+          "description": "All three astronauts return to Earth. Eagle’s lower stage remains on the Moon, while lunar samples come home with the crew.",
+          "sources": ["mission", "catalog"]
+        }
+      ],
+      "viking": [
+        {
+          "name": "Launch from Earth",
+          "shortDate": "20 AUG 1975",
+          "date": "20 August 1975",
+          "description": "Viking 1 leaves Earth with an orbiter and a robotic lander traveling together.",
+          "sources": ["viking"]
+        },
+        {
+          "name": "Mars orbit",
+          "shortDate": "19 JUN 1976",
+          "date": "19 June 1976",
+          "description": "Viking 1 enters orbit around Mars. Images from above help the team examine possible landing places.",
+          "sources": ["viking"]
+        },
+        {
+          "name": "Surface landing",
+          "shortDate": "20 JUL 1976",
+          "date": "20 July 1976",
+          "description": "The lander touches down at Chryse Planitia. The orbiter continues working above Mars.",
+          "sources": ["viking"]
+        },
+        {
+          "name": "The first picture",
+          "shortDate": "20 JUL 1976",
+          "date": "20 July 1976 · Camera 2",
+          "description": "Viking 1 returns its first surface photograph. Rocks, fine material and part of its footpad appear in the image.",
+          "file": "assets/archive/viking-first.jpg",
+          "caption": "PIA00381 · NASA/JPL. Original Viking 1 surface photograph.",
+          "sources": ["viking-first", "viking-messages"]
+        }
+      ],
+      "sojourner": [
+        {
+          "name": "Launch from Earth",
+          "shortDate": "04 DEC 1996",
+          "date": "4 December 1996",
+          "description": "Pathfinder launches carrying the small Sojourner rover.",
+          "sources": ["pathfinder"]
+        },
+        {
+          "name": "Mars landing",
+          "shortDate": "04 JUL 1997",
+          "date": "4 July 1997",
+          "description": "Pathfinder lands at Ares Vallis with protective airbags. Sojourner is still on the lander.",
+          "file": "assets/archive/sojourner-airbags.jpg",
+          "caption": "PIA00611 · NASA/JPL · Pathfinder lander camera; rover still aboard.",
+          "sources": ["pathfinder", "sojourner-airbags"]
+        },
+        {
+          "name": "Rover deployment",
+          "shortDate": "SOL 2",
+          "date": "Sol 2 · second Martian day",
+          "description": "Sojourner rolls down the ramp onto the surface. A sol is a Martian day.",
+          "sources": ["pathfinder"]
+        },
+        {
+          "name": "Final data received",
+          "shortDate": "27 SEP 1997",
+          "date": "27 September 1997",
+          "description": "The final Pathfinder data arrive on Earth. Attempts to restore communication continue afterward.",
+          "sources": ["sojourner-barnacle"]
+        }
+      ]
+    }
+  },
+  "sojournerDuration": {
+    "planned": 7,
+    "reported": 83,
+    "unit": "days",
+    "kind": "NASA mission-summary comparison, not telemetry or sols",
+    "source": "sojourner-barnacle"
+  },
+  "sojournerEntry": {
+    "name": "Sojourner",
+    "destination": "MARS",
+    "arrivalFile": "assets/video/sojourner-arrival-web.mp4",
+    "arrivalStatus": "Pathfinder carries Sojourner to Mars.",
+    "arrivalMediaStatus": "Owner-provided illustrated landing animation included unchanged. AI-generated visual, ChatGPT + Kling AI; not original NASA mission footage.",
+    "briefing": {
+      "title": "SOJOURNER",
+      "subtitle": "A little rover. A big adventure.",
+      "year": "1997",
+      "durationMs": 7000,
+      "distanceText": "≈191 million km",
+      "distanceContextText": "≈119 million miles · Earth–Mars distance at arrival",
+      "landing": "Pathfinder landed · 4 July 1997",
+      "facts": [
+        ["LANDER", "Pathfinder"],
+        ["ROVER", "Sojourner"],
+        ["LANDING SITE", "Ares Vallis"]
+      ],
+      "sources": [
+        "pathfinder",
+        "sojourner-distance",
+        "pathfinder-model-reference"
+      ],
+      "illustrationNote": "7-second illustrated journey · not to scale or actual flight time"
+    },
+    "crtIntro": {
+      "label": "SOJOURNER / ARRIVAL RECORD / 04 JUL 1997",
+      "hudLabel": "MISSION ARCHIVE / 04 JUL 1997",
+      "textPanel": "sojourner-crt-intro-text",
+      "paragraphs": [
+        "The year is nineteen ninety-seven. Pathfinder has landed on Mars, carrying a small rover named Sojourner.",
+        "The landing place is Ares Vallis, an ancient floodplain filled with rocks.",
+        "Pathfinder stays in place. On the second Martian day, Sojourner rolls down a ramp and begins exploring on six little wheels.",
+        "Together, their cameras and instruments help people study this new world.",
+        "Welcome to the Sojourner archive.",
+        "Tap the middle screen to turn the educational three-dimensional models. Open the landing file and compare real NASA photographs.",
+        "Tap the cassette to hear NASA voices. See the glowing question mark? Open the notebook and try the discovery quiz.",
+        "Your little Mars adventure starts now."
+      ],
+      "previewDurationMs": 58000,
+      "revealMs": 1350,
+      "audio": {
+        "file": "assets/audio/sojorner-crt.mp3",
+        "status": "owner-recording-loaded",
+        "generation": "AI-generated narration · ElevenLabs",
+        "cues": [
+          {
+            "text": "The ",
+            "start": 0.0,
+            "end": 0.24
+          },
+          {
+            "text": "year ",
+            "start": 0.24,
+            "end": 0.54
+          },
+          {
+            "text": "is ",
+            "start": 0.54,
+            "end": 0.78
+          },
+          {
+            "text": "nineteen ",
+            "start": 0.78,
+            "end": 1.373
+          },
+          {
+            "text": "ninety-",
+            "start": 1.373,
+            "end": 1.967
+          },
+          {
+            "text": "seven. ",
+            "start": 1.967,
+            "end": 2.56
+          },
+          {
+            "text": "Pathfinder ",
+            "start": 3.4,
+            "end": 3.68
+          },
+          {
+            "text": "has ",
+            "start": 3.68,
+            "end": 4.3
+          },
+          {
+            "text": "landed ",
+            "start": 4.3,
+            "end": 4.58
+          },
+          {
+            "text": "on ",
+            "start": 4.58,
+            "end": 4.86
+          },
+          {
+            "text": "Mars, ",
+            "start": 4.86,
+            "end": 5.22
+          },
+          {
+            "text": "carrying ",
+            "start": 5.72,
+            "end": 6.24
+          },
+          {
+            "text": "a ",
+            "start": 6.24,
+            "end": 6.46
+          },
+          {
+            "text": "small ",
+            "start": 6.46,
+            "end": 6.78
+          },
+          {
+            "text": "rover ",
+            "start": 6.78,
+            "end": 7.1
+          },
+          {
+            "text": "named ",
+            "start": 7.1,
+            "end": 7.64
+          },
+          {
+            "text": "Sojourner.\n\n",
+            "start": 7.64,
+            "end": 8.42
+          },
+          {
+            "text": "The ",
+            "start": 9.14,
+            "end": 9.2
+          },
+          {
+            "text": "landing ",
+            "start": 9.2,
+            "end": 9.42
+          },
+          {
+            "text": "place ",
+            "start": 9.42,
+            "end": 9.78
+          },
+          {
+            "text": "is ",
+            "start": 9.78,
+            "end": 10.1
+          },
+          {
+            "text": "Ares ",
+            "start": 10.1,
+            "end": 10.5
+          },
+          {
+            "text": "Vallis, ",
+            "start": 10.5,
+            "end": 11.0
+          },
+          {
+            "text": "an ",
+            "start": 11.3,
+            "end": 11.54
+          },
+          {
+            "text": "ancient ",
+            "start": 11.54,
+            "end": 11.9
+          },
+          {
+            "text": "floodplain ",
+            "start": 11.9,
+            "end": 12.6
+          },
+          {
+            "text": "filled ",
+            "start": 12.6,
+            "end": 12.94
+          },
+          {
+            "text": "with ",
+            "start": 12.94,
+            "end": 13.24
+          },
+          {
+            "text": "rocks.\n\n",
+            "start": 13.24,
+            "end": 13.48
+          },
+          {
+            "text": "Pathfinder ",
+            "start": 15.02,
+            "end": 15.03
+          },
+          {
+            "text": "stays ",
+            "start": 15.02,
+            "end": 15.48
+          },
+          {
+            "text": "in ",
+            "start": 15.48,
+            "end": 15.68
+          },
+          {
+            "text": "place. ",
+            "start": 15.68,
+            "end": 15.96
+          },
+          {
+            "text": "On ",
+            "start": 16.88,
+            "end": 16.89
+          },
+          {
+            "text": "the ",
+            "start": 16.88,
+            "end": 17.0
+          },
+          {
+            "text": "second ",
+            "start": 17.0,
+            "end": 17.32
+          },
+          {
+            "text": "Martian ",
+            "start": 17.32,
+            "end": 17.54
+          },
+          {
+            "text": "day, ",
+            "start": 17.54,
+            "end": 18.0
+          },
+          {
+            "text": "Sojourner ",
+            "start": 18.32,
+            "end": 18.92
+          },
+          {
+            "text": "rolls ",
+            "start": 18.92,
+            "end": 19.24
+          },
+          {
+            "text": "down ",
+            "start": 19.24,
+            "end": 19.58
+          },
+          {
+            "text": "a ",
+            "start": 19.58,
+            "end": 19.68
+          },
+          {
+            "text": "ramp ",
+            "start": 19.68,
+            "end": 19.92
+          },
+          {
+            "text": "and ",
+            "start": 19.92,
+            "end": 20.42
+          },
+          {
+            "text": "begins ",
+            "start": 20.42,
+            "end": 20.68
+          },
+          {
+            "text": "exploring ",
+            "start": 20.68,
+            "end": 21.26
+          },
+          {
+            "text": "on ",
+            "start": 21.26,
+            "end": 21.6
+          },
+          {
+            "text": "six ",
+            "start": 21.6,
+            "end": 21.9
+          },
+          {
+            "text": "little ",
+            "start": 21.9,
+            "end": 22.18
+          },
+          {
+            "text": "wheels.\n\n",
+            "start": 22.18,
+            "end": 22.48
+          },
+          {
+            "text": "Together, ",
+            "start": 23.12,
+            "end": 23.52
+          },
+          {
+            "text": "their ",
+            "start": 23.84,
+            "end": 24.06
+          },
+          {
+            "text": "cameras ",
+            "start": 24.06,
+            "end": 24.44
+          },
+          {
+            "text": "and ",
+            "start": 24.44,
+            "end": 24.68
+          },
+          {
+            "text": "instruments ",
+            "start": 24.68,
+            "end": 25.0
+          },
+          {
+            "text": "help ",
+            "start": 25.0,
+            "end": 25.4
+          },
+          {
+            "text": "people ",
+            "start": 25.4,
+            "end": 25.68
+          },
+          {
+            "text": "study ",
+            "start": 25.68,
+            "end": 26.1
+          },
+          {
+            "text": "this ",
+            "start": 26.1,
+            "end": 26.4
+          },
+          {
+            "text": "new ",
+            "start": 26.4,
+            "end": 26.6
+          },
+          {
+            "text": "world.\n\n",
+            "start": 26.6,
+            "end": 26.92
+          },
+          {
+            "text": "Welcome ",
+            "start": 27.78,
+            "end": 28.26
+          },
+          {
+            "text": "to ",
+            "start": 28.26,
+            "end": 28.48
+          },
+          {
+            "text": "the ",
+            "start": 28.48,
+            "end": 28.6
+          },
+          {
+            "text": "Sojourner ",
+            "start": 28.6,
+            "end": 29.1
+          },
+          {
+            "text": "archive.\n\n",
+            "start": 29.1,
+            "end": 29.52
+          },
+          {
+            "text": "Tap ",
+            "start": 30.26,
+            "end": 30.44
+          },
+          {
+            "text": "the ",
+            "start": 30.44,
+            "end": 30.62
+          },
+          {
+            "text": "middle ",
+            "start": 30.62,
+            "end": 30.76
+          },
+          {
+            "text": "screen ",
+            "start": 30.76,
+            "end": 31.06
+          },
+          {
+            "text": "to ",
+            "start": 31.06,
+            "end": 31.3
+          },
+          {
+            "text": "turn ",
+            "start": 31.3,
+            "end": 31.52
+          },
+          {
+            "text": "the ",
+            "start": 31.52,
+            "end": 31.64
+          },
+          {
+            "text": "educational ",
+            "start": 31.64,
+            "end": 32.02
+          },
+          {
+            "text": "three-",
+            "start": 32.02,
+            "end": 32.56
+          },
+          {
+            "text": "dimensional ",
+            "start": 32.56,
+            "end": 32.82
+          },
+          {
+            "text": "models. ",
+            "start": 32.82,
+            "end": 33.36
+          },
+          {
+            "text": "Open ",
+            "start": 34.22,
+            "end": 34.23
+          },
+          {
+            "text": "the ",
+            "start": 34.22,
+            "end": 34.34
+          },
+          {
+            "text": "landing ",
+            "start": 34.34,
+            "end": 34.54
+          },
+          {
+            "text": "file ",
+            "start": 34.54,
+            "end": 34.88
+          },
+          {
+            "text": "and ",
+            "start": 34.88,
+            "end": 35.32
+          },
+          {
+            "text": "compare ",
+            "start": 35.32,
+            "end": 35.6
+          },
+          {
+            "text": "real ",
+            "start": 35.6,
+            "end": 35.94
+          },
+          {
+            "text": "NASA ",
+            "start": 35.94,
+            "end": 36.24
+          },
+          {
+            "text": "photographs.\n\n",
+            "start": 36.24,
+            "end": 36.72
+          },
+          {
+            "text": "Tap ",
+            "start": 37.62,
+            "end": 37.78
+          },
+          {
+            "text": "the ",
+            "start": 37.78,
+            "end": 37.96
+          },
+          {
+            "text": "cassette ",
+            "start": 37.96,
+            "end": 38.18
+          },
+          {
+            "text": "to ",
+            "start": 38.18,
+            "end": 38.54
+          },
+          {
+            "text": "hear ",
+            "start": 38.54,
+            "end": 38.68
+          },
+          {
+            "text": "NASA ",
+            "start": 38.68,
+            "end": 39.0
+          },
+          {
+            "text": "voices. ",
+            "start": 39.0,
+            "end": 39.34
+          },
+          {
+            "text": "See ",
+            "start": 40.26,
+            "end": 40.3
+          },
+          {
+            "text": "the ",
+            "start": 40.3,
+            "end": 40.44
+          },
+          {
+            "text": "glowing ",
+            "start": 40.44,
+            "end": 40.64
+          },
+          {
+            "text": "question ",
+            "start": 40.64,
+            "end": 41.08
+          },
+          {
+            "text": "mark? ",
+            "start": 41.08,
+            "end": 41.3
+          },
+          {
+            "text": "Open ",
+            "start": 42.04,
+            "end": 42.05
+          },
+          {
+            "text": "the ",
+            "start": 42.04,
+            "end": 42.18
+          },
+          {
+            "text": "notebook ",
+            "start": 42.18,
+            "end": 42.34
+          },
+          {
+            "text": "and ",
+            "start": 42.34,
+            "end": 42.94
+          },
+          {
+            "text": "try ",
+            "start": 42.94,
+            "end": 43.14
+          },
+          {
+            "text": "the ",
+            "start": 43.14,
+            "end": 43.36
+          },
+          {
+            "text": "discovery ",
+            "start": 43.36,
+            "end": 43.66
+          },
+          {
+            "text": "quiz.\n\n",
+            "start": 43.66,
+            "end": 44.08
+          },
+          {
+            "text": "Your ",
+            "start": 44.98,
+            "end": 45.22
+          },
+          {
+            "text": "little ",
+            "start": 45.22,
+            "end": 45.48
+          },
+          {
+            "text": "Mars ",
+            "start": 45.48,
+            "end": 45.78
+          },
+          {
+            "text": "adventure ",
+            "start": 45.78,
+            "end": 46.18
+          },
+          {
+            "text": "starts ",
+            "start": 46.18,
+            "end": 47.22
+          },
+          {
+            "text": "now.",
+            "start": 47.22,
+            "end": 47.8
+          }
+        ],
+        "alignment": "Local speech-recognition word estimates aligned to the approved NASA-based script. Spoken year normalized; Ares Vallis spelling retained from NASA sources. Playback follows audio.currentTime, including pauses and seeking. Editorial word timings, not historical mission timestamps."
+      },
+      "sources": [
+        "pathfinder",
+        "sojourner-hardware",
+        "sojourner-barnacle",
+        "pathfinder-model-reference"
+      ]
+    },
+    "arrivalWatermarkEmbedded": true
+  }
+}

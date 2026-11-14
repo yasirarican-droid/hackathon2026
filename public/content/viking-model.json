@@ -1,0 +1,13 @@
+{
+  "file": "assets/models/viking-lander.glb",
+  "originalFilename": "Viking Lander (1).glb",
+  "source": "https://science.nasa.gov/3d-resources/viking-lander/",
+  "download": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/viking-lander/Viking%20Lander.glb",
+  "credit": "NASA / Michael D. Carbajal",
+  "sha256": "1233dc2c96a1c0b08ca9a20f7ed9c09e0223f06f14f6ae6371349504c1929149",
+  "bytes": 1849384,
+  "verified": "2026-11-14",
+  "matchesNASA": true,
+  "geometry": "Original bytes and mesh geometry unchanged.",
+  "display": "Runtime colors, metalness, roughness and lighting adjusted for readable viewing; not an exact paint reconstruction. Original material toggle available."
+}

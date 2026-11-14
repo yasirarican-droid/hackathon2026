@@ -1,0 +1,241 @@
+{
+  "cutoffUTC": "2026-11-14T06:00:00Z",
+  "cutoffLocal": "2026-11-14 09:00 Europe/Istanbul",
+  "checkedAtUTC": "2026-11-14T14:34:55.876930+00:00",
+  "retiredAssets": [
+    {
+      "file": "assets/art/sojourner-cassette.webp",
+      "sha256": "cc9357bd18938bd20760119326c8f8f57764b45e64bdf2f5867addbbafc28ec5",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/sojourner-crt-rover-v1.webp",
+      "sha256": "9058d89641c5a5a0ad2d56068923a06a4634000cdb87166d330d1d66bf2da41d",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/sojourner-desk-phone-v2.webp",
+      "sha256": "14f585b56088cd995c0f0d40d6d9f74a439e8a60abd0addf2e392ad83e5297f4",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/sojourner-hello-explorer.webp",
+      "sha256": "ffcd9055ed68ce70b149664232ba54adb6d78f1f8c4902bd8447538303898595",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/sojourner-lava-lamp.webp",
+      "sha256": "7a617eb825f03359cb9c2390347085dc8052dc604b52fb6cd4cec1612de3ae63",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/timeline-apollo.webp",
+      "sha256": "97c486729a1d25f1cbf03b59c5767857d4c31905bf168f6fed9427c2859f4248",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/timeline-sojourner.webp",
+      "sha256": "c8679cf9bb42915e0117dc493578252d7f4794be92439b2f7052b3f9386c4bd4",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/viking-banker-lamp.png",
+      "sha256": "add5461c1e88e5af72693428287a07fb6dc49b4ee9c7932826d614442ac46c11",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    },
+    {
+      "file": "assets/art/viking-telephone.png",
+      "sha256": "85ddac0c45224e73155676cb2122ef180763e92b8f67fc53c6961fdcccd828d3",
+      "reason": "Pre-start project illustration retired, not re-dated."
+    }
+  ],
+  "activeArtwork": [
+    {
+      "file": "assets/art/apollo-room-v2.webp",
+      "sha256": "37848374f7da9f7ef616f6b63a45f9c3b8e4b6f774b74888045027eedf482c19",
+      "generationOutput": "exec-a479e2cb-e3c2-49f9-9852-368fcb50b2ac.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T09:45:58.476797+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "f07177f8ecde9c25a1a7734b830c31fb1490ad067c9ba7c58c4e4143b2b73506",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "37848374f7da9f7ef616f6b63a45f9c3b8e4b6f774b74888045027eedf482c19"
+    },
+    {
+      "file": "assets/art/desk-props-v2.webp",
+      "sha256": "e5fad05141a4d8c598c14f211aac62b5f7b23eef8e34d4e6ef61fac902172d54",
+      "generationOutput": "exec-d907c9c1-0dba-4342-94cc-ff16a6c44099.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T09:46:44.503440+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "52528f29d663c5a56373471a257dd836d718c7582cd7f6137094c3d9d760e630",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "e5fad05141a4d8c598c14f211aac62b5f7b23eef8e34d4e6ef61fac902172d54"
+    },
+    {
+      "file": "assets/art/eagle-story.webp",
+      "sha256": "696e36dbddd7e3a02cbbc15fdd6306c20e8f59261a5aad71afda96e8bc869bdf",
+      "generationOutput": "exec-5e138909-4f03-4395-bd45-8ffd61197071.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T10:14:37.035512+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "86c7d7df678ce8cc7b84d85a7880ed03993c752ff4ceecb311e1bbb9561cd614",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "696e36dbddd7e3a02cbbc15fdd6306c20e8f59261a5aad71afda96e8bc869bdf"
+    },
+    {
+      "file": "assets/art/sojourner-cassette-v2.webp",
+      "sha256": "feda4752ad9a6b88ee4abeb1e73ab9934ca6a0f6934ed1281c81d053cf84536e",
+      "generationOutput": "exec-63e1ed64-f9f1-494b-9a32-20f9217e92b5.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:32:42.400590+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "eb14a71211e05c54ae8eb9fbbf11b51c4f5023a453ac4a97e585cfb04419f773",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "feda4752ad9a6b88ee4abeb1e73ab9934ca6a0f6934ed1281c81d053cf84536e"
+    },
+    {
+      "file": "assets/art/sojourner-desk-phone-v3.webp",
+      "sha256": "93a7f9c67f20a1a23ef277ab88f17cfe39dd485c7882836c8d9bb28462ee05a7",
+      "generationOutput": "exec-b0737766-0ead-43bc-bd42-415ee6a58e33.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:32:11.813182+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "35741fa12a14a95832ac6d78df240582c5f4f51db86f2703b431e6ded247e209",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "93a7f9c67f20a1a23ef277ab88f17cfe39dd485c7882836c8d9bb28462ee05a7"
+    },
+    {
+      "file": "assets/art/sojourner-hello-explorer-v2.webp",
+      "sha256": "f318b72332c6091a56360fd71a4b6e3ac0f9707012775ac5a6faf4cbb5dd4487",
+      "generationOutput": "exec-fa6f5ec0-e67f-4bf1-9500-cdc5fde4403b.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:31:31.576373+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "4d9bf903be1e0f34de229b0c4512eecc036140b486814be880255b054fbdc501",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "f318b72332c6091a56360fd71a4b6e3ac0f9707012775ac5a6faf4cbb5dd4487"
+    },
+    {
+      "file": "assets/art/sojourner-lava-lamp-v2.webp",
+      "sha256": "b3d44366eda90787af5325904700eaad70d96767707ecf7a45e2d9d5beb7dc4e",
+      "generationOutput": "exec-71cbf23a-5857-4e3d-a07e-df84ad3aef04.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:31:41.061173+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "82962f76c4758ddc634f9eff1faddda955830ab80bd2b4d2b159b4104b2ddf8b",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "b3d44366eda90787af5325904700eaad70d96767707ecf7a45e2d9d5beb7dc4e"
+    },
+    {
+      "file": "assets/art/sojourner-room-v1.webp",
+      "sha256": "2ee7d1d0eefe194e0a400773853ac97245b61cf9fb3d556115cd3f747eccf8eb",
+      "generationOutput": "exec-31c15c0a-48c7-479d-bbea-806ab967716e.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T12:43:47.639591+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "71ceaf9a7e7c9798c7f20296c321b685bceafcb7f5316461868a8c236e8aa9a9",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "2ee7d1d0eefe194e0a400773853ac97245b61cf9fb3d556115cd3f747eccf8eb"
+    },
+    {
+      "file": "assets/art/space-hero.webp",
+      "sha256": "b128fa1f174bfd024c9e526fac12ec95edd31848aada0dcabde42bb1dc6659cf",
+      "generationOutput": "exec-8045879e-985d-4db3-acb1-d6af0a391010.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T09:06:10.973890+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "32d9251c4f561837697b46d775cf8121bd22ed1e205c105fcde5337aba9bed4d",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "b128fa1f174bfd024c9e526fac12ec95edd31848aada0dcabde42bb1dc6659cf"
+    },
+    {
+      "file": "assets/art/space-planets.webp",
+      "sha256": "cc8805021f4c35234ae364bd89bc42047882a401e1e88a6af7776e167513fcc1",
+      "generationOutput": "exec-e3b3c61e-7601-4d7a-aaaa-033b08e5e5f8.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T09:14:29.018820+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "b70c2d4159cbcd9dfb11dc98b32b4adf21258dc35d1f507b1e1b7a30332fdb76",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "cc8805021f4c35234ae364bd89bc42047882a401e1e88a6af7776e167513fcc1"
+    },
+    {
+      "file": "assets/art/timeline-apollo-v2.webp",
+      "sha256": "adb9266f54fe75ae6fc30a7458ce5b5061274c218289b7d58df28ef884756595",
+      "generationOutput": "exec-10bcab61-2693-4cc2-92eb-497c18e580aa.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:32:08.593913+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "e623d1c6f984d4af4ed37211b4bf933c181590d08ad00a659b3303320ae8179e",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "adb9266f54fe75ae6fc30a7458ce5b5061274c218289b7d58df28ef884756595"
+    },
+    {
+      "file": "assets/art/timeline-sojourner-v2.webp",
+      "sha256": "5fc67b658eb5e6de6a7d9bb464eb80b72e9c253d773bd4e6f68391529ddf2e4b",
+      "generationOutput": "exec-a5bf1e06-4cdc-4c0a-b9b8-d48b1ccf16ee.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:33:21.796139+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "6c5b928d95e566c269f6976ab976df27944a2cd82b136ce8605329232b6da261",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "5fc67b658eb5e6de6a7d9bb464eb80b72e9c253d773bd4e6f68391529ddf2e4b"
+    },
+    {
+      "file": "assets/art/timeline-viking.webp",
+      "sha256": "4ca673db41a8fb4497b6deec3040b24ed506c1ca621ff33f7787350723c518d1",
+      "generationOutput": "exec-ddd0f15e-05ee-4cd4-b866-d745394b723d.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:25:42.787580+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "87a5a50e26898563ce9aaf214e94fdf144b67895d0f10e365d6dc0075e3cfb73",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "4ca673db41a8fb4497b6deec3040b24ed506c1ca621ff33f7787350723c518d1"
+    },
+    {
+      "file": "assets/art/viking-banker-lamp-v2.webp",
+      "sha256": "f4089f02f9b6eff079402b365d0ca78f625ae8ddc8c53c0608d8e9221a4247de",
+      "generationOutput": "exec-887381af-ca84-4213-add6-e1a0c23c0a6e.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:30:25.150249+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "40e4ce9ef855f98d9146e6fac20fb2a32b90ed56109b43ce7520fee7e62df60d",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "f4089f02f9b6eff079402b365d0ca78f625ae8ddc8c53c0608d8e9221a4247de"
+    },
+    {
+      "file": "assets/art/viking-room-v1.webp",
+      "sha256": "51ca5b207fc0d56433112d5cabd0553ec29f4340bd8a63cd44d51ef8551ba885",
+      "generationOutput": "exec-5338f944-830e-4350-8cf3-52e215790082.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T11:18:15.190102+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "ff069f8e68fe613073412385fc7f4e74c2cbdcf8140042099f9591b34c498b55",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "51ca5b207fc0d56433112d5cabd0553ec29f4340bd8a63cd44d51ef8551ba885"
+    },
+    {
+      "file": "assets/art/viking-story.webp",
+      "sha256": "8e97255726f347c8bd036068e2417ab25da5df51939c452ecbaec4ac95be5854",
+      "generationOutput": "exec-c2ebba01-1d26-4256-a580-2a013313fd08.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T12:03:34.576838+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "b69de4a140ebe8c22d71f91fb9588cf009a7edfc7a53ce204db78da5be2b3249",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "8e97255726f347c8bd036068e2417ab25da5df51939c452ecbaec4ac95be5854"
+    },
+    {
+      "file": "assets/art/viking-telephone-v2.webp",
+      "sha256": "26857e36bfeb3f1f241bd47f9aa02e2910eec0ce804f7939ca2395e6d5bcd529",
+      "generationOutput": "exec-49d60340-c680-451d-8e22-cd4f23e37c80.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T14:31:10.593986+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "352aa326b6861eb1965a35ccbea33aad15a2bbec3cc2918e7af9967880ea15c4",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "26857e36bfeb3f1f241bd47f9aa02e2910eec0ce804f7939ca2395e6d5bcd529"
+    },
+    {
+      "file": "assets/art/wordmark.webp",
+      "sha256": "a70585da52a727d7a7d13d60ae76adece45d2539a108a7ea5204153558aace9a",
+      "generationOutput": "exec-2e74223b-246e-4eae-81ea-081790ee9610.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T08:34:06.676374+00:00",
+      "verification": "Optimized WebP derivative of the recorded post-start ImageGen output. Original generation hash and observed original output time retained. Display disclosure consolidated in the production-information card at owner request.",
+      "originalGenerationSHA256": "61669ad41af61bd426537d0c1670458b4018379f659e2e830ddf2214201697c1",
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "sourceWebPSHA256": "a70585da52a727d7a7d13d60ae76adece45d2539a108a7ea5204153558aace9a"
+    }
+  ],
+  "retirement": "Nine pre-start illustrations removed from project and retained outside project for undo/audit. One obsolete import script retired. No dates falsified.",
+  "ownerMedia": "Owner confirms all supplied music, films and narrator recordings were produced after cutoff. Original generation time not independently verified.",
+  "historicalSources": "Original NASA images, original NASA 3D models, NASA podcast source excerpts, fonts, licenses and libraries retain their original source history; these are not claimed as new project productions.",
+  "planningFiles": "AGENTS.md and .gitignore are pre-event planning/repository configuration, not new product content. Local credential files and Git history are untouched and excluded from publication.",
+  "derivatives": "Some post-start ImageGen room/branding/Viking generations used owner design references as style or edit inputs. They are new outputs after cutoff, with derivative origin preserved; not claimed as entirely independent of pre-event design.",
+  "webOptimization": "18 decorative PNGs converted to WebP at original dimensions with exact alpha retained. One unused monitor atlas removed. Original generated PNGs archived outside published project; original production times retained.",
+  "displayDisclosure": "Owner requested removal of repeated on-image and interface AI labels. Tools and AI origins are described in one production-information card; source metadata retained. Embedded arrival-video credits remain. This card-only illustration disclosure is not represented as equivalent to the competition visible-watermark requirement."
+}

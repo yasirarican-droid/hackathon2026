@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "file": "assets/art/timeline-apollo-v2.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+      "bytes": 855174,
+      "sha256": "adb9266f54fe75ae6fc30a7458ce5b5061274c218289b7d58df28ef884756595",
+      "classification": "AI-generated decorative illustration, not original NASA evidence.",
+      "webOptimization": {
+        "originalSHA256": "e623d1c6f984d4af4ed37211b4bf933c181590d08ad00a659b3303320ae8179e",
+        "originalBytes": 4144861,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    {
+      "file": "assets/art/timeline-sojourner-v2.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+      "bytes": 862138,
+      "sha256": "5fc67b658eb5e6de6a7d9bb464eb80b72e9c253d773bd4e6f68391529ddf2e4b",
+      "classification": "AI-generated decorative illustration, not original NASA evidence.",
+      "webOptimization": {
+        "originalSHA256": "6c5b928d95e566c269f6976ab976df27944a2cd82b136ce8605329232b6da261",
+        "originalBytes": 3914978,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    },
+    {
+      "file": "assets/art/timeline-viking.webp",
+      "created": "2026-11-14",
+      "tool": "OpenAI built-in ImageGen",
+      "origin": "Edited owner-selected olive CRT illustration; screen replaced with pencil illustration using NASA PIA09703 hardware photo as structural reference. No branding or flags.",
+      "bytes": 527766,
+      "sha256": "4ca673db41a8fb4497b6deec3040b24ed506c1ca621ff33f7787350723c518d1",
+      "classification": "AI-generated decorative illustration, not original NASA photography or engineering reconstruction.",
+      "sourceRecord": "media.json: viking-hardware, NASA PIA09703",
+      "promptSummary": "Keep olive CRT cabinet and transparent background; replace screen with squat Viking lander based on NASA hardware image, three legs, dish and sampler, stationary on illustrative orange terrain; no solar wings, flames, logos, flags, badges or text.",
+      "webOptimization": {
+        "originalSHA256": "87a5a50e26898563ce9aaf214e94fdf144b67895d0f10e365d6dc0075e3cfb73",
+        "originalBytes": 2756609,
+        "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+        "originalRetained": "Unchanged original retained outside published project."
+      }
+    }
+  ]
+}

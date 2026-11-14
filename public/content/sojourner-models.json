@@ -1,0 +1,48 @@
+{
+  "created": "2026-11-14",
+  "tool": "OpenAI Codex authored deterministic Three.js geometry; GLTFExporter writes local GLB files. No image-to-3D service or third-party model used.",
+  "sources": [
+    {
+      "url": "https://www.jpl.nasa.gov/news/press_kits/mpfland.pdf",
+      "usedFor": "July 1997 landing press kit, printed pages 7 and 28-32: rover dimensions, 13cm wheel diameter, component schematics, three-petal structure, deployed 2.75m span and camera mast about 1.5m."
+    },
+    {
+      "url": "https://www-robotics.jpl.nasa.gov/what-we-do/flight-projects/pathfinder/",
+      "usedFor": "Rover hardware photograph, six-wheel rocker-bogie architecture, solar array, rear APXS, antenna and broad hardware arrangement."
+    },
+    {
+      "url": "https://science.nasa.gov/photojournal/sojourner-near-barnacle-bill/",
+      "usedFor": "Independent mission photograph for comparing real rover hardware."
+    }
+  ],
+  "models": [
+    {
+      "id": "sojourner",
+      "file": "assets/models/sojourner-educational.glb",
+      "bytes": 536952,
+      "sha256": "768fb81d766751a7c29ce7facc28af8d4e74e7c95275d5483b276b73315de8f5",
+      "meshCount": 371,
+      "boundsMeters": [
+        0.48000000002607707,
+        0.5706266201527852,
+        0.651
+      ],
+      "classification": "AI-assisted authored educational reconstruction based on NASA references; not a NASA-issued model or engineering CAD.",
+      "limitations": "Solar cell pattern, wheel cleats, joints, wiring, antenna length and material appearance are approximate. Main body proportion and six 13cm wheels follow NASA references. No internal engineering mechanisms reconstructed."
+    },
+    {
+      "id": "pathfinder",
+      "file": "assets/models/pathfinder-educational.glb",
+      "bytes": 291964,
+      "sha256": "a8e19d4882e9bd8ebe64e27773f5dea6cf1db9e310440e782cc0e24b6779857e",
+      "meshCount": 140,
+      "boundsMeters": [
+        2.75,
+        1.428,
+        2.397638456200509
+      ],
+      "classification": "AI-assisted authored educational reconstruction based on NASA references; not a NASA-issued model or engineering CAD.",
+      "limitations": "Open-petal educational state, rover separate. Airbags, discarded arrival hardware, internal mechanisms and minute wiring omitted. Petal geometry, instrument arrangement and optical materials simplified. 2.75m overall horizontal span used as a reference; no claim to photogrammetric fidelity."
+    }
+  ]
+}
