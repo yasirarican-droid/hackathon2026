@@ -20,6 +20,7 @@ async function walk(directory) {
         "cassette-player.js",
         "learning-guide.js",
         "progress-store.js",
+        "explorer-guide.js",
       ].includes(file.name) &&
       !full.endsWith(".txt")
     )

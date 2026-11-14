@@ -1,5 +1,7 @@
 # NASA Starboard — Abandoned, But Not Forgotten
 
+The right-side question mark opens four rotating explorer tips per screen. Quiet idle guides and the prominent yellow Field Guide help visitors find evidence and track three learning goals per mission. [Guide behavior and controls](docs/explorer-guides.md).
+
 An interactive Moon and Mars archive for school-age explorers. Three illustrated rooms connect equipment left behind with original NASA photographs, mission records and scientific evidence.
 
 Live application: https://nasastarboard.app/  

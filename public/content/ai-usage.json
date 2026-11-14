@@ -247,5 +247,10 @@
     "tool": "OpenAI Codex",
     "scope": "Source-linked field guide goals, local-only progress persistence, direct/story entry choices, keyboard-accessible model part lessons and ray picking for the project-authored rover/lander. No generated scientific data.",
     "geometry": "Original NASA GLBs remain unchanged. Temporary annotation outlines and guided camera views are viewer overlays. Educational Sojourner/Pathfinder parts are matched to named reconstruction components."
+  },
+  "explorerGuides": {
+    "tool": "OpenAI built-in ImageGen",
+    "record": "content/explorer-guides.json",
+    "description": "Four transparent-background, friendly navigation characters. Three mission mascots derive from existing project illustrations; homepage astronaut is an original imagined child character. Not historical people, transmissions, evidence or NASA-provided assets."
   }
 }

@@ -418,7 +418,8 @@
       "intro": "AI-generated illustrations, films, narration and music. Original NASA evidence is credited separately.",
       "paragraphs": [
         "AI tools helped create the illustrative setting, films, narrator voices, music, code and explanatory text. These creative elements are separate from original NASA evidence.",
-        "Illustrations and imagined character portraits are not historical photographs. Narrator stories are modern educational explanations, not original mission transmissions. The cassette’s NASA/JPL archive excerpts are credited separately."
+        "Illustrations and imagined character portraits are not historical photographs. Narrator stories are modern educational explanations, not original mission transmissions. The cassette’s NASA/JPL archive excerpts are credited separately.",
+        "The smiling explorer guides are imagined navigation helpers. Their tips explain how to use this archive; they are not historical spacecraft messages."
       ],
       "facts": [
         ["ILLUSTRATIONS", "OpenAI ImageGen"],

@@ -85,6 +85,26 @@
     "sha256": "696e36dbddd7e3a02cbbc15fdd6306c20e8f59261a5aad71afda96e8bc869bdf"
   },
   {
+    "path": "assets/art/guide-astronaut.webp",
+    "bytes": 435022,
+    "sha256": "7b79d3aeb1178e31fae8755758b041b8f58e2669191008a7a8694e53808bfc33"
+  },
+  {
+    "path": "assets/art/guide-eagle.webp",
+    "bytes": 406650,
+    "sha256": "b98297e5f9c8758374dfa301b8104beed23bb4b91484947808a99ae8316e2499"
+  },
+  {
+    "path": "assets/art/guide-sojourner.webp",
+    "bytes": 468416,
+    "sha256": "ab2f85b0e83216dfb7892e848306660dc2af08dbf2265cc05386229d1867f675"
+  },
+  {
+    "path": "assets/art/guide-viking.webp",
+    "bytes": 321816,
+    "sha256": "b3a73f07c776a917dc0b7f015283cdf5307050d7448b36eb0d3396cde191bd0d"
+  },
+  {
     "path": "assets/art/sojourner-cassette-v2.webp",
     "bytes": 702254,
     "sha256": "feda4752ad9a6b88ee4abeb1e73ab9934ca6a0f6934ed1281c81d053cf84536e"
@@ -266,13 +286,18 @@
   },
   {
     "path": "content/ai-usage.json",
-    "bytes": 20488,
-    "sha256": "6e121b81b290cb396eac039242ec9b556d8f3bbe48081acb6f1664f64207c7dc"
+    "bytes": 20886,
+    "sha256": "38b16394ab91ad8578aed4381ad186996c07be123b723bab02dfa83e1d55b778"
   },
   {
     "path": "content/archive.json",
-    "bytes": 93047,
-    "sha256": "5e16810f0a257585e19f94e0dfa3474f6612d21809eeb9d037b71c96d8d3de05"
+    "bytes": 93208,
+    "sha256": "9956f0f55360afbb43406adf47de548eeb07f32b60434dcfc9874da14c7b75d6"
+  },
+  {
+    "path": "content/explorer-guides.json",
+    "bytes": 5420,
+    "sha256": "48d33058dafe79e0656bb2dbb15a713ae14af36a1f500abff7ed455a5e04b142"
   },
   {
     "path": "content/learning.json",
@@ -296,8 +321,8 @@
   },
   {
     "path": "content/production-audit.json",
-    "bytes": 19921,
-    "sha256": "0e86c75ad1e2dc3bc6001e39562f4ca56e420fe40b8523af360fce4ec622241c"
+    "bytes": 23210,
+    "sha256": "f07e229783827f5ce6cc974dd87c65d8db27948deb0d3f7634068463f83e6642"
   },
   {
     "path": "content/sojourner-art.json",

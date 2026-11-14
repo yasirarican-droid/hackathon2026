@@ -1,0 +1,13 @@
+# Quiet explorer guides
+
+The Field Guide is a yellow notebook control with a readable title, short instruction, three progress dots and gentle four-second glow. Completion turns it green. Reduced-motion and Pause motion disable the glow and pop animation.
+
+Four transparent character assets were generated with the built-in ImageGen tool after the event start: a child astronaut for the homepage, Eagle for Apollo, Viking for Viking 1 and a small Sojourner rover. Original generation files remain outside the project; optimized WebPs retain original dimensions and exact alpha. Paths, original hashes, observed output times, reference illustrations and prompt summaries are in public/content/explorer-guides.json. These are imagined navigation mascots, not scientific evidence or historical speech. Their origin is included in the shared production-information card.
+
+The question-mark control on the right opens a guide on demand. Four different tips cycle independently on each page; each has an action opening the actual relevant exhibit. Automatic appearances count separately from manual requests. The first automatic tip appears after approximately 45 seconds without pointer, keyboard or scroll activity. A tip lasts 14 seconds except while keyboard focus is inside it. There are at most two automatic appearances per screen per page load, separated by at least two minutes on the same screen. New screens get their own idle delay.
+
+Tips and the help control are suppressed during a dialog, briefing, arrival video, CRT narration, hidden browser tab or portrait guard. Navigating or opening a panel hides the guide immediately. Tips never start audio or take keyboard focus automatically. Manual help moves focus to its action, and Escape or Dismiss returns focus. The image and surrounding area do not intercept clicks; the bubble controls do. Hide automatic tips for this visit disables unsolicited appearances until reload, while the question-mark control remains available.
+
+Room tips open the real Field Guide or an existing mission exhibit. Once all three goals are solved, the Field Guide tip points to saving field notes. No new factual NASA claims or narrator recordings were introduced. Existing NASA evidence remains unchanged.
+
+Browser verification covers four screens, idle timing, CTA destinations, progress indicators, no automatic focus change, dialog suppression, four distinct manual tips per cycle, disabling unsolicited tips, Escape, portrait guard and landscape bounds. Screenshots were visually inspected at 1440×900 and 844×390. Existing learning and browser suites also passed.

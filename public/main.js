@@ -2,20 +2,22 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261114-learning1";
+} from "./progress-store.js?v=20261114-guides1";
 import {
   renderLearningGuide,
   mountPartLesson,
-} from "./learning-guide.js?v=20261114-learning1";
-import { createCassettePlayer } from "./cassette-player.js?v=20261114-learning1";
-import { sojournerItems } from "./sojourner-room.js?v=20261114-learning1";
-import { createCRTIntro } from "./crt-intro.js?v=20261114-learning1";
-import { createSideScreens } from "./side-screens.js?v=20261114-learning1";
+} from "./learning-guide.js?v=20261114-guides1";
+import { createCassettePlayer } from "./cassette-player.js?v=20261114-guides1";
+import { sojournerItems } from "./sojourner-room.js?v=20261114-guides1";
+import { createCRTIntro } from "./crt-intro.js?v=20261114-guides1";
+import { createSideScreens } from "./side-screens.js?v=20261114-guides1";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261114-learning1";
+} from "./mission-room.js?v=20261114-guides1";
+
+import { createExplorerGuide } from "./explorer-guide.js?v=20261114-guides1";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();
@@ -63,6 +65,7 @@ const storyPanels = new Set([
 let crtIntro;
 let missionRoom;
 let sideScreens;
+let explorerGuide;
 let cassettePlayer;
 let vikingPressure;
 let crtIntroSeen = false;
@@ -369,6 +372,24 @@ async function prepare() {
     $("#application").hidden = false;
     $("#preparation").hidden = true;
     route();
+    explorerGuide = createExplorerGuide({
+      asset,
+      context: () => {
+        const page = ["#apollo", "#viking", "#sojourner"].includes(location.hash)
+          ? currentMission()
+          : "home";
+        return {
+          page,
+          solved: learning[page]?.goals.filter(g => goalsSolved.has(page + ":" + g.id)).length || 0,
+          blocked: document.hidden || orientationQuery.matches || dialog.open || briefingActive || arrivalActive || crtIntro?.active || !prepared,
+        };
+      },
+      open: openExhibit,
+      navigate: () => {
+        location.hash = "missions";
+        document.querySelector('.year-label')?.focus({ preventScroll: true });
+      },
+    });
   } catch (error) {
     $("#prepare-stage").textContent = "Please try again.";
     $("#prepare-status").hidden = false;
@@ -470,8 +491,20 @@ function updateLearningUI() {
   const count = learning[mission].goals.filter((g) =>
     goalsSolved.has(mission + ":" + g.id),
   ).length;
-  if ($("#learning-guide-open"))
-    $("#learning-guide-open").textContent = `Field guide · ${count} / 3 goals`;
+  const guideButton = $("#learning-guide-open");
+  if (guideButton) {
+    guideButton.classList.toggle("goals-complete", count === 3);
+    guideButton.setAttribute("aria-label", `Open Field Guide · ${count} of 3 goals complete`);
+    guideButton.replaceChildren();
+    const icon = node("span", "field-guide-icon", "✦");
+    icon.setAttribute("aria-hidden", "true");
+    const copy = node("span", "field-guide-copy");
+    copy.append(node("strong", "", "Field Guide"), node("small", "", count === 3 ? "3 / 3 goals · Great exploring!" : `${count} / 3 goals · Follow the clues`));
+    const dots = node("span", "field-guide-dots");
+    dots.setAttribute("aria-hidden", "true");
+    for (let i = 0; i < 3; i++) dots.append(node("i", i < count ? "is-solved" : ""));
+    guideButton.append(icon, copy, dots);
+  }
 }
 function openLearningGuide() {
   renderLearningGuide({
@@ -796,6 +829,7 @@ function startCRTIntro() {
 }
 
 function route() {
+  explorerGuide?.reset();
   if (!archive) return;
   updateLearningUI();
   if (dialog.open) dialog.close();
@@ -1285,6 +1319,7 @@ for (const event of ["play", "pause", "ended", "timeupdate"])
   storyVoice.addEventListener(event, updateStoryControls);
 
 function openExhibit(id) {
+  explorerGuide?.reset();
   if (!archive) return;
   sideScreens?.closePanel();
   cassettePlayer?.close();
