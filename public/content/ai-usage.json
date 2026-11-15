@@ -1,6 +1,6 @@
 {
   "created": "2026-11-14",
-  "status": "Published to the owner-managed nasastarboard.app server after explicit owner authorization on 2026-11-14. Competition submission has not been performed by this deployment.",
+  "status": "Live at https://www.abandonedbutnotforgotten.org/. Final project materials prepared on 15 November 2026 for the 2026 NASA Space Apps Challenge.",
   "code": {
     "tool": "OpenAI Codex",
     "scope": "New HTML, CSS, JavaScript, content structure, asset-loading logic and local QA scripts. Homepage rocket is inline SVG with separately animated flame layers; the shape follows the user-provided project rocket reference. All motion respects pause and reduced-motion preferences. A seven-second illustrated Apollo entry briefing uses the Web Animations API, sourced static mission facts and local SVG/CSS artwork. Its rocket path is illustrative, not telemetry.",
@@ -8,7 +8,7 @@
   },
   "text": {
     "tool": "OpenAI Codex",
-    "scope": "Original child-friendly summaries based on the individually credited NASA sources. The two brief radio excerpts retain their speaker and GET timestamps. Original short Apollo 11 narrator story, based on linked NASA records. Not a transcript or a spacecraft transmission. Original child-friendly Viking telephone narrator script based on NASA mission, PDS spacecraft description and science records; not a transmission.",
+    "scope": "Child-friendly summaries, modern mission stories and Last Signal narration based on the individually credited NASA sources. Quoted historical radio excerpts retain their speaker and mission timestamps.",
     "disclosure": "AI-assisted explanatory text; not a NASA-authored educational narrative."
   },
   "art": {
@@ -17,26 +17,34 @@
     "files": [
       "assets/art/apollo-room-v2.webp",
       "assets/art/desk-props-v2.webp",
-      "assets/art/wordmark.webp",
+      "assets/art/eagle-story.webp",
+      "assets/art/sojourner-cassette-v2.webp",
+      "assets/art/sojourner-desk-phone-v3.webp",
+      "assets/art/sojourner-hello-explorer-v2.webp",
+      "assets/art/sojourner-lava-lamp-v2.webp",
+      "assets/art/sojourner-room-v1.webp",
       "assets/art/space-hero.webp",
       "assets/art/space-planets.webp",
-      "assets/art/eagle-story.webp",
-      "assets/art/viking-room-v1.webp",
-      "assets/art/viking-story.webp",
-      "assets/art/sojourner-room-v1.webp",
-      "assets/art/viking-banker-lamp-v2.webp",
-      "assets/art/viking-telephone-v2.webp",
-      "assets/art/sojourner-lava-lamp-v2.webp",
-      "assets/art/sojourner-desk-phone-v3.webp",
       "assets/art/timeline-apollo-v2.webp",
       "assets/art/timeline-sojourner-v2.webp",
-      "assets/art/sojourner-cassette-v2.webp",
-      "assets/art/sojourner-hello-explorer-v2.webp"
+      "assets/art/timeline-viking.webp",
+      "assets/art/viking-banker-lamp-v2.webp",
+      "assets/art/viking-room-v1.webp",
+      "assets/art/viking-story.webp",
+      "assets/art/viking-telephone-v2.webp",
+      "assets/art/wordmark.webp",
+      "assets/art/guide-astronaut.webp",
+      "assets/art/guide-eagle.webp",
+      "assets/art/guide-viking.webp",
+      "assets/art/guide-sojourner.webp",
+      "assets/art/archive-floppy-525-v1.webp",
+      "assets/art/archive-floppy-35-v1.webp",
+      "assets/art/archive-cd-v1.webp"
     ],
     "disclosure": "AI-generated illustrative interface artwork, not scientific evidence, historical photography, or an exact reconstruction of a real control room.",
-    "marking": "At owner request, repeated image/interface labels were removed and production tools are described in the shared How this archive was made card. Original video watermarks remain. Metadata preserves AI provenance; this card-only illustration disclosure is not declared equivalent to the competition visible-watermark requirement.",
-    "hero": "The home illustration is assembled from an ImageGen-edited planet/trail layer and clipped original rocket and flame layers. The embedded home AI lettering is removed at the owner's request. The Sources panel retains the AI illustration disclosure. The rocket has gentle motion and its flame flickers; pause and reduced motion apply.",
-    "storyIllustration": "Imagined friendly Eagle character based on the owner's storybook style reference. Generated with OpenAI ImageGen on 2026-11-14. Not a NASA image, hardware reconstruction or scientific evidence. AI origin is disclosed via the i panel and Sources.",
+    "marking": "AI tools, source references and per-asset provenance are documented in Project Info and content/production-audit.json.",
+    "hero": "Homepage illustration composed from project ImageGen artwork with independently animated rocket and flame layers. Motion follows pause and reduced-motion preferences.",
+    "storyIllustration": "Friendly Eagle character generated with OpenAI ImageGen for the illustrated story. NASA hardware references and fictional character design are documented separately in Project Info and the source records.",
     "vikingRoom": "Built-in ImageGen edit of the Apollo decorative room on 14 November 2026: three CRT cabinets recolored olive green with fixed screen geometry and desk perspective. No generated logos, flags, evidence or graph. Full prompt in docs/viking-room.md.",
     "vikingStoryIllustration": {
       "tool": "OpenAI built-in ImageGen",
@@ -45,7 +53,7 @@
       "sha256": "8e97255726f347c8bd036068e2417ab25da5df51939c452ecbaec4ac95be5854",
       "description": "Owner-requested storybook Viking character matching the Apollo postcard style. NASA hardware photograph and PDS description used as references. Three landing legs, antenna dish and sampler retained as recognizable features. Friendly face and Martian scene are imagined illustrative art, not evidence or an exact engineering reconstruction. No generated logos, flags or insignia.",
       "promptRecord": "docs/viking-phone-story.md",
-      "marking": "Uses the existing i panel, Sources and metadata disclosures per owner preference.",
+      "marking": "Tool attribution and NASA references are documented in Project Info, Sources and asset metadata.",
       "webOptimization": {
         "originalSHA256": "b69de4a140ebe8c22d71f91fb9588cf009a7edfc7a53ce204db78da5be2b3249",
         "originalBytes": 3780193,
@@ -56,7 +64,8 @@
     "vikingProps": {
       "metadata": "content/viking-props.json",
       "scope": "New banker lamp and push-button phone generated from scratch on 2026-11-14 after 09:00 Europe/Istanbul. Replaces retired pre-start artwork."
-    }
+    },
+    "consoleUpdate": "On 15 November 2026, the three room backgrounds were edited with ImageGen to integrate the Where is it now? controls; original output IDs, dates and hashes are retained in production-audit.json."
   },
   "audio": {
     "included": true,
@@ -129,7 +138,7 @@
     "file": "assets/video/moon-arrival-web.mp4",
     "origin": "Provided by the project owner",
     "metadata": "content/video.json",
-    "disclosure": "The supplied clip visibly includes an AI-generated ChatGPT/Kling AI watermark. The file and embedded marking are retained unchanged. The exact generation workflow has not been independently established.",
+    "disclosure": "AI-generated arrival film. Tool attribution and source references are recorded in the project metadata.",
     "webOptimization": {
       "originalSHA256": "a83f6e3c1cdaaadbd07b12b5c7efe07bcfed98182c2cdbbba10d5a793ace1107",
       "originalBytes": 14807402,
@@ -208,7 +217,7 @@
     "phoneAudio": {
       "file": "assets/audio/sojorner-phone.mp3",
       "metadata": "content/narration.json",
-      "playback": "Shared phone controller; automatically starts on activation."
+      "playback": "The recorded mission story plays from the desk CD; the telephone opens Last Signal."
     },
     "video": {
       "file": "assets/video/sojourner-arrival-web.mp4",
@@ -227,7 +236,7 @@
     "metadata": "content/timeline-art.json",
     "classification": "AI-generated decorative mission-card illustrations, not NASA evidence.",
     "newArt": "Apollo and Sojourner monitor illustrations newly generated from scratch after cutoff. Viking monitor was generated on 2026-11-14 after cutoff as an edit with a pre-event cabinet style reference and NASA hardware photo; derivative origin retained. All are illustrative, not NASA evidence.",
-    "disclosure": "Common artwork information button and Sources describe illustrative origin. Original NASA photographs remain in evidence panels unchanged."
+    "disclosure": "Project Info, Sources and per-asset records document the illustrative origin and NASA references."
   },
   "productionAudit": {
     "metadata": "content/production-audit.json",
@@ -258,5 +267,6 @@
     "eligibility": "Three correct mission-quiz answers earn the mission award; three passed quizzes earn the combined award. Exploration is optional support.",
     "personalization": "Name and theme rendered locally into SVG. No name persistence or server upload.",
     "award": "Independent educational project completion award; not NASA-issued and not a formal measure of learning."
-  }
+  },
+  "updated": "2026-11-15"
 }

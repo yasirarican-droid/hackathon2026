@@ -12,8 +12,10 @@ AGENTS.md
 *.pem
 *.key
 *.ppk
-copykemal_hetzner*
-hackathon2026_hetzner*
+*_hetzner*
+*_ssh_key*
+id_rsa*
+id_ed25519*
 .ssh/
 node_modules/
 

@@ -12,3 +12,4 @@
 *.woff2 binary
 *.ttf binary
 public/** -text
+docs/provenance/** -text

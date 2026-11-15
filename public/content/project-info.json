@@ -1,13 +1,13 @@
 {
   "title": "About this project",
-  "name": "NASA Starboard — Abandoned, But Not Forgotten",
+  "name": "Abandoned, But Not Forgotten",
   "purpose": "A child-friendly archive connecting Apollo 11, Viking 1 and Sojourner with original NASA evidence and the stories of equipment left behind.",
   "event": {
     "name": "2026 NASA Space Apps Challenge",
     "dates": "14–15 November 2026",
-    "participation": "Universal Event",
+    "participation": "Universal Local Event",
     "source": "https://science.nasa.gov/universe/nasa-welcomes-all-ages-experience-levels-for-space-apps-challenge/",
-    "registrationBasis": "Universal Event participation reported by the project owner."
+    "registrationBasis": "Universal Local Event participation reported by the project owner."
   },
   "team": [
     {

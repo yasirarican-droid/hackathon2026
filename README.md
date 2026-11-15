@@ -9,7 +9,7 @@ An illustrated space-history adventure that puts school-age explorers in the mis
 
 [**Explore the live archive**](https://www.abandonedbutnotforgotten.org/) · [**Watch the demo**](https://youtu.be/UBaxWCMwD6A) · [**Project presentation — PDF**](docs/delivery/Abandoned-But-Not-Forgotten.pdf) · [**Space Apps submission**](SPACE_APPS_PAGE.md)
 
-Independent project for the **2026 NASA Space Apps Challenge · Universal Event**
+Independent project for the **2026 NASA Space Apps Challenge · Universal Local Event**
 
 [![Watch our project demo](https://img.youtube.com/vi/UBaxWCMwD6A/hqdefault.jpg)](https://youtu.be/UBaxWCMwD6A)
 
@@ -69,6 +69,18 @@ A small six-wheeled rover depended on its lander to relay messages home. Explore
 
 These are connected activities, not a compulsory linear sequence. Collecting every object is not required to earn the quiz certificate.
 
+### When the archive goes quiet
+
+The ringing phone opens **Last Signal**: a short, sourced narration that connects the mission’s ending with what remains today.
+
+![The Last Signal CRT tells Sojourner’s final chapter](docs/media/last-signal.jpg)
+
+### Curiosity gets a reward
+
+Three guided answers earn a mission certificate. Children can choose a name and color, download their award and continue toward the combined three-mission certificate.
+
+![The explorer certificate with name and color customization](docs/media/certificate.jpg)
+
 ## Why three missions?
 
 We chose storytelling depth over a large catalog. Three eras give children time to recognize each machine, inspect evidence and understand how a mission can end while its scientific legacy continues. The design aims to encourage curiosity; we do not claim a measured improvement in learning outcomes.
@@ -113,7 +125,7 @@ The control rooms are fictional archive environments, not reconstructions of act
 |---|---|---|
 | **OpenAI Codex** | Software implementation, integration assistance, explanatory text and automated checks | Project Info, source documentation and AI usage records |
 | **OpenAI ImageGen / ChatGPT** | Illustrated control rooms, interface artwork, fictional guides and visual production assistance | Shared project Info and per-asset provenance records |
-| **ChatGPT + Kling AI** | Team-supplied illustrated arrival films | AI production credits in the films and project Info |
+| **ChatGPT + Kling AI** | Team-supplied illustrated arrival films | Project Info and video provenance records |
 | **ElevenLabs** | Mission introductions, archive stories, naming story and Last Signal narration | Project Info, descriptive provenance and MP3 metadata; separate from historical audio |
 | **Suno** | Homepage music | Project Info and audio provenance/metadata |
 

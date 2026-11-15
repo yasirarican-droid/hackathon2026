@@ -7,7 +7,7 @@ import {
   renderLearningGuide,
   mountPartLesson,
   renderCompletionBadge,
-} from "./learning-guide.js?v=20261115-crtkey1";
+} from "./learning-guide.js?v=20261115-deliverytext2";
 import { createCassettePlayer } from "./cassette-player.js?v=20261115-crtkey1";
 import { sojournerItems } from "./sojourner-room.js?v=20261115-crtkey1";
 import { createCRTIntro } from "./crt-intro.js?v=20261115-crtkey1";

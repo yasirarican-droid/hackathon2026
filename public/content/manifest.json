@@ -361,8 +361,8 @@
   },
   {
     "path": "content/ai-usage.json",
-    "bytes": 21806,
-    "sha256": "af382d3c34c53e76bb8e9b30941406469cbfee306d0471ba77347570ab7d09c6"
+    "bytes": 21629,
+    "sha256": "161295c01658b5f81915f735bfa7fe196f2af172dc15353530ec9a284b8d3914"
   },
   {
     "path": "content/archival-audio.json",
@@ -426,8 +426,8 @@
   },
   {
     "path": "content/project-info.json",
-    "bytes": 5632,
-    "sha256": "25c10c1cfabb9d879c8978d233f964d55201c975bfc867ca8dcf133d5d87a03a"
+    "bytes": 5625,
+    "sha256": "a08280e2c5c670286af038627dc5f24e0fd8edd1383a9a2394f424d1e3b2724e"
   },
   {
     "path": "content/sojourner-art.json",

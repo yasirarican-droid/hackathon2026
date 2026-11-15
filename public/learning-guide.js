@@ -67,7 +67,7 @@ export function renderLearningGuide({
             ...goal.sources.map((id) => data.sourceURLs[id]),
             "",
           ]),
-          "Practice completed in NASA Starboard. This is not a test certificate or proof of learning effectiveness.",
+          "Practice completed in Abandoned, But Not Forgotten. Keep exploring the NASA sources in your notes.",
         ].join("\n");
         const url = URL.createObjectURL(
           new Blob([text], { type: "text/plain;charset=utf-8" }),
