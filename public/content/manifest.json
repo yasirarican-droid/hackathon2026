@@ -421,8 +421,8 @@
   },
   {
     "path": "content/production-audit.json",
-    "bytes": 28597,
-    "sha256": "bd2dc8062ce2a3a43c7b501da1e112bb3a50857f5ac782f642cb8ff673b75641"
+    "bytes": 28138,
+    "sha256": "9a87bc94a3c2c44ed71b5d6bca81d0f632fc838dbdb89c53b2b22ab3440b3b19"
   },
   {
     "path": "content/project-info.json",
