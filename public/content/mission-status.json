@@ -1,0 +1,76 @@
+{
+  "reviewed": "2026-11-14",
+  "apollo": {
+    "name": "Apollo 11 · Eagle",
+    "title": "Eagle: two parts, different endings",
+    "place": "Tranquility Base, Moon",
+    "condition": "The lower landing stage is inactive on the Moon. The separate laser reflector still returns light sent from Earth.",
+    "reason": "The lower stage was the launch platform for the crew cabin. The cabin lifted off; the landing gear and surface experiments stayed behind.",
+    "ending": "The upper cabin was left in lunar orbit after the crew transferred. NSSDCA says its fate is unknown and a later impact is assumed, not confirmed. NASA's artifact catalog does not identify an impact location.",
+    "evidence": "apollo-orbit",
+    "imageNote": "LRO/LROC orbital photograph. NASA page published 19 June 2019; this is not a live image.",
+    "question": "Which part is visible in this photograph?",
+    "answer": "Eagle's lower landing stage. The upper cabin had already left the surface.",
+    "sources": [
+      "catalog",
+      "reflector",
+      "lunar-artifacts",
+      "orbital-apollo"
+    ],
+    "catalog": {
+      "record": "1969-059C",
+      "source": "catalog",
+      "title": "NASA NSSDCA — Apollo 11 LM / EASEP",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+    }
+  },
+  "viking": {
+    "name": "Viking 1 · Lander",
+    "title": "A science station that went quiet",
+    "place": "Chryse Planitia, Mars",
+    "condition": "The lander is inactive at its landing site. It no longer sends messages to Earth.",
+    "reason": "Viking was a stationary science station, not a return spacecraft. It remained where it landed when communication ended.",
+    "ending": "In November 1982, a faulty command sent from Earth interrupted communications. Attempts to regain contact were unsuccessful.",
+    "evidence": "viking-orbit",
+    "imageNote": "NASA-provided HiRISE lander cutout, PIA01881. Published 5 December 2006; this is not a live image.",
+    "question": "Did Viking drive away after its mission?",
+    "answer": "No. It was a lander, not a rover. HiRISE located it at its landing site.",
+    "sources": [
+      "catalog-viking",
+      "viking",
+      "viking-science",
+      "orbital-viking"
+    ],
+    "catalog": {
+      "record": "1975-075C",
+      "source": "catalog-viking",
+      "title": "NASA NSSDCA Master Catalog — Viking 1 Lander · 1975-075C",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C"
+    }
+  },
+  "sojourner": {
+    "name": "Sojourner & Pathfinder",
+    "title": "A little rover and a missing relay",
+    "place": "Pathfinder landing region, Ares Vallis, Mars",
+    "condition": "Both are silent. Sojourner needed the Pathfinder lander to relay its messages to Earth; the rover's final parking spot is uncertain.",
+    "reason": "They were sent to study Mars, with no return journey. Once the lander stopped relaying data, the team could no longer talk to the rover.",
+    "ending": "Pathfinder's final data arrived on 27 September 1997. Sojourner was programmed to approach and circle an unresponsive lander, but its actual final movements are not known.",
+    "evidence": "pathfinder-orbit",
+    "imageNote": "NASA's annotated HiRISE hardware view, PIA09105, acquired 21 December 2006. MPF marks the Pathfinder lander, not a confirmed Sojourner position.",
+    "question": "Does the orbital image prove exactly where Sojourner stopped?",
+    "answer": "No. The lander is identified; the proposed tiny rover candidate remains uncertain. A likely explanation is not the same as a confirmed observation.",
+    "sources": [
+      "catalog-sojourner",
+      "catalog-pathfinder",
+      "pathfinder",
+      "sojourner-last",
+      "orbital-pathfinder"
+    ],
+    "catalog": {
+      "record": "MESURPR",
+      "source": "catalog-sojourner",
+      "title": "NASA NSSDCA Master Catalog — Mars Pathfinder Rover / Sojourner · MESURPR",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=MESURPR"
+    }
+  }
+}

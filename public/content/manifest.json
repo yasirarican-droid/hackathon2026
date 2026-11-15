@@ -1,0 +1,497 @@
+[
+  {
+    "path": "assets/archive/bootprint.jpg",
+    "bytes": 275174,
+    "sha256": "f85a6d5e77b18badaa04bd2971722022d34da31d7bdc0bd65417c8c80a7bf3af"
+  },
+  {
+    "path": "assets/archive/disc.jpg",
+    "bytes": 112467,
+    "sha256": "84527838863f82bbb0c3d8b4aa4ffce61ada6713e00befbb994db197cc366d35"
+  },
+  {
+    "path": "assets/archive/eagle.jpg",
+    "bytes": 1412072,
+    "sha256": "d55839d9ae960cb57c219819a312b1486e5c41b45728c8371c6d717bbb1c8dce"
+  },
+  {
+    "path": "assets/archive/olive.jpg",
+    "bytes": 240838,
+    "sha256": "6c93879e2e34ad59454ad76355ab6482aae3f4d7c0b902bc85709aaf244c9be1"
+  },
+  {
+    "path": "assets/archive/reflector.jpg",
+    "bytes": 322463,
+    "sha256": "080ad882b01b38fc611d3aaa5207f8e0cc3ba7f657a50c446914ffed35d71fbf"
+  },
+  {
+    "path": "assets/archive/seismometer.jpg",
+    "bytes": 4384521,
+    "sha256": "f0b921f888d8adbc6a381e8ebd8f87a38ea24497f7c40f4413751fe2f451e357"
+  },
+  {
+    "path": "assets/archive/sojourner-airbags.jpg",
+    "bytes": 175721,
+    "sha256": "7ab21892d99c09807a4c3b70bf364f5e2a056ccb3f3a3da8cacfbcff0c16f81d"
+  },
+  {
+    "path": "assets/archive/sojourner-yogi.jpg",
+    "bytes": 38174,
+    "sha256": "e737cf379c31d9fbee99d73293cad742cee290b497747962fc32b30b50286598"
+  },
+  {
+    "path": "assets/archive/sojourner.jpg",
+    "bytes": 61419,
+    "sha256": "e6d8ac859bcd87cec2a8792551a168196814ab5501cfc64d90cbc59646700a8e"
+  },
+  {
+    "path": "assets/archive/viking-first.jpg",
+    "bytes": 152154,
+    "sha256": "9bc3ac4ee8845e663fd9fc7e23eec220617ad9ef12a46e557767b4df6f0c6109"
+  },
+  {
+    "path": "assets/archive/viking-hardware.jpg",
+    "bytes": 154869,
+    "sha256": "f1d220f7a8505cea074805d473a084cfb494bd6d110686559ab913ed3b2f6db1"
+  },
+  {
+    "path": "assets/archive/viking-lander.png",
+    "bytes": 447880,
+    "sha256": "3d6ef08b7abb92c8f0a6d070371f93e249beba6e0260a0078c7dc4f34c77813b"
+  },
+  {
+    "path": "assets/archive/viking-panorama.jpg",
+    "bytes": 81557,
+    "sha256": "6c558eda1cfd4e5471b57eaebcc1c47de2fbece07a442f9717b97202e1df9c6e"
+  },
+  {
+    "path": "assets/archive/viking.jpg",
+    "bytes": 76748,
+    "sha256": "b0fa4d386e81119685a41879061b94e5146b1c975049f6fbff7ba14b75f3364e"
+  },
+  {
+    "path": "assets/art/apollo-room-v2.webp",
+    "bytes": 437570,
+    "sha256": "092d101b49e537b115690eb800a556f28d3d627889b4b865dd5cb12e71c57fa1"
+  },
+  {
+    "path": "assets/art/archive-cd-v1.webp",
+    "bytes": 453018,
+    "sha256": "1af000dd7fca95cb66c60958bd38531dd08ae8169581caa98022b3606df3b657"
+  },
+  {
+    "path": "assets/art/archive-floppy-35-v1.webp",
+    "bytes": 444660,
+    "sha256": "a07c74976afbc75232070e2726f1b4a9ba4da660e12b95434d1adadd1c2fb7f7"
+  },
+  {
+    "path": "assets/art/archive-floppy-525-v1.webp",
+    "bytes": 449360,
+    "sha256": "a76f05b1b52cb7283a18248263df9b4ba6206319d55379c49ae702c5a4980fca"
+  },
+  {
+    "path": "assets/art/desk-props-v2.webp",
+    "bytes": 526624,
+    "sha256": "e5fad05141a4d8c598c14f211aac62b5f7b23eef8e34d4e6ef61fac902172d54"
+  },
+  {
+    "path": "assets/art/eagle-story.webp",
+    "bytes": 749140,
+    "sha256": "696e36dbddd7e3a02cbbc15fdd6306c20e8f59261a5aad71afda96e8bc869bdf"
+  },
+  {
+    "path": "assets/art/guide-astronaut.webp",
+    "bytes": 435022,
+    "sha256": "7b79d3aeb1178e31fae8755758b041b8f58e2669191008a7a8694e53808bfc33"
+  },
+  {
+    "path": "assets/art/guide-eagle.webp",
+    "bytes": 406650,
+    "sha256": "b98297e5f9c8758374dfa301b8104beed23bb4b91484947808a99ae8316e2499"
+  },
+  {
+    "path": "assets/art/guide-sojourner.webp",
+    "bytes": 468416,
+    "sha256": "ab2f85b0e83216dfb7892e848306660dc2af08dbf2265cc05386229d1867f675"
+  },
+  {
+    "path": "assets/art/guide-viking.webp",
+    "bytes": 321816,
+    "sha256": "b3a73f07c776a917dc0b7f015283cdf5307050d7448b36eb0d3396cde191bd0d"
+  },
+  {
+    "path": "assets/art/sojourner-cassette-v2.webp",
+    "bytes": 702254,
+    "sha256": "feda4752ad9a6b88ee4abeb1e73ab9934ca6a0f6934ed1281c81d053cf84536e"
+  },
+  {
+    "path": "assets/art/sojourner-desk-phone-v3.webp",
+    "bytes": 592100,
+    "sha256": "93a7f9c67f20a1a23ef277ab88f17cfe39dd485c7882836c8d9bb28462ee05a7"
+  },
+  {
+    "path": "assets/art/sojourner-hello-explorer-v2.webp",
+    "bytes": 817496,
+    "sha256": "f318b72332c6091a56360fd71a4b6e3ac0f9707012775ac5a6faf4cbb5dd4487"
+  },
+  {
+    "path": "assets/art/sojourner-lava-lamp-v2.webp",
+    "bytes": 562624,
+    "sha256": "b3d44366eda90787af5325904700eaad70d96767707ecf7a45e2d9d5beb7dc4e"
+  },
+  {
+    "path": "assets/art/sojourner-room-v1.webp",
+    "bytes": 350770,
+    "sha256": "081e81778dc31f0ca0095672c95e16f159a3c2e197ebd36977cd34a808112cca"
+  },
+  {
+    "path": "assets/art/space-hero.webp",
+    "bytes": 557746,
+    "sha256": "b128fa1f174bfd024c9e526fac12ec95edd31848aada0dcabde42bb1dc6659cf"
+  },
+  {
+    "path": "assets/art/space-planets.webp",
+    "bytes": 407094,
+    "sha256": "cc8805021f4c35234ae364bd89bc42047882a401e1e88a6af7776e167513fcc1"
+  },
+  {
+    "path": "assets/art/timeline-apollo-v2.webp",
+    "bytes": 855174,
+    "sha256": "adb9266f54fe75ae6fc30a7458ce5b5061274c218289b7d58df28ef884756595"
+  },
+  {
+    "path": "assets/art/timeline-sojourner-v2.webp",
+    "bytes": 862138,
+    "sha256": "5fc67b658eb5e6de6a7d9bb464eb80b72e9c253d773bd4e6f68391529ddf2e4b"
+  },
+  {
+    "path": "assets/art/timeline-viking.webp",
+    "bytes": 527766,
+    "sha256": "4ca673db41a8fb4497b6deec3040b24ed506c1ca621ff33f7787350723c518d1"
+  },
+  {
+    "path": "assets/art/viking-banker-lamp-v2.webp",
+    "bytes": 464240,
+    "sha256": "f4089f02f9b6eff079402b365d0ca78f625ae8ddc8c53c0608d8e9221a4247de"
+  },
+  {
+    "path": "assets/art/viking-room-v1.webp",
+    "bytes": 434702,
+    "sha256": "c296df6cf114400ec201d47fceeafd33f428cc96473c10650dd9082a415a9653"
+  },
+  {
+    "path": "assets/art/viking-story.webp",
+    "bytes": 753688,
+    "sha256": "8e97255726f347c8bd036068e2417ab25da5df51939c452ecbaec4ac95be5854"
+  },
+  {
+    "path": "assets/art/viking-telephone-v2.webp",
+    "bytes": 554732,
+    "sha256": "26857e36bfeb3f1f241bd47f9aa02e2910eec0ce804f7939ca2395e6d5bcd529"
+  },
+  {
+    "path": "assets/art/wordmark.webp",
+    "bytes": 408464,
+    "sha256": "a70585da52a727d7a7d13d60ae76adece45d2539a108a7ea5204153558aace9a"
+  },
+  {
+    "path": "assets/audio/apollo-intro-crt.mp3",
+    "bytes": 1112599,
+    "sha256": "f6df3b87abf065a18e4ff93f7721df9db47b4c2186a266b3d84394be0990b8db"
+  },
+  {
+    "path": "assets/audio/apollo-original-landing.mp3",
+    "bytes": 26388,
+    "sha256": "c2cf9c2754ec3c2f7315acd4fcdd7d892fb2027919c1a80adf90a49f63c0316c"
+  },
+  {
+    "path": "assets/audio/apollo-phone.mp3",
+    "bytes": 1264318,
+    "sha256": "eaedbc0cd9098d67b8b7afe3150a1b1af1494eb91b3df7048d2056046330d1d4"
+  },
+  {
+    "path": "assets/audio/eagle-last-signal.mp3",
+    "bytes": 1319486,
+    "sha256": "b5a06ac2c0d947a53d26d1e0381be3727cfc63222f7fe91b7cea08bdc738a9de"
+  },
+  {
+    "path": "assets/audio/lets-explore.mp3",
+    "bytes": 872588,
+    "sha256": "658c38cda3ee1974c6f38d16a06f717358f9d19223a860b268c91ea7fff55852"
+  },
+  {
+    "path": "assets/audio/sojorner-crt.mp3",
+    "bytes": 1175293,
+    "sha256": "f6704cb3cc0a9362fb494a50888c9fe804373aef536c4029fee580c2132c3482"
+  },
+  {
+    "path": "assets/audio/sojorner-last-signal.mp3",
+    "bytes": 1643613,
+    "sha256": "d6c03e8ead02eebe88b96ca4c93787e6457afd623c10178f7194eea5b1db0c8a"
+  },
+  {
+    "path": "assets/audio/sojorner-name.mp3",
+    "bytes": 991597,
+    "sha256": "2eb143db7e1456cfa931874c24ac5a804fe3f208728dd544982b2597211b6770"
+  },
+  {
+    "path": "assets/audio/sojorner-phone.mp3",
+    "bytes": 1125138,
+    "sha256": "efa4de6bc0d7549a2747ce55ae2c6827b988f35afca783bf97010aaa44044d28"
+  },
+  {
+    "path": "assets/audio/sojourner-01-launch-day.mp3",
+    "bytes": 64289,
+    "sha256": "5bd692666acc1fa4b47f9c8c3079268e1afe41b79dc3be90e3692e04bafa32ef"
+  },
+  {
+    "path": "assets/audio/sojourner-02-first-wheels-on-mars.mp3",
+    "bytes": 339627,
+    "sha256": "fe2e992f606461b83109ad5690bc17b43bdacdaac90cee71d23674365186713b"
+  },
+  {
+    "path": "assets/audio/sojourner-03-a-team-across-space.mp3",
+    "bytes": 365546,
+    "sha256": "441dde3d8a7d5c714372a8f5b27e1c9f450ea17bf515d8b4744ea16471b23072"
+  },
+  {
+    "path": "assets/audio/sojourner-04-a-lasting-adventure.mp3",
+    "bytes": 221258,
+    "sha256": "a9ec9ebf6214a665dc469cff0787c874178984bbc42dbf6d2a93243a8c93fc59"
+  },
+  {
+    "path": "assets/audio/viking-intro-crt.mp3",
+    "bytes": 1241748,
+    "sha256": "6703180f284d5f93f59f81c7c5520d84c3d59a75384723bc8b7a62e3903970e1"
+  },
+  {
+    "path": "assets/audio/viking-last-signal.mp3",
+    "bytes": 1441112,
+    "sha256": "6c9153de612a618b146a1941245ff6dedf7ebc168a05184117260d779791b427"
+  },
+  {
+    "path": "assets/audio/viking1-phone.mp3",
+    "bytes": 1427322,
+    "sha256": "d5b9f1825cc37495731a60f6f205db883ec002f0210f3c1a468c001b44f62b15"
+  },
+  {
+    "path": "assets/fonts/BubblegumSans-Regular.ttf",
+    "bytes": 38844,
+    "sha256": "db8d1c71c398266ecabe9ae4923c4feb1323441a4f056a9339e41d8f847bd0c0"
+  },
+  {
+    "path": "assets/fonts/ComicNeue-Bold.ttf",
+    "bytes": 55716,
+    "sha256": "3e7e5fccfd7e0788f317b43312151c1bd5cf058c9697a8d83eac3939050bd61e"
+  },
+  {
+    "path": "assets/fonts/ComicNeue-Regular.ttf",
+    "bytes": 57248,
+    "sha256": "a0ee5a37c8b27c4db0700137d928598b1e23b0089e1546a8961909176b779360"
+  },
+  {
+    "path": "assets/fonts/kalam-700-latin.woff2",
+    "bytes": 22144,
+    "sha256": "252063af6ade8b9a744cde4ddad0fc21ea53b8ba711eed121a0c2e8610ea9c93"
+  },
+  {
+    "path": "assets/fonts/nunito-700.ttf",
+    "bytes": 125464,
+    "sha256": "1a025dfce6e6e03bbe31ba82277ec5ed96df8b8dd58b3df6267269490b90b1dc"
+  },
+  {
+    "path": "assets/fonts/patrick-hand-400-latin.woff2",
+    "bytes": 23944,
+    "sha256": "ac5bc9033b2572bf84d39f7150c1634e37ed16e8dbee632d6d0bceac0bbf0199"
+  },
+  {
+    "path": "assets/fonts/share-tech-mono-400-latin.woff2",
+    "bytes": 13500,
+    "sha256": "41e6b9f297f7d9a2df2aaa274092f76d2f72711a15ca455f7f4f4f92caf16b72"
+  },
+  {
+    "path": "assets/models/apollo-lunar-module.glb",
+    "bytes": 716840,
+    "sha256": "379101dfcee399267addf771709107c35e826b0b9e5233272f123e4c8a585c4e"
+  },
+  {
+    "path": "assets/models/pathfinder-educational.glb",
+    "bytes": 291964,
+    "sha256": "a8e19d4882e9bd8ebe64e27773f5dea6cf1db9e310440e782cc0e24b6779857e"
+  },
+  {
+    "path": "assets/models/sojourner-educational.glb",
+    "bytes": 536952,
+    "sha256": "768fb81d766751a7c29ce7facc28af8d4e74e7c95275d5483b276b73315de8f5"
+  },
+  {
+    "path": "assets/models/viking-lander.glb",
+    "bytes": 1849384,
+    "sha256": "1233dc2c96a1c0b08ca9a20f7ed9c09e0223f06f14f6ae6371349504c1929149"
+  },
+  {
+    "path": "assets/nasa/apollo-orbit.jpg",
+    "bytes": 202986,
+    "sha256": "c8ebab62a7c56b5320b7b9100787a048e262643f5d893b7ce079d706279b597b"
+  },
+  {
+    "path": "assets/nasa/pathfinder-orbit.jpg",
+    "bytes": 455564,
+    "sha256": "7acfff0767cbfcdc92ae8ed8724ea4f99e2e1cc0704547dd1500f4cd3209c627"
+  },
+  {
+    "path": "assets/nasa/viking-orbit.jpg",
+    "bytes": 112103,
+    "sha256": "df5ee2fbaeed24f024702ef84bd09b90d3673194c8a0eb461bc2b600936eff57"
+  },
+  {
+    "path": "assets/video/moon-arrival-web.mp4",
+    "bytes": 2524090,
+    "sha256": "c2c5cee99e673c093b4318af97aab94811f676901ea93852f27e21a4af608cfa"
+  },
+  {
+    "path": "assets/video/sojourner-arrival-web.mp4",
+    "bytes": 6564448,
+    "sha256": "aec847e1e47329e0adda2d97735c4457e7134adf5614039d696fc5b2f152c0ea"
+  },
+  {
+    "path": "assets/video/viking-arrival-web.mp4",
+    "bytes": 3309713,
+    "sha256": "f0237696524535846ebb68659681e9270424fe1c23bf0c6f8e5dd42661f0acc1"
+  },
+  {
+    "path": "content/ai-usage.json",
+    "bytes": 21806,
+    "sha256": "af382d3c34c53e76bb8e9b30941406469cbfee306d0471ba77347570ab7d09c6"
+  },
+  {
+    "path": "content/archival-audio.json",
+    "bytes": 862,
+    "sha256": "2115253999a2b848547dbac7c8f508605d3e8f3c09100a71dc1adeb009d01df4"
+  },
+  {
+    "path": "content/archive-desk-media.json",
+    "bytes": 4079,
+    "sha256": "325c5fbffce56fc27d6a99d2a4fd1bdfaf30872318250935293f1d8be228194e"
+  },
+  {
+    "path": "content/archive.json",
+    "bytes": 109073,
+    "sha256": "7945289f6d63553047e0d4f36291c38d7efd7462ce64d416ef5022cc49e98194"
+  },
+  {
+    "path": "content/explorer-guides.json",
+    "bytes": 5420,
+    "sha256": "48d33058dafe79e0656bb2dbb15a713ae14af36a1f500abff7ed455a5e04b142"
+  },
+  {
+    "path": "content/final-signals.json",
+    "bytes": 59465,
+    "sha256": "f8a3b93b266080f6104834ce7c7cfa1e5dc661324ace6d2258b750cfe88b1994"
+  },
+  {
+    "path": "content/learning.json",
+    "bytes": 15839,
+    "sha256": "6e30a66aa27d495e61535f46f6ff720e6385de62dc1a1eb49225bfd6f81a47f0"
+  },
+  {
+    "path": "content/media.json",
+    "bytes": 11976,
+    "sha256": "ac099279673e669d2657521882949f7d9885908d9532c58e5ff9d8735645fe44"
+  },
+  {
+    "path": "content/mission-status.json",
+    "bytes": 4102,
+    "sha256": "8d5ac35a9be5c394b14d8eca8c5b7f5861e6d450c1a8e1aa20d2dc5d51311996"
+  },
+  {
+    "path": "content/model.json",
+    "bytes": 1650,
+    "sha256": "7288cff6d535c072cba1b8fb10acc5f8541a62ef2471ac03efc93907992878c9"
+  },
+  {
+    "path": "content/narration.json",
+    "bytes": 10007,
+    "sha256": "6f2e1c7dd233455bbbd62636ac108cb45656c95e449bded92f6ce77bf612d82d"
+  },
+  {
+    "path": "content/orbital-images.json",
+    "bytes": 2848,
+    "sha256": "ade365999a85566aa360bace77a9e3b9ccf85e27780abaa8a75f10894bb741a8"
+  },
+  {
+    "path": "content/production-audit.json",
+    "bytes": 28597,
+    "sha256": "bd2dc8062ce2a3a43c7b501da1e112bb3a50857f5ac782f642cb8ff673b75641"
+  },
+  {
+    "path": "content/project-info.json",
+    "bytes": 5632,
+    "sha256": "25c10c1cfabb9d879c8978d233f964d55201c975bfc867ca8dcf133d5d87a03a"
+  },
+  {
+    "path": "content/sojourner-art.json",
+    "bytes": 4300,
+    "sha256": "2e0514a0ff3f870ab4518b8313e4c3d476c178b64f27f6fedabbb2acf6cfe2f6"
+  },
+  {
+    "path": "content/sojourner-models.json",
+    "bytes": 2485,
+    "sha256": "a5d5bff6793795d2659f9ea8b0d2c76a9dad280b4382df79cd65db50d24db988"
+  },
+  {
+    "path": "content/sojourner-recordings.json",
+    "bytes": 9141,
+    "sha256": "836e8924719aaf26af1a1d7e4b1894e63edfea83275051bce87890f567a4ab58"
+  },
+  {
+    "path": "content/sojourner-video.json",
+    "bytes": 2577,
+    "sha256": "617d7e99cdb587e7bea4b555add6eec2fb1f27918c820c39a1bbbb6defcb49ef"
+  },
+  {
+    "path": "content/timeline-art.json",
+    "bytes": 3080,
+    "sha256": "7ce9f51a3fef9a57a2345ec1e433dd357b076e2e8abec78ad5991da8867c2819"
+  },
+  {
+    "path": "content/video.json",
+    "bytes": 2277,
+    "sha256": "6e92c672c7d92838ae2fde5f83ba7bf93d7fcde7fe7ffc589ca907f863ba6505"
+  },
+  {
+    "path": "content/viking-model.json",
+    "bytes": 724,
+    "sha256": "281c3f6c22eec3fb263fafdd2166355075042211ec0c361682b9a7ec4dafdae9"
+  },
+  {
+    "path": "content/viking-pressure.json",
+    "bytes": 4062,
+    "sha256": "ce05e65154668807a9556eb2c31e40c96eea84633d6b0c804a7271ed5f1c27be"
+  },
+  {
+    "path": "content/viking-props.json",
+    "bytes": 1697,
+    "sha256": "f41de442c29373f90d4d960fe780e812f4c041ea54c15b2fd698cd15d616d1dc"
+  },
+  {
+    "path": "content/viking-video.json",
+    "bytes": 2570,
+    "sha256": "0d4122fb586c4810e5c3bdf779aa02b74c5e5deed06b32ace0b11d145969664d"
+  },
+  {
+    "path": "vendor/draco/draco_decoder.wasm",
+    "bytes": 192420,
+    "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac"
+  },
+  {
+    "path": "vendor/draco/draco_wasm_wrapper.js",
+    "bytes": 58572,
+    "sha256": "f3ab54e2feabfe8bd37928b5f400bc10230dcc278c7e70bca5e025f63519d960"
+  },
+  {
+    "path": "vendor/eagle-viewer.js",
+    "bytes": 662568,
+    "sha256": "d6e823540d1dec5f03fddeacabd3b72726410beccecae020c38ebaefbe66ab7f"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "kind": "Imagined illustrated navigation guides, not historical testimony or NASA evidence.",
+  "disclosure": "Tools disclosed in shared production-information card at owner request.",
+  "behavior": "Idle-only, dismissible, silent, no focus theft; suppressed during media, dialogs and portrait guard.",
+  "artwork": [
+    {
+      "file": "assets/art/guide-astronaut.webp",
+      "sha256": "7b79d3aeb1178e31fae8755758b041b8f58e2669191008a7a8694e53808bfc33",
+      "generationOutput": "exec-c5c6f32c-2993-4a43-a238-edf2d75488b3.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T16:37:15.338407+00:00",
+      "originalGenerationSHA256": "d967ce09754bdefa55c1f0e306e4e1ea4424636d16c1e7a41357efbf496a4ae6",
+      "processing": "WebP quality 88 method 6; original pixel dimensions and exact alpha retained. Original generated PNG retained outside published project.",
+      "verification": "New post-start ImageGen character output; alpha verified. Imagined illustrative guide, not original NASA imagery or a scientific model.",
+      "sourceWebPSHA256": "7b79d3aeb1178e31fae8755758b041b8f58e2669191008a7a8694e53808bfc33",
+      "character": "astronaut",
+      "tool": "OpenAI built-in ImageGen",
+      "referenceIllustration": null,
+      "promptSummary": "Friendly child astronaut with a waving hand, explorer notebook, cream spacesuit, teal/brass details and dark curls. Full-body storybook pencil/ink cutout; transparent alpha; no logos, flags, mission patches, text or branding."
+    },
+    {
+      "file": "assets/art/guide-eagle.webp",
+      "sha256": "b98297e5f9c8758374dfa301b8104beed23bb4b91484947808a99ae8316e2499",
+      "generationOutput": "exec-026b7d33-40ac-4e51-9c70-2877fcfea531.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T16:35:15.645649+00:00",
+      "originalGenerationSHA256": "14bc1dc85c96abf4751b0a6e40848c266de86d1374a3afabd0a7f101d9e7cfdf",
+      "processing": "WebP quality 88 method 6; original pixel dimensions and exact alpha retained. Original generated PNG retained outside published project.",
+      "verification": "New post-start ImageGen character output; alpha verified. Imagined illustrative guide, not original NASA imagery or a scientific model.",
+      "sourceWebPSHA256": "b98297e5f9c8758374dfa301b8104beed23bb4b91484947808a99ae8316e2499",
+      "character": "eagle",
+      "tool": "OpenAI built-in ImageGen",
+      "referenceIllustration": "assets/art/eagle-story.webp",
+      "promptSummary": "Use the smiling Eagle story character as identity and colored-pencil engraved style reference. Entire silver upper cabin, friendly eyes and smile, gold foil lower stage, four landing feet, ladder and antenna. Compact front three-quarter transparent cutout; no scenery, speech bubble, text, logos, flags or NASA marks."
+    },
+    {
+      "file": "assets/art/guide-viking.webp",
+      "sha256": "b3a73f07c776a917dc0b7f015283cdf5307050d7448b36eb0d3396cde191bd0d",
+      "generationOutput": "exec-77521125-159d-478a-afa4-3396d31d207c.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T16:35:27.118973+00:00",
+      "originalGenerationSHA256": "37da9c42f8dd78911c31d58eb301d08e431c6f118520b39304c32fd2a4bde8df",
+      "processing": "WebP quality 88 method 6; original pixel dimensions and exact alpha retained. Original generated PNG retained outside published project.",
+      "verification": "New post-start ImageGen character output; alpha verified. Imagined illustrative guide, not original NASA imagery or a scientific model.",
+      "sourceWebPSHA256": "b3a73f07c776a917dc0b7f015283cdf5307050d7448b36eb0d3396cde191bd0d",
+      "character": "viking",
+      "tool": "OpenAI built-in ImageGen",
+      "referenceIllustration": "assets/art/viking-story.webp",
+      "promptSummary": "Use the Viking story character as identity and pencil/etched ink reference. Entire ivory/brass lander, dish, three legs, sampler boom, foil bags and friendly front-panel face. Compact front three-quarter transparent cutout; remove Mars terrain, sky and speech balloon; no logos, flags, NASA marks or text."
+    },
+    {
+      "file": "assets/art/guide-sojourner.webp",
+      "sha256": "ab2f85b0e83216dfb7892e848306660dc2af08dbf2265cc05386229d1867f675",
+      "generationOutput": "exec-e42dc74a-a981-4d8e-98b6-781958948b00.png",
+      "observedGeneratedOutputWriteUTC": "2026-11-14T16:36:26.452190+00:00",
+      "originalGenerationSHA256": "a5c254156c7f96f8ced687ea29bfccd64b0b841f0b203084b9ff207308a6ebca",
+      "processing": "WebP quality 88 method 6; original pixel dimensions and exact alpha retained. Original generated PNG retained outside published project.",
+      "verification": "New post-start ImageGen character output; alpha verified. Imagined illustrative guide, not original NASA imagery or a scientific model.",
+      "sourceWebPSHA256": "ab2f85b0e83216dfb7892e848306660dc2af08dbf2265cc05386229d1867f675",
+      "character": "sojourner",
+      "tool": "OpenAI built-in ImageGen",
+      "referenceIllustration": "assets/art/sojourner-hello-explorer-v2.webp",
+      "promptSummary": "Use the smiling Sojourner story character as identity/style reference. Entire six-wheeled rover, gold foil body, dark blue solar array, camera eyes, smile and short antenna. Detailed colored-pencil/etched ink transparent cutout; no scenery, speech balloon, text, logos, flags or extra human limbs."
+    }
+  ]
+}

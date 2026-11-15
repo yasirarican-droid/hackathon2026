@@ -1,0 +1,32 @@
+[
+  {
+    "file": "assets/art/viking-banker-lamp-v2.webp",
+    "created": "2026-11-14",
+    "tool": "OpenAI built-in ImageGen",
+    "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+    "bytes": 464240,
+    "sha256": "f4089f02f9b6eff079402b365d0ca78f625ae8ddc8c53c0608d8e9221a4247de",
+    "classification": "AI-generated decorative illustration, not original NASA evidence.",
+    "webOptimization": {
+      "originalSHA256": "40e4ce9ef855f98d9146e6fac20fb2a32b90ed56109b43ce7520fee7e62df60d",
+      "originalBytes": 2491431,
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "originalRetained": "Unchanged original retained outside published project."
+    }
+  },
+  {
+    "file": "assets/art/viking-telephone-v2.webp",
+    "created": "2026-11-14",
+    "tool": "OpenAI built-in ImageGen",
+    "origin": "New illustration generated from scratch after 2026-11-14 09:00 Europe/Istanbul. No earlier image reused as input.",
+    "bytes": 554732,
+    "sha256": "26857e36bfeb3f1f241bd47f9aa02e2910eec0ce804f7939ca2395e6d5bcd529",
+    "classification": "AI-generated decorative illustration, not original NASA evidence.",
+    "webOptimization": {
+      "originalSHA256": "352aa326b6861eb1965a35ccbea33aad15a2bbec3cc2918e7af9967880ea15c4",
+      "originalBytes": 2472092,
+      "processing": "WebP quality 92 method 6; original pixel dimensions and exact alpha retained. No content regeneration or resizing.",
+      "originalRetained": "Unchanged original retained outside published project."
+    }
+  }
+]

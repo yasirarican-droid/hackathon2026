@@ -1,0 +1,34 @@
+{
+  "file": "assets/video/sojourner-arrival-web.mp4",
+  "originalFilename": "mars-sojourney-landing.mp4",
+  "origin": "Provided by the project owner",
+  "added": "2026-11-14",
+  "bytes": 6564448,
+  "sha256": "aec847e1e47329e0adda2d97735c4457e7134adf5614039d696fc5b2f152c0ea",
+  "durationSeconds": 10.5,
+  "width": 1916,
+  "height": 1080,
+  "audioTrack": true,
+  "classification": "Owner-provided illustrated Pathfinder/Sojourner landing animation, not original NASA mission footage or measured telemetry.",
+  "modifications": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit. Visible AI-GENERATED VISUAL - CHATGPT + KLING AI credit burned into lower-left picture area, original resolution/timing retained; AAC audio packet bytes unchanged.",
+  "use": "After seven-second Earth-to-Mars briefing and before Sojourner CRT introduction. Shared autoplay, pause, replay, sound, seek, fullscreen and Skip controls.",
+  "aiDisclosure": "AI-generated visual · ChatGPT + Kling AI. Tool attribution supplied by the project owner on 2026-11-14. Not original NASA mission footage.",
+  "displayCredit": "AI-GENERATED VISUAL · CHATGPT + KLING AI",
+  "productionTimeOwnerStatement": {
+    "statement": "Owner confirms all supplied homepage music, arrival films and Apollo/Viking/Sojourner narrator recordings were produced after 2026-11-14 09:00 Europe/Istanbul.",
+    "recordedOn": "2026-11-14",
+    "verification": "Owner statement; exact original production timestamps are not independently established. Original bytes retained."
+  },
+  "webOptimization": {
+    "originalSHA256": "a3282158c0c8f26cf5b1f842cb4a4eacd6b46efec4ae65eac54aac7c0e25a0c3",
+    "originalBytes": 21765352,
+    "processing": "H.264 CRF 23 medium, original resolution and frame timing, original AAC audio stream copied, faststart enabled. No scene, duration, speed or soundtrack edit.",
+    "originalRetained": "Unchanged original retained outside published project."
+  },
+  "sourceOriginalFilename": "mars-sojourney-landing.mp4",
+  "sourceOriginalSHA256": "a3282158c0c8f26cf5b1f842cb4a4eacd6b46efec4ae65eac54aac7c0e25a0c3",
+  "sourceOriginalBytes": 21765352,
+  "watermarkEmbedded": true,
+  "watermarkProcessing": "Visible AI-GENERATED VISUAL - CHATGPT + KLING AI credit burned into lower-left picture area, original resolution/timing retained; AAC audio packet bytes unchanged.",
+  "preWatermarkSHA256": "829058c38e4c6defa8e65649bf6415d2e80430253617b439b35090d3f70cb256"
+}

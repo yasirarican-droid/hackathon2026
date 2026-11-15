@@ -1,0 +1,14 @@
+* text=auto
+*.md text eol=lf
+*.pdf binary
+*.pptx binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.mp3 binary
+*.mp4 binary
+*.glb binary
+*.woff2 binary
+*.ttf binary
+public/** -text

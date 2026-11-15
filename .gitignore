@@ -16,3 +16,7 @@ copykemal_hetzner*
 hackathon2026_hetzner*
 .ssh/
 node_modules/
+
+.delivery-build/
+docs/qa/
+docs/audit-20261115/
