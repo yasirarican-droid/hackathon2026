@@ -41,6 +41,15 @@ try {
   await guide.locator('.guide-action').click();
   assert.match(page.url(), /#missions$/);
   assert.equal(await guide.isVisible(), false);
+  await page.locator('.guide-help:not(.guide-fact)').click();
+  await guide.locator('.guide-message').click();
+  assert.equal(await guide.isVisible(), true);
+  await page.mouse.click(20, 180);
+  assert.equal(await guide.isVisible(), false);
+  assert.equal(await shade.isVisible(), false);
+  await page.locator('.guide-help:not(.guide-fact)').click();
+  assert.equal(await guide.isVisible(), true);
+  await page.keyboard.press('Escape');
   for (const mission of ['apollo', 'viking', 'sojourner']) {
     await page.locator('.' + mission + '-card .mission-button').click();
     await page.locator('#room-page').waitFor({ state: 'visible' });
@@ -134,7 +143,7 @@ try {
   assert.equal(await small.locator('.guide-help:not(.guide-fact)').evaluate(el => el === document.activeElement), true);
   await small.close();
   assert.deepEqual(errors, []);
-  await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Small invitations only until clicked on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
+  await writeFile('docs/qa/explorer-guide-results.json', JSON.stringify({ passed: true, checks: ['Small invitations only until clicked on four screens', 'No automatic focus change', 'Mission-specific transparent characters', 'Field Guide action and progress dots', 'Dialog suppression', 'Desktop/landscape bounds', 'Disable automatic tips for visit', 'Four distinct manual tips per cycle', 'Manual tips remain open after outside mouse movement, blur and elapsed time', 'Round character launcher in the top-right corner', 'Manual help remains available when automatic tips disabled', 'Outside click dismisses; inside click and opening click preserve the tip', 'Escape dismisses and portrait guard suppresses both controls'], errors }, null, 2));
   console.log('Explorer guides passed: four characters, idle timing, actions, focus, dialogs, responsive bounds, dimmed background and launcher invitation.');
 } finally {
   await browser.close();

@@ -2,27 +2,27 @@ import {
   loadProgress,
   saveProgress,
   safeIds,
-} from "./progress-store.js?v=20261115-reward2";
+} from "./progress-store.js?v=20261115-guideclose1";
 import {
   renderLearningGuide,
   mountPartLesson,
   renderCompletionBadge,
-} from "./learning-guide.js?v=20261115-reward2";
-import { createCassettePlayer } from "./cassette-player.js?v=20261115-reward2";
-import { sojournerItems } from "./sojourner-room.js?v=20261115-reward2";
-import { createCRTIntro } from "./crt-intro.js?v=20261115-reward2";
-import { createSideScreens } from "./side-screens.js?v=20261115-reward2";
+} from "./learning-guide.js?v=20261115-guideclose1";
+import { createCassettePlayer } from "./cassette-player.js?v=20261115-guideclose1";
+import { sojournerItems } from "./sojourner-room.js?v=20261115-guideclose1";
+import { createCRTIntro } from "./crt-intro.js?v=20261115-guideclose1";
+import { createSideScreens } from "./side-screens.js?v=20261115-guideclose1";
 import {
   createMissionRoom,
   pressureChart,
   vikingItems,
-} from "./mission-room.js?v=20261115-reward2";
+} from "./mission-room.js?v=20261115-guideclose1";
 
-import { createExplorerGuide } from "./explorer-guide.js?v=20261115-reward2";
-import { renderMissionStatus } from "./mission-status.js?v=20261115-reward2";
+import { createExplorerGuide } from "./explorer-guide.js?v=20261115-guideclose1";
+import { renderMissionStatus } from "./mission-status.js?v=20261115-guideclose1";
 
-import { createFinalSignal } from "./final-signal.js?v=20261115-reward2";
-import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-reward2";
+import { createFinalSignal } from "./final-signal.js?v=20261115-guideclose1";
+import { certificateRequirements, certificateEarned, renderCertificate } from "./explorer-certificate.js?v=20261115-guideclose1";
 
 const $ = (selector) => document.querySelector(selector);
 const assets = new Map();

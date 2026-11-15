@@ -183,6 +183,11 @@ export function createExplorerGuide({ asset, context, open, navigate }) {
   function activity(event) {
     if (event.type === 'keydown' && event.key === 'Escape') reset();
   }
+  function dismissOutside(event) {
+    if (root.hidden || root.contains(event.target) || help.contains(event.target) || invitation.contains(event.target)) return;
+    reset();
+  }
+  document.addEventListener('click', dismissOutside);
   for (const type of ['keydown'])
     document.addEventListener(type, activity, { passive: true });
   root.querySelector('.guide-close').addEventListener('click', reset);
@@ -216,6 +221,7 @@ export function createExplorerGuide({ asset, context, open, navigate }) {
     reset,
     destroy() {
       clearInterval(timer);
+      document.removeEventListener('click', dismissOutside);
       for (const type of ['keydown'])
         document.removeEventListener(type, activity);
       hide();
