@@ -1,0 +1,15 @@
+{
+  "title": "Apollo 11: Eagle Has Landed",
+  "file": "assets/audio/apollo-original-landing.mp3",
+  "source": "https://www.nasa.gov/historical-sounds/",
+  "download": "https://www.nasa.gov/wp-content/uploads/2015/01/569462main_eagle_has_landed.mp3",
+  "credit": "NASA",
+  "kind": "Historical mission audio; not AI-generated",
+  "durationSeconds": 5.364,
+  "bytes": 26388,
+  "sha256": "c2cf9c2754ec3c2f7315acd4fcdd7d892fb2027919c1a80adf90a49f63c0316c",
+  "processing": "NASA-hosted MP3 bytes retained unchanged. The short selection is NASA-edited; no project audio editing or revoicing.",
+  "transcriptSource": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/a11.landing.html",
+  "callGET": "102:45:58",
+  "transcriptContext": "The displayed transcript also includes an adjacent Aldrin call that is not in this short recording."
+}

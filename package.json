@@ -1,0 +1,19 @@
+{
+  "name": "abandoned-but-not-forgotten",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-production-dates.mjs",
+    "test": "node scripts/browser-check.mjs",
+    "build:viewer": "node scripts/build-viewer.mjs",
+    "test:learning": "node scripts/learning-check.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.65.1",
+    "three": "0.187.0"
+  },
+  "license": "Apache-2.0"
+}

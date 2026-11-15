@@ -1,0 +1,19 @@
+# Quiet explorer guides
+
+The Field Guide is a yellow notebook control with a readable title, short instruction, three progress dots and gentle four-second glow. Completion turns it green. Reduced-motion and Pause motion disable the glow and pop animation.
+
+The control sits directly below Timeline in all three rooms, as a tab extending from the left edge. It is anchored to the actual navigation row rather than to the desk. Hover and keyboard focus slide it inward slightly; the title and progress remain visible without hovering. Landscape uses compact dimensions.
+
+When the full character guide is open, a noninteractive translucent shade dims the surrounding page and leaves the guide and launcher bright. The shade disappears on dismissal, navigation or suppression. It does not behave as a separate modal or intercept pointer events.
+
+A small Need a clue? Tap me! invitation appears beside the portrait about ten seconds after a screen becomes available, stays for approximately 5.5 seconds, and can repeat after 75 seconds, up to three times per screen per load. Clicking it opens the same manual guide. It is suppressed during a full guide, dialogs, mission media, hidden tabs and orientation prompts. Disabling automatic tips disables this invitation too. Reduced motion disables its entrance animation.
+
+Four transparent character assets were generated with the built-in ImageGen tool after the event start: a child astronaut for the homepage, Eagle for Apollo, Viking for Viking 1 and a small Sojourner rover. Original generation files remain outside the project; optimized WebPs retain original dimensions and exact alpha. Paths, original hashes, observed output times, reference illustrations and prompt summaries are in public/content/explorer-guides.json. These are imagined navigation mascots, not scientific evidence or historical speech. Their origin is included in the shared production-information card.
+
+The round character portrait in the top-right corner opens a guide on demand and updates to the current mission. Four different tips cycle independently on each page; each has an action opening the actual relevant exhibit. Manual tips stay open until explicitly dismissed, acted on or superseded by navigation/media. Pointer movement and scrolling do not dismiss them. Clicking outside the character guide dismisses it; clicks within the bubble and the portrait opening click preserve it. Full character guides now open only after clicking a portrait or its small invitation. Idle time never opens a full guide. Only the small invitations described above can appear automatically.
+
+Tips and the help control are suppressed during a dialog, briefing, arrival video, CRT narration, hidden browser tab or portrait guard. Navigating or opening a panel hides the guide immediately. Tips never start audio or take keyboard focus automatically. Manual help moves focus to its action, and Escape or Dismiss returns focus. The image and surrounding area do not intercept clicks; the bubble controls do. Hide automatic tips for this visit disables unsolicited appearances until reload, while the character portrait remains available.
+
+Room tips open the real Field Guide or an existing mission exhibit. Once all three goals are solved, the Field Guide tip points to saving field notes. No new factual NASA claims or narrator recordings were introduced. Existing NASA evidence remains unchanged.
+
+Browser verification covers four screens, idle timing, CTA destinations, progress indicators, no automatic focus change, dialog suppression, four distinct manual tips per cycle, disabling unsolicited tips, Escape, portrait guard and landscape bounds. Screenshots were visually inspected at 1440×900 and 844×390. Existing learning and browser suites also passed.
