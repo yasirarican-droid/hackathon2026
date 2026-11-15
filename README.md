@@ -1,6 +1,6 @@
 # NASA Starboard
 
-Live site: https://nasastarboard.app
+Live site: #
 
 ## Publishing
 
