@@ -1,6 +1,7 @@
 {
   "cutoffUTC": "2026-11-14T06:00:00Z",
   "cutoffLocal": "2026-11-14 09:00 Europe/Istanbul",
+  "applicationDevelopmentStart": {"date": "2026-11-14", "timezone": "Europe/Istanbul", "scope": "Development of the submitted interactive application", "basis": "Team-reported start date; original repository and asset provenance records retained."},
   "checkedAtUTC": "2026-11-15T10:51:00.685153+00:00",
   "retiredAssets": [
     {

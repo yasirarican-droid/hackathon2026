@@ -11,6 +11,8 @@ An illustrated space-history adventure that puts school-age explorers in the mis
 
 Independent project for the **2026 NASA Space Apps Challenge · Universal Local Event**
 
+Development of the submitted interactive application began on November 14, 2026.
+
 [![Watch our project demo](docs/media/project-demo.gif)](https://youtu.be/UBaxWCMwD6A)
 
 </div>

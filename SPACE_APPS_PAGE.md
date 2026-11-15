@@ -4,6 +4,8 @@
 
 **Event:** 2026 NASA Space Apps Challenge — Universal Local Event
 
+Development of the submitted interactive application began on November 14, 2026.
+
 **Project Demo:** https://youtu.be/UBaxWCMwD6A
 
 **Final Project:** https://www.abandonedbutnotforgotten.org/
