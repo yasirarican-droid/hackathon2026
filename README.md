@@ -11,7 +11,7 @@ An illustrated space-history adventure that puts school-age explorers in the mis
 
 Independent project for the **2026 NASA Space Apps Challenge · Universal Local Event**
 
-[![Watch our project demo](https://img.youtube.com/vi/UBaxWCMwD6A/hqdefault.jpg)](https://youtu.be/UBaxWCMwD6A)
+[![Watch our project demo](docs/media/project-demo.gif)](https://youtu.be/UBaxWCMwD6A)
 
 </div>
 
